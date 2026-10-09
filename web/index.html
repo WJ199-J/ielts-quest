@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IELTS Quest</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+      background: #f6f7fb;
+      color: #202334;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #e6e8ef;
+      padding: 24px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .logo span {
+      color: #5145e5;
+    }
+
+    .version {
+      background: #eef0ff;
+      color: #5145e5;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    main {
+      width: min(1000px, 92%);
+      margin: 50px auto;
+    }
+
+    .hero {
+      margin-bottom: 38px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin: 0 0 12px;
+    }
+
+    .hero p {
+      color: #687086;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .chapter {
+      background: white;
+      border: 1px solid #e5e7ef;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 30px rgba(20, 25, 50, 0.05);
+    }
+
+    .chapter-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
+
+    .chapter-label {
+      color: #5145e5;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    .chapter h2 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .progress-text {
+      color: #687086;
+      font-size: 14px;
+    }
+
+    .progress {
+      width: 100%;
+      height: 9px;
+      background: #eceef5;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      background: #5145e5;
+      transition: width .3s ease;
+    }
+
+    .missions {
+      display: grid;
+      gap: 14px;
+    }
+
+    .mission {
+      border: 1px solid #e6e8ef;
+      border-radius: 15px;
+      padding: 19px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: .2s;
+      background: #fff;
+    }
+
+    .mission.available {
+      cursor: pointer;
+    }
+
+    .mission.available:hover {
+      transform: translateY(-2px);
+      border-color: #aaa5ff;
+      box-shadow: 0 7px 18px rgba(60, 50, 180, .08);
+    }
+
+    .mission.locked {
+      opacity: .52;
+      background: #fafafa;
+    }
+
+    .mission-left {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+    }
+
+    .mission-number {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: #f0efff;
+      color: #5145e5;
+      font-weight: 800;
+    }
+
+    .mission-title {
+      font-weight: 750;
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    .mission-info {
+      color: #81879a;
+      font-size: 14px;
+    }
+
+    .status {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .start {
+      color: #5145e5;
+    }
+
+    .done {
+      color: #16854d;
+    }
+
+    .locked-text {
+      color: #999eae;
+    }
+
+    .continue-box {
+      margin-top: 25px;
+      background: #f3f2ff;
+      border-radius: 15px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .continue-box p {
+      margin: 0;
+      color: #62687b;
+    }
+
+    button {
+      border: 0;
+      background: #5145e5;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 11px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: #4036ca;
+    }
+
+    footer {
+      text-align: center;
+      color: #989dad;
+      margin: 45px 0;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .chapter {
+        padding: 21px;
+      }
+
+      .chapter-top {
+        display: block;
+      }
+
+      .progress-text {
+        margin-top: 10px;
+      }
+
+      .continue-box {
+        display: block;
+      }
+
+      .continue-box button {
+        margin-top: 14px;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    IELTS <span>Quest</span>
+  </div>
+
+  <div class="version">
+    Alpha 0.4
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>Start your IELTS Quest.</h1>
+
+    <p>
+      通过故事学习雅思词汇。课程会从简单内容开始，
+      随着 Mission 推进逐渐提高难度。
+    </p>
+  </section>
+
+
+  <section class="chapter">
+
+    <div class="chapter-top">
+
+      <div>
+        <div class="chapter-label">
+          CHAPTER 1
+        </div>
+
+        <h2>Natural Geography</h2>
+      </div>
+
+      <div
+        class="progress-text"
+        id="progressText"
+      >
+        0 / 3 Missions completed
+      </div>
+
+    </div>
+
+
+    <div class="progress">
+      <div
+        class="progress-bar"
+        id="progressBar"
+      ></div>
+    </div>
+
+
+    <div class="missions">
+
+      <div
+        class="mission available"
+        onclick="openMission(1)"
+      >
+
+        <div class="mission-left">
+
+          <div class="mission-number">
+            01
+          </div>
+
+          <div>
+
+            <div class="mission-title">
+              A Quiet Morning Walk
+            </div>
+
+            <div class="mission-info">
+              Easy · 6 core words · 10–15 min
+            </div>
+
+          </div>
+
+        </div>
+
+        <div
+          class="status start"
+          id="status1"
+        >
+          Start →
+        </div>
+
+      </div>
+
+
+      <div
+        class="mission available"
+        onclick="openMission(2)"
+      >
+
+        <div class="mission-left">
+
+          <div class="mission-number">
+            02
+          </div>
+
+          <div>
+
+            <div class="mission-title">
+              A Day on a Small Island
+            </div>
+
+            <div class="mission-info">
+              Easy · 6 core words · 10–15 min
+            </div>
+
+          </div>
+
+        </div>
+
+        <div
+          class="status start"
+          id="status2"
+        >
+          Start →
+        </div>
+
+      </div>
+
+
+      <div
+        class="mission available"
+        onclick="openMission(3)"
+      >
+
+        <div class="mission-left">
+
+          <div class="mission-number">
+            03
+          </div>
+
+          <div>
+
+            <div class="mission-title">
+              A River in the Forest
+            </div>
+
+            <div class="mission-info">
+              Easy+ · 8 core words · 15–20 min
+            </div>
+
+          </div>
+
+        </div>
+
+        <div
+          class="status start"
+          id="status3"
+        >
+          Start →
+        </div>
+
+      </div>
+
+
+      <div class="mission locked">
+
+        <div class="mission-left">
+
+          <div class="mission-number">
+            04
+          </div>
+
+          <div>
+
+            <div class="mission-title">
+              Weather Changes
+            </div>
+
+            <div class="mission-info">
+              Easy+ · In development
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="status locked-text">
+          🔒
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="continue-box">
+
+      <p>
+        <strong>Continue learning</strong><br>
+        从当前 Mission 继续你的学习进度。
+      </p>
+
+      <button onclick="continueLearning()">
+        Continue
+      </button>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  IELTS Quest · Story-based IELTS Learning Platform
+</footer>
+
+
+<script>
+
+  const TOTAL_MISSIONS = 3;
+
+  function getCompletedMissions() {
+
+    const completed = [];
+
+    for (let i = 1; i <= TOTAL_MISSIONS; i++) {
+
+      const value =
+        localStorage.getItem(
+          "ieltsQuestMission" + i + "Completed"
+        );
+
+      if (value === "true") {
+        completed.push(i);
+      }
+
+    }
+
+    return completed;
+  }
+
+
+  function updateProgress() {
+
+    const completed = getCompletedMissions();
+
+    const percentage =
+      (completed.length / TOTAL_MISSIONS) * 100;
+
+    document.getElementById(
+      "progressBar"
+    ).style.width =
+      percentage + "%";
+
+
+    document.getElementById(
+      "progressText"
+    ).textContent =
+      completed.length +
+      " / " +
+      TOTAL_MISSIONS +
+      " Missions completed";
+
+
+    completed.forEach(function(number) {
+
+      const status =
+        document.getElementById(
+          "status" + number
+        );
+
+      if (status) {
+
+        status.textContent =
+          "Completed ✓";
+
+        status.className =
+          "status done";
+
+      }
+
+    });
+
+  }
+
+
+  function openMission(number) {
+
+    localStorage.setItem(
+      "ieltsQuestCurrentMission",
+      number
+    );
+
+    window.location.href =
+      "mission.html?id=" + number;
+
+  }
+
+
+  function continueLearning() {
+
+    let current =
+      localStorage.getItem(
+        "ieltsQuestCurrentMission"
+      );
+
+    if (!current) {
+      current = 1;
+    }
+
+    openMission(current);
+
+  }
+
+
+  updateProgress();
+
+</script>
+
+</body>
+</html>

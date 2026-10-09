@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mission · IELTS Quest</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:#f6f7fb;
+  color:#202334;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+}
+
+header{
+  height:82px;
+  background:#fff;
+  border-bottom:1px solid #e6e8ef;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 6%;
+}
+
+.logo{
+  font-size:27px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.logo span{color:#5145e5}
+
+.back{
+  border:0;
+  background:#f0efff;
+  color:#5145e5;
+  padding:10px 16px;
+  border-radius:10px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+main{
+  width:min(940px,92%);
+  margin:38px auto 70px;
+}
+
+.topline{
+  color:#5145e5;
+  font-weight:800;
+  font-size:14px;
+  letter-spacing:.04em;
+}
+
+h1{
+  font-size:35px;
+  margin:8px 0;
+}
+
+.subtitle{
+  color:#7b8194;
+  margin-bottom:25px;
+}
+
+.steps{
+  display:flex;
+  gap:8px;
+  margin-bottom:25px;
+}
+
+.step{
+  flex:1;
+  height:7px;
+  border-radius:20px;
+  background:#e5e7ef;
+}
+
+.step.active{background:#5145e5}
+
+.card{
+  background:#fff;
+  border:1px solid #e5e7ef;
+  border-radius:19px;
+  padding:32px;
+  box-shadow:0 8px 28px rgba(20,25,50,.045);
+}
+
+.notice{
+  background:#f4f3ff;
+  border-left:4px solid #5145e5;
+  padding:14px 17px;
+  border-radius:8px;
+  color:#5c6175;
+  margin-bottom:25px;
+  line-height:1.7;
+}
+
+.story{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:22px;
+  line-height:2.05;
+}
+
+.sentence{
+  margin-bottom:8px;
+}
+
+.translation{
+  display:none;
+  font-family:Inter,"Segoe UI",Arial,sans-serif;
+  font-size:15px;
+  line-height:1.6;
+  color:#626a80;
+  background:#f7f8fc;
+  border-left:3px solid #c8c5ff;
+  border-radius:7px;
+  padding:8px 12px;
+  margin:-1px 0 15px;
+}
+
+.translation.show{display:block}
+
+.word{
+  color:#5145e5;
+  border-bottom:3px dotted #9e99ff;
+  cursor:pointer;
+  background:#f6f5ff;
+  padding:0 3px;
+  border-radius:5px;
+}
+
+.support{
+  cursor:pointer;
+  border-bottom:1px dotted #a8adba;
+}
+
+.dictionary{
+  display:none;
+  margin-top:25px;
+  background:#f7f8fc;
+  border:1px solid #e3e5ed;
+  border-radius:14px;
+  padding:20px;
+}
+
+.dictionary.show{display:block}
+
+.dict-word{
+  font-size:25px;
+  font-weight:800;
+}
+
+.ipa{
+  color:#5145e5;
+  margin:5px 0 11px;
+}
+
+.meaning{
+  font-size:16px;
+  margin-bottom:9px;
+}
+
+.example{
+  color:#666d80;
+  line-height:1.6;
+}
+
+.actions{
+  margin-top:28px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+button.primary{
+  border:0;
+  background:#5145e5;
+  color:#fff;
+  padding:13px 21px;
+  border-radius:11px;
+  font-size:15px;
+  font-weight:750;
+  cursor:pointer;
+}
+
+button.secondary{
+  border:0;
+  background:#eef0f6;
+  color:#33394d;
+  padding:13px 21px;
+  border-radius:11px;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.quiz{display:none}
+.quiz.show{display:block}
+
+.question{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:21px;
+  line-height:1.9;
+  margin-bottom:19px;
+}
+
+.answer{
+  display:inline-block;
+  min-width:150px;
+  width:170px;
+  padding:8px 13px;
+  margin:0 4px;
+  border:2px solid #c8cbd7;
+  border-radius:999px;
+  font-family:Inter,"Segoe UI",Arial,sans-serif;
+  font-size:16px;
+  outline:none;
+}
+
+.answer:focus{border-color:#5145e5}
+
+.answer.correct{
+  border-color:#35ad68;
+  background:#effaf3;
+}
+
+.answer.wrong{
+  border-color:#e05a67;
+  background:#fff1f3;
+}
+
+.result{
+  display:none;
+  margin-top:28px;
+  background:#f4f5fb;
+  border-radius:16px;
+  padding:23px;
+}
+
+.result.show{display:block}
+
+.score{
+  font-size:27px;
+  font-weight:850;
+  margin-bottom:9px;
+}
+
+.result-note{
+  color:#62697c;
+  line-height:1.7;
+}
+
+.finish{
+  display:none;
+  margin-top:12px;
+}
+
+.finish.show{display:inline-block}
+
+@media(max-width:650px){
+  header{padding:0 4%}
+  .card{padding:21px}
+  h1{font-size:29px}
+  .story,.question{font-size:19px}
+  .answer{width:145px;min-width:120px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo" onclick="goHome()">IELTS <span>Quest</span></div>
+  <button class="back" onclick="goHome()">← Mission List</button>
+</header>
+
+<main>
+
+<div class="topline" id="missionNumber">CHAPTER 1 · MISSION</div>
+<h1 id="missionTitle">Loading Mission...</h1>
+<div class="subtitle" id="missionMeta"></div>
+
+<div class="steps">
+  <div class="step active" id="step1"></div>
+  <div class="step" id="step2"></div>
+  <div class="step" id="step3"></div>
+</div>
+
+<section class="card">
+
+  <div id="studySection">
+
+    <div class="notice">
+      先阅读完整故事。紫色虚线词是本 Mission 的核心词汇；
+      其他带轻微虚线的词也可以点击查看释义。中文逐句翻译将在提交测试后解锁。
+    </div>
+
+    <div class="story" id="story"></div>
+
+    <div class="dictionary" id="dictionary">
+      <div class="dict-word" id="dictWord"></div>
+      <div class="ipa" id="dictIpa"></div>
+      <div class="meaning" id="dictMeaning"></div>
+      <div class="example" id="dictExample"></div>
+    </div>
+
+    <div class="actions">
+      <button class="primary" onclick="startQuiz()">开始测试</button>
+    </div>
+
+  </div>
+
+
+  <div class="quiz" id="quizSection">
+
+    <div class="notice">
+      根据文章内容填写单词。提交后会显示正确率、正确答案和逐句中文翻译。
+    </div>
+
+    <div id="questions"></div>
+
+    <div class="actions">
+      <button class="primary" onclick="submitQuiz()">提交答案</button>
+      <button class="secondary" onclick="returnStudy()">返回文章</button>
+    </div>
+
+    <div class="result" id="result">
+      <div class="score" id="score"></div>
+      <div class="result-note" id="resultNote"></div>
+
+      <div class="actions">
+        <button class="primary" onclick="submitQuiz()">修改后再次提交</button>
+        <button class="secondary" onclick="showTranslations()">查看完整文章与翻译</button>
+        <button class="primary finish" id="finishButton" onclick="finishMission()">Finish</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<script>
+
+/*
+  Alpha 0.4 mission engine.
+  Mission 1–3 data is temporarily stored here.
+  A later commit will move course content into /data JSON files.
+*/
+
+const missions = {
+
+1:{
+  title:"A Quiet Morning Walk",
+  level:"Easy",
+  time:"10–15 min",
+
+  sentences:[
+    {
+      en:'Early one morning, Mia went for a walk near her home.',
+      zh:'一天清晨，Mia 在家附近散步。'
+    },
+    {
+      en:'A small <core data-word="stream">stream</core> ran beside the path.',
+      zh:'一条小溪沿着小路流淌。'
+    },
+    {
+      en:'The land was <core data-word="flat">flat</core>, so the walk was easy.',
+      zh:'这里的土地很平坦，所以走起来很轻松。'
+    },
+    {
+      en:'The water was <core data-word="shallow">shallow</core> and she could see the stones below.',
+      zh:'溪水很浅，她能看到水下的石头。'
+    },
+    {
+      en:'Mia picked up a <core data-word="smooth">smooth</core> stone and put it in her bag.',
+      zh:'Mia 捡起一块光滑的石头，把它放进包里。'
+    },
+    {
+      en:'A light <core data-word="mist">mist</core> covered the trees.',
+      zh:'一层薄雾笼罩着树木。'
+    },
+    {
+      en:'She stopped to enjoy the quiet <core data-word="landscape">landscape</core> before walking home.',
+      zh:'回家前，她停下来欣赏安静的自然风景。'
+    }
+  ],
+
+  dictionary:{
+    stream:["/striːm/","n. 小溪；溪流","A stream runs through the village.","一条小溪流经这个村庄。"],
+    flat:["/flæt/","adj. 平坦的","The road is flat and easy to walk on.","这条路很平坦，很容易行走。"],
+    shallow:["/ˈʃæləʊ/","adj. 浅的","The water is shallow near the bank.","岸边的水很浅。"],
+    smooth:["/smuːð/","adj. 光滑的；平稳的","The stone feels smooth.","这块石头摸起来很光滑。"],
+    mist:["/mɪst/","n. 薄雾","Morning mist covered the hills.","晨雾笼罩着山丘。"],
+    landscape:["/ˈlændskeɪp/","n. 风景；景观","The mountain landscape was beautiful.","山地景色非常美。"],
+    path:["/pɑːθ/","n. 小路；路径","We followed a narrow path.","我们沿着一条狭窄的小路前进。"],
+    stone:["/stəʊn/","n. 石头","She found a small stone.","她发现了一块小石头。"]
+  },
+
+  quiz:[
+    ["A small ______ ran beside the path.","stream"],
+    ["The land was ______, so walking was easy.","flat"],
+    ["The water was ______ and Mia could see the stones.","shallow"],
+    ["Mia picked up a ______ stone.","smooth"],
+    ["A light ______ covered the trees.","mist"],
+    ["She enjoyed the quiet ______.","landscape"]
+  ]
+},
+
+2:{
+  title:"A Day on a Small Island",
+  level:"Easy",
+  time:"10–15 min",
+
+  sentences:[
+    {
+      en:'Emma visited a small <core data-word="island">island</core> with her family.',
+      zh:'Emma 和家人来到一座小岛。'
+    },
+    {
+      en:'They walked along the <core data-word="beach">beach</core> near the <core data-word="coast">coast</core>.',
+      zh:'他们沿着海岸附近的沙滩散步。'
+    },
+    {
+      en:'The <core data-word="waves">waves</core> moved slowly because the weather was calm.',
+      zh:'因为天气平静，海浪缓缓移动。'
+    },
+    {
+      en:'Emma found a beautiful <core data-word="shell">shell</core> beside the water.',
+      zh:'Emma 在水边发现了一个漂亮的贝壳。'
+    },
+    {
+      en:'Far away, the horizon seemed to meet the blue <core data-word="ocean">ocean</core>.',
+      zh:'远处，地平线仿佛与蓝色的海洋相接。'
+    },
+    {
+      en:'Emma sat quietly and enjoyed the natural landscape around her.',
+      zh:'Emma 静静地坐着，欣赏身边的自然景色。'
+    }
+  ],
+
+  dictionary:{
+    island:["/ˈaɪlənd/","n. 岛；岛屿","They spent a week on the island.","他们在岛上度过了一周。"],
+    beach:["/biːtʃ/","n. 海滩","We walked along the beach.","我们沿着海滩散步。"],
+    coast:["/kəʊst/","n. 海岸","The town lies on the coast.","这个城镇位于海岸。"],
+    waves:["/weɪvz/","n. 海浪（wave 的复数）","Large waves reached the beach.","巨浪涌向海滩。"],
+    shell:["/ʃel/","n. 贝壳；外壳","She found a shell in the sand.","她在沙子里发现了一个贝壳。"],
+    ocean:["/ˈəʊʃn/","n. 海洋","The ocean looked calm.","海面看起来很平静。"],
+    horizon:["/həˈraɪzn/","n. 地平线","The sun disappeared below the horizon.","太阳落到了地平线以下。"],
+    natural:["/ˈnætʃrəl/","adj. 自然的","The area has great natural beauty.","这个地区拥有美丽的自然风光。"]
+  },
+
+  quiz:[
+    ["Emma visited a small ______.","island"],
+    ["They walked along the ______.","beach"],
+    ["They were walking near the ______.","coast"],
+    ["The ______ moved slowly.","waves"],
+    ["Emma found a beautiful ______.","shell"],
+    ["She looked across the blue ______.","ocean"]
+  ]
+},
+
+3:{
+  title:"A River in the Forest",
+  level:"Easy+",
+  time:"15–20 min",
+
+  sentences:[
+    {
+      en:'Early one morning, Anna and her brother walked into a quiet <core data-word="forest">forest</core>.',
+      zh:'一天清晨，Anna 和哥哥走进一片安静的森林。'
+    },
+    {
+      en:'They wanted to find the <core data-word="source">source</core> of a small <core data-word="river">river</core>.',
+      zh:'他们想找到一条小河的源头。'
+    },
+    {
+      en:'A light <support data-word="mist">mist</support> covered the trees.',
+      zh:'一层薄雾笼罩着树木。'
+    },
+    {
+      en:'They could hear the gentle <core data-word="current">current</core> before they saw the water.',
+      zh:'在看到河水之前，他们就听到了轻柔的水流声。'
+    },
+    {
+      en:'Soon they reached a wooden <core data-word="bridge">bridge</core>.',
+      zh:'很快，他们来到一座木桥前。'
+    },
+    {
+      en:'The river was <core data-word="shallow">shallow</core>, so they could see small stones below.',
+      zh:'河水很浅，所以他们能看到水下的小石头。'
+    },
+    {
+      en:'After another short walk, they saw a beautiful <core data-word="waterfall">waterfall</core>.',
+      zh:'又走了一小段路后，他们看到了一座美丽的瀑布。'
+    },
+    {
+      en:'Anna thought it was one of the most peaceful <core data-word="landscape">landscapes</core> she had ever seen.',
+      zh:'Anna 觉得这是她见过的最宁静的风景之一。'
+    }
+  ],
+
+  dictionary:{
+    forest:["/ˈfɒrɪst/","n. 森林","The forest is home to many animals.","这片森林是许多动物的家园。"],
+    source:["/sɔːs/","n. 来源；源头","They searched for the source of the river.","他们寻找这条河的源头。"],
+    river:["/ˈrɪvə(r)/","n. 河；河流","The river flows through the valley.","这条河流经山谷。"],
+    current:["/ˈkʌrənt/","n. 水流；洋流","The river has a strong current.","这条河的水流很急。"],
+    bridge:["/brɪdʒ/","n. 桥","They crossed the wooden bridge.","他们走过了木桥。"],
+    shallow:["/ˈʃæləʊ/","adj. 浅的","The river is shallow here.","这里的河水很浅。"],
+    waterfall:["/ˈwɔːtəfɔːl/","n. 瀑布","We heard the waterfall before we saw it.","我们还没看到瀑布就先听到了水声。"],
+    landscape:["/ˈlændskeɪp/","n. 风景；景观","The landscape changed as they climbed higher.","随着他们越爬越高，景色发生了变化。"],
+    mist:["/mɪst/","n. 薄雾","Mist covered the trees in the morning.","早晨薄雾笼罩着树木。"],
+    gentle:["/ˈdʒentl/","adj. 轻柔的；温和的","A gentle wind moved through the trees.","一阵轻柔的风吹过树林。"]
+  },
+
+  quiz:[
+    ["They walked into a quiet ______.","forest"],
+    ["They wanted to find the ______ of the river.","source"],
+    ["They followed a small ______.","river"],
+    ["They heard the gentle ______ of the water.","current"],
+    ["They reached a wooden ______.","bridge"],
+    ["The river was very ______.","shallow"],
+    ["They saw a beautiful ______.","waterfall"],
+    ["Anna admired the peaceful ______.","landscape"]
+  ]
+}
+
+};
+
+
+let missionId =
+  Number(
+    new URLSearchParams(
+      window.location.search
+    ).get("id")
+  ) || 1;
+
+
+if(!missions[missionId]){
+  missionId=1;
+}
+
+
+const mission=missions[missionId];
+
+
+function renderMission(){
+
+  document.title =
+    "Mission " + missionId + " · IELTS Quest";
+
+  document.getElementById("missionNumber").textContent =
+    "CHAPTER 1 · MISSION " + missionId;
+
+  document.getElementById("missionTitle").textContent =
+    mission.title;
+
+  document.getElementById("missionMeta").textContent =
+    mission.level + " · " + mission.time;
+
+
+  const story =
+    document.getElementById("story");
+
+  story.innerHTML="";
+
+
+  mission.sentences.forEach(function(sentence,index){
+
+    const english=document.createElement("div");
+
+    english.className="sentence";
+
+    english.innerHTML=sentence.en
+      .replaceAll(
+        "<core ",
+        '<span class="word" '
+      )
+      .replaceAll(
+        "</core>",
+        "</span>"
+      )
+      .replaceAll(
+        "<support ",
+        '<span class="support" '
+      )
+      .replaceAll(
+        "</support>",
+        "</span>"
+      );
+
+    story.appendChild(english);
+
+
+    const translation=document.createElement("div");
+
+    translation.className="translation";
+    translation.id="translation-"+index;
+    translation.textContent=sentence.zh;
+
+    story.appendChild(translation);
+
+  });
+
+
+  document
+    .querySelectorAll("[data-word]")
+    .forEach(function(element){
+
+      element.addEventListener(
+        "click",
+        function(){
+          showDictionary(
+            this.dataset.word
+          );
+        }
+      );
+
+    });
+
+
+  renderQuiz();
+
+}
+
+
+function showDictionary(word){
+
+  const data=mission.dictionary[word];
+
+  if(!data) return;
+
+  document.getElementById(
+    "dictWord"
+  ).textContent=word;
+
+  document.getElementById(
+    "dictIpa"
+  ).textContent=data[0];
+
+  document.getElementById(
+    "dictMeaning"
+  ).textContent=data[1];
+
+  document.getElementById(
+    "dictExample"
+  ).innerHTML=
+    data[2] +
+    "<br>" +
+    data[3];
+
+  document.getElementById(
+    "dictionary"
+  ).classList.add("show");
+
+}
+
+
+function renderQuiz(){
+
+  const container=
+    document.getElementById("questions");
+
+  container.innerHTML="";
+
+
+  mission.quiz.forEach(
+    function(question,index){
+
+      const wrapper=
+        document.createElement("div");
+
+      wrapper.className="question";
+
+
+      const parts=
+        question[0].split("______");
+
+
+      wrapper.innerHTML=
+        (index+1) +
+        ". " +
+        parts[0] +
+        '<input class="answer" id="answer-' +
+        index +
+        '" autocomplete="off">' +
+        (parts[1] || "");
+
+
+      container.appendChild(wrapper);
+
+    }
+  );
+
+}
+
+
+function startQuiz(){
+
+  document.getElementById(
+    "studySection"
+  ).style.display="none";
+
+  document.getElementById(
+    "quizSection"
+  ).classList.add("show");
+
+  setStep(2);
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+
+}
+
+
+function returnStudy(){
+
+  document.getElementById(
+    "studySection"
+  ).style.display="block";
+
+  document.getElementById(
+    "quizSection"
+  ).classList.remove("show");
+
+  setStep(1);
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+
+}
+
+
+function submitQuiz(){
+
+  let correct=0;
+
+
+  mission.quiz.forEach(
+    function(question,index){
+
+      const input=
+        document.getElementById(
+          "answer-"+index
+        );
+
+      const userAnswer=
+        input.value
+          .trim()
+          .toLowerCase();
+
+      const correctAnswer=
+        question[1].toLowerCase();
+
+
+      input.classList.remove(
+        "correct",
+        "wrong"
+      );
+
+
+      if(userAnswer===correctAnswer){
+
+        correct++;
+
+        input.classList.add(
+          "correct"
+        );
+
+      }else{
+
+        input.classList.add(
+          "wrong"
+        );
+
+        input.placeholder=
+          correctAnswer;
+
+      }
+
+    }
+  );
+
+
+  const total=
+    mission.quiz.length;
+
+  const percentage=
+    Math.round(
+      correct/total*100
+    );
+
+
+  document.getElementById(
+    "score"
+  ).textContent=
+    "正确率：" +
+    percentage +
+    "%";
+
+
+  document.getElementById(
+    "resultNote"
+  ).innerHTML=
+    "答对 <strong>" +
+    correct +
+    "</strong> / " +
+    total +
+    " 题。<br>" +
+    "你可以直接修改红色答案框，然后再次提交。逐句中文翻译现已解锁。";
+
+
+  document.getElementById(
+    "result"
+  ).classList.add("show");
+
+
+  document.getElementById(
+    "finishButton"
+  ).classList.add("show");
+
+
+  localStorage.setItem(
+    "ieltsQuestMission" +
+    missionId +
+    "LastScore",
+    percentage
+  );
+
+
+  const previousBest=
+    Number(
+      localStorage.getItem(
+        "ieltsQuestMission" +
+        missionId +
+        "BestScore"
+      ) || 0
+    );
+
+
+  if(percentage>previousBest){
+
+    localStorage.setItem(
+      "ieltsQuestMission" +
+      missionId +
+      "BestScore",
+      percentage
+    );
+
+  }
+
+
+  const attempts=
+    Number(
+      localStorage.getItem(
+        "ieltsQuestMission" +
+        missionId +
+        "Attempts"
+      ) || 0
+    );
+
+
+  localStorage.setItem(
+    "ieltsQuestMission" +
+    missionId +
+    "Attempts",
+    attempts+1
+  );
+
+
+  showTranslations();
+
+  setStep(3);
+
+}
+
+
+function showTranslations(){
+
+  document
+    .querySelectorAll(
+      ".translation"
+    )
+    .forEach(
+      function(element){
+        element.classList.add(
+          "show"
+        );
+      }
+    );
+
+}
+
+
+function setStep(step){
+
+  for(let i=1;i<=3;i++){
+
+    const element=
+      document.getElementById(
+        "step"+i
+      );
+
+    if(i<=step){
+      element.classList.add(
+        "active"
+      );
+    }else{
+      element.classList.remove(
+        "active"
+      );
+    }
+
+  }
+
+}
+
+
+function finishMission(){
+
+  localStorage.setItem(
+    "ieltsQuestMission" +
+    missionId +
+    "Completed",
+    "true"
+  );
+
+  localStorage.setItem(
+    "ieltsQuestCurrentMission",
+    missionId
+  );
+
+  window.location.href=
+    "index.html";
+
+}
+
+
+function goHome(){
+
+  window.location.href=
+    "index.html";
+
+}
+
+
+renderMission();
+
+</script>
+
+</body>
+</html>

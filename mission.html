@@ -2,11 +2,13 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mission · IELTS Quest</title>
 
 <style>
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 
 body{
   margin:0;
@@ -28,244 +30,328 @@ header{
 .logo{
   font-size:27px;
   font-weight:800;
+  color:#5145e5;
   cursor:pointer;
 }
 
-.logo span{color:#5145e5}
-
-.back{
-  border:0;
-  background:#f0efff;
-  color:#5145e5;
-  padding:10px 16px;
-  border-radius:10px;
-  font-weight:700;
-  cursor:pointer;
+.header-right{
+  color:#777b8c;
+  font-size:14px;
 }
 
 main{
-  width:min(940px,92%);
-  margin:38px auto 70px;
+  width:min(960px,90%);
+  margin:44px auto 90px;
 }
-
-.topline{
-  color:#5145e5;
-  font-weight:800;
-  font-size:14px;
-  letter-spacing:.04em;
-}
-
-h1{
-  font-size:35px;
-  margin:8px 0;
-}
-
-.subtitle{
-  color:#7b8194;
-  margin-bottom:25px;
-}
-
-.steps{
-  display:flex;
-  gap:8px;
-  margin-bottom:25px;
-}
-
-.step{
-  flex:1;
-  height:7px;
-  border-radius:20px;
-  background:#e5e7ef;
-}
-
-.step.active{background:#5145e5}
 
 .card{
   background:#fff;
-  border:1px solid #e5e7ef;
-  border-radius:19px;
-  padding:32px;
-  box-shadow:0 8px 28px rgba(20,25,50,.045);
+  border:1px solid #e7e8ef;
+  border-radius:22px;
+  padding:34px;
+  margin-bottom:22px;
+  box-shadow:0 5px 20px rgba(40,42,60,.04);
 }
 
-.notice{
-  background:#f4f3ff;
-  border-left:4px solid #5145e5;
-  padding:14px 17px;
-  border-radius:8px;
-  color:#5c6175;
+.hidden{
+  display:none !important;
+}
+
+.eyebrow{
+  color:#5145e5;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:.05em;
+  margin-bottom:10px;
+}
+
+h1{
+  font-size:38px;
+  margin:0 0 12px;
+  line-height:1.2;
+}
+
+h2{
+  font-size:25px;
+  margin:0 0 18px;
+}
+
+h3{
+  margin:0 0 10px;
+}
+
+.meta{
+  color:#777b8c;
   margin-bottom:25px;
-  line-height:1.7;
+}
+
+.progress{
+  width:100%;
+  height:8px;
+  background:#ececf5;
+  border-radius:999px;
+  overflow:hidden;
+  margin-top:22px;
+}
+
+.progress span{
+  display:block;
+  height:100%;
+  background:#5145e5;
+  border-radius:999px;
 }
 
 .story{
   font-family:Georgia,"Times New Roman",serif;
-  font-size:22px;
+  font-size:23px;
   line-height:2.05;
+  color:#282a37;
 }
 
-.sentence{
-  margin-bottom:8px;
+.story p{
+  margin:0 0 18px;
 }
 
-.translation{
-  display:none;
-  font-family:Inter,"Segoe UI",Arial,sans-serif;
-  font-size:15px;
-  line-height:1.6;
-  color:#626a80;
-  background:#f7f8fc;
-  border-left:3px solid #c8c5ff;
-  border-radius:7px;
-  padding:8px 12px;
-  margin:-1px 0 15px;
-}
-
-.translation.show{display:block}
-
-.word{
+.target-word{
   color:#5145e5;
-  border-bottom:3px dotted #9e99ff;
+  font-weight:700;
+  border-bottom:2px dotted #5145e5;
   cursor:pointer;
-  background:#f6f5ff;
-  padding:0 3px;
+}
+
+.support-word{
+  cursor:pointer;
+  background:#f2f2f7;
   border-radius:5px;
+  padding:1px 3px;
 }
 
-.support{
-  cursor:pointer;
-  border-bottom:1px dotted #a8adba;
-}
-
-.dictionary{
-  display:none;
-  margin-top:25px;
-  background:#f7f8fc;
-  border:1px solid #e3e5ed;
+.word-tip{
+  margin-top:22px;
+  padding:17px 19px;
   border-radius:14px;
-  padding:20px;
+  background:#f7f6ff;
+  border:1px solid #dedafd;
 }
 
-.dictionary.show{display:block}
-
-.dict-word{
-  font-size:25px;
+.word-tip-title{
+  font-size:20px;
   font-weight:800;
-}
-
-.ipa{
   color:#5145e5;
-  margin:5px 0 11px;
 }
 
-.meaning{
-  font-size:16px;
-  margin-bottom:9px;
+.word-tip-ipa{
+  color:#666b7c;
+  margin:4px 0;
 }
 
-.example{
-  color:#666d80;
-  line-height:1.6;
+.word-tip-meaning{
+  font-size:15px;
 }
 
-.actions{
-  margin-top:28px;
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
+.vocab-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
 }
 
-button.primary{
+.vocab-item{
+  border:1px solid #e7e8ef;
+  border-radius:14px;
+  padding:15px;
+}
+
+.vocab-word{
+  font-weight:800;
+  font-size:18px;
+}
+
+.vocab-ipa{
+  color:#777b8c;
+  margin:4px 0;
+}
+
+.vocab-meaning{
+  font-size:14px;
+}
+
+button{
   border:0;
-  background:#5145e5;
-  color:#fff;
+  border-radius:12px;
   padding:13px 21px;
-  border-radius:11px;
   font-size:15px;
   font-weight:750;
   cursor:pointer;
 }
 
-button.secondary{
-  border:0;
-  background:#eef0f6;
-  color:#33394d;
-  padding:13px 21px;
-  border-radius:11px;
-  font-size:15px;
-  font-weight:700;
-  cursor:pointer;
+.primary{
+  background:#5145e5;
+  color:#fff;
 }
 
-.quiz{display:none}
-.quiz.show{display:block}
-
-.question{
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:21px;
-  line-height:1.9;
-  margin-bottom:19px;
+.secondary{
+  background:#eeeeF6;
+  color:#34364a;
 }
 
-.answer{
-  display:inline-block;
-  min-width:150px;
-  width:170px;
-  padding:8px 13px;
-  margin:0 4px;
-  border:2px solid #c8cbd7;
-  border-radius:999px;
-  font-family:Inter,"Segoe UI",Arial,sans-serif;
-  font-size:16px;
-  outline:none;
+.button-row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:25px;
 }
 
-.answer:focus{border-color:#5145e5}
-
-.answer.correct{
-  border-color:#35ad68;
-  background:#effaf3;
-}
-
-.answer.wrong{
-  border-color:#e05a67;
-  background:#fff1f3;
-}
-
-.result{
-  display:none;
-  margin-top:28px;
-  background:#f4f5fb;
-  border-radius:16px;
-  padding:23px;
-}
-
-.result.show{display:block}
-
-.score{
-  font-size:27px;
-  font-weight:850;
-  margin-bottom:9px;
-}
-
-.result-note{
-  color:#62697c;
+.quiz-intro{
+  color:#686c7e;
   line-height:1.7;
 }
 
-.finish{
-  display:none;
-  margin-top:12px;
+.question{
+  padding:22px 0;
+  border-bottom:1px solid #ececf2;
 }
 
-.finish.show{display:inline-block}
+.question:last-child{
+  border-bottom:0;
+}
 
-@media(max-width:650px){
-  header{padding:0 4%}
-  .card{padding:21px}
-  h1{font-size:29px}
-  .story,.question{font-size:19px}
-  .answer{width:145px;min-width:120px}
+.question-number{
+  font-size:13px;
+  color:#888c9d;
+  margin-bottom:10px;
+}
+
+.question-sentence{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:21px;
+  line-height:2;
+}
+
+.answer-input{
+  width:150px;
+  max-width:45vw;
+  padding:8px 10px;
+  margin:0 5px;
+  border-radius:9px;
+  border:2px solid #c9cad5;
+  font-family:inherit;
+  font-size:18px;
+  text-align:center;
+  outline:none;
+}
+
+.answer-input:focus{
+  border-color:#5145e5;
+}
+
+.answer-input.correct{
+  border-color:#27a865;
+  background:#effbf4;
+}
+
+.answer-input.wrong{
+  border-color:#e05252;
+  background:#fff1f1;
+}
+
+.answer-note{
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  font-size:13px;
+  margin-top:7px;
+}
+
+.answer-note.correct{
+  color:#218653;
+}
+
+.answer-note.wrong{
+  color:#c83d3d;
+}
+
+.result-score{
+  font-size:54px;
+  font-weight:850;
+  color:#5145e5;
+  margin:8px 0;
+}
+
+.translation-sentence{
+  padding:18px 0;
+  border-bottom:1px solid #ececf2;
+}
+
+.translation-sentence:last-child{
+  border-bottom:0;
+}
+
+.translation-en{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:20px;
+  line-height:1.7;
+}
+
+.translation-zh{
+  margin-top:7px;
+  color:#686c7e;
+  line-height:1.7;
+}
+
+.mission-nav{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:22px;
+}
+
+.mission-chip{
+  background:#fff;
+  color:#55596b;
+  border:1px solid #dddfea;
+}
+
+.mission-chip.active{
+  background:#5145e5;
+  color:#fff;
+  border-color:#5145e5;
+}
+
+.saved-info{
+  margin-top:14px;
+  font-size:13px;
+  color:#777b8c;
+}
+
+@media(max-width:700px){
+  header{
+    padding:0 5%;
+  }
+
+  main{
+    width:92%;
+    margin-top:25px;
+  }
+
+  .card{
+    padding:23px;
+    border-radius:17px;
+  }
+
+  h1{
+    font-size:31px;
+  }
+
+  .story{
+    font-size:20px;
+    line-height:1.95;
+  }
+
+  .vocab-grid{
+    grid-template-columns:1fr;
+  }
+
+  .question-sentence{
+    font-size:19px;
+  }
 }
 </style>
 </head>
@@ -273,686 +359,1177 @@ button.secondary{
 <body>
 
 <header>
-  <div class="logo" onclick="goHome()">IELTS <span>Quest</span></div>
-  <button class="back" onclick="goHome()">← Mission List</button>
+  <div class="logo" onclick="goHome()">IELTS Quest</div>
+  <div class="header-right">Story-based IELTS Vocabulary Learning</div>
 </header>
 
 <main>
 
-<div class="topline" id="missionNumber">CHAPTER 1 · MISSION</div>
-<h1 id="missionTitle">Loading Mission...</h1>
-<div class="subtitle" id="missionMeta"></div>
+  <div class="mission-nav" id="missionNav"></div>
 
-<div class="steps">
-  <div class="step active" id="step1"></div>
-  <div class="step" id="step2"></div>
-  <div class="step" id="step3"></div>
-</div>
+  <!-- STORY VIEW -->
+  <section id="storyView">
 
-<section class="card">
+    <div class="card">
+      <div class="eyebrow" id="missionNumber"></div>
 
-  <div id="studySection">
+      <h1 id="missionTitle"></h1>
 
-    <div class="notice">
-      先阅读完整故事。紫色虚线词是本 Mission 的核心词汇；
-      其他带轻微虚线的词也可以点击查看释义。中文逐句翻译将在提交测试后解锁。
+      <div class="meta" id="missionMeta"></div>
+
+      <div class="progress">
+        <span id="missionProgress"></span>
+      </div>
+
+      <div class="saved-info" id="savedInfo"></div>
     </div>
 
-    <div class="story" id="story"></div>
+    <div class="card">
+      <h2>Story</h2>
 
-    <div class="dictionary" id="dictionary">
-      <div class="dict-word" id="dictWord"></div>
-      <div class="ipa" id="dictIpa"></div>
-      <div class="meaning" id="dictMeaning"></div>
-      <div class="example" id="dictExample"></div>
+      <p style="color:#777b8c;line-height:1.7;">
+        先阅读完整故事。紫色虚线词是本 Mission 的核心学习词；
+        部分辅助词也可以点击查看释义。
+      </p>
+
+      <div class="story" id="storyContent"></div>
+
+      <div id="wordTip" class="word-tip hidden"></div>
     </div>
 
-    <div class="actions">
-      <button class="primary" onclick="startQuiz()">开始测试</button>
-    </div>
+    <div class="card">
+      <h2>Core Vocabulary</h2>
 
-  </div>
+      <div class="vocab-grid" id="vocabList"></div>
 
-
-  <div class="quiz" id="quizSection">
-
-    <div class="notice">
-      根据文章内容填写单词。提交后会显示正确率、正确答案和逐句中文翻译。
-    </div>
-
-    <div id="questions"></div>
-
-    <div class="actions">
-      <button class="primary" onclick="submitQuiz()">提交答案</button>
-      <button class="secondary" onclick="returnStudy()">返回文章</button>
-    </div>
-
-    <div class="result" id="result">
-      <div class="score" id="score"></div>
-      <div class="result-note" id="resultNote"></div>
-
-      <div class="actions">
-        <button class="primary" onclick="submitQuiz()">修改后再次提交</button>
-        <button class="secondary" onclick="showTranslations()">查看完整文章与翻译</button>
-        <button class="primary finish" id="finishButton" onclick="finishMission()">Finish</button>
+      <div class="button-row">
+        <button class="primary" onclick="startQuiz()">开始测试</button>
       </div>
     </div>
 
-  </div>
+  </section>
 
-</section>
+
+  <!-- QUIZ VIEW -->
+  <section id="quizView" class="hidden">
+
+    <div class="card">
+      <div class="eyebrow">QUIZ</div>
+
+      <h1 id="quizTitle"></h1>
+
+      <p class="quiz-intro">
+        测试仍然保留故事中的完整句子。
+        系统只会把本次考核的目标词替换成输入框，
+        句子的其他内容不会删除。
+      </p>
+    </div>
+
+    <div class="card">
+      <div id="quizQuestions"></div>
+
+      <div class="button-row">
+        <button class="primary" onclick="submitQuiz()">提交答案</button>
+        <button class="secondary" onclick="backToStory()">返回文章</button>
+      </div>
+    </div>
+
+    <div id="resultCard" class="card hidden">
+
+      <div class="eyebrow">RESULT</div>
+
+      <h2>本次测试结果</h2>
+
+      <div class="result-score" id="scoreText">0%</div>
+
+      <p id="scoreDetail"></p>
+
+      <div class="button-row">
+        <button class="primary" onclick="submitQuiz()">修改后再次提交</button>
+
+        <button
+          class="secondary"
+          id="translationButton"
+          onclick="showTranslation()"
+        >
+          查看完整文章与翻译
+        </button>
+
+        <button class="secondary" onclick="finishMission()">Finish</button>
+      </div>
+    </div>
+
+    <div id="translationPanel" class="card hidden">
+
+      <div class="eyebrow">FULL STORY & TRANSLATION</div>
+
+      <h2>完整文章与逐句翻译</h2>
+
+      <p style="color:#777b8c;line-height:1.7;">
+        完成测试后，可以在这里重新阅读完整英文，
+        并对照每一句中文翻译。
+      </p>
+
+      <div id="translationContent"></div>
+
+      <div class="button-row">
+        <button class="primary" onclick="finishMission()">Finish</button>
+      </div>
+    </div>
+
+  </section>
 
 </main>
 
+
 <script>
 
-/*
-  Alpha 0.4 mission engine.
-  Mission 1–3 data is temporarily stored here.
-  A later commit will move course content into /data JSON files.
-*/
+/* =========================================================
+   IELTS QUEST
+   Mission Engine
+   Story / Vocabulary / Quiz / Translation 共用同一份数据
+   ========================================================= */
 
-const missions = {
+const missions = [
 
-1:{
-  title:"A Quiet Morning Walk",
-  level:"Easy",
-  time:"10–15 min",
+  /* ================= MISSION 1 ================= */
 
-  sentences:[
-    {
-      en:'Early one morning, Mia went for a walk near her home.',
-      zh:'一天清晨，Mia 在家附近散步。'
-    },
-    {
-      en:'A small <core data-word="stream">stream</core> ran beside the path.',
-      zh:'一条小溪沿着小路流淌。'
-    },
-    {
-      en:'The land was <core data-word="flat">flat</core>, so the walk was easy.',
-      zh:'这里的土地很平坦，所以走起来很轻松。'
-    },
-    {
-      en:'The water was <core data-word="shallow">shallow</core> and she could see the stones below.',
-      zh:'溪水很浅，她能看到水下的石头。'
-    },
-    {
-      en:'Mia picked up a <core data-word="smooth">smooth</core> stone and put it in her bag.',
-      zh:'Mia 捡起一块光滑的石头，把它放进包里。'
-    },
-    {
-      en:'A light <core data-word="mist">mist</core> covered the trees.',
-      zh:'一层薄雾笼罩着树木。'
-    },
-    {
-      en:'She stopped to enjoy the quiet <core data-word="landscape">landscape</core> before walking home.',
-      zh:'回家前，她停下来欣赏安静的自然风景。'
-    }
-  ],
+  {
+    id:1,
+    title:"A Quiet Morning Walk",
+    level:"Easy",
+    time:"8–12 min",
+    progress:20,
 
-  dictionary:{
-    stream:["/striːm/","n. 小溪；溪流","A stream runs through the village.","一条小溪流经这个村庄。"],
-    flat:["/flæt/","adj. 平坦的","The road is flat and easy to walk on.","这条路很平坦，很容易行走。"],
-    shallow:["/ˈʃæləʊ/","adj. 浅的","The water is shallow near the bank.","岸边的水很浅。"],
-    smooth:["/smuːð/","adj. 光滑的；平稳的","The stone feels smooth.","这块石头摸起来很光滑。"],
-    mist:["/mɪst/","n. 薄雾","Morning mist covered the hills.","晨雾笼罩着山丘。"],
-    landscape:["/ˈlændskeɪp/","n. 风景；景观","The mountain landscape was beautiful.","山地景色非常美。"],
-    path:["/pɑːθ/","n. 小路；路径","We followed a narrow path.","我们沿着一条狭窄的小路前进。"],
-    stone:["/stəʊn/","n. 石头","She found a small stone.","她发现了一块小石头。"]
+    sentences:[
+      {
+        en:"Emma woke up early and decided to take a quiet walk near her home.",
+        zh:"Emma 很早醒来，决定在家附近安静地散步。"
+      },
+      {
+        en:"The air was fresh, and the street was peaceful.",
+        zh:"空气很清新，街道也很安静。"
+      },
+      {
+        en:"She followed a narrow path beside a small park.",
+        zh:"她沿着小公园旁的一条狭窄小路向前走。"
+      },
+      {
+        en:"Several birds were singing in the trees.",
+        zh:"几只鸟正在树上鸣叫。"
+      },
+      {
+        en:"Emma stopped for a moment and noticed the soft morning light.",
+        zh:"Emma 停了一会儿，注意到了柔和的晨光。"
+      },
+      {
+        en:"The simple walk made her feel calm and ready for the day.",
+        zh:"这次简单的散步让她感到平静，也准备好开始新的一天。"
+      }
+    ],
+
+    coreWords:[
+      {
+        word:"quiet",
+        answer:"quiet",
+        ipa:"/ˈkwaɪət/",
+        meaning:"安静的；平静的",
+        sentence:0
+      },
+      {
+        word:"fresh",
+        answer:"fresh",
+        ipa:"/freʃ/",
+        meaning:"清新的；新鲜的",
+        sentence:1
+      },
+      {
+        word:"peaceful",
+        answer:"peaceful",
+        ipa:"/ˈpiːsfəl/",
+        meaning:"平静的；安宁的",
+        sentence:1
+      },
+      {
+        word:"path",
+        answer:"path",
+        ipa:"/pɑːθ/",
+        meaning:"小路；路径",
+        sentence:2
+      },
+      {
+        word:"noticed",
+        answer:"noticed",
+        ipa:"/ˈnəʊtɪst/",
+        meaning:"注意到",
+        sentence:4
+      },
+      {
+        word:"calm",
+        answer:"calm",
+        ipa:"/kɑːm/",
+        meaning:"平静的",
+        sentence:5
+      }
+    ],
+
+    supportWords:[
+      {
+        word:"decided",
+        ipa:"/dɪˈsaɪdɪd/",
+        meaning:"决定"
+      },
+      {
+        word:"narrow",
+        ipa:"/ˈnærəʊ/",
+        meaning:"狭窄的"
+      },
+      {
+        word:"beside",
+        ipa:"/bɪˈsaɪd/",
+        meaning:"在……旁边"
+      },
+      {
+        word:"several",
+        ipa:"/ˈsevrəl/",
+        meaning:"几个；若干"
+      }
+    ]
   },
 
-  quiz:[
-    ["A small ______ ran beside the path.","stream"],
-    ["The land was ______, so walking was easy.","flat"],
-    ["The water was ______ and Mia could see the stones.","shallow"],
-    ["Mia picked up a ______ stone.","smooth"],
-    ["A light ______ covered the trees.","mist"],
-    ["She enjoyed the quiet ______.","landscape"]
-  ]
-},
 
-2:{
-  title:"A Day on a Small Island",
-  level:"Easy",
-  time:"10–15 min",
+  /* ================= MISSION 2 ================= */
 
-  sentences:[
-    {
-      en:'Emma visited a small <core data-word="island">island</core> with her family.',
-      zh:'Emma 和家人来到一座小岛。'
-    },
-    {
-      en:'They walked along the <core data-word="beach">beach</core> near the <core data-word="coast">coast</core>.',
-      zh:'他们沿着海岸附近的沙滩散步。'
-    },
-    {
-      en:'The <core data-word="waves">waves</core> moved slowly because the weather was calm.',
-      zh:'因为天气平静，海浪缓缓移动。'
-    },
-    {
-      en:'Emma found a beautiful <core data-word="shell">shell</core> beside the water.',
-      zh:'Emma 在水边发现了一个漂亮的贝壳。'
-    },
-    {
-      en:'Far away, the horizon seemed to meet the blue <core data-word="ocean">ocean</core>.',
-      zh:'远处，地平线仿佛与蓝色的海洋相接。'
-    },
-    {
-      en:'Emma sat quietly and enjoyed the natural landscape around her.',
-      zh:'Emma 静静地坐着，欣赏身边的自然景色。'
-    }
-  ],
+  {
+    id:2,
+    title:"A Day on a Small Island",
+    level:"Easy",
+    time:"10–15 min",
+    progress:40,
 
-  dictionary:{
-    island:["/ˈaɪlənd/","n. 岛；岛屿","They spent a week on the island.","他们在岛上度过了一周。"],
-    beach:["/biːtʃ/","n. 海滩","We walked along the beach.","我们沿着海滩散步。"],
-    coast:["/kəʊst/","n. 海岸","The town lies on the coast.","这个城镇位于海岸。"],
-    waves:["/weɪvz/","n. 海浪（wave 的复数）","Large waves reached the beach.","巨浪涌向海滩。"],
-    shell:["/ʃel/","n. 贝壳；外壳","She found a shell in the sand.","她在沙子里发现了一个贝壳。"],
-    ocean:["/ˈəʊʃn/","n. 海洋","The ocean looked calm.","海面看起来很平静。"],
-    horizon:["/həˈraɪzn/","n. 地平线","The sun disappeared below the horizon.","太阳落到了地平线以下。"],
-    natural:["/ˈnætʃrəl/","adj. 自然的","The area has great natural beauty.","这个地区拥有美丽的自然风光。"]
+    sentences:[
+      {
+        en:"Emma visited a small island with her family.",
+        zh:"Emma 和家人来到一座小岛。"
+      },
+      {
+        en:"They walked along the beach near the coast.",
+        zh:"他们沿着海岸附近的沙滩散步。"
+      },
+      {
+        en:"The waves moved slowly because the weather was calm.",
+        zh:"因为天气平静，海浪缓缓移动。"
+      },
+      {
+        en:"Emma found a beautiful shell beside the water.",
+        zh:"Emma 在水边发现了一个漂亮的贝壳。"
+      },
+      {
+        en:"Far away, the horizon seemed to meet the blue ocean.",
+        zh:"远处，地平线仿佛与蓝色的海洋相接。"
+      },
+      {
+        en:"Emma sat quietly and enjoyed the natural landscape around her.",
+        zh:"Emma 静静地坐着，欣赏身边的自然景色。"
+      }
+    ],
+
+    coreWords:[
+      {
+        word:"island",
+        answer:"island",
+        ipa:"/ˈaɪlənd/",
+        meaning:"岛；岛屿",
+        sentence:0
+      },
+      {
+        word:"beach",
+        answer:"beach",
+        ipa:"/biːtʃ/",
+        meaning:"沙滩；海滩",
+        sentence:1
+      },
+      {
+        word:"coast",
+        answer:"coast",
+        ipa:"/kəʊst/",
+        meaning:"海岸；海滨",
+        sentence:1
+      },
+      {
+        word:"waves",
+        answer:"waves",
+        ipa:"/weɪvz/",
+        meaning:"海浪；波浪",
+        sentence:2
+      },
+      {
+        word:"shell",
+        answer:"shell",
+        ipa:"/ʃel/",
+        meaning:"贝壳；外壳",
+        sentence:3
+      },
+      {
+        word:"ocean",
+        answer:"ocean",
+        ipa:"/ˈəʊʃən/",
+        meaning:"海洋",
+        sentence:4
+      }
+    ],
+
+    supportWords:[
+      {
+        word:"family",
+        ipa:"/ˈfæməli/",
+        meaning:"家人；家庭"
+      },
+      {
+        word:"along",
+        ipa:"/əˈlɒŋ/",
+        meaning:"沿着"
+      },
+      {
+        word:"weather",
+        ipa:"/ˈweðə/",
+        meaning:"天气"
+      },
+      {
+        word:"calm",
+        ipa:"/kɑːm/",
+        meaning:"平静的"
+      },
+      {
+        word:"beside",
+        ipa:"/bɪˈsaɪd/",
+        meaning:"在……旁边"
+      },
+      {
+        word:"horizon",
+        ipa:"/həˈraɪzən/",
+        meaning:"地平线"
+      },
+      {
+        word:"seemed",
+        ipa:"/siːmd/",
+        meaning:"似乎；好像"
+      },
+      {
+        word:"quietly",
+        ipa:"/ˈkwaɪətli/",
+        meaning:"安静地"
+      },
+      {
+        word:"natural",
+        ipa:"/ˈnætʃərəl/",
+        meaning:"自然的"
+      },
+      {
+        word:"landscape",
+        ipa:"/ˈlændskeɪp/",
+        meaning:"风景；景观"
+      }
+    ]
   },
 
-  quiz:[
-    ["Emma visited a small ______.","island"],
-    ["They walked along the ______.","beach"],
-    ["They were walking near the ______.","coast"],
-    ["The ______ moved slowly.","waves"],
-    ["Emma found a beautiful ______.","shell"],
-    ["She looked across the blue ______.","ocean"]
-  ]
-},
 
-3:{
-  title:"A River in the Forest",
-  level:"Easy+",
-  time:"15–20 min",
+  /* ================= MISSION 3 ================= */
 
-  sentences:[
-    {
-      en:'Early one morning, Anna and her brother walked into a quiet <core data-word="forest">forest</core>.',
-      zh:'一天清晨，Anna 和哥哥走进一片安静的森林。'
-    },
-    {
-      en:'They wanted to find the <core data-word="source">source</core> of a small <core data-word="river">river</core>.',
-      zh:'他们想找到一条小河的源头。'
-    },
-    {
-      en:'A light <support data-word="mist">mist</support> covered the trees.',
-      zh:'一层薄雾笼罩着树木。'
-    },
-    {
-      en:'They could hear the gentle <core data-word="current">current</core> before they saw the water.',
-      zh:'在看到河水之前，他们就听到了轻柔的水流声。'
-    },
-    {
-      en:'Soon they reached a wooden <core data-word="bridge">bridge</core>.',
-      zh:'很快，他们来到一座木桥前。'
-    },
-    {
-      en:'The river was <core data-word="shallow">shallow</core>, so they could see small stones below.',
-      zh:'河水很浅，所以他们能看到水下的小石头。'
-    },
-    {
-      en:'After another short walk, they saw a beautiful <core data-word="waterfall">waterfall</core>.',
-      zh:'又走了一小段路后，他们看到了一座美丽的瀑布。'
-    },
-    {
-      en:'Anna thought it was one of the most peaceful <core data-word="landscape">landscapes</core> she had ever seen.',
-      zh:'Anna 觉得这是她见过的最宁静的风景之一。'
-    }
-  ],
+  {
+    id:3,
+    title:"A River in the Forest",
+    level:"Easy+",
+    time:"12–16 min",
+    progress:60,
 
-  dictionary:{
-    forest:["/ˈfɒrɪst/","n. 森林","The forest is home to many animals.","这片森林是许多动物的家园。"],
-    source:["/sɔːs/","n. 来源；源头","They searched for the source of the river.","他们寻找这条河的源头。"],
-    river:["/ˈrɪvə(r)/","n. 河；河流","The river flows through the valley.","这条河流经山谷。"],
-    current:["/ˈkʌrənt/","n. 水流；洋流","The river has a strong current.","这条河的水流很急。"],
-    bridge:["/brɪdʒ/","n. 桥","They crossed the wooden bridge.","他们走过了木桥。"],
-    shallow:["/ˈʃæləʊ/","adj. 浅的","The river is shallow here.","这里的河水很浅。"],
-    waterfall:["/ˈwɔːtəfɔːl/","n. 瀑布","We heard the waterfall before we saw it.","我们还没看到瀑布就先听到了水声。"],
-    landscape:["/ˈlændskeɪp/","n. 风景；景观","The landscape changed as they climbed higher.","随着他们越爬越高，景色发生了变化。"],
-    mist:["/mɪst/","n. 薄雾","Mist covered the trees in the morning.","早晨薄雾笼罩着树木。"],
-    gentle:["/ˈdʒentl/","adj. 轻柔的；温和的","A gentle wind moved through the trees.","一阵轻柔的风吹过树林。"]
-  },
+    sentences:[
+      {
+        en:"On Saturday morning, Daniel followed a forest trail with two friends.",
+        zh:"星期六早上，Daniel 和两个朋友沿着一条森林小径前行。"
+      },
+      {
+        en:"After walking for twenty minutes, they reached a clear river.",
+        zh:"走了二十分钟后，他们来到了一条清澈的河边。"
+      },
+      {
+        en:"The water flowed gently between large rocks and tall trees.",
+        zh:"河水在巨大的岩石和高大的树木之间缓缓流动。"
+      },
+      {
+        en:"They decided to explore the area before having lunch.",
+        zh:"他们决定在吃午饭之前探索一下这个区域。"
+      },
+      {
+        en:"Daniel noticed several unusual plants growing beside the river.",
+        zh:"Daniel 注意到河边生长着几种不寻常的植物。"
+      },
+      {
+        en:"Although the journey was simple, the natural environment made the experience memorable.",
+        zh:"虽然这段旅程很简单，但自然环境让这次经历令人难忘。"
+      }
+    ],
 
-  quiz:[
-    ["They walked into a quiet ______.","forest"],
-    ["They wanted to find the ______ of the river.","source"],
-    ["They followed a small ______.","river"],
-    ["They heard the gentle ______ of the water.","current"],
-    ["They reached a wooden ______.","bridge"],
-    ["The river was very ______.","shallow"],
-    ["They saw a beautiful ______.","waterfall"],
-    ["Anna admired the peaceful ______.","landscape"]
-  ]
+    coreWords:[
+      {
+        word:"trail",
+        answer:"trail",
+        ipa:"/treɪl/",
+        meaning:"小径；路线",
+        sentence:0
+      },
+      {
+        word:"reached",
+        answer:"reached",
+        ipa:"/riːtʃt/",
+        meaning:"到达",
+        sentence:1
+      },
+      {
+        word:"flowed",
+        answer:"flowed",
+        ipa:"/fləʊd/",
+        meaning:"流动",
+        sentence:2
+      },
+      {
+        word:"explore",
+        answer:"explore",
+        ipa:"/ɪkˈsplɔː/",
+        meaning:"探索；探究",
+        sentence:3
+      },
+      {
+        word:"unusual",
+        answer:"unusual",
+        ipa:"/ʌnˈjuːʒuəl/",
+        meaning:"不寻常的",
+        sentence:4
+      },
+      {
+        word:"environment",
+        answer:"environment",
+        ipa:"/ɪnˈvaɪrənmənt/",
+        meaning:"环境",
+        sentence:5
+      },
+      {
+        word:"memorable",
+        answer:"memorable",
+        ipa:"/ˈmemərəbəl/",
+        meaning:"难忘的；值得记住的",
+        sentence:5
+      }
+    ],
+
+    supportWords:[
+      {
+        word:"forest",
+        ipa:"/ˈfɒrɪst/",
+        meaning:"森林"
+      },
+      {
+        word:"clear",
+        ipa:"/klɪə/",
+        meaning:"清澈的；清楚的"
+      },
+      {
+        word:"gently",
+        ipa:"/ˈdʒentli/",
+        meaning:"轻柔地；缓慢地"
+      },
+      {
+        word:"rocks",
+        ipa:"/rɒks/",
+        meaning:"岩石"
+      },
+      {
+        word:"area",
+        ipa:"/ˈeəriə/",
+        meaning:"区域；地区"
+      },
+      {
+        word:"several",
+        ipa:"/ˈsevrəl/",
+        meaning:"几个；若干"
+      },
+      {
+        word:"journey",
+        ipa:"/ˈdʒɜːni/",
+        meaning:"旅程"
+      },
+      {
+        word:"experience",
+        ipa:"/ɪkˈspɪəriəns/",
+        meaning:"经历；体验"
+      }
+    ]
+  }
+
+];
+
+
+/* =========================================================
+   STATE
+   ========================================================= */
+
+let currentMissionId =
+  Number(localStorage.getItem("ieltsQuestCurrentMission")) || 2;
+
+let currentMission =
+  missions.find(m => m.id === currentMissionId) || missions[1];
+
+let submitted = false;
+
+
+/* =========================================================
+   STORAGE
+   ========================================================= */
+
+function storageKey(){
+  return "ieltsQuestMission_" + currentMission.id;
 }
 
-};
+function getSavedState(){
+  try{
+    return JSON.parse(localStorage.getItem(storageKey())) || {
+      answers:{},
+      bestScore:0,
+      attempts:0,
+      completed:false
+    };
+  }catch(e){
+    return {
+      answers:{},
+      bestScore:0,
+      attempts:0,
+      completed:false
+    };
+  }
+}
 
-
-let missionId =
-  Number(
-    new URLSearchParams(
-      window.location.search
-    ).get("id")
-  ) || 1;
-
-
-if(!missions[missionId]){
-  missionId=1;
+function saveState(state){
+  localStorage.setItem(storageKey(),JSON.stringify(state));
 }
 
 
-const mission=missions[missionId];
+/* =========================================================
+   TEXT HELPERS
+   ========================================================= */
 
+function escapeRegExp(text){
+  return text.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+}
 
-function renderMission(){
+function markWords(sentence){
 
-  document.title =
-    "Mission " + missionId + " · IELTS Quest";
+  let output = sentence;
 
-  document.getElementById("missionNumber").textContent =
-    "CHAPTER 1 · MISSION " + missionId;
+  const allWords = [
+    ...currentMission.coreWords.map(w => ({
+      ...w,
+      type:"target"
+    })),
+    ...currentMission.supportWords.map(w => ({
+      ...w,
+      type:"support"
+    }))
+  ];
 
-  document.getElementById("missionTitle").textContent =
-    mission.title;
+  allWords.sort((a,b) => b.word.length - a.word.length);
 
-  document.getElementById("missionMeta").textContent =
-    mission.level + " · " + mission.time;
+  allWords.forEach(item => {
 
+    const regex =
+      new RegExp("\\b(" + escapeRegExp(item.word) + ")\\b","gi");
 
-  const story =
-    document.getElementById("story");
+    output = output.replace(
+      regex,
+      function(match){
 
-  story.innerHTML="";
+        const cls =
+          item.type === "target"
+          ? "target-word"
+          : "support-word";
 
-
-  mission.sentences.forEach(function(sentence,index){
-
-    const english=document.createElement("div");
-
-    english.className="sentence";
-
-    english.innerHTML=sentence.en
-      .replaceAll(
-        "<core ",
-        '<span class="word" '
-      )
-      .replaceAll(
-        "</core>",
-        "</span>"
-      )
-      .replaceAll(
-        "<support ",
-        '<span class="support" '
-      )
-      .replaceAll(
-        "</support>",
-        "</span>"
-      );
-
-    story.appendChild(english);
-
-
-    const translation=document.createElement("div");
-
-    translation.className="translation";
-    translation.id="translation-"+index;
-    translation.textContent=sentence.zh;
-
-    story.appendChild(translation);
-
+        return `<span
+          class="${cls}"
+          onclick="showWordInfo('${item.word.replace(/'/g,"\\'")}')"
+        >${match}</span>`;
+      }
+    );
   });
 
-
-  document
-    .querySelectorAll("[data-word]")
-    .forEach(function(element){
-
-      element.addEventListener(
-        "click",
-        function(){
-          showDictionary(
-            this.dataset.word
-          );
-        }
-      );
-
-    });
-
-
-  renderQuiz();
-
+  return output;
 }
 
 
-function showDictionary(word){
+/* =========================================================
+   MISSION NAVIGATION
+   ========================================================= */
 
-  const data=mission.dictionary[word];
+function renderMissionNav(){
 
-  if(!data) return;
+  const nav = document.getElementById("missionNav");
 
-  document.getElementById(
-    "dictWord"
-  ).textContent=word;
+  nav.innerHTML = "";
 
-  document.getElementById(
-    "dictIpa"
-  ).textContent=data[0];
+  missions.forEach(mission => {
 
-  document.getElementById(
-    "dictMeaning"
-  ).textContent=data[1];
+    const button = document.createElement("button");
 
-  document.getElementById(
-    "dictExample"
-  ).innerHTML=
-    data[2] +
-    "<br>" +
-    data[3];
+    button.className =
+      "mission-chip" +
+      (mission.id === currentMission.id ? " active" : "");
 
-  document.getElementById(
-    "dictionary"
-  ).classList.add("show");
+    button.textContent =
+      "Mission " + mission.id;
 
+    button.onclick = () => {
+      switchMission(mission.id);
+    };
+
+    nav.appendChild(button);
+  });
+}
+
+function switchMission(id){
+
+  currentMissionId = id;
+
+  currentMission =
+    missions.find(m => m.id === id);
+
+  localStorage.setItem(
+    "ieltsQuestCurrentMission",
+    String(id)
+  );
+
+  submitted = false;
+
+  renderAll();
+
+  showStory();
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+}
+
+
+/* =========================================================
+   STORY
+   ========================================================= */
+
+function renderStory(){
+
+  document.getElementById("missionNumber").textContent =
+    "MISSION " + currentMission.id;
+
+  document.getElementById("missionTitle").textContent =
+    currentMission.title;
+
+  document.getElementById("missionMeta").textContent =
+    currentMission.level +
+    " · " +
+    currentMission.time;
+
+  document.getElementById("missionProgress").style.width =
+    currentMission.progress + "%";
+
+  const saved = getSavedState();
+
+  const savedInfo =
+    document.getElementById("savedInfo");
+
+  if(saved.attempts > 0){
+
+    savedInfo.textContent =
+      "学习记录：已测试 " +
+      saved.attempts +
+      " 次 · 最高正确率 " +
+      saved.bestScore +
+      "%" +
+      (saved.completed ? " · 已完成" : "");
+
+  }else{
+
+    savedInfo.textContent =
+      "尚未进行测试。";
+
+  }
+
+  const story =
+    document.getElementById("storyContent");
+
+  story.innerHTML =
+    currentMission.sentences
+      .map(item =>
+        `<p>${markWords(item.en)}</p>`
+      )
+      .join("");
+
+  document.getElementById("wordTip")
+    .classList.add("hidden");
+}
+
+
+/* =========================================================
+   VOCABULARY
+   ========================================================= */
+
+function renderVocabulary(){
+
+  const container =
+    document.getElementById("vocabList");
+
+  container.innerHTML =
+    currentMission.coreWords
+      .map(item => `
+        <div class="vocab-item">
+          <div class="vocab-word">
+            ${item.word}
+          </div>
+
+          <div class="vocab-ipa">
+            ${item.ipa}
+          </div>
+
+          <div class="vocab-meaning">
+            ${item.meaning}
+          </div>
+        </div>
+      `)
+      .join("");
+}
+
+
+/* =========================================================
+   WORD INFO
+   ========================================================= */
+
+function showWordInfo(word){
+
+  const item =
+    currentMission.coreWords.find(
+      w => w.word.toLowerCase() === word.toLowerCase()
+    )
+    ||
+    currentMission.supportWords.find(
+      w => w.word.toLowerCase() === word.toLowerCase()
+    );
+
+  if(!item) return;
+
+  const tip =
+    document.getElementById("wordTip");
+
+  tip.innerHTML = `
+    <div class="word-tip-title">
+      ${item.word}
+    </div>
+
+    <div class="word-tip-ipa">
+      ${item.ipa}
+    </div>
+
+    <div class="word-tip-meaning">
+      ${item.meaning}
+    </div>
+  `;
+
+  tip.classList.remove("hidden");
+}
+
+
+/* =========================================================
+   QUIZ GENERATION
+   关键修复：
+   直接读取完整 Story sentence，
+   只替换考核词，不删除其他句子内容。
+   ========================================================= */
+
+function createQuizSentence(wordData,index){
+
+  const fullSentence =
+    currentMission.sentences[wordData.sentence].en;
+
+  const regex =
+    new RegExp(
+      "\\b" +
+      escapeRegExp(wordData.word) +
+      "\\b",
+      "i"
+    );
+
+  const saved = getSavedState();
+
+  const savedAnswer =
+    saved.answers[index] || "";
+
+  const input = `
+    <input
+      class="answer-input"
+      id="answer-${index}"
+      type="text"
+      autocomplete="off"
+      spellcheck="false"
+      value="${savedAnswer.replace(/"/g,"&quot;")}"
+      aria-label="Question ${index + 1}"
+    >
+  `;
+
+  return fullSentence.replace(regex,input);
 }
 
 
 function renderQuiz(){
 
-  const container=
-    document.getElementById("questions");
+  document.getElementById("quizTitle").textContent =
+    currentMission.title;
 
-  container.innerHTML="";
+  const container =
+    document.getElementById("quizQuestions");
 
+  container.innerHTML =
+    currentMission.coreWords
+      .map((wordData,index) => {
 
-  mission.quiz.forEach(
-    function(question,index){
+        return `
+          <div class="question">
 
-      const wrapper=
-        document.createElement("div");
+            <div class="question-number">
+              Question ${index + 1}
+            </div>
 
-      wrapper.className="question";
+            <div class="question-sentence">
+              ${createQuizSentence(wordData,index)}
+            </div>
 
+            <div
+              class="answer-note"
+              id="note-${index}"
+            ></div>
 
-      const parts=
-        question[0].split("______");
+          </div>
+        `;
 
-
-      wrapper.innerHTML=
-        (index+1) +
-        ". " +
-        parts[0] +
-        '<input class="answer" id="answer-' +
-        index +
-        '" autocomplete="off">' +
-        (parts[1] || "");
-
-
-      container.appendChild(wrapper);
-
-    }
-  );
-
+      })
+      .join("");
 }
 
+
+/* =========================================================
+   QUIZ ACTIONS
+   ========================================================= */
 
 function startQuiz(){
 
-  document.getElementById(
-    "studySection"
-  ).style.display="none";
+  renderQuiz();
 
-  document.getElementById(
-    "quizSection"
-  ).classList.add("show");
+  document.getElementById("storyView")
+    .classList.add("hidden");
 
-  setStep(2);
+  document.getElementById("quizView")
+    .classList.remove("hidden");
 
-  window.scrollTo({
-    top:0,
-    behavior:"smooth"
-  });
+  document.getElementById("resultCard")
+    .classList.add("hidden");
 
-}
-
-
-function returnStudy(){
-
-  document.getElementById(
-    "studySection"
-  ).style.display="block";
-
-  document.getElementById(
-    "quizSection"
-  ).classList.remove("show");
-
-  setStep(1);
+  document.getElementById("translationPanel")
+    .classList.add("hidden");
 
   window.scrollTo({
     top:0,
     behavior:"smooth"
   });
-
 }
 
 
 function submitQuiz(){
 
-  let correct=0;
+  let correctCount = 0;
 
+  const state =
+    getSavedState();
 
-  mission.quiz.forEach(
-    function(question,index){
+  const answers = {};
 
-      const input=
+  currentMission.coreWords.forEach(
+    (wordData,index) => {
+
+      const input =
         document.getElementById(
-          "answer-"+index
+          "answer-" + index
         );
 
-      const userAnswer=
-        input.value
-          .trim()
-          .toLowerCase();
+      const note =
+        document.getElementById(
+          "note-" + index
+        );
 
-      const correctAnswer=
-        question[1].toLowerCase();
+      if(!input) return;
 
+      const answer =
+        input.value.trim();
+
+      answers[index] = answer;
+
+      const isCorrect =
+        answer.toLowerCase() ===
+        wordData.answer.toLowerCase();
 
       input.classList.remove(
         "correct",
         "wrong"
       );
 
+      note.classList.remove(
+        "correct",
+        "wrong"
+      );
 
-      if(userAnswer===correctAnswer){
+      if(isCorrect){
 
-        correct++;
+        correctCount++;
 
-        input.classList.add(
-          "correct"
-        );
+        input.classList.add("correct");
+
+        note.classList.add("correct");
+
+        note.textContent = "✓ 正确";
 
       }else{
 
-        input.classList.add(
-          "wrong"
-        );
+        input.classList.add("wrong");
 
-        input.placeholder=
-          correctAnswer;
+        note.classList.add("wrong");
+
+        note.textContent =
+          "正确答案：" +
+          wordData.answer;
 
       }
-
     }
   );
 
+  const total =
+    currentMission.coreWords.length;
 
-  const total=
-    mission.quiz.length;
-
-  const percentage=
+  const score =
     Math.round(
-      correct/total*100
+      correctCount / total * 100
     );
 
+  state.answers = answers;
 
-  document.getElementById(
-    "score"
-  ).textContent=
-    "正确率：" +
-    percentage +
-    "%";
+  state.attempts =
+    (state.attempts || 0) + 1;
 
-
-  document.getElementById(
-    "resultNote"
-  ).innerHTML=
-    "答对 <strong>" +
-    correct +
-    "</strong> / " +
-    total +
-    " 题。<br>" +
-    "你可以直接修改红色答案框，然后再次提交。逐句中文翻译现已解锁。";
-
-
-  document.getElementById(
-    "result"
-  ).classList.add("show");
-
-
-  document.getElementById(
-    "finishButton"
-  ).classList.add("show");
-
-
-  localStorage.setItem(
-    "ieltsQuestMission" +
-    missionId +
-    "LastScore",
-    percentage
-  );
-
-
-  const previousBest=
-    Number(
-      localStorage.getItem(
-        "ieltsQuestMission" +
-        missionId +
-        "BestScore"
-      ) || 0
+  state.bestScore =
+    Math.max(
+      state.bestScore || 0,
+      score
     );
 
-
-  if(percentage>previousBest){
-
-    localStorage.setItem(
-      "ieltsQuestMission" +
-      missionId +
-      "BestScore",
-      percentage
-    );
-
+  if(score === 100){
+    state.completed = true;
   }
 
+  saveState(state);
 
-  const attempts=
-    Number(
-      localStorage.getItem(
-        "ieltsQuestMission" +
-        missionId +
-        "Attempts"
-      ) || 0
-    );
+  submitted = true;
 
+  document.getElementById("scoreText")
+    .textContent = score + "%";
 
-  localStorage.setItem(
-    "ieltsQuestMission" +
-    missionId +
-    "Attempts",
-    attempts+1
-  );
+  document.getElementById("scoreDetail")
+    .textContent =
+      "答对 " +
+      correctCount +
+      " / " +
+      total +
+      " 题。你可以直接修改红色答案框，然后再次提交。逐句中文翻译现已解锁。";
 
+  document.getElementById("resultCard")
+    .classList.remove("hidden");
 
-  showTranslations();
-
-  setStep(3);
-
+  document.getElementById("resultCard")
+    .scrollIntoView({
+      behavior:"smooth",
+      block:"start"
+    });
 }
 
 
-function showTranslations(){
+/* =========================================================
+   TRANSLATION
+   修复：
+   点击按钮后真正生成完整文章与逐句翻译。
+   ========================================================= */
 
-  document
-    .querySelectorAll(
-      ".translation"
-    )
-    .forEach(
-      function(element){
-        element.classList.add(
-          "show"
-        );
-      }
-    );
+function showTranslation(){
 
-}
+  if(!submitted){
 
+    alert("请先提交一次答案。");
 
-function setStep(step){
-
-  for(let i=1;i<=3;i++){
-
-    const element=
-      document.getElementById(
-        "step"+i
-      );
-
-    if(i<=step){
-      element.classList.add(
-        "active"
-      );
-    }else{
-      element.classList.remove(
-        "active"
-      );
-    }
-
+    return;
   }
 
+  const panel =
+    document.getElementById(
+      "translationPanel"
+    );
+
+  const content =
+    document.getElementById(
+      "translationContent"
+    );
+
+  content.innerHTML =
+    currentMission.sentences
+      .map((item,index) => `
+
+        <div class="translation-sentence">
+
+          <div class="translation-en">
+            ${index + 1}. ${item.en}
+          </div>
+
+          <div class="translation-zh">
+            ${item.zh}
+          </div>
+
+        </div>
+
+      `)
+      .join("");
+
+  panel.classList.remove("hidden");
+
+  panel.scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
 }
 
+
+/* =========================================================
+   FINISH
+   保留学习记录，不清空答案。
+   ========================================================= */
 
 function finishMission(){
 
-  localStorage.setItem(
-    "ieltsQuestMission" +
-    missionId +
-    "Completed",
-    "true"
+  const state =
+    getSavedState();
+
+  state.completed = true;
+
+  saveState(state);
+
+  submitted = false;
+
+  renderStory();
+
+  showStory();
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+}
+
+
+/* =========================================================
+   RETURN
+   ========================================================= */
+
+function backToStory(){
+
+  saveCurrentInputs();
+
+  showStory();
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+}
+
+
+function saveCurrentInputs(){
+
+  const state =
+    getSavedState();
+
+  const answers =
+    state.answers || {};
+
+  currentMission.coreWords.forEach(
+    (wordData,index) => {
+
+      const input =
+        document.getElementById(
+          "answer-" + index
+        );
+
+      if(input){
+        answers[index] =
+          input.value;
+      }
+    }
   );
 
-  localStorage.setItem(
-    "ieltsQuestCurrentMission",
-    missionId
-  );
+  state.answers = answers;
 
-  window.location.href=
-    "index.html";
+  saveState(state);
+}
 
+
+/* =========================================================
+   VIEW
+   ========================================================= */
+
+function showStory(){
+
+  document.getElementById("storyView")
+    .classList.remove("hidden");
+
+  document.getElementById("quizView")
+    .classList.add("hidden");
 }
 
 
 function goHome(){
 
-  window.location.href=
+  window.location.href =
     "index.html";
-
 }
 
 
-renderMission();
+/* =========================================================
+   RENDER
+   ========================================================= */
+
+function renderAll(){
+
+  renderMissionNav();
+
+  renderStory();
+
+  renderVocabulary();
+}
+
+
+/* =========================================================
+   START
+   ========================================================= */
+
+renderAll();
+showStory();
 
 </script>
 

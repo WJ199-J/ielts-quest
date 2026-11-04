@@ -114,9 +114,11 @@
       <button class="modal-close" id="closeLogin" type="button" aria-label="关闭登录窗口">×</button>
       <span class="modal-mark" aria-hidden="true">IQ</span><span class="section-kicker">ACCOUNT</span>
       <h2 id="loginTitle">登录 IELTS Quest</h2>
-      <p>登录后可在不同设备同步学习进度。目前账号服务尚未接入，网页试学进度会安全保存在本设备。</p>
-      <div class="connection-notice"><span class="status-dot pending"></span><div><strong>账号服务待接入</strong><small>需要配置认证服务后才能发送登录邮件</small></div></div>
-      <form id="loginForm"><label>邮箱地址<input type="email" placeholder="name@example.com" autocomplete="email" disabled /></label><button class="primary-button full-width" type="submit" disabled>发送登录链接</button></form>
+      <p id="accountDescription">目前账号服务尚未接入，学习进度保存在本设备。邮箱登录与跨设备同步将分步开放。</p>
+      <div class="connection-notice"><span class="status-dot pending"></span><div><strong id="accountNoticeTitle">账号服务待接入</strong><small id="accountNoticeDetail">需要配置认证服务后才能发送登录邮件</small></div></div>
+      <form id="loginForm"><label>邮箱地址<input id="loginEmail" type="email" placeholder="name@example.com" autocomplete="email" required disabled /></label><button id="sendLoginLink" class="primary-button full-width" type="submit" disabled>发送登录链接</button></form>
+      <p id="accountMessage" class="account-message" role="status" aria-live="polite"></p>
+      <button id="signOutButton" class="text-button hidden" type="button">退出当前设备账号</button>
       <button class="text-button modal-guest" id="continueGuest" type="button">先以访客身份学习</button>
     </section>
   </div>
@@ -130,5 +132,7 @@
   <script src="data/chapter17.js"></script><script src="data/chapter18.js"></script><script src="data/chapter19.js"></script>
   <script src="data/chapter20.js"></script><script src="data/chapter21.js"></script><script src="data/chapter22.js"></script>
   <script src="assets/home.js"></script>
+  <script src="assets/auth-config.js"></script>
+  <script src="assets/account.js"></script>
 </body>
 </html>

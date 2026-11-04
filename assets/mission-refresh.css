@@ -29,7 +29,7 @@ body { background: radial-gradient(circle at 10% 2%, rgba(15,107,87,.06), transp
 .theme-toggle { width: 39px; height: 39px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: var(--card); color: var(--text); cursor: pointer; font-size: 19px; }
 .home-link { border-color: var(--line); background: var(--card); }
 .mission-nav { flex-wrap: nowrap; overflow-x: auto; padding: 3px 0 8px; scrollbar-width: thin; }
-.mission-chip { flex: 0 0 auto; background: var(--card); }
+.mission-chip { flex: 0 0 auto; background: var(--card); color: var(--muted); }
 .mission-chip.active { background: var(--primary); color: #fff; border-color: var(--primary); }
 .hero { background: linear-gradient(135deg,var(--card),var(--primary-soft)); border-radius: 24px; padding: 31px; }
 .hero h1 { font-family: Georgia,"Times New Roman","Noto Serif SC",serif; }
@@ -41,8 +41,10 @@ body { background: radial-gradient(circle at 10% 2%, rgba(15,107,87,.06), transp
 .secondary-btn { background: var(--primary-soft); color: var(--text); }
 .primary-btn:disabled,.secondary-btn:disabled { cursor: not-allowed; opacity: .45; }
 .stat { background: color-mix(in srgb,var(--card) 75%,var(--bg)); }
-.notice { background: color-mix(in srgb,var(--card) 75%,var(--bg)); border-left-color: var(--primary); }
+.notice { background: color-mix(in srgb,var(--card) 75%,var(--bg)); border-left-color: var(--primary); color: var(--muted); }
 .quiz-input { background: var(--card); color: var(--text); }
+.quiz-input.correct { color: var(--success); }
+.quiz-input.wrong { color: var(--danger); }
 .mission-vocabulary { margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--line); }
 .mission-vocabulary h3 { font-size: 16px; margin: 0 0 14px; }
 .vocabulary-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(180px,1fr)); gap: 10px; }

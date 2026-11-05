@@ -33,19 +33,19 @@
       if (url.protocol !== "https:" || url.username || url.password || /^sb_secret_/i.test(config.publishableKey)) {
         throw new Error("invalid_public_config");
       }
-      // The supported public SDK handles callback tokens, session persistence and refresh.
-      const sdk = await import("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm");
-      client = sdk.createClient(config.supabaseUrl, config.publishableKey, {
-        auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true,
-          storageKey: "ieltsQuestAuthSession" }
-      });
+      client = await window.IELTS_QUEST_AUTH.getClient();
       const { data, error } = await client.auth.getSession();
       if (error) throw error;
       renderUser(data.session?.user || null);
+      window.dispatchEvent(new CustomEvent("ieltsquest:auth-change", { detail: { user: data.session?.user || null } }));
       email.disabled = false;
       submit.disabled = false;
       submit.textContent = "发送登录链接";
-      client.auth.onAuthStateChange((_event, session) => renderUser(session?.user || null));
+      client.auth.onAuthStateChange((_event, session) => {
+        const user = session?.user || null;
+        renderUser(user);
+        window.dispatchEvent(new CustomEvent("ieltsquest:auth-change", { detail: { user } }));
+      });
     } catch (error) {
       noticeTitle.textContent = "登录服务暂不可用";
       noticeDetail.textContent = "请稍后重试，可继续以访客身份学习";

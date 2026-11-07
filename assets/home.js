@@ -31,7 +31,7 @@
       return normalized;
     } catch (error) { return { missions: {}, words: {} }; }
   }
-  const state = readState();
+  let state = readState();
   const missionState = (id) => state.missions[id] || { bestScore: 0, attempts: 0, completed: false, lastScore: 0 };
   const isComplete = (mission) => Boolean(missionState(mission.id).completed);
   const missionsForChapter = (chapter) => missions.filter((mission) => mission.chapter === chapter);
@@ -83,8 +83,13 @@
 
   function chapterMatches(chapter) {
     const progress = chapterProgress(chapter);
-    if (filter === "active" && (progress.completed === 0 || progress.completed === progress.total)) return false;
-    if (filter === "complete" && progress.completed !== progress.total) return false;
+    const items = missionsForChapter(chapter);
+    const hasActivity = items.some((mission) => {
+      const status = missionState(mission.id);
+      return status.attempts > 0 || status.bestScore > 0 || status.completed;
+    });
+    if (filter === "active" && (!hasActivity || progress.completed === progress.total)) return false;
+    if (filter === "complete" && progress.completed === 0) return false;
     if (!query) return true;
     const meta = chapterMeta[chapter - 1] || [];
     const content = [`chapter ${chapter}`,...meta,...missionsForChapter(chapter).flatMap((mission) => [mission.title,mission.titleZh])].join(" ").toLowerCase();
@@ -170,6 +175,13 @@
     const hour = new Date().getHours();
     document.getElementById("greeting").textContent = `${hour < 11 ? "早上好" : hour < 18 ? "下午好" : "晚上好"}，今天也向目标分数前进一步。`;
   }
+
+  window.addEventListener("ieltsquest:progress-synced", () => {
+    state = readState();
+    renderOverview();
+    renderChapters();
+    renderMissionPanel();
+  });
 
   setupTheme(); setupGreeting(); renderOverview(); renderChapters(); renderMissionPanel(); setupFilters(); setupLoginModal();
 })();

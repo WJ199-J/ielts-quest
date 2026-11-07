@@ -599,9 +599,16 @@
 
             <button
               class="secondary-btn"
+              id="resultBackStoryBtn"
+            >
+              返回阅读
+            </button>
+
+            <button
+              class="secondary-btn"
               id="finishBtn"
             >
-              Finish
+              进入下一关
             </button>
 
           </div>
@@ -762,7 +769,7 @@
   <script src="assets/mission-theme.js?v=20261104-2"></script>
   <script src="assets/auth-config.js?v=20261105-1"></script>
   <script src="assets/auth-client.js?v=20261105-1"></script>
-  <script src="assets/cloud-progress.js?v=20261105-1"></script>
+  <script src="assets/cloud-progress.js?v=20261107-1"></script>
 
   <script>
     /*
@@ -852,6 +859,8 @@
           bestScore: 0,
           attempts: 0,
           completed: false,
+          completionMethod: null,
+          completedAt: null,
           lastScore: 0
         };
 
@@ -1545,6 +1554,7 @@
           100
         );
 
+      const firstSubmission = !quizSubmitted;
 
       if (!quizSubmitted) {
 
@@ -1566,6 +1576,12 @@
             score
           );
 
+        if (score === 100) {
+          missionState.completed = true;
+          missionState.completionMethod = "first-submit-100";
+          missionState.completedAt = new Date().toISOString();
+        }
+
         saveAppState();
 
         quizSubmitted = true;
@@ -1575,7 +1591,8 @@
       showResult(
         score,
         correctCount,
-        inputs.length
+        inputs.length,
+        firstSubmission
       );
 
       renderMissionRecord();
@@ -1651,7 +1668,8 @@
     function showResult(
       score,
       correct,
-      total
+      total,
+      firstSubmission = false
     ) {
 
       document
@@ -1673,10 +1691,15 @@
 
       let message = "";
 
-      if (score === 100) {
+      if (score === 100 && firstSubmission) {
 
         message =
-          "全部正确。可以进入翻译检查，或者开始新一轮随机测试。";
+          "首次提交全部正确，本关已完成。你可以自行选择复习、查看翻译或进入下一关。";
+
+      } else if (score === 100) {
+
+        message =
+          "错题已全部改正，但本轮不计为完成。请开始新一轮测试，并在首次提交时达到 100%。";
 
       } else if (score >= 80) {
 
@@ -1701,13 +1724,15 @@
       const finishButton =
         document.getElementById("finishBtn");
 
+      const missionState = getMissionState(currentMission.id);
+
       setVocabularyVisible(true);
 
-      finishButton.disabled = score !== 100;
+      finishButton.disabled = !missionState.completed;
       finishButton.textContent =
-        score === 100
-          ? "完成并进入下一关"
-          : "达到 100% 后完成";
+        missionState.completed
+          ? "进入下一关"
+          : "首次提交 100% 后解锁下一关";
 
 
       document.getElementById(
@@ -1832,7 +1857,8 @@
       showResult(
         score,
         correctCount,
-        inputs.length
+        inputs.length,
+        false
       );
 
       renderMissionRecord();
@@ -2206,40 +2232,20 @@
     }
 
 
-    function finishMission() {
+    function goToNextMission() {
 
       const state =
         getMissionState(
           currentMission.id
         );
 
-      if (state.lastScore !== 100) {
+      if (!state.completed) {
         document.getElementById(
           "resultMessage"
         ).textContent =
-          "请先修正错题并达到 100%，再完成本关。";
+          "请开始新一轮测试，并在首次提交时达到 100%，再进入下一关。";
         return;
       }
-
-      state.completed = true;
-
-      saveAppState();
-
-      document
-        .getElementById(
-          "translationSection"
-        )
-        .classList.add("hidden");
-
-      document
-        .getElementById(
-          "resultSection"
-        )
-        .classList.add("hidden");
-
-      showOnly("story");
-
-      renderMissionRecord();
 
       const currentIndex =
         missions.findIndex(
@@ -2261,6 +2267,13 @@
         top: 0,
         behavior: "smooth"
       });
+    }
+
+    function returnToStory() {
+      document.getElementById("resultSection").classList.add("hidden");
+      document.getElementById("translationSection").classList.add("hidden");
+      showOnly("story");
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
 
@@ -2324,8 +2337,12 @@
       )
       .addEventListener(
         "click",
-        finishMission
+        goToNextMission
       );
+
+    document
+      .getElementById("resultBackStoryBtn")
+      .addEventListener("click", returnToStory);
 
 
     document
@@ -2385,6 +2402,12 @@
       ) {
         currentMissionId = 1;
       }
+
+      window.addEventListener("ieltsquest:progress-synced", () => {
+        appState = loadAppState();
+        renderMissionRecord();
+        renderWordProgress();
+      });
 
       loadMission(
         currentMissionId

@@ -27,6 +27,10 @@
       bestScore: Math.max(Number(local.bestScore) || 0, Number(remote.bestScore) || 0),
       attempts: Math.max(localAttempts, remoteAttempts),
       completed: Boolean(local.completed || remote.completed),
+      completionMethod: local.completionMethod || remote.completionMethod || null,
+      completedAt: String(local.completedAt || "") >= String(remote.completedAt || "")
+        ? (local.completedAt || null)
+        : (remote.completedAt || null),
       lastScore: localAttempts >= remoteAttempts
         ? Number(local.lastScore) || 0
         : Number(remote.lastScore) || 0
@@ -63,14 +67,8 @@
     const description = document.getElementById("accountDescription");
     if (description && synced) description.textContent = "学习进度已绑定当前账号，并保留本设备副本。";
   }
-  function requestRefreshIfChanged(before, after) {
-    if (JSON.stringify(before) === JSON.stringify(after)) return;
-    const marker = "ieltsQuestSyncReloaded";
-    writeState(after);
-    if (sessionStorage.getItem(marker) !== "1") {
-      sessionStorage.setItem(marker, "1");
-      window.location.reload();
-    }
+  function applyMergedState(before, after) {
+    if (JSON.stringify(before) !== JSON.stringify(after)) writeState(after);
   }
 
   async function syncNow() {
@@ -104,8 +102,7 @@
 
       if (currentMission) localStorage.setItem(CURRENT_KEY, String(currentMission));
       setStatus("进度已同步至账号", true);
-      requestRefreshIfChanged(local, merged);
-      sessionStorage.removeItem("ieltsQuestSyncReloaded");
+      applyMergedState(local, merged);
       window.dispatchEvent(new CustomEvent("ieltsquest:progress-synced"));
     } catch (error) {
       console.warn("IELTS Quest cloud sync unavailable; local progress remains active.", error);

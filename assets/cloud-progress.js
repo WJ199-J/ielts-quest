@@ -9,6 +9,9 @@
   let queued = false;
 
   function emptyState() { return { missions: {}, words: {} }; }
+  function isFormalCompletion(state = {}) {
+    return state.completed === true && state.completionMethod === "first-submit-100";
+  }
   function readState() {
     try {
       const value = JSON.parse(localStorage.getItem(STORAGE_KEY));
@@ -23,14 +26,18 @@
   function mergeMission(local = {}, remote = {}) {
     const localAttempts = Number(local.attempts) || 0;
     const remoteAttempts = Number(remote.attempts) || 0;
+    const localComplete = isFormalCompletion(local);
+    const remoteComplete = isFormalCompletion(remote);
+    const completed = localComplete || remoteComplete;
+    const completedAt = String(local.completedAt || "") >= String(remote.completedAt || "")
+      ? (localComplete ? local.completedAt || null : remoteComplete ? remote.completedAt || null : null)
+      : (remoteComplete ? remote.completedAt || null : localComplete ? local.completedAt || null : null);
     return {
       bestScore: Math.max(Number(local.bestScore) || 0, Number(remote.bestScore) || 0),
       attempts: Math.max(localAttempts, remoteAttempts),
-      completed: Boolean(local.completed || remote.completed),
-      completionMethod: local.completionMethod || remote.completionMethod || null,
-      completedAt: String(local.completedAt || "") >= String(remote.completedAt || "")
-        ? (local.completedAt || null)
-        : (remote.completedAt || null),
+      completed,
+      completionMethod: completed ? "first-submit-100" : null,
+      completedAt: completed ? completedAt : null,
       lastScore: localAttempts >= remoteAttempts
         ? Number(local.lastScore) || 0
         : Number(remote.lastScore) || 0

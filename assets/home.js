@@ -16,24 +16,27 @@
   let filter = "all";
   let query = "";
 
+  function isFormalCompletion(status = {}) {
+    return status.completed === true && status.completionMethod === "first-submit-100";
+  }
+
   function readState() {
     try {
       const state = JSON.parse(localStorage.getItem(STORAGE_KEY));
       const normalized = state && typeof state === "object" ? { missions: state.missions || {}, words: state.words || {} } : { missions: {}, words: {} };
-      let migrated = false;
-      missions.forEach((mission) => {
-        if (localStorage.getItem(`ieltsQuestMission${mission.id}Completed`) === "true" && !normalized.missions[mission.id]) {
-          normalized.missions[mission.id] = { bestScore: 0, attempts: 0, completed: true, lastScore: 0 };
-          migrated = true;
-        }
+      Object.values(normalized.missions).forEach((status) => {
+        if (!status || typeof status !== "object") return;
+        const completed = isFormalCompletion(status);
+        status.completed = completed;
+        status.completionMethod = completed ? "first-submit-100" : null;
+        status.completedAt = completed ? status.completedAt || null : null;
       });
-      if (migrated) localStorage.setItem(STORAGE_KEY,JSON.stringify(normalized));
       return normalized;
     } catch (error) { return { missions: {}, words: {} }; }
   }
   let state = readState();
   const missionState = (id) => state.missions[id] || { bestScore: 0, attempts: 0, completed: false, lastScore: 0 };
-  const isComplete = (mission) => Boolean(missionState(mission.id).completed);
+  const isComplete = (mission) => isFormalCompletion(missionState(mission.id));
   const missionsForChapter = (chapter) => missions.filter((mission) => mission.chapter === chapter);
   function chapterProgress(chapter) {
     const items = missionsForChapter(chapter);
@@ -130,7 +133,7 @@
     const list = document.getElementById("missionList");
     list.innerHTML = items.map((mission,index) => {
       const status = missionState(mission.id);
-      const complete = Boolean(status.completed);
+      const complete = isFormalCompletion(status);
       const meta = [mission.level,mission.time || "10–20 min",`${mission.newCoreWords.length} 词`].filter(Boolean).join(" · ");
       return `<div class="mission-row ${complete ? "complete" : ""}">
         <span class="mission-sequence">${complete ? "✓" : String(index + 1).padStart(2,"0")}</span>

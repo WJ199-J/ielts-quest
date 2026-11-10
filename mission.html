@@ -866,7 +866,18 @@
 
       }
 
-      return appState.missions[id];
+      const missionState = appState.missions[id];
+      const formallyCompleted =
+        missionState.completed === true &&
+        missionState.completionMethod === "first-submit-100";
+
+      if (!formallyCompleted) {
+        missionState.completed = false;
+        missionState.completionMethod = null;
+        missionState.completedAt = null;
+      }
+
+      return missionState;
     }
 
 

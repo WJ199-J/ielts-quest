@@ -4,26 +4,38 @@
   const STORAGE_KEY = "ieltsQuestV1";
   const CURRENT_KEY = "ieltsQuestCurrentMission";
   const TABLE = "user_progress";
+  const USER_CONFIRMED_COMPLETIONS = new Set([2, 3]);
   let timer = 0;
   let syncing = false;
   let queued = false;
 
   function emptyState() { return { missions: {}, words: {} }; }
+  function restoreConfirmedCompletion(id, state = {}) {
+    if (USER_CONFIRMED_COMPLETIONS.has(Number(id)) && Number(state.bestScore) === 100 && !state.completionMethod) {
+      state.completed = true;
+      state.completionMethod = "user-confirmed-legacy-completion";
+    }
+    return state;
+  }
   function isFormalCompletion(state = {}) {
-    return state.completed === true && state.completionMethod === "first-submit-100";
+    return state.completed === true && ["first-submit-100", "user-confirmed-legacy-completion"].includes(state.completionMethod);
   }
   function readState() {
     try {
       const value = JSON.parse(localStorage.getItem(STORAGE_KEY));
-      return value && typeof value === "object"
+      const state = value && typeof value === "object"
         ? { missions: value.missions || {}, words: value.words || {} }
         : emptyState();
+      Object.entries(state.missions).forEach(([id, mission]) => restoreConfirmedCompletion(id, mission));
+      return state;
     } catch (_) { return emptyState(); }
   }
   function writeState(state) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   }
-  function mergeMission(local = {}, remote = {}) {
+  function mergeMission(id, local = {}, remote = {}) {
+    restoreConfirmedCompletion(id, local);
+    restoreConfirmedCompletion(id, remote);
     const localAttempts = Number(local.attempts) || 0;
     const remoteAttempts = Number(remote.attempts) || 0;
     const localComplete = isFormalCompletion(local);
@@ -36,7 +48,7 @@
       bestScore: Math.max(Number(local.bestScore) || 0, Number(remote.bestScore) || 0),
       attempts: Math.max(localAttempts, remoteAttempts),
       completed,
-      completionMethod: completed ? "first-submit-100" : null,
+      completionMethod: completed ? (localComplete ? local.completionMethod : remote.completionMethod) : null,
       completedAt: completed ? completedAt : null,
       lastScore: localAttempts >= remoteAttempts
         ? Number(local.lastScore) || 0
@@ -59,7 +71,7 @@
   function mergeState(local, remote) {
     const merged = emptyState();
     const missionIds = new Set([...Object.keys(remote?.missions || {}), ...Object.keys(local?.missions || {})]);
-    missionIds.forEach(id => { merged.missions[id] = mergeMission(local?.missions?.[id], remote?.missions?.[id]); });
+    missionIds.forEach(id => { merged.missions[id] = mergeMission(id, local?.missions?.[id], remote?.missions?.[id]); });
     const words = new Set([...Object.keys(remote?.words || {}), ...Object.keys(local?.words || {})]);
     words.forEach(word => { merged.words[word] = mergeWord(local?.words?.[word], remote?.words?.[word]); });
     return merged;

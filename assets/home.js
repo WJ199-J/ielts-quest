@@ -3,6 +3,7 @@
   const missions = Array.isArray(window.IELTS_QUEST_MISSIONS) ? window.IELTS_QUEST_MISSIONS : [];
   const STORAGE_KEY = "ieltsQuestV1";
   const THEME_KEY = "ieltsQuestTheme";
+  const USER_CONFIRMED_COMPLETIONS = new Set([2, 3]);
   const chapterMeta = [
     ["自然地理","Natural Geography"],["植物研究","Plant Life"],["动物保护","Animal World"],
     ["太空探索","Space Exploration"],["教育与学习","Education"],["科技与发明","Technology"],
@@ -17,20 +18,27 @@
   let query = "";
 
   function isFormalCompletion(status = {}) {
-    return status.completed === true && status.completionMethod === "first-submit-100";
+    return status.completed === true && ["first-submit-100", "user-confirmed-legacy-completion"].includes(status.completionMethod);
   }
 
   function readState() {
     try {
       const state = JSON.parse(localStorage.getItem(STORAGE_KEY));
       const normalized = state && typeof state === "object" ? { missions: state.missions || {}, words: state.words || {} } : { missions: {}, words: {} };
-      Object.values(normalized.missions).forEach((status) => {
+      let repaired = false;
+      Object.entries(normalized.missions).forEach(([id, status]) => {
         if (!status || typeof status !== "object") return;
+        if (USER_CONFIRMED_COMPLETIONS.has(Number(id)) && Number(status.bestScore) === 100 && !status.completionMethod) {
+          status.completed = true;
+          status.completionMethod = "user-confirmed-legacy-completion";
+          repaired = true;
+        }
         const completed = isFormalCompletion(status);
         status.completed = completed;
-        status.completionMethod = completed ? "first-submit-100" : null;
+        status.completionMethod = completed ? status.completionMethod : null;
         status.completedAt = completed ? status.completedAt || null : null;
       });
+      if (repaired) localStorage.setItem(STORAGE_KEY, JSON.stringify(normalized));
       return normalized;
     } catch (error) { return { missions: {}, words: {} }; }
   }

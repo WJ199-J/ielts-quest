@@ -769,7 +769,7 @@
   <script src="assets/mission-theme.js?v=20261104-2"></script>
   <script src="assets/auth-config.js?v=20261105-1"></script>
   <script src="assets/auth-client.js?v=20261105-1"></script>
-  <script src="assets/cloud-progress.js?v=20261110-1"></script>
+  <script src="assets/cloud-progress.js?v=20261110-2"></script>
 
   <script>
     /*
@@ -867,9 +867,17 @@
       }
 
       const missionState = appState.missions[id];
+      if (
+        [2, 3].includes(Number(id)) &&
+        Number(missionState.bestScore) === 100 &&
+        !missionState.completionMethod
+      ) {
+        missionState.completed = true;
+        missionState.completionMethod = "user-confirmed-legacy-completion";
+      }
       const formallyCompleted =
         missionState.completed === true &&
-        missionState.completionMethod === "first-submit-100";
+        ["first-submit-100", "user-confirmed-legacy-completion"].includes(missionState.completionMethod);
 
       if (!formallyCompleted) {
         missionState.completed = false;

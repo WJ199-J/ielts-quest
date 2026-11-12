@@ -28,7 +28,7 @@
       let repaired = false;
       Object.entries(normalized.missions).forEach(([id, status]) => {
         if (!status || typeof status !== "object") return;
-        if (USER_CONFIRMED_COMPLETIONS.has(Number(id)) && Number(status.bestScore) === 100 && !status.completionMethod) {
+        if (USER_CONFIRMED_COMPLETIONS.has(Number(id)) && Number(status.bestScore) === 100 && !status.completionRuleVersion && !status.completionMethod) {
           status.completed = true;
           status.completionMethod = "user-confirmed-legacy-completion";
           repaired = true;

@@ -477,7 +477,7 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="assets/mission-refresh.css?v=20261104-2" />
+  <link rel="stylesheet" href="assets/mission-refresh.css?v=20261112-1" />
 </head>
 
 <body>
@@ -532,10 +532,12 @@
           <section id="studyVocabulary" class="mission-vocabulary" aria-label="本关学习词汇"></section>
 
           <div class="button-row">
+            <button class="secondary-btn hidden" id="resumeQuizBtn" type="button">继续上次作答</button>
             <button class="primary-btn" id="startQuizBtn">
               开始测试
             </button>
           </div>
+          <p id="draftNotice" class="subtext" role="status"></p>
         </section>
 
 
@@ -645,6 +647,7 @@
       <aside>
 
         <section class="card word-panel">
+          <button id="closeWordBtn" class="secondary-btn word-close" type="button" aria-label="关闭词义">关闭 ×</button>
           <h2>Word</h2>
 
           <div
@@ -675,6 +678,8 @@
               id="selectedMeaning"
               class="meaning"
             ></div>
+            <p id="speechStatus" class="subtext" role="status" aria-live="polite"></p>
+            <p id="selectedLexical" class="subtext"></p>
 
             <button
               id="speakBtn"
@@ -744,10 +749,10 @@
 
 
   <!-- COURSE DATA -->
-  <script src="data/missions.js"></script>
+  <script src="data/missions.js?v=20261112-1"></script>
   <script src="data/chapter2.js"></script>
   <script src="data/chapter3.js"></script>
-  <script src="data/chapter4.js"></script>
+  <script src="data/chapter4.js?v=20261112-1"></script>
   <script src="data/chapter5.js"></script>
   <script src="data/chapter6.js"></script>
   <script src="data/chapter7.js"></script>
@@ -765,11 +770,14 @@
   <script src="data/chapter19.js"></script>
   <script src="data/chapter20.js"></script>
   <script src="data/chapter21.js"></script>
-  <script src="data/chapter22.js"></script>
+  <script src="data/chapter22.js?v=20261112-1"></script>
+  <script src="data/review-vocabulary.js?v=20261112-1"></script>
   <script src="assets/mission-theme.js?v=20261104-2"></script>
   <script src="assets/auth-config.js?v=20261105-1"></script>
   <script src="assets/auth-client.js?v=20261105-1"></script>
-  <script src="assets/cloud-progress.js?v=20261110-2"></script>
+  <script src="assets/cloud-progress.js?v=20261112-1"></script>
+  <script src="assets/vocabulary-pattern.js?v=20261112-1"></script>
+  <script src="assets/quiz-session.js?v=20261112-1"></script>
 
   <script>
     /*
@@ -807,6 +815,7 @@
     let currentQuizWords = [];
 
     let quizSubmitted = false;
+    let quizSession = null;
 
     let selectedSpeechWord = "";
 
@@ -870,6 +879,7 @@
       if (
         [2, 3].includes(Number(id)) &&
         Number(missionState.bestScore) === 100 &&
+        !missionState.completionRuleVersion &&
         !missionState.completionMethod
       ) {
         missionState.completed = true;
@@ -927,6 +937,10 @@
     }
 
 
+    function acceptedAnswers(info, input) {
+      return [...(info?.answers?.length ? info.answers : [input.dataset.word]), input.dataset.surface].filter(Boolean);
+    }
+
     function getAllCoreWords(mission) {
 
       const newWords =
@@ -977,7 +991,7 @@
         if (found) return found;
       }
 
-      return null;
+      return (window.IELTS_QUEST_REVIEW_VOCABULARY || []).find(item => item.word.toLowerCase() === target) || null;
     }
 
 
@@ -1103,7 +1117,7 @@
           .filter(word =>
             storyContainsWord(
               currentMission,
-              word.word
+              word
             )
           );
 
@@ -1116,24 +1130,88 @@
       currentQuizWords =
         weightedPick(words, count);
 
+      const previous = window.IELTS_QUEST_QUIZ_SESSIONS.get(currentMission.id, quizSignature());
+      if (previous && words.length > count && currentQuizWords.every(item => previous.words.includes(item.word))) {
+        const replacement = words.find(item => !previous.words.includes(item.word));
+        if (replacement) currentQuizWords[currentQuizWords.length - 1] = replacement;
+      }
+
+      quizSession = {
+        signature: quizSignature(), words: currentQuizWords.map(item => item.word),
+        answers: {}, submitted: false, assisted: false, firstScore: null,
+        score: null, correct: 0, stage: "quiz", isCorrection: false
+      };
+
       quizSubmitted = false;
 
       renderQuiz();
+      persistQuizSession("quiz");
     }
 
 
     function storyContainsWord(mission, word) {
 
-      const regex = new RegExp(
-        "\\b" +
-        escapeRegExp(word) +
-        "(?:s|es|ed|ing)?\\b",
-        "i"
-      );
+      const regex = window.IELTS_QUEST_VOCABULARY.pattern(word, "i");
 
       return mission.story.some(
         sentence => regex.test(sentence.en)
       );
+    }
+
+    function quizSignature() {
+      return JSON.stringify([currentMission.story, currentMission.newCoreWords, currentMission.reviewWords]);
+    }
+
+    function persistQuizSession(stage) {
+      if (!quizSession || !currentMission) return;
+      quizSession.stage = stage;
+      quizSession.submitted = quizSubmitted;
+      document.querySelectorAll(".quiz-input").forEach(input => {
+        quizSession.answers[input.dataset.word] = input.value;
+        if (quizSubmitted) {
+          quizSession.feedback ||= {};
+          quizSession.feedback[input.dataset.word] = input.classList.contains("correct");
+        }
+      });
+      const saved = window.IELTS_QUEST_QUIZ_SESSIONS.save(currentMission.id, quizSession);
+      document.getElementById("draftNotice").textContent = saved
+        ? "作答痕迹已保存在本设备，刷新后可继续。" : "本设备存储空间不足，作答痕迹暂未保存。";
+    }
+
+    function restoreQuizSession() {
+      const saved = window.IELTS_QUEST_QUIZ_SESSIONS.get(currentMission.id, quizSignature());
+      if (!saved) return false;
+      const vocabulary = getAllCoreWords(currentMission);
+      const selected = saved.words.map(word => vocabulary.find(item => item.word === word));
+      if (!selected.length || selected.some(item => !item)) return false;
+      quizSession = saved;
+      currentQuizWords = selected;
+      quizSubmitted = saved.submitted;
+      renderQuiz();
+      document.querySelectorAll(".quiz-input").forEach(input => {
+        input.value = saved.answers[input.dataset.word] || "";
+        if (!saved.submitted) return;
+        const info = findVocabulary(input.dataset.word);
+        const correct = saved.feedback?.[input.dataset.word] ?? acceptedAnswers(info, input).some(answer => normalizeAnswer(answer) === normalizeAnswer(input.value));
+        input.classList.add(correct ? "correct" : "wrong");
+        if (!correct) {
+          const hint = document.createElement("span");
+          hint.className = "answer-hint";
+          hint.textContent = ` ${info.word} `;
+          input.closest(".quiz-slot").appendChild(hint);
+        }
+      });
+      if (saved.stage === "result") {
+        showResult(saved.score, saved.correct, selected.length, !saved.isCorrection && !saved.assisted && saved.firstScore === 100);
+      } else if (saved.stage === "story") {
+        showOnly("story");
+      } else if (saved.submitted) {
+        setVocabularyVisible(true);
+      }
+      document.getElementById("submitQuizBtn").disabled = saved.submitted;
+      document.getElementById("resumeQuizBtn").classList.remove("hidden");
+      document.getElementById("draftNotice").textContent = "已恢复本设备上次的作答痕迹。";
+      return true;
     }
 
 
@@ -1142,66 +1220,20 @@
     // =========================================================
 
     function decorateStoryText(text) {
-
-      let output = text;
-
-      const coreWords =
-        getAllCoreWords(currentMission)
-          .sort(
-            (a, b) =>
-              b.word.length - a.word.length
-          );
-
-      coreWords.forEach(item => {
-
-        const regex = new RegExp(
-          "\\b(" +
-          escapeRegExp(item.word) +
-          "(?:s|es|ed|ing)?)\\b",
-          "gi"
-        );
-
-        const className =
-          item.type === "review"
-            ? "review-word"
-            : "core-word";
-
-        output = output.replace(
-          regex,
-          `<span
-            class="${className}"
-            data-word="${item.word}"
-          >$1</span>`
-        );
+      const items = [...getAllCoreWords(currentMission), ...(currentMission.supportWords || []).map(item => ({ ...item, type: "support" }))];
+      let output = "", cursor = 0;
+      window.IELTS_QUEST_VOCABULARY.matches(text, items).forEach(match => {
+        output += escapeHTML(text.slice(cursor, match.start));
+        const support = match.item.type === "support";
+        const className = support ? "support-word" : match.item.type === "review" ? "review-word" : "core-word";
+        output += `<span class="${className}" tabindex="0" role="button" ${support ? "data-support" : "data-word"}="${escapeHTML(match.item.word)}">${escapeHTML(match.text)}</span>`;
+        cursor = match.end;
       });
+      return output + escapeHTML(text.slice(cursor));
+    }
 
-
-      const supportWords =
-        [...(currentMission.supportWords || [])]
-          .sort(
-            (a, b) =>
-              b.word.length - a.word.length
-          );
-
-      supportWords.forEach(item => {
-
-        const regex = new RegExp(
-          "\\b(" +
-          escapeRegExp(item.word) +
-          "(?:s|es|ed|ing)?)\\b",
-          "gi"
-        );
-
-        output = output.replace(
-          regex,
-          `<span
-            class="support-word"
-            data-support="${item.word}"
-          >$1</span>`
-        );
-      });
-
-      return output;
+    function escapeHTML(text) {
+      return String(text).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#39;");
     }
 
 
@@ -1229,6 +1261,12 @@
     // =========================================================
 
     function bindWordClicks() {
+
+      document.querySelectorAll(".core-word, .review-word, .support-word").forEach(element => {
+        element.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") { event.preventDefault(); element.click(); }
+        });
+      });
 
       document
         .querySelectorAll(
@@ -1324,14 +1362,20 @@
         "selectedMeaning"
       ).textContent = meaning;
 
+      const lexicalInfo = findVocabulary(word) || findSupportWord(word);
+      document.getElementById("selectedLexical").textContent = [lexicalInfo?.pos, ...(lexicalInfo?.collocations || [])].filter(Boolean).join(" · ");
+
       document.getElementById(
         "wordType"
       ).textContent = type;
 
       if (window.matchMedia("(max-width: 820px)").matches) {
-        document.querySelector(".word-panel").scrollIntoView({
-          behavior: "smooth", block: "center"
-        });
+        const panel = document.querySelector(".word-panel");
+        panel.classList.add("mobile-open");
+        panel.setAttribute("role", "dialog");
+        panel.setAttribute("aria-modal", "true");
+        panel.setAttribute("aria-label", `${word} 的词义与发音`);
+        document.getElementById("closeWordBtn").focus({ preventScroll: true });
       }
     }
 
@@ -1352,10 +1396,15 @@
           const word = document.createElement("strong");
           word.textContent = info.word;
           const detail = document.createElement("small");
-          detail.textContent = `${info.ipa || "音标待补"} · ${info.type === "review" ? "Review" : "New"}`;
+          detail.textContent = `${info.ipa || "音标待补"} · ${info.pos || "词性待补"} · ${info.type === "review" ? "Review" : "New"}`;
           const meaning = document.createElement("small");
           meaning.textContent = info.meaning || "释义待补";
           button.append(word, detail, meaning);
+          if (info.collocations?.length) {
+            const collocations = document.createElement("small");
+            collocations.textContent = info.collocations.join(" · ");
+            button.appendChild(collocations);
+          }
           button.addEventListener("click", () => {
             showWordDetail(info.word, info.ipa || "音标待补", info.meaning,
               info.type === "review" ? "Review Word" : "New Core Word");
@@ -1391,6 +1440,11 @@
 
       utterance.lang = "en-GB";
       utterance.rate = 0.82;
+      const status = document.getElementById("speechStatus");
+      status.textContent = "正在准备发音…";
+      utterance.onstart = () => { status.textContent = "正在播放…"; };
+      utterance.onend = () => { status.textContent = "播放完成"; };
+      utterance.onerror = () => { status.textContent = "发音暂不可用，请检查设备声音或更换浏览器后重试。"; };
 
       speechSynthesis.speak(utterance);
     }
@@ -1404,50 +1458,17 @@
       sentence,
       usedWords
     ) {
-
-      let output = sentence;
-
-      currentQuizWords.forEach(item => {
-
-        const key =
-          item.word.toLowerCase();
-
-        if (usedWords.has(key)) {
-          return;
-        }
-
-        const regex = new RegExp(
-          "\\b(" +
-          escapeRegExp(item.word) +
-          "(?:s|es|ed|ing)?)\\b",
-          "i"
-        );
-
-        if (!regex.test(output)) {
-          return;
-        }
-
+      let output = "", cursor = 0;
+      const items = currentQuizWords.filter(item => !usedWords.has(item.word.toLowerCase()));
+      window.IELTS_QUEST_VOCABULARY.matches(sentence, items).forEach(match => {
+        const key = match.item.word.toLowerCase();
+        if (usedWords.has(key)) return;
         usedWords.add(key);
-
-        output = output.replace(
-          regex,
-          `<span
-            class="quiz-slot"
-            data-answer="${item.word}"
-          >
-            <input
-              class="quiz-input"
-              type="text"
-              autocomplete="off"
-              spellcheck="false"
-              data-word="${item.word}"
-              aria-label="Fill in the missing word"
-            />
-          </span>`
-        );
+        output += escapeHTML(sentence.slice(cursor, match.start));
+        output += `<span class="quiz-slot"><input class="quiz-input" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" data-word="${escapeHTML(match.item.word)}" data-surface="${escapeHTML(match.text)}" aria-label="Fill in the missing word" /></span>`;
+        cursor = match.end;
       });
-
-      return output;
+      return output + escapeHTML(sentence.slice(cursor));
     }
 
 
@@ -1479,6 +1500,7 @@
         } 个词。保留完整故事，只挖空被抽中的目标词。`;
 
       showOnly("quiz");
+      document.getElementById("submitQuizBtn").disabled = quizSubmitted;
 
       window.scrollTo({
         top: 0,
@@ -1511,10 +1533,7 @@
         const info =
           findVocabulary(word);
 
-        const accepted =
-          info?.answers?.length
-            ? info.answers
-            : [word];
+        const accepted = acceptedAnswers(info, input);
 
         const userAnswer =
           normalizeAnswer(input.value);
@@ -1585,6 +1604,7 @@
           );
 
         missionState.attempts += 1;
+        missionState.completionRuleVersion = 2;
 
         missionState.lastScore =
           score;
@@ -1595,7 +1615,7 @@
             score
           );
 
-        if (score === 100) {
+        if (score === 100 && !quizSession?.assisted) {
           missionState.completed = true;
           missionState.completionMethod = "first-submit-100";
           missionState.completedAt = new Date().toISOString();
@@ -1604,14 +1624,21 @@
         saveAppState();
 
         quizSubmitted = true;
+        quizSession.firstScore = score;
       }
+
+      quizSession.score = score;
+      quizSession.correct = correctCount;
+      quizSession.isCorrection = !firstSubmission;
+      persistQuizSession("result");
+      document.getElementById("submitQuizBtn").disabled = true;
 
 
       showResult(
         score,
         correctCount,
         inputs.length,
-        firstSubmission
+        firstSubmission && !quizSession.assisted
       );
 
       renderMissionRecord();
@@ -1630,10 +1657,7 @@
         const info =
           findVocabulary(word);
 
-        const accepted =
-          info?.answers?.length
-            ? info.answers
-            : [word];
+        const accepted = acceptedAnswers(info, input);
 
         const answer =
           normalizeAnswer(input.value);
@@ -1710,7 +1734,9 @@
 
       let message = "";
 
-      if (score === 100 && firstSubmission) {
+      if (quizSession?.assisted) {
+        message = "本轮作答期间已返回原文，成绩仅作练习记录。开始新一轮测试，首次提交 100% 后计为完成。";
+      } else if (score === 100 && firstSubmission) {
 
         message =
           "首次提交全部正确，本关已完成。你可以自行选择复习、查看翻译或进入下一关。";
@@ -1787,10 +1813,7 @@
         const info =
           findVocabulary(word);
 
-        const accepted =
-          info?.answers?.length
-            ? info.answers
-            : [word];
+        const accepted = acceptedAnswers(info, input);
 
         const answer =
           normalizeAnswer(input.value);
@@ -1872,6 +1895,10 @@
 
       saveAppState();
 
+      quizSession.score = score;
+      quizSession.correct = correctCount;
+      quizSession.isCorrection = true;
+      persistQuizSession("result");
 
       showResult(
         score,
@@ -2088,6 +2115,8 @@
 
     function loadMission(id) {
 
+      if (currentMission && quizSession) persistQuizSession(quizSession.stage);
+
       const mission =
         missions.find(
           item => item.id === id
@@ -2098,6 +2127,7 @@
       currentMissionId = id;
 
       currentMission = mission;
+      quizSession = null;
 
       const missionUrl = new URL(window.location.href);
       missionUrl.searchParams.set("id", String(id));
@@ -2177,6 +2207,10 @@
 
       showOnly("story");
 
+      document.getElementById("resumeQuizBtn").classList.add("hidden");
+      document.getElementById("draftNotice").textContent = "";
+      restoreQuizSession();
+
       saveAppState();
 
       window.scrollTo({
@@ -2187,6 +2221,8 @@
 
 
     function resetWordPanel() {
+
+      closeWordPanel();
 
       selectedSpeechWord = "";
 
@@ -2289,6 +2325,8 @@
     }
 
     function returnToStory() {
+      if (quizSession && !quizSubmitted) quizSession.assisted = true;
+      persistQuizSession("story");
       document.getElementById("resultSection").classList.add("hidden");
       document.getElementById("translationSection").classList.add("hidden");
       showOnly("story");
@@ -2299,6 +2337,30 @@
     // =========================================================
     // EVENTS
     // =========================================================
+
+    function closeWordPanel() {
+      const panel = document.querySelector(".word-panel");
+      panel.classList.remove("mobile-open");
+      panel.removeAttribute("role");
+      panel.removeAttribute("aria-modal");
+      panel.removeAttribute("aria-label");
+    }
+    document.getElementById("closeWordBtn").addEventListener("click", closeWordPanel);
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeWordPanel();
+      if (event.key === "Tab" && document.querySelector(".word-panel").classList.contains("mobile-open")) {
+        const first = document.getElementById("closeWordBtn"), last = document.getElementById("speakBtn");
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+    });
+
+    document.getElementById("resumeQuizBtn").addEventListener("click", () => {
+      persistQuizSession(quizSubmitted ? "result" : "quiz");
+      restoreQuizSession();
+    });
+    document.getElementById("quizStory").addEventListener("input", () => persistQuizSession(quizSession?.stage || "quiz"));
+    window.addEventListener("pagehide", () => { if (quizSession) persistQuizSession(quizSession.stage); });
 
     document
       .getElementById(
@@ -2370,7 +2432,7 @@
       )
       .addEventListener(
         "click",
-        () => showOnly("story")
+        returnToStory
       );
 
 

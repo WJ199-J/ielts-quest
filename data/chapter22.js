@@ -311,7 +311,9 @@ const data = [
     "newCoreWords": [
       {
         "word": "imminent",
-        "ipa": "",
+        "ipa": "/ˈɪmɪnənt/",
+        "pos": "adj.",
+        "collocations": ["imminent danger", "an imminent decision"],
         "meaning": "即将发生的",
         "answers": [
           "imminent"
@@ -319,7 +321,9 @@ const data = [
       },
       {
         "word": "periodically",
-        "ipa": "",
+        "ipa": "/ˌpɪəriˈɒdɪkli/",
+        "pos": "adv.",
+        "collocations": ["check periodically", "review periodically"],
         "meaning": "定期地",
         "answers": [
           "periodically"
@@ -327,7 +331,9 @@ const data = [
       },
       {
         "word": "meanwhile",
-        "ipa": "",
+        "ipa": "/ˈmiːnwaɪl/",
+        "pos": "adv.",
+        "collocations": ["meanwhile, her colleague", "meanwhile, back at home"],
         "meaning": "与此同时",
         "answers": [
           "meanwhile"
@@ -335,7 +341,9 @@ const data = [
       },
       {
         "word": "meantime",
-        "ipa": "",
+        "ipa": "/ˈmiːntaɪm/",
+        "pos": "n.",
+        "collocations": ["in the meantime", "for the meantime"],
         "meaning": "其间",
         "answers": [
           "meantime"
@@ -343,7 +351,9 @@ const data = [
       },
       {
         "word": "instant",
-        "ipa": "",
+        "ipa": "/ˈɪnstənt/",
+        "pos": "n.",
+        "collocations": ["in an instant", "for an instant"],
         "meaning": "瞬间",
         "answers": [
           "instant"
@@ -351,7 +361,9 @@ const data = [
       },
       {
         "word": "present",
-        "ipa": "",
+        "ipa": "/ˈprezənt/",
+        "pos": "adj.",
+        "collocations": ["the present record", "the present situation"],
         "meaning": "当前的",
         "answers": [
           "present"

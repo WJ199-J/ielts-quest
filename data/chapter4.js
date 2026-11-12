@@ -357,7 +357,7 @@ const data=[
     "newCoreWords": [
       {"word":"ambitious","ipa":"","meaning":"雄心勃勃的","answers":["ambitious"]},
       {"word":"advanced","ipa":"","meaning":"先进的","answers":["advanced"]},
-      {"word":"equip","ipa":"","meaning":"装备；配备","answers":["equip"]},
+      {"word":"equip","ipa":"","meaning":"装备；配备","answers":["equip","equipped"]},
       {"word":"departure","ipa":"","meaning":"出发；离开","answers":["departure"]},
       {"word":"adjust","ipa":"","meaning":"调整","answers":["adjust"]},
       {"word":"exploration","ipa":"","meaning":"探索","answers":["exploration"]},

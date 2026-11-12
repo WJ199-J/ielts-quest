@@ -58,42 +58,56 @@ window.IELTS_QUEST_MISSIONS = [
       {
         word: "beach",
         ipa: "/biːtʃ/",
+        pos: "n.",
+        collocations: ["walk along the beach", "a sandy beach"],
         meaning: "海滩；沙滩",
         answers: ["beach"]
       },
       {
         word: "breeze",
         ipa: "/briːz/",
+        pos: "n.",
+        collocations: ["a light breeze", "a sea breeze"],
         meaning: "微风",
         answers: ["breeze"]
       },
       {
         word: "coast",
         ipa: "/kəʊst/",
+        pos: "n.",
+        collocations: ["along the coast", "the east coast"],
         meaning: "海岸；海滨",
         answers: ["coast"]
       },
       {
         word: "shore",
         ipa: "/ʃɔː/",
+        pos: "n.",
+        collocations: ["on the shore", "reach the shore"],
         meaning: "岸；滨",
         answers: ["shore"]
       },
       {
         word: "stream",
         ipa: "/striːm/",
+        pos: "n.",
+        collocations: ["a small stream", "cross a stream"],
         meaning: "小溪；溪流",
         answers: ["stream"]
       },
       {
         word: "landscape",
         ipa: "/ˈlændskeɪp/",
+        pos: "n.",
+        collocations: ["the surrounding landscape", "a natural landscape"],
         meaning: "风景；地貌",
         answers: ["landscape"]
       },
       {
         word: "environment",
         ipa: "/ɪnˈvaɪrənmənt/",
+        pos: "n.",
+        collocations: ["the natural environment", "protect the environment"],
         meaning: "环境",
         answers: ["environment"]
       }

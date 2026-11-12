@@ -11,7 +11,7 @@
 
   function emptyState() { return { missions: {}, words: {} }; }
   function restoreConfirmedCompletion(id, state = {}) {
-    if (USER_CONFIRMED_COMPLETIONS.has(Number(id)) && Number(state.bestScore) === 100 && !state.completionMethod) {
+    if (USER_CONFIRMED_COMPLETIONS.has(Number(id)) && Number(state.bestScore) === 100 && !state.completionRuleVersion && !state.completionMethod) {
       state.completed = true;
       state.completionMethod = "user-confirmed-legacy-completion";
     }
@@ -47,6 +47,7 @@
     return {
       bestScore: Math.max(Number(local.bestScore) || 0, Number(remote.bestScore) || 0),
       attempts: Math.max(localAttempts, remoteAttempts),
+      completionRuleVersion: Math.max(Number(local.completionRuleVersion) || 0, Number(remote.completionRuleVersion) || 0),
       completed,
       completionMethod: completed ? (localComplete ? local.completionMethod : remote.completionMethod) : null,
       completedAt: completed ? completedAt : null,

@@ -775,7 +775,7 @@
   <script src="assets/mission-theme.js?v=20261104-2"></script>
   <script src="assets/auth-config.js?v=20261105-1"></script>
   <script src="assets/auth-client.js?v=20261105-1"></script>
-  <script src="assets/cloud-progress.js?v=20261112-1"></script>
+  <script src="assets/cloud-progress.js?v=20261112-2"></script>
   <script src="assets/vocabulary-pattern.js?v=20261112-1"></script>
   <script src="assets/quiz-session.js?v=20261112-1"></script>
 
@@ -827,7 +827,8 @@
     function defaultState() {
       return {
         missions: {},
-        words: {}
+        words: {},
+        units: {}
       };
     }
 
@@ -842,7 +843,8 @@
 
         return {
           missions: saved.missions || {},
-          words: saved.words || {}
+          words: saved.words || {},
+          units: saved.units || {}
         };
 
       } catch (error) {

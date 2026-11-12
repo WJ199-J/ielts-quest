@@ -2,6 +2,22 @@
 
 Version: 1.0
 
+## B-plan decision (2026-11-12)
+
+The owner selected the B plan. Existing short Missions remain the progressive
+learning steps. Several Missions in the same chapter form a Unit with a target
+of approximately 100 unique learning items and a 50-question Unit checkpoint.
+
+- Do not rename or renumber the existing 98 Missions.
+- Do not duplicate words merely to reach the Unit target.
+- A Unit checkpoint stays locked until its unique item count is within the
+  approved approximate range and every Mission in that Unit is formally
+  complete.
+- Only a first formal submission of 100% marks a Unit complete. Correcting an
+  earlier submission to 100% updates the score but not completion.
+- Source coverage and Unit readiness are separate from file delivery. A Unit
+  is not content-approved until its source-to-course mapping is verified.
+
 ---
 
 # 1. Course Goal

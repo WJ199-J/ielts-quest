@@ -1,6 +1,7 @@
 (function () {
   "use strict";
   const missions = Array.isArray(window.IELTS_QUEST_MISSIONS) ? window.IELTS_QUEST_MISSIONS : [];
+  const units = Array.isArray(window.IELTS_QUEST_UNITS) ? window.IELTS_QUEST_UNITS : [];
   const STORAGE_KEY = "ieltsQuestV1";
   const THEME_KEY = "ieltsQuestTheme";
   const USER_CONFIRMED_COMPLETIONS = new Set([2, 3]);
@@ -24,7 +25,7 @@
   function readState() {
     try {
       const state = JSON.parse(localStorage.getItem(STORAGE_KEY));
-      const normalized = state && typeof state === "object" ? { missions: state.missions || {}, words: state.words || {} } : { missions: {}, words: {} };
+      const normalized = state && typeof state === "object" ? { missions: state.missions || {}, words: state.words || {}, units: state.units || {} } : { missions: {}, words: {}, units: {} };
       let repaired = false;
       Object.entries(normalized.missions).forEach(([id, status]) => {
         if (!status || typeof status !== "object") return;
@@ -40,7 +41,7 @@
       });
       if (repaired) localStorage.setItem(STORAGE_KEY, JSON.stringify(normalized));
       return normalized;
-    } catch (error) { return { missions: {}, words: {} }; }
+    } catch (error) { return { missions: {}, words: {}, units: {} }; }
   }
   let state = readState();
   const missionState = (id) => state.missions[id] || { bestScore: 0, attempts: 0, completed: false, lastScore: 0 };
@@ -150,6 +151,39 @@
       </div>`;
     }).join("");
     list.querySelectorAll("[data-mission]").forEach((button) => button.addEventListener("click",() => openMission(Number(button.dataset.mission))));
+    renderUnitSummary();
+  }
+
+  function renderUnitSummary() {
+    const unit = units.find(item => item.chapter === selectedChapter);
+    const container = document.getElementById("unitSummary");
+    if (!unit || !container) { container?.classList.add("hidden"); return; }
+    container.classList.remove("hidden");
+    const progress = chapterProgress(selectedChapter);
+    const allMissionsComplete = progress.total > 0 && progress.completed === progress.total;
+    const unitStatus = state.units?.[unit.id] || {};
+    const unitComplete = unitStatus.completed === true && unitStatus.completionMethod === "first-submit-100";
+    const coveragePercent = Math.min(100, Math.round((unit.itemCount / unit.targetItemCount) * 100));
+    document.getElementById("unitItemCount").textContent = `${unit.itemCount} / ${unit.targetItemCount}`;
+    document.getElementById("unitCoverageBar").style.width = `${coveragePercent}%`;
+    document.getElementById("unitCoverageBar").parentElement.setAttribute("aria-valuenow", String(coveragePercent));
+    const action = document.getElementById("unitAction");
+    if (!unit.contentReady) {
+      document.getElementById("unitCoverageNote").textContent = `还需补齐 ${unit.gapToTarget} 个不重复学习项；补齐前不开放 50 题测验。`;
+      action.textContent = "课程内容补齐中";
+      action.disabled = true;
+    } else if (!allMissionsComplete) {
+      document.getElementById("unitCoverageNote").textContent = `学习项已达到约 100 项；完成本章 ${progress.total} 个 Mission 后解锁。`;
+      action.textContent = "完成全部 Mission 后解锁";
+      action.disabled = true;
+    } else {
+      document.getElementById("unitCoverageNote").textContent = unitComplete
+        ? `单元测验已正式完成，最高 ${Number(unitStatus.bestScore) || 100}%。`
+        : `本单元已满足覆盖与学习条件，可进入 50 题综合测验。`;
+      action.textContent = unitComplete ? "复习 50 题单元测验" : "开始 50 题单元测验";
+      action.disabled = false;
+      action.onclick = () => { window.location.href = `unit.html?chapter=${selectedChapter}`; };
+    }
   }
 
   function setupFilters() {

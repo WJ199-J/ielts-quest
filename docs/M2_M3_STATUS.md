@@ -32,6 +32,30 @@ The uploaded source has been located: 雅思词汇真经PDF高清彩色版.pdf, 
 
 The repository specification recommends 6–10 core words for introductory short stories; the project control also requires about 100 core learning items and about 50 questions per story. The current 98 Missions contain 6–21 new words each. All 98 fail the latter scale requirement. Expanding each to about 100 requires rewriting the course rather than a small patch and changes the meaning of already-completed Missions.
 
+## B-plan implementation started — 2026-11-12
+
+The owner selected option 2. The first implementation increment adds a Unit
+layer without renumbering or rewriting the accepted Missions:
+
+- `data/units.js` groups all 98 Missions into 22 chapter Units and counts only
+  unique new-core items.
+- The course panel shows each Unit's current unique-item count, target of 100,
+  exact shortfall, and the 50-question checkpoint gate.
+- `unit.html` provides the Unit path and checkpoint screen. A checkpoint
+  unlocks only when the Unit contains 90–120 unique items and every Mission is
+  formally complete.
+- Unit attempts, best score and formal completion are stored separately under
+  `state.units` and merged through the existing account sync. Only a first
+  submission of 100% completes a Unit; correction to 100% does not.
+- `scripts/test-units.cjs` verifies 22 Units, all 98 Mission assignments, unique
+  item counting and the readiness gate. Chapter 1 remains visibly locked at
+  66/100 with a 34-item shortfall; Chapter 2 currently reaches 118/100 and
+  satisfies the approximate-100 content gate.
+
+This increment establishes the B-plan product structure. It does not claim
+that Chapter 1 or the remaining chapters have completed source mapping. Those
+content gaps remain M3 work.
+
 Concrete options for the owner:
 
 1. Keep existing short Missions and IDs as the introductory/legacy course; develop a separate advanced course with about 100 items and 50 questions per Mission, preserving old progress separately.

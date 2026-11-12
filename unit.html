@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f4ed" />
+  <title>IELTS Quest · 单元测验</title>
+  <link rel="stylesheet" href="assets/home.css?v=20261112-2" />
+  <link rel="stylesheet" href="assets/unit.css?v=20261112-2" />
+</head>
+<body>
+  <header class="unit-header"><div class="unit-header-inner"><a class="brand" href="index.html"><span class="brand-mark">IQ</span><span><strong>IELTS Quest</strong><small>B 方案 · 单元学习</small></span></a><div class="header-actions"><button class="icon-button" id="themeToggle" type="button" aria-label="切换深色模式">◐</button><a class="back-link" href="index.html#course">← 返回课程</a></div></div></header>
+  <main class="unit-page">
+    <section class="unit-hero">
+      <div><span class="section-kicker" id="unitLabel">CHAPTER · UNIT 01</span><h1 id="unitTitle">单元学习与测验</h1><p id="unitDescription">多个短 Mission 组成一个约 100 学习项的单元，完成后进入 50 题综合测验。</p></div>
+      <div class="unit-score"><span>学习项覆盖</span><strong id="coverageCount">0 / 100</strong><small id="coverageState">核对中</small></div>
+    </section>
+
+    <section class="unit-grid">
+      <article class="unit-card unit-main">
+        <div class="unit-section-head"><div><span class="section-kicker">MISSION PATH</span><h2>本单元学习路径</h2></div><span class="unit-badge" id="missionProgress">0 / 0 已完成</span></div>
+        <div class="unit-mission-list" id="unitMissionList"></div>
+        <div class="checkpoint" id="checkpoint">
+          <div><span class="section-kicker">UNIT CHECKPOINT</span><h2>50 题综合测验</h2><p id="checkpointNote">完成覆盖与学习条件后解锁。</p></div>
+          <button class="primary-button" id="startUnitQuiz" type="button" disabled>尚未解锁</button>
+        </div>
+      </article>
+      <aside class="unit-card unit-side"><span class="section-kicker">B PLAN RULES</span><h2>单元完成规则</h2><ol><li><b>多个短 Mission</b><span>保留由易到难的学习节奏。</span></li><li><b>约 100 个不重复学习项</b><span>不足时明确显示缺口，不用重复词凑数。</span></li><li><b>随机 50 题</b><span>从本单元故事中的可定位词汇抽取。</span></li><li><b>首次提交 100%</b><span>才记为正式完成；纠错到 100% 不计完成。</span></li></ol><div class="unit-warning" id="unitWarning">课程内容仍在逐章核对原书词源。</div></aside>
+    </section>
+
+    <section class="quiz-shell hidden" id="quizShell" aria-labelledby="quizTitle">
+      <div class="quiz-heading"><div><span class="section-kicker">50 QUESTION CHECKPOINT</span><h2 id="quizTitle">单元综合测验</h2><p>请根据故事语境填写单词。提交后停留在结果页，由你决定修改答案或返回课程。</p></div><div class="quiz-score hidden" id="quizScore"><span>本次得分</span><strong id="scoreValue">0%</strong></div></div>
+      <div id="quizList" class="quiz-list"></div>
+      <div class="quiz-actions"><button class="primary-button" id="submitUnitQuiz" type="button">提交 50 题</button><button class="text-button" id="newUnitRound" type="button">重新随机一组</button><a class="text-button" href="index.html#course">返回课程</a></div>
+      <p class="quiz-save" id="quizSave" role="status">作答会保存在本设备。</p>
+    </section>
+  </main>
+
+  <script src="data/missions.js?v=20261112-1"></script>
+  <script src="data/chapter2.js"></script><script src="data/chapter3.js"></script><script src="data/chapter4.js?v=20261112-1"></script>
+  <script src="data/chapter5.js"></script><script src="data/chapter6.js"></script><script src="data/chapter7.js"></script><script src="data/chapter8.js"></script>
+  <script src="data/chapter9.js"></script><script src="data/chapter10.js"></script><script src="data/chapter11.js"></script><script src="data/chapter12.js"></script>
+  <script src="data/chapter13.js"></script><script src="data/chapter14.js"></script><script src="data/chapter15.js"></script><script src="data/chapter16.js"></script>
+  <script src="data/chapter17.js"></script><script src="data/chapter18.js"></script><script src="data/chapter19.js"></script><script src="data/chapter20.js"></script>
+  <script src="data/chapter21.js"></script><script src="data/chapter22.js?v=20261112-1"></script>
+  <script src="data/units.js?v=20261112-2"></script>
+  <script src="assets/auth-config.js?v=20261105-1"></script><script src="assets/auth-client.js?v=20261105-1"></script>
+  <script src="assets/cloud-progress.js?v=20261112-2"></script><script src="assets/vocabulary-pattern.js?v=20261112-1"></script>
+  <script src="assets/unit.js?v=20261112-2"></script>
+</body>
+</html>

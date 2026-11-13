@@ -37,6 +37,14 @@
       seen.add(key);
       result.push({ key, word: info.word, answers: [...new Set([info.word, ...(info.answers || []), match[0]])], surface: match[0], meaning: info.meaning || "", missionId: mission.id, missionTitle: mission.titleZh || mission.title, sentence: sentence.en, translation: sentence.zh });
     }));
+    (unit.supplementalItems || []).forEach(info => {
+      const key = String(info.word || "").toLowerCase();
+      if (!key || seen.has(key) || !info.example) return;
+      const match = info.example.match(window.IELTS_QUEST_VOCABULARY.pattern(info, "i"));
+      if (!match) return;
+      seen.add(key);
+      result.push({ key, word: info.word, answers: [...new Set([info.word, ...(info.answers || []), match[0]])], surface: match[0], meaning: info.meaning || "", missionId: "Unit", missionTitle: "原书扩展词汇", sentence: info.example, translation: info.translation || "" });
+    });
     return result;
   }
   function applyTheme(theme) { document.documentElement.dataset.theme = theme; localStorage.setItem(THEME_KEY, theme); document.querySelector('meta[name="theme-color"]').setAttribute("content", theme === "dark" ? "#101815" : "#f7f4ed"); }
@@ -55,6 +63,10 @@
       const complete = isMissionComplete(mission); const best = Number(state.missions?.[mission.id]?.bestScore) || 0;
       return `<div class="unit-mission ${complete ? "complete" : ""}"><span>${complete ? "✓" : String(index + 1).padStart(2,"0")}</span><div><strong>${escapeHtml(mission.titleZh || mission.title)}</strong><small>${mission.newCoreWords.length} 个新词${best ? ` · 最高 ${best}%` : ""}</small></div><a href="mission.html?id=${mission.id}">${complete ? "复习" : "学习"}</a></div>`;
     }).join("");
+    const supplement = unit.supplementalItems || [];
+    document.getElementById("unitSupplement").classList.toggle("hidden", supplement.length === 0);
+    document.getElementById("supplementCount").textContent = `${supplement.length} 项`;
+    document.getElementById("supplementGrid").innerHTML = supplement.map(item => `<article class="supplement-item"><div><strong>${escapeHtml(item.word)}</strong><span>${escapeHtml(item.ipa)} · ${escapeHtml(item.pos)}</span></div><p>${escapeHtml(item.meaning)}</p><small>${escapeHtml(item.example)}</small><em>原书第 ${item.sourcePage} 页</em></article>`).join("");
     const allComplete = unitMissions.length > 0 && completed === unitMissions.length;
     const button = document.getElementById("startUnitQuiz");
     if (!unit.contentReady) { document.getElementById("checkpointNote").textContent = `当前只有 ${unit.itemCount} 个不重复学习项，还需补齐 ${unit.gapToTarget} 项。`; button.textContent = "内容补齐后开放"; button.disabled = true; }

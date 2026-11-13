@@ -48,9 +48,11 @@ layer without renumbering or rewriting the accepted Missions:
   `state.units` and merged through the existing account sync. Only a first
   submission of 100% completes a Unit; correction to 100% does not.
 - `scripts/test-units.cjs` verifies 22 Units, all 98 Mission assignments, unique
-  item counting and the readiness gate. Chapter 1 remains visibly locked at
-  66/100 with a 34-item shortfall; Chapter 2 currently reaches 118/100 and
-  satisfies the approximate-100 content gate.
+  item counting and the readiness gate. A follow-up source-mapping pass adds
+  34 original-book items to Chapter 1 at Unit level, taking it from 66/100 to
+  exactly 100/100 without changing accepted Mission stories, IDs, scores or
+  completion history. Chapter 2 currently reaches 118/100 and satisfies the
+  approximate-100 content gate.
 
 This increment establishes the B-plan product structure. It does not claim
 that Chapter 1 or the remaining chapters have completed source mapping. Those

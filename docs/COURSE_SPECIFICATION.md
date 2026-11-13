@@ -17,6 +17,10 @@ of approximately 100 unique learning items and a 50-question Unit checkpoint.
   earlier submission to 100% updates the score but not completion.
 - Source coverage and Unit readiness are separate from file delivery. A Unit
   is not content-approved until its source-to-course mapping is verified.
+- Original-source enrichment may be attached at Unit level when changing an
+  accepted Mission would invalidate prior progress. Each such item must carry
+  a source page, learning context and answer form, and must be included in the
+  Unit checkpoint pool without changing existing Mission completion records.
 
 ---
 

@@ -47,4 +47,19 @@ assert.equal(chapter1.itemCount, 100);
 assert.equal(chapter1.contentReady, true, "Chapter 1 source enrichment should satisfy the B-plan gate");
 assert.equal(chapter1.gapToTarget, 0);
 
+const mappedTargets = new Map([
+  [2, { itemCount: 118, supplementalCount: 0 }],
+  [3, { itemCount: 100, supplementalCount: 28 }],
+  [4, { itemCount: 100, supplementalCount: 41 }],
+  [5, { itemCount: 100, supplementalCount: 31 }]
+]);
+mappedTargets.forEach((expected, chapter) => {
+  const unit = units.find(item => item.chapter === chapter);
+  assert.equal(unit.sourceCoverageStatus, "chapter-source-mapped", `Chapter ${chapter} source mapping status`);
+  assert.equal(unit.itemCount, expected.itemCount, `Chapter ${chapter} unique item count`);
+  assert.equal(unit.supplementalItems.length, expected.supplementalCount, `Chapter ${chapter} supplemental item count`);
+  assert.equal(unit.gapToTarget, 0, `Chapter ${chapter} target gap`);
+  assert.equal(unit.contentReady, true, `Chapter ${chapter} should satisfy the B-plan gate`);
+});
+
 console.log(`Unit checks passed: ${units.length} Units, ${assigned.length} Mission assignments.`);

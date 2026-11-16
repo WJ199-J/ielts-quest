@@ -1,4 +1,4 @@
-# M2 / M3 execution record — 2026-11-12
+# M2 / M3 execution record — 2026-11-16
 
 ## Delivery boundary
 
@@ -54,9 +54,15 @@ layer without renumbering or rewriting the accepted Missions:
   completion history. Chapter 2 currently reaches 118/100 and satisfies the
   approximate-100 content gate.
 
-This increment establishes the B-plan product structure. It does not claim
-that Chapter 1 or the remaining chapters have completed source mapping. Those
-content gaps remain M3 work.
+This increment establishes the B-plan product structure. Source mapping is now
+complete for Chapters 1–5: Chapter 1 is 100/100, Chapter 2 is 118/100, and
+Chapters 3–5 are each 100/100. Chapters 3–5 add 28, 41 and 31 source-backed
+Unit items respectively without changing accepted Mission content or learner
+progress. See `SOURCE_COVERAGE_CHAPTERS_1_5.md` for the coverage ledger.
+
+Chapters 6–22 still require the same source-mapping pass and remain M3 work.
+M2/M3 as a whole are not accepted as complete until those chapters and the
+remaining real-device acceptance are finished.
 
 Concrete options for the owner:
 

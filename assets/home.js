@@ -19,7 +19,13 @@
   let query = "";
 
   function isFormalCompletion(status = {}) {
-    return status.completed === true && ["first-submit-100", "user-confirmed-legacy-completion"].includes(status.completionMethod);
+    return status.completed === true && ["first-submit-90-plus", "first-submit-100", "user-confirmed-legacy-completion"].includes(status.completionMethod);
+  }
+
+  function missionProgressScore(status = {}) {
+    const trackedScore = Number(status.progressScore) || 0;
+    if (trackedScore > 0) return Math.max(0, Math.min(100, trackedScore));
+    return isFormalCompletion(status) ? Math.max(0, Math.min(100, Number(status.completionScore) || Number(status.bestScore) || 0)) : 0;
   }
 
   function readState() {
@@ -49,7 +55,9 @@
   const missionsForChapter = (chapter) => missions.filter((mission) => mission.chapter === chapter);
   function chapterProgress(chapter) {
     const items = missionsForChapter(chapter);
-    return { total: items.length, completed: items.filter(isComplete).length };
+    const completed = items.filter(isComplete).length;
+    const percent = items.length ? Math.round(items.reduce((sum, mission) => sum + missionProgressScore(missionState(mission.id)), 0) / items.length) : 0;
+    return { total: items.length, completed, percent };
   }
   function getCurrentMission() {
     if (!missions.length) return null;
@@ -70,7 +78,7 @@
     const current = getCurrentMission();
     if (!current) return;
     const completed = missions.filter(isComplete).length;
-    const percent = missions.length ? Math.round((completed / missions.length) * 100) : 0;
+    const percent = missions.length ? Math.round(missions.reduce((sum, mission) => sum + missionProgressScore(missionState(mission.id)), 0) / missions.length) : 0;
     const bestScore = Math.max(0, ...missions.map((mission) => Number(missionState(mission.id).bestScore) || 0));
     const [zh,en] = chapterMeta[current.chapter - 1] || ["课程章节","Course Chapter"];
     selectedChapter = current.chapter;
@@ -133,7 +141,7 @@
     const [zh,en] = chapterMeta[selectedChapter - 1] || ["课程章节","Course Chapter"];
     const items = missionsForChapter(selectedChapter);
     const progress = chapterProgress(selectedChapter);
-    const percent = progress.total ? Math.round((progress.completed / progress.total) * 100) : 0;
+    const percent = progress.percent;
     document.getElementById("selectedChapterNumber").textContent = String(selectedChapter).padStart(2,"0");
     document.getElementById("selectedChapterLabel").textContent = `CHAPTER ${selectedChapter}`;
     document.getElementById("selectedChapterTitle").textContent = `${zh} · ${en}`;
@@ -143,10 +151,11 @@
     list.innerHTML = items.map((mission,index) => {
       const status = missionState(mission.id);
       const complete = isFormalCompletion(status);
+      const completionScore = Number(status.completionScore) || Number(status.progressScore) || Number(status.bestScore) || 0;
       const meta = [mission.level,mission.time || "10–20 min",`${mission.newCoreWords.length} 词`].filter(Boolean).join(" · ");
       return `<div class="mission-row ${complete ? "complete" : ""}">
         <span class="mission-sequence">${complete ? "✓" : String(index + 1).padStart(2,"0")}</span>
-        <span class="mission-copy"><strong>${escapeText(mission.titleZh || mission.title)}</strong><small>${escapeText(meta)}${status.bestScore ? ` · 最高 ${status.bestScore}%` : ""}</small></span>
+        <span class="mission-copy"><strong>${escapeText(mission.titleZh || mission.title)}</strong><small>${escapeText(meta)}${complete ? ` · 完成 ${completionScore}%` : status.bestScore ? ` · 最高 ${status.bestScore}%` : ""}</small></span>
         <button class="mission-action" type="button" data-mission="${mission.id}">${complete ? "复习" : "开始"}</button>
       </div>`;
     }).join("");
@@ -173,8 +182,8 @@
       action.textContent = "课程内容补齐中";
       action.disabled = true;
     } else if (!allMissionsComplete) {
-      document.getElementById("unitCoverageNote").textContent = `学习项已达到约 100 项；完成本章 ${progress.total} 个 Mission 后解锁。`;
-      action.textContent = "完成全部 Mission 后解锁";
+      document.getElementById("unitCoverageNote").textContent = `学习项已达到约 100 项；本章 ${progress.total} 个 Mission 首次有效成绩均达到 90% 后解锁。`;
+      action.textContent = "全部 Mission 达到 90% 后解锁";
       action.disabled = true;
     } else {
       document.getElementById("unitCoverageNote").textContent = unitComplete

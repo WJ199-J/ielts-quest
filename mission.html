@@ -775,7 +775,7 @@
   <script src="assets/mission-theme.js?v=20261104-2"></script>
   <script src="assets/auth-config.js?v=20261105-1"></script>
   <script src="assets/auth-client.js?v=20261105-1"></script>
-  <script src="assets/cloud-progress.js?v=20261112-2"></script>
+  <script src="assets/cloud-progress.js?v=20261118-1"></script>
   <script src="assets/vocabulary-pattern.js?v=20261112-1"></script>
   <script src="assets/quiz-session.js?v=20261112-1"></script>
 
@@ -868,6 +868,8 @@
 
         appState.missions[id] = {
           bestScore: 0,
+          progressScore: 0,
+          completionScore: 0,
           attempts: 0,
           completed: false,
           completionMethod: null,
@@ -889,7 +891,12 @@
       }
       const formallyCompleted =
         missionState.completed === true &&
-        ["first-submit-100", "user-confirmed-legacy-completion"].includes(missionState.completionMethod);
+        ["first-submit-90-plus", "first-submit-100", "user-confirmed-legacy-completion"].includes(missionState.completionMethod);
+
+      if (formallyCompleted && missionState.completionMethod !== "first-submit-90-plus") {
+        missionState.completionScore ||= Number(missionState.bestScore) || 100;
+        missionState.progressScore ||= Number(missionState.completionScore) || 100;
+      }
 
       if (!formallyCompleted) {
         missionState.completed = false;
@@ -1204,7 +1211,7 @@
         }
       });
       if (saved.stage === "result") {
-        showResult(saved.score, saved.correct, selected.length, !saved.isCorrection && !saved.assisted && saved.firstScore === 100);
+        showResult(saved.score, saved.correct, selected.length, !saved.isCorrection && !saved.assisted);
       } else if (saved.stage === "story") {
         showOnly("story");
       } else if (saved.submitted) {
@@ -1606,7 +1613,7 @@
           );
 
         missionState.attempts += 1;
-        missionState.completionRuleVersion = 2;
+        missionState.completionRuleVersion = 3;
 
         missionState.lastScore =
           score;
@@ -1617,10 +1624,21 @@
             score
           );
 
-        if (score === 100 && !quizSession?.assisted) {
+        if (!quizSession?.assisted) {
+          missionState.progressScore = Math.max(
+            Number(missionState.progressScore) || 0,
+            score
+          );
+        }
+
+        if (score >= 90 && !quizSession?.assisted) {
           missionState.completed = true;
-          missionState.completionMethod = "first-submit-100";
-          missionState.completedAt = new Date().toISOString();
+          missionState.completionMethod = "first-submit-90-plus";
+          missionState.completionScore = Math.max(
+            Number(missionState.completionScore) || 0,
+            score
+          );
+          missionState.completedAt ||= new Date().toISOString();
         }
 
         saveAppState();
@@ -1737,16 +1755,18 @@
       let message = "";
 
       if (quizSession?.assisted) {
-        message = "本轮作答期间已返回原文，成绩仅作练习记录。开始新一轮测试，首次提交 100% 后计为完成。";
-      } else if (score === 100 && firstSubmission) {
+        message = "本轮作答期间已返回原文，成绩仅作练习记录。开始新一轮测试，首次提交达到 90% 后计为完成。";
+      } else if (score >= 90 && firstSubmission) {
 
         message =
-          "首次提交全部正确，本关已完成。你可以自行选择复习、查看翻译或进入下一关。";
+          score === 100
+            ? "首次提交全部正确，本关已完成。你可以自行选择复习、查看翻译或进入下一关。"
+            : `首次提交 ${score}%，达到 90% 完成标准。本关已按真实成绩记录。`;
 
-      } else if (score === 100) {
+      } else if (score >= 90) {
 
         message =
-          "错题已全部改正，但本轮不计为完成。请开始新一轮测试，并在首次提交时达到 100%。";
+          `本轮纠错后达到 ${score}%，但不计为正式完成。请开始新一轮测试，并在首次提交时达到 90%。`;
 
       } else if (score >= 80) {
 
@@ -1779,7 +1799,7 @@
       finishButton.textContent =
         missionState.completed
           ? "进入下一关"
-          : "首次提交 100% 后解锁下一关";
+          : "首次提交 90% 后解锁下一关";
 
 
       document.getElementById(

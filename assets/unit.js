@@ -19,7 +19,7 @@
   function quizKey() { return `ieltsQuestUnitQuizV1:${unit?.id || "unknown"}`; }
   function readQuiz() { try { return JSON.parse(localStorage.getItem(quizKey())) || null; } catch (_) { return null; } }
   function saveQuiz() { try { localStorage.setItem(quizKey(), JSON.stringify(quiz)); document.getElementById("quizSave").textContent = "作答痕迹已保存在本设备，刷新后可继续。"; } catch (_) { document.getElementById("quizSave").textContent = "本设备存储空间不足，作答痕迹暂未保存。"; } }
-  function isMissionComplete(mission) { const item = state.missions?.[mission.id] || {}; return item.completed === true && ["first-submit-100", "user-confirmed-legacy-completion"].includes(item.completionMethod); }
+  function isMissionComplete(mission) { const item = state.missions?.[mission.id] || {}; return item.completed === true && ["first-submit-90-plus", "first-submit-100", "user-confirmed-legacy-completion"].includes(item.completionMethod); }
   function escapeHtml(value) { return String(value || "").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;"); }
   function normalize(value) { return String(value || "").trim().toLowerCase().replace(/[.,!?;:'"]/g, ""); }
   function shuffle(items) { const copy = [...items]; for (let i = copy.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [copy[i], copy[j]] = [copy[j], copy[i]]; } return copy; }
@@ -60,8 +60,8 @@
     const completed = unitMissions.filter(isMissionComplete).length;
     document.getElementById("missionProgress").textContent = `${completed} / ${unitMissions.length} 已完成`;
     document.getElementById("unitMissionList").innerHTML = unitMissions.map((mission,index) => {
-      const complete = isMissionComplete(mission); const best = Number(state.missions?.[mission.id]?.bestScore) || 0;
-      return `<div class="unit-mission ${complete ? "complete" : ""}"><span>${complete ? "✓" : String(index + 1).padStart(2,"0")}</span><div><strong>${escapeHtml(mission.titleZh || mission.title)}</strong><small>${mission.newCoreWords.length} 个新词${best ? ` · 最高 ${best}%` : ""}</small></div><a href="mission.html?id=${mission.id}">${complete ? "复习" : "学习"}</a></div>`;
+      const item = state.missions?.[mission.id] || {}; const complete = isMissionComplete(mission); const best = Number(item.bestScore) || 0; const completionScore = Number(item.completionScore) || Number(item.progressScore) || best;
+      return `<div class="unit-mission ${complete ? "complete" : ""}"><span>${complete ? "✓" : String(index + 1).padStart(2,"0")}</span><div><strong>${escapeHtml(mission.titleZh || mission.title)}</strong><small>${mission.newCoreWords.length} 个新词${complete ? ` · 完成 ${completionScore}%` : best ? ` · 最高 ${best}%` : ""}</small></div><a href="mission.html?id=${mission.id}">${complete ? "复习" : "学习"}</a></div>`;
     }).join("");
     const supplement = unit.supplementalItems || [];
     document.getElementById("unitSupplement").classList.toggle("hidden", supplement.length === 0);
@@ -70,7 +70,7 @@
     const allComplete = unitMissions.length > 0 && completed === unitMissions.length;
     const button = document.getElementById("startUnitQuiz");
     if (!unit.contentReady) { document.getElementById("checkpointNote").textContent = `当前只有 ${unit.itemCount} 个不重复学习项，还需补齐 ${unit.gapToTarget} 项。`; button.textContent = "内容补齐后开放"; button.disabled = true; }
-    else if (!allComplete) { document.getElementById("checkpointNote").textContent = `学习项数量已达标；完成剩余 ${unitMissions.length - completed} 个 Mission 后解锁。`; button.textContent = "完成全部 Mission 后解锁"; button.disabled = true; }
+    else if (!allComplete) { document.getElementById("checkpointNote").textContent = `学习项数量已达标；剩余 ${unitMissions.length - completed} 个 Mission 首次有效成绩达到 90% 后解锁。`; button.textContent = "全部 Mission 达到 90% 后解锁"; button.disabled = true; }
     else { document.getElementById("checkpointNote").textContent = "已满足覆盖与学习条件，可随机抽取 50 题。"; button.textContent = quiz ? "继续本轮测验" : "开始 50 题测验"; button.disabled = false; button.onclick = () => startQuiz(false); }
     const status = state.units?.[unit.id] || {};
     if (status.completed && status.completionMethod === "first-submit-100") document.getElementById("unitWarning").textContent = `本单元已正式完成，最高分 ${status.bestScore || 100}%。重新练习不会取消完成状态。`;

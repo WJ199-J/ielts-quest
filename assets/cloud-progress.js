@@ -18,7 +18,7 @@
     return state;
   }
   function isFormalCompletion(state = {}) {
-    return state.completed === true && ["first-submit-100", "user-confirmed-legacy-completion"].includes(state.completionMethod);
+    return state.completed === true && ["first-submit-90-plus", "first-submit-100", "user-confirmed-legacy-completion"].includes(state.completionMethod);
   }
   function readState() {
     try {
@@ -46,6 +46,8 @@
       : (remoteComplete ? remote.completedAt || null : localComplete ? local.completedAt || null : null);
     return {
       bestScore: Math.max(Number(local.bestScore) || 0, Number(remote.bestScore) || 0),
+      progressScore: Math.max(Number(local.progressScore) || 0, Number(remote.progressScore) || 0),
+      completionScore: Math.max(Number(local.completionScore) || 0, Number(remote.completionScore) || 0),
       attempts: Math.max(localAttempts, remoteAttempts),
       completionRuleVersion: Math.max(Number(local.completionRuleVersion) || 0, Number(remote.completionRuleVersion) || 0),
       completed,

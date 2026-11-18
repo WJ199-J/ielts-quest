@@ -40,6 +40,15 @@
           status.completionMethod = "user-confirmed-legacy-completion";
           repaired = true;
         }
+        if (status.completed !== true && Number(status.completionRuleVersion) === 2 && Number(status.attempts) === 1 && Number(status.bestScore) >= 90 && Number(status.bestScore) < 100 && !status.completionMethod) {
+          status.completed = true;
+          status.completionMethod = "first-submit-90-plus";
+          status.completionScore = Number(status.bestScore);
+          status.progressScore = Number(status.bestScore);
+          status.completionRuleVersion = 3;
+          status.completedAt ||= new Date().toISOString();
+          repaired = true;
+        }
         const completed = isFormalCompletion(status);
         status.completed = completed;
         status.completionMethod = completed ? status.completionMethod : null;

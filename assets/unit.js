@@ -12,7 +12,16 @@
 
   function emptyState() { return { missions: {}, words: {}, units: {} }; }
   function readState() {
-    try { const value = JSON.parse(localStorage.getItem(STORAGE_KEY)); return value && typeof value === "object" ? { missions: value.missions || {}, words: value.words || {}, units: value.units || {} } : emptyState(); }
+    try {
+      const value = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      const normalized = value && typeof value === "object" ? { missions: value.missions || {}, words: value.words || {}, units: value.units || {} } : emptyState();
+      Object.values(normalized.missions).forEach(item => {
+        if (item?.completed !== true && Number(item?.completionRuleVersion) === 2 && Number(item?.attempts) === 1 && Number(item?.bestScore) >= 90 && Number(item?.bestScore) < 100 && !item?.completionMethod) {
+          item.completed = true; item.completionMethod = "first-submit-90-plus"; item.completionScore = Number(item.bestScore); item.progressScore = Number(item.bestScore); item.completionRuleVersion = 3; item.completedAt ||= new Date().toISOString();
+        }
+      });
+      return normalized;
+    }
     catch (_) { return emptyState(); }
   }
   function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); window.IELTS_QUEST_SYNC?.schedule(); }

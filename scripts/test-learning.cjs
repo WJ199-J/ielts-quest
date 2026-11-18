@@ -91,7 +91,8 @@ const historical = { bestScore: 100, completed: true, completionMethod: 'user-co
 ctx.fixture = historical;
 assert.equal(run('window.testMerge(2,fixture,{}).completed'), true, 'Keep accepted Mission 2 completion');
 assert.equal(run('window.testMerge(3,{},fixture).completed'), true, 'Keep accepted Mission 3 completion');
-assert.equal(run('window.testMerge(5,{bestScore:94,completed:false,attempts:1},{}).completed'), false);
+assert.equal(run('window.testMerge(5,{bestScore:94,completed:false,attempts:1,completionRuleVersion:2},{}).completed'), true, 'Migrate an existing clean 90-99 score to the new rule');
+assert.equal(run('window.testMerge(5,{bestScore:89,completed:false,attempts:1,completionRuleVersion:2},{}).completed'), false, 'Do not migrate scores below 90');
 assert.equal(run('window.testMerge(2,{bestScore:100,completed:false,completionRuleVersion:2},{}).completed'), false, 'Cloud cannot promote new correction to historical completion');
 const ninety = { bestScore: 94, progressScore: 94, completionScore: 94, completed: true, completionMethod: 'first-submit-90-plus', attempts: 1 };
 ctx.fixture = ninety;

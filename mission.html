@@ -889,6 +889,21 @@
         missionState.completed = true;
         missionState.completionMethod = "user-confirmed-legacy-completion";
       }
+      if (
+        missionState.completed !== true &&
+        Number(missionState.completionRuleVersion) === 2 &&
+        Number(missionState.attempts) === 1 &&
+        Number(missionState.bestScore) >= 90 &&
+        Number(missionState.bestScore) < 100 &&
+        !missionState.completionMethod
+      ) {
+        missionState.completed = true;
+        missionState.completionMethod = "first-submit-90-plus";
+        missionState.completionScore = Number(missionState.bestScore);
+        missionState.progressScore = Number(missionState.bestScore);
+        missionState.completionRuleVersion = 3;
+        missionState.completedAt ||= new Date().toISOString();
+      }
       const formallyCompleted =
         missionState.completed === true &&
         ["first-submit-90-plus", "first-submit-100", "user-confirmed-legacy-completion"].includes(missionState.completionMethod);

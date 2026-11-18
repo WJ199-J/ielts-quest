@@ -15,6 +15,14 @@
       state.completed = true;
       state.completionMethod = "user-confirmed-legacy-completion";
     }
+    if (state.completed !== true && Number(state.completionRuleVersion) === 2 && Number(state.attempts) === 1 && Number(state.bestScore) >= 90 && Number(state.bestScore) < 100 && !state.completionMethod) {
+      state.completed = true;
+      state.completionMethod = "first-submit-90-plus";
+      state.completionScore = Number(state.bestScore);
+      state.progressScore = Number(state.bestScore);
+      state.completionRuleVersion = 3;
+      state.completedAt ||= new Date().toISOString();
+    }
     return state;
   }
   function isFormalCompletion(state = {}) {

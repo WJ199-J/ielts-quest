@@ -775,7 +775,7 @@
   <script src="assets/mission-theme.js?v=20261104-2"></script>
   <script src="assets/auth-config.js?v=20261105-1"></script>
   <script src="assets/auth-client.js?v=20261105-1"></script>
-  <script src="assets/cloud-progress.js?v=20261118-1"></script>
+  <script src="assets/cloud-progress.js?v=20261123-1"></script>
   <script src="assets/vocabulary-pattern.js?v=20261112-1"></script>
   <script src="assets/quiz-session.js?v=20261112-1"></script>
 
@@ -880,6 +880,9 @@
       }
 
       const missionState = appState.missions[id];
+      if (Number(missionState.completionRuleVersion) >= 3 && Object.prototype.hasOwnProperty.call(missionState, "progressScore")) {
+        missionState.bestScore = Number(missionState.progressScore) || 0;
+      }
       if (
         [2, 3].includes(Number(id)) &&
         Number(missionState.bestScore) === 100 &&
@@ -1630,16 +1633,9 @@
         missionState.attempts += 1;
         missionState.completionRuleVersion = 3;
 
-        missionState.lastScore =
-          score;
-
-        missionState.bestScore =
-          Math.max(
-            missionState.bestScore,
-            score
-          );
-
         if (!quizSession?.assisted) {
+          missionState.lastScore = score;
+          missionState.bestScore = Math.max(Number(missionState.bestScore) || 0, score);
           missionState.progressScore = Math.max(
             Number(missionState.progressScore) || 0,
             score
@@ -1915,22 +1911,6 @@
           100
         );
 
-
-      const missionState =
-        getMissionState(
-          currentMission.id
-        );
-
-      missionState.lastScore =
-        score;
-
-      missionState.bestScore =
-        Math.max(
-          missionState.bestScore,
-          score
-        );
-
-      saveAppState();
 
       quizSession.score = score;
       quizSession.correct = correctCount;

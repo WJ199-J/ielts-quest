@@ -121,7 +121,7 @@
     const score = Math.round((correct / selected.length) * 100); const firstSubmission = quiz.submissions === 0;
     quiz.submissions += 1; quiz.submitted = true; quiz.score = score; if (firstSubmission) quiz.firstScore = score;
     state.units ||= {}; const status = state.units[unit.id] ||= { bestScore: 0, lastScore: 0, attempts: 0, completed: false, completionMethod: null, completedAt: null };
-    status.bestScore = Math.max(Number(status.bestScore) || 0, score); status.lastScore = score;
+    if (firstSubmission) { status.bestScore = Math.max(Number(status.bestScore) || 0, score); status.lastScore = score; }
     if (firstSubmission) { status.attempts = (Number(status.attempts) || 0) + 1; if (score === 100) { status.completed = true; status.completionMethod = "first-submit-100"; status.completedAt = new Date().toISOString(); } }
     saveState(); saveQuiz(); renderQuiz(pool);
     document.getElementById("quizSave").textContent = firstSubmission && score === 100 ? "首次提交 100%，本单元已正式完成。" : score === 100 ? "已纠错至 100%；本轮不会被计为正式完成。" : `已提交，正确 ${correct} / ${selected.length}。结果页会保留，可继续修改。`;

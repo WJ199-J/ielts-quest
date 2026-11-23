@@ -11,6 +11,9 @@
 
   function emptyState() { return { missions: {}, words: {}, units: {} }; }
   function restoreConfirmedCompletion(id, state = {}) {
+    if (Number(state.completionRuleVersion) >= 3 && Object.prototype.hasOwnProperty.call(state, "progressScore")) {
+      state.bestScore = Number(state.progressScore) || 0;
+    }
     if (USER_CONFIRMED_COMPLETIONS.has(Number(id)) && Number(state.bestScore) === 100 && !state.completionRuleVersion && !state.completionMethod) {
       state.completed = true;
       state.completionMethod = "user-confirmed-legacy-completion";

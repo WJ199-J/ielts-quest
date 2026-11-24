@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 12 饮食健康 | M55–M58 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 55,
     "chapter": 12,
@@ -41,100 +41,125 @@ const data = [
     "newCoreWords": [
       {
         "word": "cuisine",
-        "ipa": "",
+        "ipa": "/kwɪˈzin/",
         "meaning": "烹饪；菜肴",
         "answers": [
           "cuisine"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "chef",
-        "ipa": "",
+        "ipa": "/ˈʃɛf/",
         "meaning": "厨师",
         "answers": [
           "chef"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "vegetarian",
-        "ipa": "",
+        "ipa": "/ˌvɛdʒəˈtɛˌɹiən/",
         "meaning": "素食者；素食的",
         "answers": [
           "vegetarian"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "appetiser",
-        "ipa": "",
+        "ipa": "/ˈæpɪtaɪzə/",
         "meaning": "开胃菜",
         "answers": [
           "appetiser"
-        ]
+        ],
+        "ipaAccent": "en-GB",
+        "ipaSource": "人工校订英式宽式音标"
       },
       {
         "word": "cucumber",
-        "ipa": "",
+        "ipa": "/ˈkjukəmbɚ/",
         "meaning": "黄瓜",
         "answers": [
           "cucumber"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "soup",
-        "ipa": "",
+        "ipa": "/ˈsup/",
         "meaning": "汤",
         "answers": [
           "soup"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sandwich",
-        "ipa": "",
+        "ipa": "/ˈsændwɪtʃ/",
         "meaning": "三明治",
         "answers": [
           "sandwich"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "snack",
-        "ipa": "",
+        "ipa": "/ˈsnæk/",
         "meaning": "零食",
         "answers": [
           "snack",
           "snacks"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "refreshment",
-        "ipa": "",
+        "ipa": "/ɹəˈfɹɛʃmənt/",
         "meaning": "茶点",
         "answers": [
           "refreshment",
           "refreshments"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "takeaway",
-        "ipa": "",
+        "ipa": "/ˈteɪkəˌweɪ/",
         "meaning": "外卖",
         "answers": [
           "takeaway"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "nutritious",
-        "ipa": "",
+        "ipa": "/nuˈtɹɪʃəs/",
         "meaning": "有营养的",
         "answers": [
           "nutritious"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
     "supportWords": [
       {
         "word": "community",
-        "meaning": "社区"
+        "meaning": "社区",
+        "ipa": "/kəˈmjunəti/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -178,108 +203,134 @@ const data = [
     "newCoreWords": [
       {
         "word": "harvest",
-        "ipa": "",
+        "ipa": "/ˈhɑɹvəst/",
         "meaning": "收获",
         "answers": [
           "harvest"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "wheat",
-        "ipa": "",
+        "ipa": "/ˈwit/",
         "meaning": "小麦",
         "answers": [
           "wheat"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "grain",
-        "ipa": "",
+        "ipa": "/ˈɡɹeɪn/",
         "meaning": "谷物",
         "answers": [
           "grain"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "flour",
-        "ipa": "",
+        "ipa": "/ˈflaʊɚ/",
         "meaning": "面粉",
         "answers": [
           "flour"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "porridge",
-        "ipa": "",
+        "ipa": "/ˈpɔɹədʒ/",
         "meaning": "粥",
         "answers": [
           "porridge"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fruit",
-        "ipa": "",
+        "ipa": "/ˈfɹut/",
         "meaning": "水果",
         "answers": [
           "fruit"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "bean",
-        "ipa": "",
+        "ipa": "/ˈbin/",
         "meaning": "豆",
         "answers": [
           "bean",
           "beans"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pod",
-        "ipa": "",
+        "ipa": "/ˈpɑd/",
         "meaning": "豆荚",
         "answers": [
           "pod"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "peel",
-        "ipa": "",
+        "ipa": "/ˈpil/",
         "meaning": "削皮",
         "answers": [
           "peel"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "peach",
-        "ipa": "",
+        "ipa": "/ˈpitʃ/",
         "meaning": "桃子",
         "answers": [
           "peach"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "melon",
-        "ipa": "",
+        "ipa": "/ˈmɛlən/",
         "meaning": "甜瓜",
         "answers": [
           "melon"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "juice",
-        "ipa": "",
+        "ipa": "/ˈdʒus/",
         "meaning": "果汁",
         "answers": [
           "juice"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "beverage",
-        "ipa": "",
+        "ipa": "/ˈbɛvɚɪdʒ/",
         "meaning": "饮料",
         "answers": [
           "beverage"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -329,109 +380,135 @@ const data = [
     "newCoreWords": [
       {
         "word": "boil",
-        "ipa": "",
+        "ipa": "/ˈbɔɪl/",
         "meaning": "煮沸",
         "answers": [
           "boil"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "roast",
-        "ipa": "",
+        "ipa": "/ˈɹoʊst/",
         "meaning": "烤",
         "answers": [
           "roast"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fry",
-        "ipa": "",
+        "ipa": "/ˈfɹaɪ/",
         "meaning": "油煎；油炸",
         "answers": [
           "fry"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "eggplant",
-        "ipa": "",
+        "ipa": "/ˈɛɡˌplænt/",
         "meaning": "茄子",
         "answers": [
           "eggplant"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "ginger",
-        "ipa": "",
+        "ipa": "/ˈdʒɪndʒɚ/",
         "meaning": "姜",
         "answers": [
           "ginger"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pepper",
-        "ipa": "",
+        "ipa": "/ˈpɛpɚ/",
         "meaning": "胡椒",
         "answers": [
           "pepper"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "salt",
-        "ipa": "",
+        "ipa": "/ˈsɔlt/",
         "meaning": "盐",
         "answers": [
           "salt"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "vinegar",
-        "ipa": "",
+        "ipa": "/ˈvɪnəɡɚ/",
         "meaning": "醋",
         "answers": [
           "vinegar"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "honey",
-        "ipa": "",
+        "ipa": "/ˈhʌni/",
         "meaning": "蜂蜜",
         "answers": [
           "honey"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sauce",
-        "ipa": "",
+        "ipa": "/ˈsɔs/",
         "meaning": "酱汁",
         "answers": [
           "sauce"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "grind",
-        "ipa": "",
+        "ipa": "/ˈɡɹaɪnd/",
         "meaning": "研磨",
         "answers": [
           "grind"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "spice",
-        "ipa": "",
+        "ipa": "/ˈspaɪs/",
         "meaning": "香料",
         "answers": [
           "spice",
           "spices"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "ingredient",
-        "ipa": "",
+        "ipa": "/ˌɪnˈɡɹidiənt/",
         "meaning": "原料",
         "answers": [
           "ingredient",
           "ingredients"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -483,94 +560,116 @@ const data = [
     "newCoreWords": [
       {
         "word": "nutrition",
-        "ipa": "",
+        "ipa": "/nuˈtɹɪʃən/",
         "meaning": "营养",
         "answers": [
           "nutrition"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "hunger",
-        "ipa": "",
+        "ipa": "/ˈhʌŋɡɚ/",
         "meaning": "饥饿",
         "answers": [
           "hunger"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "thirsty",
-        "ipa": "",
+        "ipa": "/ˈθɝsti/",
         "meaning": "口渴的",
         "answers": [
           "thirsty"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "digest",
-        "ipa": "",
+        "ipa": "/daɪˈdʒɛst/ 或 /ˈdaɪdʒɛst/",
         "meaning": "消化",
         "answers": [
           "digest"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "nutrient",
-        "ipa": "",
+        "ipa": "/ˈnutɹiənt/",
         "meaning": "营养物质",
         "answers": [
           "nutrient",
           "nutrients"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "supplement",
-        "ipa": "",
+        "ipa": "/ˈsʌpləmənt/",
         "meaning": "补充剂；补充",
         "answers": [
           "supplement"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "dietary",
-        "ipa": "",
+        "ipa": "/ˈdaɪəˌtɛɹi/",
         "meaning": "饮食的",
         "answers": [
           "dietary"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "ingredient",
-        "ipa": "",
+        "ipa": "/ˌɪnˈɡɹidiənt/",
         "meaning": "原料",
         "answers": [
           "ingredient",
           "ingredients"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tasty",
-        "ipa": "",
+        "ipa": "/ˈteɪsti/",
         "meaning": "美味的",
         "answers": [
           "tasty"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "balanced",
-        "ipa": "",
+        "ipa": "/ˈbælənst/",
         "meaning": "均衡的",
         "answers": [
           "balanced"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "diet",
-        "ipa": "",
+        "ipa": "/ˈdaɪət/",
         "meaning": "饮食",
         "answers": [
           "diet",
           "diets"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -580,5 +679,5 @@ const data = [
     "supportWords": []
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 22 时间日期 | Mission 95–98 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 95,
     "chapter": 22,
@@ -29,51 +29,63 @@ const data = [
     "newCoreWords": [
       {
         "word": "era",
-        "ipa": "",
+        "ipa": "/ˈɛɹə/",
         "meaning": "时代",
         "answers": [
           "era"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "century",
-        "ipa": "",
+        "ipa": "/ˈsɛntʃɚi/",
         "meaning": "世纪",
         "answers": [
           "century"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "millennium",
-        "ipa": "",
+        "ipa": "/məˈlɛniəm/",
         "meaning": "千年",
         "answers": [
           "millennium"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "contemporary",
-        "ipa": "",
+        "ipa": "/kənˈtɛmpɚˌɛɹi/",
         "meaning": "当代的",
         "answers": [
           "contemporary"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "modern",
-        "ipa": "",
+        "ipa": "/ˈmɑdɚn/",
         "meaning": "现代的",
         "answers": [
           "modern"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "permanent",
-        "ipa": "",
+        "ipa": "/ˈpɝmənənt/",
         "meaning": "永久的",
         "answers": [
           "permanent"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -107,67 +119,83 @@ const data = [
     "newCoreWords": [
       {
         "word": "dawn",
-        "ipa": "",
+        "ipa": "/ˈdɔn/",
         "meaning": "黎明",
         "answers": [
           "dawn"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "daily",
-        "ipa": "",
+        "ipa": "/ˈdeɪli/",
         "meaning": "每日的",
         "answers": [
           "daily"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "midday",
-        "ipa": "",
+        "ipa": "/ˈmɪdˌdeɪ/",
         "meaning": "正午",
         "answers": [
           "midday"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "moment",
-        "ipa": "",
+        "ipa": "/ˈmoʊmənt/",
         "meaning": "片刻",
         "answers": [
           "moment"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "minute",
-        "ipa": "",
+        "ipa": "/ˈmɪnət/ 或 /maɪˈnut/ 或 /maɪˈnjut/",
         "meaning": "分钟",
         "answers": [
           "minute"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "punctual",
-        "ipa": "",
+        "ipa": "/ˈpʌŋktʃuəl/",
         "meaning": "守时的",
         "answers": [
           "punctual"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "midnight",
-        "ipa": "",
+        "ipa": "/ˈmɪˌdnaɪt/",
         "meaning": "午夜",
         "answers": [
           "midnight"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "date",
-        "ipa": "",
+        "ipa": "/ˈdeɪt/",
         "meaning": "日期",
         "answers": [
           "date"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -201,83 +229,103 @@ const data = [
     "newCoreWords": [
       {
         "word": "annual",
-        "ipa": "",
+        "ipa": "/ˈænjuəl/",
         "meaning": "年度的",
         "answers": [
           "annual"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "monthly",
-        "ipa": "",
+        "ipa": "/ˈmʌnθli/",
         "meaning": "每月的",
         "answers": [
           "monthly"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "preceding",
-        "ipa": "",
+        "ipa": "/pɹiˈsidɪŋ/",
         "meaning": "在前的",
         "answers": [
           "preceding"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "period",
-        "ipa": "",
+        "ipa": "/ˈpɪɹiəd/",
         "meaning": "时期",
         "answers": [
           "period"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "initially",
-        "ipa": "",
+        "ipa": "/ˌɪˈnɪʃəli/",
         "meaning": "最初",
         "answers": [
           "initially"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "intermediate",
-        "ipa": "",
+        "ipa": "/ˌɪntɚˈmidiɪt/",
         "meaning": "中间的",
         "answers": [
           "intermediate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "duration",
-        "ipa": "",
+        "ipa": "/ˈdʊˈɹeɪʃən/",
         "meaning": "持续时间",
         "answers": [
           "duration"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "former",
-        "ipa": "",
+        "ipa": "/ˈfɔɹmɚ/",
         "meaning": "以前的",
         "answers": [
           "former"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "latter",
-        "ipa": "",
+        "ipa": "/ˈlætɚ/",
         "meaning": "后者的",
         "answers": [
           "latter"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "precedent",
-        "ipa": "",
+        "ipa": "/ˈpɹɛsɪdənt/",
         "meaning": "先例",
         "answers": [
           "precedent"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -313,7 +361,10 @@ const data = [
         "word": "imminent",
         "ipa": "/ˈɪmɪnənt/",
         "pos": "adj.",
-        "collocations": ["imminent danger", "an imminent decision"],
+        "collocations": [
+          "imminent danger",
+          "an imminent decision"
+        ],
         "meaning": "即将发生的",
         "answers": [
           "imminent"
@@ -323,7 +374,10 @@ const data = [
         "word": "periodically",
         "ipa": "/ˌpɪəriˈɒdɪkli/",
         "pos": "adv.",
-        "collocations": ["check periodically", "review periodically"],
+        "collocations": [
+          "check periodically",
+          "review periodically"
+        ],
         "meaning": "定期地",
         "answers": [
           "periodically"
@@ -333,7 +387,10 @@ const data = [
         "word": "meanwhile",
         "ipa": "/ˈmiːnwaɪl/",
         "pos": "adv.",
-        "collocations": ["meanwhile, her colleague", "meanwhile, back at home"],
+        "collocations": [
+          "meanwhile, her colleague",
+          "meanwhile, back at home"
+        ],
         "meaning": "与此同时",
         "answers": [
           "meanwhile"
@@ -343,7 +400,10 @@ const data = [
         "word": "meantime",
         "ipa": "/ˈmiːntaɪm/",
         "pos": "n.",
-        "collocations": ["in the meantime", "for the meantime"],
+        "collocations": [
+          "in the meantime",
+          "for the meantime"
+        ],
         "meaning": "其间",
         "answers": [
           "meantime"
@@ -353,7 +413,10 @@ const data = [
         "word": "instant",
         "ipa": "/ˈɪnstənt/",
         "pos": "n.",
-        "collocations": ["in an instant", "for an instant"],
+        "collocations": [
+          "in an instant",
+          "for an instant"
+        ],
         "meaning": "瞬间",
         "answers": [
           "instant"
@@ -363,7 +426,10 @@ const data = [
         "word": "present",
         "ipa": "/ˈprezənt/",
         "pos": "adj.",
-        "collocations": ["the present record", "the present situation"],
+        "collocations": [
+          "the present record",
+          "the present situation"
+        ],
         "meaning": "当前的",
         "answers": [
           "present"
@@ -374,5 +440,5 @@ const data = [
     "supportWords": []
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

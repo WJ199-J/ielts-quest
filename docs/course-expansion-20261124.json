@@ -1,0 +1,1370 @@
+{
+  "release": "2026-11-24-6",
+  "originalMissionCount": 98,
+  "missionCount": 134,
+  "newArticleCount": 36,
+  "newSourceHeadwords": 216,
+  "filledPronunciationRecords": 1367,
+  "chapters": [
+    {
+      "chapter": 1,
+      "articles": 6,
+      "oldArticles": 6,
+      "addedIds": []
+    },
+    {
+      "chapter": 2,
+      "articles": 8,
+      "oldArticles": 8,
+      "addedIds": []
+    },
+    {
+      "chapter": 3,
+      "articles": 6,
+      "oldArticles": 6,
+      "addedIds": []
+    },
+    {
+      "chapter": 4,
+      "articles": 6,
+      "oldArticles": 6,
+      "addedIds": []
+    },
+    {
+      "chapter": 5,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        99,
+        100
+      ]
+    },
+    {
+      "chapter": 6,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        101,
+        102
+      ]
+    },
+    {
+      "chapter": 7,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        103,
+        104
+      ]
+    },
+    {
+      "chapter": 8,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        105,
+        106
+      ]
+    },
+    {
+      "chapter": 9,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        107,
+        108
+      ]
+    },
+    {
+      "chapter": 10,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        109,
+        110
+      ]
+    },
+    {
+      "chapter": 11,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        111,
+        112
+      ]
+    },
+    {
+      "chapter": 12,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        113,
+        114
+      ]
+    },
+    {
+      "chapter": 13,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        115,
+        116
+      ]
+    },
+    {
+      "chapter": 14,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        117,
+        118
+      ]
+    },
+    {
+      "chapter": 15,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        119,
+        120
+      ]
+    },
+    {
+      "chapter": 16,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        121,
+        122
+      ]
+    },
+    {
+      "chapter": 17,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        123,
+        124
+      ]
+    },
+    {
+      "chapter": 18,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        125,
+        126
+      ]
+    },
+    {
+      "chapter": 19,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        127,
+        128
+      ]
+    },
+    {
+      "chapter": 20,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        129,
+        130
+      ]
+    },
+    {
+      "chapter": 21,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        131,
+        132
+      ]
+    },
+    {
+      "chapter": 22,
+      "articles": 6,
+      "oldArticles": 4,
+      "addedIds": [
+        133,
+        134
+      ]
+    }
+  ],
+  "hiddenArticles": [
+    {
+      "id": "ch1-hidden-01",
+      "level": "Medium · 证据比较",
+      "stage": 1,
+      "englishWords": 318
+    },
+    {
+      "id": "ch1-hidden-02",
+      "level": "Medium · 证据比较",
+      "stage": 1,
+      "englishWords": 326
+    },
+    {
+      "id": "ch1-hidden-03",
+      "level": "Medium · 证据比较",
+      "stage": 1,
+      "englishWords": 327
+    },
+    {
+      "id": "ch1-hidden-04",
+      "level": "Medium+ · 条件与因果",
+      "stage": 2,
+      "englishWords": 335
+    },
+    {
+      "id": "ch1-hidden-05",
+      "level": "Medium+ · 条件与因果",
+      "stage": 2,
+      "englishWords": 356
+    },
+    {
+      "id": "ch1-hidden-06",
+      "level": "Medium+ · 条件与因果",
+      "stage": 2,
+      "englishWords": 353
+    },
+    {
+      "id": "ch1-hidden-07",
+      "level": "Upper-intermediate · 模型与局限",
+      "stage": 3,
+      "englishWords": 358
+    },
+    {
+      "id": "ch1-hidden-08",
+      "level": "Upper-intermediate · 模型与局限",
+      "stage": 3,
+      "englishWords": 380
+    },
+    {
+      "id": "ch1-hidden-09",
+      "level": "Upper-intermediate · 模型与局限",
+      "stage": 3,
+      "englishWords": 360
+    },
+    {
+      "id": "ch1-hidden-10",
+      "level": "Upper-intermediate+ · 多变量推理",
+      "stage": 4,
+      "englishWords": 376
+    },
+    {
+      "id": "ch1-hidden-11",
+      "level": "Upper-intermediate+ · 多变量推理",
+      "stage": 4,
+      "englishWords": 384
+    },
+    {
+      "id": "ch1-hidden-12",
+      "level": "Upper-intermediate+ · 多变量推理",
+      "stage": 4,
+      "englishWords": 377
+    },
+    {
+      "id": "ch1-hidden-13",
+      "level": "Advanced · 综合论证",
+      "stage": 5,
+      "englishWords": 373
+    },
+    {
+      "id": "ch1-hidden-14",
+      "level": "Advanced · 综合论证",
+      "stage": 5,
+      "englishWords": 387
+    },
+    {
+      "id": "ch1-hidden-15",
+      "level": "Advanced · 综合论证",
+      "stage": 5,
+      "englishWords": 411
+    }
+  ],
+  "addedSourceMapping": [
+    {
+      "chapter": 5,
+      "missionId": 99,
+      "terms": [
+        {
+          "word": "assignment",
+          "sourcePage": 76
+        },
+        {
+          "word": "bibliography",
+          "sourcePage": 63
+        },
+        {
+          "word": "author",
+          "sourcePage": 63
+        },
+        {
+          "word": "cite",
+          "sourcePage": 78
+        },
+        {
+          "word": "compare",
+          "sourcePage": 80
+        },
+        {
+          "word": "conclude",
+          "sourcePage": 80
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "missionId": 100,
+      "terms": [
+        {
+          "word": "candidate",
+          "sourcePage": 59
+        },
+        {
+          "word": "aptitude",
+          "sourcePage": 57
+        },
+        {
+          "word": "arithmetic",
+          "sourcePage": 67
+        },
+        {
+          "word": "algebra",
+          "sourcePage": 67
+        },
+        {
+          "word": "award",
+          "sourcePage": 84
+        },
+        {
+          "word": "achieve",
+          "sourcePage": 82
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "missionId": 101,
+      "terms": [
+        {
+          "word": "prototype",
+          "sourcePage": 93
+        },
+        {
+          "word": "filter",
+          "sourcePage": 92
+        },
+        {
+          "word": "fault",
+          "sourcePage": 94
+        },
+        {
+          "word": "accurate",
+          "sourcePage": 94
+        },
+        {
+          "word": "adjust",
+          "sourcePage": 93
+        },
+        {
+          "word": "purify",
+          "sourcePage": 92
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "missionId": 102,
+      "terms": [
+        {
+          "word": "phase",
+          "sourcePage": 93
+        },
+        {
+          "word": "binary",
+          "sourcePage": 91
+        },
+        {
+          "word": "compress",
+          "sourcePage": 92
+        },
+        {
+          "word": "convert",
+          "sourcePage": 93
+        },
+        {
+          "word": "error",
+          "sourcePage": 94
+        },
+        {
+          "word": "contingency",
+          "sourcePage": 94
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "missionId": 103,
+      "terms": [
+        {
+          "word": "antique",
+          "sourcePage": 97
+        },
+        {
+          "word": "anecdote",
+          "sourcePage": 101
+        },
+        {
+          "word": "inherit",
+          "sourcePage": 97
+        },
+        {
+          "word": "custom",
+          "sourcePage": 96
+        },
+        {
+          "word": "anthropologist",
+          "sourcePage": 97
+        },
+        {
+          "word": "belief",
+          "sourcePage": 98
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "missionId": 104,
+      "terms": [
+        {
+          "word": "choir",
+          "sourcePage": 99
+        },
+        {
+          "word": "ritual",
+          "sourcePage": 98
+        },
+        {
+          "word": "religion",
+          "sourcePage": 98
+        },
+        {
+          "word": "etiquette",
+          "sourcePage": 98
+        },
+        {
+          "word": "guardian",
+          "sourcePage": 100
+        },
+        {
+          "word": "thrive",
+          "sourcePage": 101
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "missionId": 105,
+      "terms": [
+        {
+          "word": "pronoun",
+          "sourcePage": 106
+        },
+        {
+          "word": "noun",
+          "sourcePage": 106
+        },
+        {
+          "word": "verb",
+          "sourcePage": 106
+        },
+        {
+          "word": "singular",
+          "sourcePage": 106
+        },
+        {
+          "word": "plural",
+          "sourcePage": 106
+        },
+        {
+          "word": "interpret",
+          "sourcePage": 107
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "missionId": 106,
+      "terms": [
+        {
+          "word": "debate",
+          "sourcePage": 108
+        },
+        {
+          "word": "contention",
+          "sourcePage": 108
+        },
+        {
+          "word": "negotiate",
+          "sourcePage": 108
+        },
+        {
+          "word": "idiom",
+          "sourcePage": 105
+        },
+        {
+          "word": "semantic",
+          "sourcePage": 104
+        },
+        {
+          "word": "eloquence",
+          "sourcePage": 107
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "missionId": 107,
+      "terms": [
+        {
+          "word": "concert",
+          "sourcePage": 112
+        },
+        {
+          "word": "band",
+          "sourcePage": 115
+        },
+        {
+          "word": "cello",
+          "sourcePage": 116
+        },
+        {
+          "word": "guitar",
+          "sourcePage": 116
+        },
+        {
+          "word": "improvise",
+          "sourcePage": 115
+        },
+        {
+          "word": "lyric",
+          "sourcePage": 115
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "missionId": 108,
+      "terms": [
+        {
+          "word": "animation",
+          "sourcePage": 113
+        },
+        {
+          "word": "depict",
+          "sourcePage": 114
+        },
+        {
+          "word": "critic",
+          "sourcePage": 110
+        },
+        {
+          "word": "comedy",
+          "sourcePage": 113
+        },
+        {
+          "word": "drama",
+          "sourcePage": 112
+        },
+        {
+          "word": "artist",
+          "sourcePage": 113
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "missionId": 109,
+      "terms": [
+        {
+          "word": "brass",
+          "sourcePage": 131
+        },
+        {
+          "word": "bronze",
+          "sourcePage": 132
+        },
+        {
+          "word": "bolt",
+          "sourcePage": 129
+        },
+        {
+          "word": "duplicate",
+          "sourcePage": 128
+        },
+        {
+          "word": "counterfeit",
+          "sourcePage": 133
+        },
+        {
+          "word": "artefact",
+          "sourcePage": 124
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "missionId": 110,
+      "terms": [
+        {
+          "word": "fabric",
+          "sourcePage": 132
+        },
+        {
+          "word": "cotton",
+          "sourcePage": 132
+        },
+        {
+          "word": "nylon",
+          "sourcePage": 132
+        },
+        {
+          "word": "crude",
+          "sourcePage": 124
+        },
+        {
+          "word": "inferior",
+          "sourcePage": 133
+        },
+        {
+          "word": "available",
+          "sourcePage": 133
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "missionId": 111,
+      "terms": [
+        {
+          "word": "collar",
+          "sourcePage": 140
+        },
+        {
+          "word": "sleeve",
+          "sourcePage": 140
+        },
+        {
+          "word": "needle",
+          "sourcePage": 140
+        },
+        {
+          "word": "stitch",
+          "sourcePage": 140
+        },
+        {
+          "word": "sew",
+          "sourcePage": 140
+        },
+        {
+          "word": "fade",
+          "sourcePage": 142
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "missionId": 112,
+      "terms": [
+        {
+          "word": "appearance",
+          "sourcePage": 138
+        },
+        {
+          "word": "extravagant",
+          "sourcePage": 136
+        },
+        {
+          "word": "decent",
+          "sourcePage": 137
+        },
+        {
+          "word": "overall",
+          "sourcePage": 139
+        },
+        {
+          "word": "bracelet",
+          "sourcePage": 141
+        },
+        {
+          "word": "jewellery",
+          "sourcePage": 136
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "missionId": 113,
+      "terms": [
+        {
+          "word": "menu",
+          "sourcePage": 147
+        },
+        {
+          "word": "dairy",
+          "sourcePage": 153
+        },
+        {
+          "word": "garlic",
+          "sourcePage": 155
+        },
+        {
+          "word": "flavour",
+          "sourcePage": 156
+        },
+        {
+          "word": "edible",
+          "sourcePage": 146
+        },
+        {
+          "word": "cutlery",
+          "sourcePage": 148
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "missionId": 114,
+      "terms": [
+        {
+          "word": "crop",
+          "sourcePage": 152
+        },
+        {
+          "word": "loaf",
+          "sourcePage": 154
+        },
+        {
+          "word": "bake",
+          "sourcePage": 157
+        },
+        {
+          "word": "butter",
+          "sourcePage": 153
+        },
+        {
+          "word": "appetite",
+          "sourcePage": 146
+        },
+        {
+          "word": "bitter",
+          "sourcePage": 156
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "missionId": 115,
+      "terms": [
+        {
+          "word": "aisle",
+          "sourcePage": 162
+        },
+        {
+          "word": "handrail",
+          "sourcePage": 163
+        },
+        {
+          "word": "concrete",
+          "sourcePage": 160
+        },
+        {
+          "word": "design",
+          "sourcePage": 168
+        },
+        {
+          "word": "modify",
+          "sourcePage": 167
+        },
+        {
+          "word": "obstruct",
+          "sourcePage": 160
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "missionId": 116,
+      "terms": [
+        {
+          "word": "architecture",
+          "sourcePage": 160
+        },
+        {
+          "word": "infrastructure",
+          "sourcePage": 166
+        },
+        {
+          "word": "internal",
+          "sourcePage": 169
+        },
+        {
+          "word": "external",
+          "sourcePage": 169
+        },
+        {
+          "word": "malfunction",
+          "sourcePage": 167
+        },
+        {
+          "word": "apparatus",
+          "sourcePage": 166
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "missionId": 117,
+      "terms": [
+        {
+          "word": "parcel",
+          "sourcePage": 180
+        },
+        {
+          "word": "postage",
+          "sourcePage": 180
+        },
+        {
+          "word": "carrier",
+          "sourcePage": 178
+        },
+        {
+          "word": "defer",
+          "sourcePage": 179
+        },
+        {
+          "word": "deliver",
+          "sourcePage": 181
+        },
+        {
+          "word": "baggage",
+          "sourcePage": 173
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "missionId": 118,
+      "terms": [
+        {
+          "word": "canal",
+          "sourcePage": 179
+        },
+        {
+          "word": "navigate",
+          "sourcePage": 172
+        },
+        {
+          "word": "embark",
+          "sourcePage": 178
+        },
+        {
+          "word": "aboard",
+          "sourcePage": 178
+        },
+        {
+          "word": "passenger",
+          "sourcePage": 173
+        },
+        {
+          "word": "postpone",
+          "sourcePage": 179
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "missionId": 119,
+      "terms": [
+        {
+          "word": "conference",
+          "sourcePage": 186
+        },
+        {
+          "word": "bureau",
+          "sourcePage": 187
+        },
+        {
+          "word": "demographic",
+          "sourcePage": 190
+        },
+        {
+          "word": "civil",
+          "sourcePage": 189
+        },
+        {
+          "word": "association",
+          "sourcePage": 187
+        },
+        {
+          "word": "checklist",
+          "sourcePage": 191
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "missionId": 120,
+      "terms": [
+        {
+          "word": "democracy",
+          "sourcePage": 184
+        },
+        {
+          "word": "liberty",
+          "sourcePage": 189
+        },
+        {
+          "word": "egalitarian",
+          "sourcePage": 184
+        },
+        {
+          "word": "hierarchy",
+          "sourcePage": 184
+        },
+        {
+          "word": "franchise",
+          "sourcePage": 190
+        },
+        {
+          "word": "affirm",
+          "sourcePage": 193
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "missionId": 121,
+      "terms": [
+        {
+          "word": "cost",
+          "sourcePage": 200
+        },
+        {
+          "word": "coupon",
+          "sourcePage": 199
+        },
+        {
+          "word": "afford",
+          "sourcePage": 199
+        },
+        {
+          "word": "expense",
+          "sourcePage": 200
+        },
+        {
+          "word": "deficit",
+          "sourcePage": 201
+        },
+        {
+          "word": "deposit",
+          "sourcePage": 206
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "missionId": 122,
+      "terms": [
+        {
+          "word": "acquisition",
+          "sourcePage": 204
+        },
+        {
+          "word": "dividend",
+          "sourcePage": 205
+        },
+        {
+          "word": "currency",
+          "sourcePage": 199
+        },
+        {
+          "word": "export",
+          "sourcePage": 205
+        },
+        {
+          "word": "decline",
+          "sourcePage": 201
+        },
+        {
+          "word": "adequate",
+          "sourcePage": 202
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "missionId": 123,
+      "terms": [
+        {
+          "word": "agreement",
+          "sourcePage": 214
+        },
+        {
+          "word": "clue",
+          "sourcePage": 221
+        },
+        {
+          "word": "investigate",
+          "sourcePage": 217
+        },
+        {
+          "word": "mediate",
+          "sourcePage": 217
+        },
+        {
+          "word": "criteria",
+          "sourcePage": 214
+        },
+        {
+          "word": "genuine",
+          "sourcePage": 222
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "missionId": 124,
+      "terms": [
+        {
+          "word": "enact",
+          "sourcePage": 215
+        },
+        {
+          "word": "legislate",
+          "sourcePage": 216
+        },
+        {
+          "word": "penalty",
+          "sourcePage": 221
+        },
+        {
+          "word": "equity",
+          "sourcePage": 216
+        },
+        {
+          "word": "protocol",
+          "sourcePage": 214
+        },
+        {
+          "word": "oversee",
+          "sourcePage": 218
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "missionId": 125,
+      "terms": [
+        {
+          "word": "alarm",
+          "sourcePage": 231
+        },
+        {
+          "word": "boundary",
+          "sourcePage": 231
+        },
+        {
+          "word": "abandon",
+          "sourcePage": 238
+        },
+        {
+          "word": "equip",
+          "sourcePage": 226
+        },
+        {
+          "word": "contribute",
+          "sourcePage": 239
+        },
+        {
+          "word": "dilemma",
+          "sourcePage": 227
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "missionId": 126,
+      "terms": [
+        {
+          "word": "evidence",
+          "sourcePage": 230
+        },
+        {
+          "word": "blame",
+          "sourcePage": 230
+        },
+        {
+          "word": "challenge",
+          "sourcePage": 229
+        },
+        {
+          "word": "compel",
+          "sourcePage": 233
+        },
+        {
+          "word": "deprive",
+          "sourcePage": 227
+        },
+        {
+          "word": "event",
+          "sourcePage": 233
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "missionId": 127,
+      "terms": [
+        {
+          "word": "apprentice",
+          "sourcePage": 248
+        },
+        {
+          "word": "colleague",
+          "sourcePage": 248
+        },
+        {
+          "word": "client",
+          "sourcePage": 246
+        },
+        {
+          "word": "manager",
+          "sourcePage": 248
+        },
+        {
+          "word": "delegate",
+          "sourcePage": 249
+        },
+        {
+          "word": "dependent",
+          "sourcePage": 246
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "missionId": 128,
+      "terms": [
+        {
+          "word": "acquaintance",
+          "sourcePage": 248
+        },
+        {
+          "word": "guest",
+          "sourcePage": 245
+        },
+        {
+          "word": "host",
+          "sourcePage": 245
+        },
+        {
+          "word": "kin",
+          "sourcePage": 244
+        },
+        {
+          "word": "friendship",
+          "sourcePage": 248
+        },
+        {
+          "word": "affection",
+          "sourcePage": 248
+        }
+      ]
+    },
+    {
+      "chapter": 20,
+      "missionId": 129,
+      "terms": [
+        {
+          "word": "bias",
+          "sourcePage": 263
+        },
+        {
+          "word": "attribute",
+          "sourcePage": 272
+        },
+        {
+          "word": "convince",
+          "sourcePage": 265
+        },
+        {
+          "word": "distinguish",
+          "sourcePage": 274
+        },
+        {
+          "word": "assert",
+          "sourcePage": 256
+        },
+        {
+          "word": "cope",
+          "sourcePage": 267
+        }
+      ]
+    },
+    {
+      "chapter": 20,
+      "missionId": 130,
+      "terms": [
+        {
+          "word": "accustom",
+          "sourcePage": 254
+        },
+        {
+          "word": "adopt",
+          "sourcePage": 254
+        },
+        {
+          "word": "assign",
+          "sourcePage": 264
+        },
+        {
+          "word": "disregard",
+          "sourcePage": 262
+        },
+        {
+          "word": "correspond",
+          "sourcePage": 272
+        },
+        {
+          "word": "commence",
+          "sourcePage": 267
+        }
+      ]
+    },
+    {
+      "chapter": 21,
+      "missionId": 131,
+      "terms": [
+        {
+          "word": "clinic",
+          "sourcePage": 288
+        },
+        {
+          "word": "chronic",
+          "sourcePage": 287
+        },
+        {
+          "word": "acute",
+          "sourcePage": 287
+        },
+        {
+          "word": "allergy",
+          "sourcePage": 284
+        },
+        {
+          "word": "adverse",
+          "sourcePage": 301
+        },
+        {
+          "word": "alleviate",
+          "sourcePage": 290
+        }
+      ]
+    },
+    {
+      "chapter": 21,
+      "missionId": 132,
+      "terms": [
+        {
+          "word": "confidence",
+          "sourcePage": 295
+        },
+        {
+          "word": "attitude",
+          "sourcePage": 276
+        },
+        {
+          "word": "concern",
+          "sourcePage": 295
+        },
+        {
+          "word": "careful",
+          "sourcePage": 295
+        },
+        {
+          "word": "apathetic",
+          "sourcePage": 291
+        },
+        {
+          "word": "arbitrary",
+          "sourcePage": 305
+        }
+      ]
+    },
+    {
+      "chapter": 22,
+      "missionId": 133,
+      "terms": [
+        {
+          "word": "quarterly",
+          "sourcePage": 308
+        },
+        {
+          "word": "yearly",
+          "sourcePage": 308
+        },
+        {
+          "word": "ongoing",
+          "sourcePage": 310
+        },
+        {
+          "word": "prior",
+          "sourcePage": 310
+        },
+        {
+          "word": "recent",
+          "sourcePage": 309
+        },
+        {
+          "word": "up-to-date",
+          "sourcePage": 309
+        }
+      ]
+    },
+    {
+      "chapter": 22,
+      "missionId": 134,
+      "terms": [
+        {
+          "word": "consecutive",
+          "sourcePage": 311
+        },
+        {
+          "word": "simultaneous",
+          "sourcePage": 310
+        },
+        {
+          "word": "immediately",
+          "sourcePage": 309
+        },
+        {
+          "word": "finally",
+          "sourcePage": 309
+        },
+        {
+          "word": "midst",
+          "sourcePage": 310
+        },
+        {
+          "word": "anniversary",
+          "sourcePage": 308
+        }
+      ]
+    }
+  ]
+}

@@ -1,9 +1,10 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const ctx={window:{}};vm.createContext(ctx);
-for(const f of ['data/missions.js',...Array.from({length:21},(_,i)=>`data/chapter${i+2}.js`),'data/units.js','data/hidden-chapter1.js','assets/vocabulary-pattern.js','assets/hidden-course.js'])vm.runInContext(fs.readFileSync(f,'utf8'),ctx);
+for(const f of ['data/missions.js',...Array.from({length:21},(_,i)=>`data/chapter${i+2}.js`),'data/additional-missions.js','data/units.js','data/hidden-chapter1.js','assets/vocabulary-pattern.js','assets/hidden-course.js'])vm.runInContext(fs.readFileSync(f,'utf8'),ctx);
 const {IELTS_QUEST_MISSIONS:missions,IELTS_QUEST_UNITS:units,IELTS_QUEST_HIDDEN_CHAPTER1:articles,IELTS_QUEST_HIDDEN_RULES:rules}=ctx.window;
-assert.equal(missions.length,98);assert.equal(units.length,22);
-const ids=units.flatMap(u=>u.missionIds);assert.equal(ids.length,98);assert.equal(new Set(ids).size,98);
+assert.equal(missions.length,134);assert.equal(units.length,22);
+const ids=units.flatMap(u=>u.missionIds);assert.equal(ids.length,134);assert.equal(new Set(ids).size,134);
+assert.equal(units.reduce((sum,u)=>sum+u.baseCoverage,0),1172);
 assert.equal(units.filter(u=>u.hiddenReleased).length,1);assert.equal(units[0].hiddenReleased,true);
 assert.equal(articles.length,15);
 const terms=articles.flatMap(a=>a.newCoreWords);assert.equal(terms.length,180);assert.equal(new Set(terms.map(w=>w.word)).size,180);
@@ -22,5 +23,5 @@ rules.recordFirst(state,a,result);assert.equal(state.missions[a.id].bestScore,92
 answers[a.newCoreWords[0].word]=a.newCoreWords[0].word;assert.equal(rules.grade(a,answers).score,100);assert.equal(state.missions[a.id].bestScore,92);assert.equal(state.missions[a.id].attempts,1);
 rules.recordFirst(state,a,rules.grade(a,answers));assert.equal(state.missions[a.id].bestScore,100);assert.equal(state.missions[a.id].attempts,2);
 assert.equal(JSON.stringify(Object.fromEntries(Object.entries(state.missions).filter(([id])=>!id.startsWith('ch1-hidden-')))),old,'Base Mission state must not change');
-for(const f of ['assets/unit.js','unit.html','data/units.js','assets/home.js']){const code=fs.readFileSync(f,'utf8');assert(!/targetQuizCount|supplementalItems|function candidates\(|slice\(0, unit|50 题/.test(code),`${f}: retired checkpoint remains`);}
-console.log('PASS: 98 original Missions preserved; Chapter 1 only; 15 connected stories; 180 new source terms; 241 index entries partitioned; 90% gate; correction isolation; no legacy checkpoint.');
+for(const f of ['assets/unit.js','unit.html','data/additional-missions.js','data/units.js','assets/home.js']){const code=fs.readFileSync(f,'utf8');assert(!/targetQuizCount|supplementalItems|function candidates\(|slice\(0, unit|50 题/.test(code),`${f}: retired checkpoint remains`);}
+console.log('PASS: 134 Missions, original 98 IDs retained; Chapter 1 only; 15 connected stories; 180 new source terms; 241 index entries partitioned; 90% gate; correction isolation; no legacy checkpoint.');

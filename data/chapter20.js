@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 20 行为动作 | Mission 87–90 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 87,
     "chapter": 20,
@@ -29,66 +29,83 @@ const data = [
     "newCoreWords": [
       {
         "word": "glance",
-        "ipa": "",
+        "ipa": "/ˈɡlæns/",
         "meaning": "扫视",
         "answers": [
           "glance"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "gaze",
-        "ipa": "",
+        "ipa": "/ˈɡeɪz/",
         "meaning": "凝视",
         "answers": [
           "gaze"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "glimpse",
-        "ipa": "",
+        "ipa": "/ˈɡlɪmps/",
         "meaning": "瞥见",
         "answers": [
           "glimpse"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "peer",
-        "ipa": "",
+        "ipa": "/ˈpɪɹ/",
         "meaning": "仔细看",
         "answers": [
           "peer"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "contemplate",
-        "ipa": "",
+        "ipa": "/ˈkɑntəmˌpleɪt/",
         "meaning": "沉思",
         "answers": [
           "contemplate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "reflect",
-        "ipa": "",
+        "ipa": "/ɹɪˈflɛkt/",
         "meaning": "反思",
         "answers": [
           "reflect"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "react",
-        "ipa": "",
+        "ipa": "/ɹiˈækt/",
         "meaning": "反应",
         "answers": [
           "react"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
     "supportWords": [
       {
         "word": "observe",
-        "meaning": "观察"
+        "meaning": "观察",
+        "ipa": "/əbˈzɝv/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -120,77 +137,95 @@ const data = [
     "newCoreWords": [
       {
         "word": "grab",
-        "ipa": "",
+        "ipa": "/ˈɡɹæb/",
         "meaning": "抓取",
         "answers": [
           "grab"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "grasp",
-        "ipa": "",
+        "ipa": "/ˈɡɹæsp/",
         "meaning": "紧握",
         "answers": [
           "grasp"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fold",
-        "ipa": "",
+        "ipa": "/ˈfoʊld/",
         "meaning": "折叠",
         "answers": [
           "fold"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fasten",
-        "ipa": "",
+        "ipa": "/ˈfæsən/",
         "meaning": "固定",
         "answers": [
           "fasten"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "twist",
-        "ipa": "",
+        "ipa": "/ˈtwɪst/",
         "meaning": "扭转",
         "answers": [
           "twist"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "insert",
-        "ipa": "",
+        "ipa": "/ˌɪnˈsɝt/",
         "meaning": "插入",
         "answers": [
           "insert"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "connect",
-        "ipa": "",
+        "ipa": "/kəˈnɛkt/",
         "meaning": "连接",
         "answers": [
           "connect"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "loosen",
-        "ipa": "",
+        "ipa": "/ˈlusən/",
         "meaning": "松开",
         "answers": [
           "loosen",
           "loosened"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "arrange",
-        "ipa": "",
+        "ipa": "/ɚˈeɪndʒ/",
         "meaning": "安排",
         "answers": [
           "arrange",
           "arranged"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -224,75 +259,93 @@ const data = [
     "newCoreWords": [
       {
         "word": "boast",
-        "ipa": "",
+        "ipa": "/ˈboʊst/",
         "meaning": "吹嘘",
         "answers": [
           "boast"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "quarrel",
-        "ipa": "",
+        "ipa": "/ˈkwɔɹəl/",
         "meaning": "争吵",
         "answers": [
           "quarrel"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "mock",
-        "ipa": "",
+        "ipa": "/ˈmɑk/",
         "meaning": "嘲笑",
         "answers": [
           "mock"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "explain",
-        "ipa": "",
+        "ipa": "/ɪkˈspleɪn/",
         "meaning": "解释",
         "answers": [
           "explain"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "provoke",
-        "ipa": "",
+        "ipa": "/pɹəˈvoʊk/",
         "meaning": "激怒",
         "answers": [
           "provoke"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "argument",
-        "ipa": "",
+        "ipa": "/ˈɑɹɡjəmənt/",
         "meaning": "争论",
         "answers": [
           "argument"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "reassure",
-        "ipa": "",
+        "ipa": "/ˌɹiəˈʃʊɹ/",
         "meaning": "使安心",
         "answers": [
           "reassure"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "persuade",
-        "ipa": "",
+        "ipa": "/pɚˈsweɪd/",
         "meaning": "说服",
         "answers": [
           "persuade"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "cooperate",
-        "ipa": "",
+        "ipa": "/koʊˈɑpɚˌeɪt/",
         "meaning": "合作",
         "answers": [
           "cooperate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -326,59 +379,73 @@ const data = [
     "newCoreWords": [
       {
         "word": "tackle",
-        "ipa": "",
+        "ipa": "/ˈtækəl/",
         "meaning": "处理",
         "answers": [
           "tackle"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "leak",
-        "ipa": "",
+        "ipa": "/ˈlik/",
         "meaning": "泄漏",
         "answers": [
           "leak"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "contain",
-        "ipa": "",
+        "ipa": "/kənˈteɪn/",
         "meaning": "控制",
         "answers": [
           "contain"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "spill",
-        "ipa": "",
+        "ipa": "/ˈspɪl/",
         "meaning": "溢出",
         "answers": [
           "spill"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "rectify",
-        "ipa": "",
+        "ipa": "/ˈɹɛktəˌfaɪ/",
         "meaning": "纠正",
         "answers": [
           "rectify"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "update",
-        "ipa": "",
+        "ipa": "/əpˈdeɪt/",
         "meaning": "更新",
         "answers": [
           "update"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "conduct",
-        "ipa": "",
+        "ipa": "/ˈkɑndəkt/ 或 /kɑˈndʌkt/",
         "meaning": "开展",
         "answers": [
           "conduct"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -389,5 +456,5 @@ const data = [
     "supportWords": []
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

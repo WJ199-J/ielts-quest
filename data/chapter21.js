@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 21 身心健康 | Mission 91–94 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 91,
     "chapter": 21,
@@ -29,107 +29,133 @@ const data = [
     "newCoreWords": [
       {
         "word": "doctor",
-        "ipa": "",
+        "ipa": "/ˈdɑktɚ/",
         "meaning": "医生",
         "answers": [
           "doctor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "dizzy",
-        "ipa": "",
+        "ipa": "/ˈdɪzi/",
         "meaning": "头晕的",
         "answers": [
           "dizzy"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "exhausted",
-        "ipa": "",
+        "ipa": "/ɪɡˈzɔstɪd/",
         "meaning": "筋疲力尽的",
         "answers": [
           "exhausted"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pulse",
-        "ipa": "",
+        "ipa": "/ˈpʌls/",
         "meaning": "脉搏",
         "answers": [
           "pulse"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "headache",
-        "ipa": "",
+        "ipa": "/ˈhɛˌdeɪk/",
         "meaning": "头痛",
         "answers": [
           "headache"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "symptom",
-        "ipa": "",
+        "ipa": "/ˈsɪmptəm/",
         "meaning": "症状",
         "answers": [
           "symptom"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "injury",
-        "ipa": "",
+        "ipa": "/ˈɪndʒɚi/",
         "meaning": "损伤",
         "answers": [
           "injury"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "patient",
-        "ipa": "",
+        "ipa": "/ˈpeɪʃənt/",
         "meaning": "患者",
         "answers": [
           "patient"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "treatment",
-        "ipa": "",
+        "ipa": "/ˈtɹitmənt/",
         "meaning": "治疗",
         "answers": [
           "treatment"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "relieve",
-        "ipa": "",
+        "ipa": "/ɹɪˈliv/",
         "meaning": "缓解",
         "answers": [
           "relieve"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pain",
-        "ipa": "",
+        "ipa": "/ˈpeɪn/",
         "meaning": "疼痛",
         "answers": [
           "pain"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "wound",
-        "ipa": "",
+        "ipa": "/ˈwaʊnd/",
         "meaning": "伤口",
         "answers": [
           "wound"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "heal",
-        "ipa": "",
+        "ipa": "/ˈhil/",
         "meaning": "愈合",
         "answers": [
           "heal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -163,83 +189,103 @@ const data = [
     "newCoreWords": [
       {
         "word": "organ",
-        "ipa": "",
+        "ipa": "/ˈɔɹɡən/",
         "meaning": "器官",
         "answers": [
           "organ"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "heart",
-        "ipa": "",
+        "ipa": "/ˈhɑɹt/",
         "meaning": "心脏",
         "answers": [
           "heart"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "lung",
-        "ipa": "",
+        "ipa": "/ˈlʌŋ/",
         "meaning": "肺",
         "answers": [
           "lung"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "bone",
-        "ipa": "",
+        "ipa": "/ˈboʊn/",
         "meaning": "骨骼",
         "answers": [
           "bone"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "muscle",
-        "ipa": "",
+        "ipa": "/ˈmʌsəl/",
         "meaning": "肌肉",
         "answers": [
           "muscle"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "joint",
-        "ipa": "",
+        "ipa": "/ˈdʒɔɪnt/",
         "meaning": "关节",
         "answers": [
           "joint"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "physical",
-        "ipa": "",
+        "ipa": "/ˈfɪzɪkəl/",
         "meaning": "身体的",
         "answers": [
           "physical"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "backbone",
-        "ipa": "",
+        "ipa": "/ˈbækˌboʊn/",
         "meaning": "脊柱",
         "answers": [
           "backbone"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "blood",
-        "ipa": "",
+        "ipa": "/ˈblʌd/",
         "meaning": "血液",
         "answers": [
           "blood"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "health",
-        "ipa": "",
+        "ipa": "/ˈhɛlθ/",
         "meaning": "健康",
         "answers": [
           "health"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -273,67 +319,83 @@ const data = [
     "newCoreWords": [
       {
         "word": "mood",
-        "ipa": "",
+        "ipa": "/ˈmud/",
         "meaning": "心情",
         "answers": [
           "mood"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "emotion",
-        "ipa": "",
+        "ipa": "/ɪˈmoʊʃən/",
         "meaning": "情绪",
         "answers": [
           "emotion"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "mental",
-        "ipa": "",
+        "ipa": "/ˈmɛntəl/",
         "meaning": "精神的",
         "answers": [
           "mental"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "anxiety",
-        "ipa": "",
+        "ipa": "/æŋˈzaɪəti/",
         "meaning": "焦虑",
         "answers": [
           "anxiety"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "optimistic",
-        "ipa": "",
+        "ipa": "/ˌɑptəˈmɪstɪk/",
         "meaning": "乐观的",
         "answers": [
           "optimistic"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "cheerful",
-        "ipa": "",
+        "ipa": "/ˈtʃɪɹfəl/",
         "meaning": "愉快的",
         "answers": [
           "cheerful"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pessimistic",
-        "ipa": "",
+        "ipa": "/ˌpɛsəˈmɪstɪk/",
         "meaning": "悲观的",
         "answers": [
           "pessimistic"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "gloomy",
-        "ipa": "",
+        "ipa": "/ˈɡlumi/",
         "meaning": "忧郁的",
         "answers": [
           "gloomy"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -367,88 +429,108 @@ const data = [
     "newCoreWords": [
       {
         "word": "infection",
-        "ipa": "",
+        "ipa": "/ˌɪnˈfɛkʃən/",
         "meaning": "感染",
         "answers": [
           "infection"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "recover",
-        "ipa": "",
+        "ipa": "/ɹɪˈkʌvɚ/",
         "meaning": "恢复",
         "answers": [
           "recover"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "immune",
-        "ipa": "",
+        "ipa": "/ˌɪˈmjun/",
         "meaning": "免疫的",
         "answers": [
           "immune"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "therapy",
-        "ipa": "",
+        "ipa": "/ˈθɛɹəpi/",
         "meaning": "疗法",
         "answers": [
           "therapy"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "remedy",
-        "ipa": "",
+        "ipa": "/ˈɹɛmədi/",
         "meaning": "治疗方法",
         "answers": [
           "remedy"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "relief",
-        "ipa": "",
+        "ipa": "/ɹɪˈlif/",
         "meaning": "缓解",
         "answers": [
           "relief"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "medical",
-        "ipa": "",
+        "ipa": "/ˈmɛdəkəl/",
         "meaning": "医学的",
         "answers": [
           "medical"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sleep",
-        "ipa": "",
+        "ipa": "/ˈslip/",
         "meaning": "睡眠",
         "answers": [
           "sleep"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "recovery",
-        "ipa": "",
+        "ipa": "/ɹɪˈkʌvɹi/",
         "meaning": "康复",
         "answers": [
           "recovery"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "healthy",
-        "ipa": "",
+        "ipa": "/ˈhɛlθi/",
         "meaning": "健康的",
         "answers": [
           "healthy"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
     "supportWords": []
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

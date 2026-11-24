@@ -749,35 +749,36 @@
 
 
   <!-- COURSE DATA -->
-  <script src="data/missions.js?v=20261112-1"></script>
-  <script src="data/chapter2.js"></script>
-  <script src="data/chapter3.js"></script>
-  <script src="data/chapter4.js?v=20261112-1"></script>
-  <script src="data/chapter5.js"></script>
-  <script src="data/chapter6.js"></script>
-  <script src="data/chapter7.js"></script>
-  <script src="data/chapter8.js"></script>
-  <script src="data/chapter9.js"></script>
-  <script src="data/chapter10.js"></script>
-  <script src="data/chapter11.js"></script>
-  <script src="data/chapter12.js"></script>
-  <script src="data/chapter13.js"></script>
-  <script src="data/chapter14.js"></script>
-  <script src="data/chapter15.js"></script>
-  <script src="data/chapter16.js"></script>
-  <script src="data/chapter17.js"></script>
-  <script src="data/chapter18.js"></script>
-  <script src="data/chapter19.js"></script>
-  <script src="data/chapter20.js"></script>
-  <script src="data/chapter21.js"></script>
-  <script src="data/chapter22.js?v=20261112-1"></script>
+  <script src="data/missions.js?v=20261124-6"></script>
+  <script src="data/chapter2.js?v=20261124-6"></script>
+  <script src="data/chapter3.js?v=20261124-6"></script>
+  <script src="data/chapter4.js?v=20261124-6"></script>
+  <script src="data/chapter5.js?v=20261124-6"></script>
+  <script src="data/chapter6.js?v=20261124-6"></script>
+  <script src="data/chapter7.js?v=20261124-6"></script>
+  <script src="data/chapter8.js?v=20261124-6"></script>
+  <script src="data/chapter9.js?v=20261124-6"></script>
+  <script src="data/chapter10.js?v=20261124-6"></script>
+  <script src="data/chapter11.js?v=20261124-6"></script>
+  <script src="data/chapter12.js?v=20261124-6"></script>
+  <script src="data/chapter13.js?v=20261124-6"></script>
+  <script src="data/chapter14.js?v=20261124-6"></script>
+  <script src="data/chapter15.js?v=20261124-6"></script>
+  <script src="data/chapter16.js?v=20261124-6"></script>
+  <script src="data/chapter17.js?v=20261124-6"></script>
+  <script src="data/chapter18.js?v=20261124-6"></script>
+  <script src="data/chapter19.js?v=20261124-6"></script>
+  <script src="data/chapter20.js?v=20261124-6"></script>
+  <script src="data/chapter21.js?v=20261124-6"></script>
+  <script src="data/chapter22.js?v=20261124-6"></script>
+  <script src="data/additional-missions.js?v=20261124-6"></script>
   <script src="data/review-vocabulary.js?v=20261112-1"></script>
   <script src="assets/mission-theme.js?v=20261104-2"></script>
   <script src="assets/auth-config.js?v=20261105-1"></script>
   <script src="assets/auth-client.js?v=20261105-1"></script>
   <script src="assets/cloud-progress.js?v=20261123-1"></script>
   <script src="assets/vocabulary-pattern.js?v=20261112-1"></script>
-  <script src="assets/quiz-session.js?v=20261112-1"></script>
+  <script src="assets/quiz-session.js?v=20261124-6"></script>
 
   <script>
     /*
@@ -1350,7 +1351,7 @@
 
               showWordDetail(
                 info.word,
-                "",
+                info.ipa || "",
                 info.meaning,
                 "Support Word"
               );
@@ -1383,7 +1384,7 @@
 
       document.getElementById(
         "selectedIPA"
-      ).textContent = ipa;
+      ).textContent = ipa + ((findVocabulary(word) || findSupportWord(word))?.ipaAccent === "en-US" ? " · 美式" : "");
 
       document.getElementById(
         "selectedMeaning"
@@ -1423,7 +1424,7 @@
           const word = document.createElement("strong");
           word.textContent = info.word;
           const detail = document.createElement("small");
-          detail.textContent = `${info.ipa || "音标待补"} · ${info.pos || "词性待补"} · ${info.type === "review" ? "Review" : "New"}`;
+          detail.textContent = `${info.ipa || "音标待补"}${info.ipaAccent === "en-US" ? "（美式）" : ""} · ${info.pos || "词性待补"} · ${info.type === "review" ? "Review" : "New"}`;
           const meaning = document.createElement("small");
           meaning.textContent = info.meaning || "释义待补";
           button.append(word, detail, meaning);
@@ -1465,7 +1466,7 @@
           selectedSpeechWord
         );
 
-      utterance.lang = "en-GB";
+      utterance.lang = (findVocabulary(selectedSpeechWord) || findSupportWord(selectedSpeechWord))?.ipaAccent || "en-GB";
       utterance.rate = 0.82;
       const status = document.getElementById("speechStatus");
       status.textContent = "正在准备发音…";
@@ -2164,7 +2165,7 @@
       document.getElementById(
         "chapterLabel"
       ).textContent =
-        `Chapter ${mission.chapter} · Mission ${mission.id}`;
+        `Chapter ${mission.chapter} · Mission ${mission.order || mission.id}`;
 
       document.getElementById(
         "missionTitle"
@@ -2482,7 +2483,7 @@
 
           <p>
             请确认
-            <strong>data/missions.js</strong>
+            <strong>data/missions.js?v=20261124-6</strong>
             已经存在，并与 mission.html
             位于正确的目录结构中。
           </p>

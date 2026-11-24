@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 16 社会经济 | Mission 71–74 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 71,
     "chapter": 16,
@@ -29,92 +29,114 @@ const data = [
     "newCoreWords": [
       {
         "word": "market",
-        "ipa": "",
+        "ipa": "/ˈmɑɹkət/",
         "meaning": "市场",
         "answers": [
           "market"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "merchant",
-        "ipa": "",
+        "ipa": "/ˈmɝtʃənt/",
         "meaning": "商人",
         "answers": [
           "merchant"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "import",
-        "ipa": "",
+        "ipa": "/ˌɪmˈpɔɹt/ 或 /ˈɪmˌpɔɹt/",
         "meaning": "进口",
         "answers": [
           "import",
           "imported"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "goods",
-        "ipa": "",
+        "ipa": "/ˈɡʊdz/",
         "meaning": "商品",
         "answers": [
           "goods"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "discount",
-        "ipa": "",
+        "ipa": "/dɪˈskaʊnt/",
         "meaning": "折扣",
         "answers": [
           "discount"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "cash",
-        "ipa": "",
+        "ipa": "/ˈkæʃ/",
         "meaning": "现金",
         "answers": [
           "cash"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "receipt",
-        "ipa": "",
+        "ipa": "/ɹɪˈsit/",
         "meaning": "收据",
         "answers": [
           "receipt"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "purchase",
-        "ipa": "",
+        "ipa": "/ˈpɝtʃəs/",
         "meaning": "购买",
         "answers": [
           "purchase"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "grocery",
-        "ipa": "",
+        "ipa": "/ˈɡɹoʊsɚi/",
         "meaning": "杂货店",
         "answers": [
           "grocery"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "voucher",
-        "ipa": "",
+        "ipa": "/ˈvaʊtʃɚ/",
         "meaning": "代金券",
         "answers": [
           "voucher"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sale",
-        "ipa": "",
+        "ipa": "/ˈseɪl/",
         "meaning": "销售",
         "answers": [
           "sale"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -148,101 +170,126 @@ const data = [
     "newCoreWords": [
       {
         "word": "inflation",
-        "ipa": "",
+        "ipa": "/ˌɪnˈfleɪʃən/",
         "meaning": "通货膨胀",
         "answers": [
           "inflation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "increase",
-        "ipa": "",
+        "ipa": "/ˌɪnˈkɹis/ 或 /ˈɪnˌkɹis/",
         "meaning": "增加",
         "answers": [
           "increase",
           "increased"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "escalate",
-        "ipa": "",
+        "ipa": "/ˈɛskəˌleɪt/",
         "meaning": "升级；上涨",
         "answers": [
           "escalate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "wage",
-        "ipa": "",
+        "ipa": "/ˈweɪdʒ/",
         "meaning": "工资",
         "answers": [
           "wage",
           "wages"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "steady",
-        "ipa": "",
+        "ipa": "/ˈstɛdi/",
         "meaning": "稳定的",
         "answers": [
           "steady"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "reduce",
-        "ipa": "",
+        "ipa": "/ɹəˈdus/",
         "meaning": "减少",
         "answers": [
           "reduce"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "saving",
-        "ipa": "",
+        "ipa": "/ˈseɪvɪŋ/",
         "meaning": "储蓄",
         "answers": [
           "saving",
           "savings"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "income",
-        "ipa": "",
+        "ipa": "/ˈɪnˌkʌm/",
         "meaning": "收入",
         "answers": [
           "income"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tax",
-        "ipa": "",
+        "ipa": "/ˈtæks/",
         "meaning": "税",
         "answers": [
           "tax"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "debt",
-        "ipa": "",
+        "ipa": "/ˈdɛt/",
         "meaning": "债务",
         "answers": [
           "debt"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "economic",
-        "ipa": "",
+        "ipa": "/ˌɛkəˈnɑmɪk/",
         "meaning": "经济的",
         "answers": [
           "economic"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
     "supportWords": [
       {
         "word": "consume",
-        "meaning": "消费"
+        "meaning": "消费",
+        "ipa": "/kənˈsum/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -274,59 +321,73 @@ const data = [
     "newCoreWords": [
       {
         "word": "enterprise",
-        "ipa": "",
+        "ipa": "/ˈɛntɚˌpɹaɪz/",
         "meaning": "企业",
         "answers": [
           "enterprise"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "lease",
-        "ipa": "",
+        "ipa": "/ˈlis/",
         "meaning": "租赁",
         "answers": [
           "lease"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "company",
-        "ipa": "",
+        "ipa": "/ˈkʌmpəˌni/",
         "meaning": "公司",
         "answers": [
           "company"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "invoice",
-        "ipa": "",
+        "ipa": "/ˈɪnvɔɪs/",
         "meaning": "发票",
         "answers": [
           "invoice"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "transaction",
-        "ipa": "",
+        "ipa": "/tɹænˈzækʃən/",
         "meaning": "交易",
         "answers": [
           "transaction"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "turnover",
-        "ipa": "",
+        "ipa": "/ˈtɝˌnoʊvɚ/",
         "meaning": "营业额",
         "answers": [
           "turnover"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "business",
-        "ipa": "",
+        "ipa": "/ˈbɪznəs/",
         "meaning": "商业",
         "answers": [
           "business"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -335,11 +396,17 @@ const data = [
     "supportWords": [
       {
         "word": "invest",
-        "meaning": "投资"
+        "meaning": "投资",
+        "ipa": "/ˌɪnˈvɛst/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "negotiation",
-        "meaning": "谈判"
+        "meaning": "谈判",
+        "ipa": "/nɪˌɡoʊʃiˈeɪʃən/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -371,84 +438,104 @@ const data = [
     "newCoreWords": [
       {
         "word": "workforce",
-        "ipa": "",
+        "ipa": "/ˈwɝkˌfɔɹs/",
         "meaning": "劳动力",
         "answers": [
           "workforce"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "subsidy",
-        "ipa": "",
+        "ipa": "/ˈsʌbsɪdi/",
         "meaning": "补贴",
         "answers": [
           "subsidy"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "firm",
-        "ipa": "",
+        "ipa": "/ˈfɝm/",
         "meaning": "公司",
         "answers": [
           "firm"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "hire",
-        "ipa": "",
+        "ipa": "/ˈhaɪɚ/",
         "meaning": "雇用",
         "answers": [
           "hire"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "personnel",
-        "ipa": "",
+        "ipa": "/ˌpɝsəˈnɛl/",
         "meaning": "人员",
         "answers": [
           "personnel"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tariff",
-        "ipa": "",
+        "ipa": "/ˈtɛɹəf/",
         "meaning": "关税",
         "answers": [
           "tariff",
           "tariffs"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sustainable",
-        "ipa": "",
+        "ipa": "/səˈsteɪnəbəl/",
         "meaning": "可持续的",
         "answers": [
           "sustainable"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "growth",
-        "ipa": "",
+        "ipa": "/ˈɡɹoʊθ/",
         "meaning": "增长",
         "answers": [
           "growth"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "reliable",
-        "ipa": "",
+        "ipa": "/ɹɪˈlaɪəbəl/",
         "meaning": "可靠的",
         "answers": [
           "reliable"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "financial",
-        "ipa": "",
+        "ipa": "/fəˈnænʃəl/",
         "meaning": "财务的",
         "answers": [
           "financial"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -458,5 +545,5 @@ const data = [
     "supportWords": []
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

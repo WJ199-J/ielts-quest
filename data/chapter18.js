@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 18 沙场争锋 | Mission 79–82 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 79,
     "chapter": 18,
@@ -29,75 +29,93 @@ const data = [
     "newCoreWords": [
       {
         "word": "conflict",
-        "ipa": "",
+        "ipa": "/ˈkɑnflɪkt/ 或 /kənˈflɪkt/",
         "meaning": "冲突",
         "answers": [
           "conflict"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "military",
-        "ipa": "",
+        "ipa": "/ˈmɪləˌtɛɹi/",
         "meaning": "军事的",
         "answers": [
           "military"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "soldier",
-        "ipa": "",
+        "ipa": "/ˈsoʊldʒɚ/",
         "meaning": "士兵",
         "answers": [
           "soldier"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "helmet",
-        "ipa": "",
+        "ipa": "/ˈhɛlmət/",
         "meaning": "头盔",
         "answers": [
           "helmet"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "shield",
-        "ipa": "",
+        "ipa": "/ˈʃild/",
         "meaning": "盾牌",
         "answers": [
           "shield"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "army",
-        "ipa": "",
+        "ipa": "/ˈɑɹmi/",
         "meaning": "军队",
         "answers": [
           "army"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "strategy",
-        "ipa": "",
+        "ipa": "/ˈstɹætədʒi/",
         "meaning": "战略",
         "answers": [
           "strategy"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "battle",
-        "ipa": "",
+        "ipa": "/ˈbætəl/",
         "meaning": "战斗",
         "answers": [
           "battle"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "war",
-        "ipa": "",
+        "ipa": "/ˈwɔɹ/",
         "meaning": "战争",
         "answers": [
           "war"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -131,92 +149,115 @@ const data = [
     "newCoreWords": [
       {
         "word": "explosion",
-        "ipa": "",
+        "ipa": "/ɪkˈsploʊʒən/",
         "meaning": "爆炸",
         "answers": [
           "explosion"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "escape",
-        "ipa": "",
+        "ipa": "/ɪˈskeɪp/",
         "meaning": "逃离",
         "answers": [
           "escape",
           "escaped"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "shelter",
-        "ipa": "",
+        "ipa": "/ˈʃɛltɚ/",
         "meaning": "避难所",
         "answers": [
           "shelter"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "rescue",
-        "ipa": "",
+        "ipa": "/ˈɹɛskju/",
         "meaning": "救援",
         "answers": [
           "rescue"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "warn",
-        "ipa": "",
+        "ipa": "/ˈwɔɹn/",
         "meaning": "警告",
         "answers": [
           "warn",
           "warned"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "danger",
-        "ipa": "",
+        "ipa": "/ˈdeɪndʒɚ/",
         "meaning": "危险",
         "answers": [
           "danger"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "blast",
-        "ipa": "",
+        "ipa": "/ˈblæst/",
         "meaning": "爆炸",
         "answers": [
           "blast"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "prevent",
-        "ipa": "",
+        "ipa": "/pɹɪˈvɛnt/",
         "meaning": "防止",
         "answers": [
           "prevent"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "harm",
-        "ipa": "",
+        "ipa": "/ˈhɑɹm/",
         "meaning": "伤害",
         "answers": [
           "harm"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "distribute",
-        "ipa": "",
+        "ipa": "/dɪˈstɹɪbjut/",
         "meaning": "分发",
         "answers": [
           "distribute"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
     "supportWords": [
       {
         "word": "casualty",
-        "meaning": "伤亡人员"
+        "meaning": "伤亡人员",
+        "ipa": "/ˈkæʒəwəlti/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -248,84 +289,104 @@ const data = [
     "newCoreWords": [
       {
         "word": "rival",
-        "ipa": "",
+        "ipa": "/ˈɹaɪvəl/",
         "meaning": "对手",
         "answers": [
           "rival"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pause",
-        "ipa": "",
+        "ipa": "/ˈpɔz/",
         "meaning": "暂停",
         "answers": [
           "pause"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "campaign",
-        "ipa": "",
+        "ipa": "/kæmˈpeɪn/",
         "meaning": "行动",
         "answers": [
           "campaign"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "halt",
-        "ipa": "",
+        "ipa": "/ˈhɔlt/",
         "meaning": "停止",
         "answers": [
           "halt"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "violence",
-        "ipa": "",
+        "ipa": "/ˈvaɪələns/",
         "meaning": "暴力",
         "answers": [
           "violence"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "avoid",
-        "ipa": "",
+        "ipa": "/əˈvɔɪd/",
         "meaning": "避免",
         "answers": [
           "avoid"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "attack",
-        "ipa": "",
+        "ipa": "/əˈtæk/",
         "meaning": "袭击",
         "answers": [
           "attack",
           "attacks"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "compromise",
-        "ipa": "",
+        "ipa": "/ˈkɑmpɹəˌmaɪz/",
         "meaning": "妥协",
         "answers": [
           "compromise"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "cease",
-        "ipa": "",
+        "ipa": "/ˈsis/",
         "meaning": "停止",
         "answers": [
           "cease"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tension",
-        "ipa": "",
+        "ipa": "/ˈtɛnʃən/",
         "meaning": "紧张",
         "answers": [
           "tension"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -361,78 +422,96 @@ const data = [
     "newCoreWords": [
       {
         "word": "monument",
-        "ipa": "",
+        "ipa": "/ˈmɑnjumənt/",
         "meaning": "纪念碑",
         "answers": [
           "monument"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "honour",
-        "ipa": "",
+        "ipa": "/ˈɑnɚ/",
         "meaning": "尊敬",
         "answers": [
           "honour",
           "honoured"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "veteran",
-        "ipa": "",
+        "ipa": "/ˈvɛtɚən/",
         "meaning": "退伍军人",
         "answers": [
           "veteran",
           "veterans"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "restore",
-        "ipa": "",
+        "ipa": "/ɹɪˈstɔɹ/",
         "meaning": "修复",
         "answers": [
           "restore"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "damage",
-        "ipa": "",
+        "ipa": "/ˈdæmədʒ/",
         "meaning": "损害",
         "answers": [
           "damage",
           "damaged"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "safeguard",
-        "ipa": "",
+        "ipa": "/ˈseɪfˌɡɑɹd/",
         "meaning": "保护",
         "answers": [
           "safeguard"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "heritage",
-        "ipa": "",
+        "ipa": "/ˈhɛɹətədʒ/",
         "meaning": "遗产",
         "answers": [
           "heritage"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "catastrophe",
-        "ipa": "",
+        "ipa": "/kəˈtæstɹəfi/",
         "meaning": "灾难",
         "answers": [
           "catastrophe"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "cooperation",
-        "ipa": "",
+        "ipa": "/koʊˌɑpɚˈeɪʃən/",
         "meaning": "合作",
         "answers": [
           "cooperation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -442,5 +521,5 @@ const data = [
     "supportWords": []
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

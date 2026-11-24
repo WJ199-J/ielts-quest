@@ -1,4 +1,4 @@
-/* IELTS Quest | Chapter 5 | standalone additive course data */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
 const data=[
   {
@@ -37,139 +37,173 @@ const data=[
     "newCoreWords": [
       {
         "word": "university",
-        "ipa": "",
+        "ipa": "/ˌjunəˈvɝsəti/",
         "meaning": "大学",
         "answers": [
           "university"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "campus",
-        "ipa": "",
+        "ipa": "/ˈkæmpəs/",
         "meaning": "校园",
         "answers": [
           "campus"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "orientation",
-        "ipa": "",
+        "ipa": "/ˌɔɹiɛnˈteɪʃən/",
         "meaning": "迎新介绍",
         "answers": [
           "orientation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fresher",
-        "ipa": "",
+        "ipa": "/ˈfɹɛʃɚ/",
         "meaning": "大学一年级新生",
         "answers": [
           "fresher"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "register",
-        "ipa": "",
+        "ipa": "/ˈɹɛdʒɪstɚ/",
         "meaning": "登记；注册",
         "answers": [
           "register"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "enrol",
-        "ipa": "",
+        "ipa": "/ɛnˈɹoʊl/",
         "meaning": "注册课程",
         "answers": [
           "enrol"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "senior",
-        "ipa": "",
+        "ipa": "/ˈsinjɚ/",
         "meaning": "高年级学生",
         "answers": [
           "senior"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "dorm",
-        "ipa": "",
+        "ipa": "/ˈdɔɹm/",
         "meaning": "宿舍",
         "answers": [
           "dorm"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "dining hall",
-        "ipa": "",
+        "ipa": "/ˈdaɪnɪŋ ˈhɔl/",
         "meaning": "食堂",
         "answers": [
           "dining hall"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "library",
-        "ipa": "",
+        "ipa": "/ˈlaɪbɹɛˌɹi/",
         "meaning": "图书馆",
         "answers": [
           "library"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "laboratory",
-        "ipa": "",
+        "ipa": "/ˈlæbɹəˌtɔɹi/",
         "meaning": "实验室",
         "answers": [
           "laboratory"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "experiment",
-        "ipa": "",
+        "ipa": "/ɪkˈspɛɹəmənt/",
         "meaning": "实验",
         "answers": [
           "experiment"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "novice",
-        "ipa": "",
+        "ipa": "/ˈnɑvəs/",
         "meaning": "新手",
         "answers": [
           "novice"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "mentor",
-        "ipa": "",
+        "ipa": "/ˈmɛnˌtɔɹ/",
         "meaning": "导师",
         "answers": [
           "mentor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "acquire",
-        "ipa": "",
+        "ipa": "/əˈkwaɪɚ/",
         "meaning": "获得",
         "answers": [
           "acquire"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "knowledge",
-        "ipa": "",
+        "ipa": "/ˈnɑlədʒ/",
         "meaning": "知识",
         "answers": [
           "knowledge"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "education",
-        "ipa": "",
+        "ipa": "/ˌɛdʒəˈkeɪʃən/",
         "meaning": "教育",
         "answers": [
           "education"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -178,7 +212,10 @@ const data=[
     "supportWords": [
       {
         "word": "conduct",
-        "meaning": "开展"
+        "meaning": "开展",
+        "ipa": "/ˈkɑndəkt/ 或 /kɑˈndʌkt/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -222,147 +259,183 @@ const data=[
     "newCoreWords": [
       {
         "word": "semester",
-        "ipa": "",
+        "ipa": "/səˈmɛstɚ/",
         "meaning": "学期",
         "answers": [
           "semester"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "timetable",
-        "ipa": "",
+        "ipa": "/ˈtaɪmˌteɪbəl/",
         "meaning": "课程表",
         "answers": [
           "timetable"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "syllabus",
-        "ipa": "",
+        "ipa": "/ˈsɪləbəs/",
         "meaning": "教学大纲",
         "answers": [
           "syllabus"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "curriculum",
-        "ipa": "",
+        "ipa": "/kɚˈɪkjələm/",
         "meaning": "课程体系",
         "answers": [
           "curriculum"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "compulsory",
-        "ipa": "",
+        "ipa": "/kəmˈpʌlsɚi/",
         "meaning": "必修的；强制的",
         "answers": [
           "compulsory"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "seminar",
-        "ipa": "",
+        "ipa": "/ˈsɛməˌnɑɹ/",
         "meaning": "研讨会",
         "answers": [
           "seminar"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "practical",
-        "ipa": "",
+        "ipa": "/ˈpɹæktəkəl/",
         "meaning": "实际的",
         "answers": [
           "practical"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "inspire",
-        "ipa": "",
+        "ipa": "/ˌɪnˈspaɪɹ/",
         "meaning": "激励；启发",
         "answers": [
           "inspire"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "stimulate",
-        "ipa": "",
+        "ipa": "/ˈstɪmjəˌleɪt/",
         "meaning": "激发",
         "answers": [
           "stimulate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "emphasise",
-        "ipa": "",
+        "ipa": "/ˈemfəsaɪz/",
         "meaning": "强调",
         "answers": [
           "emphasise"
-        ]
+        ],
+        "ipaAccent": "en-GB",
+        "ipaSource": "人工校订英式宽式音标"
       },
       {
         "word": "cram",
-        "ipa": "",
+        "ipa": "/ˈkɹæm/",
         "meaning": "临时死记硬背",
         "answers": [
           "cram"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "enable",
-        "ipa": "",
+        "ipa": "/ɛˈneɪbəl/",
         "meaning": "使能够",
         "answers": [
           "enable"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "obscure",
-        "ipa": "",
+        "ipa": "/əbˈskjʊɹ/",
         "meaning": "晦涩的",
         "answers": [
           "obscure"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "puzzle",
-        "ipa": "",
+        "ipa": "/ˈpʌzəl/",
         "meaning": "难题",
         "answers": [
           "puzzle"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "enhance",
-        "ipa": "",
+        "ipa": "/ɛnˈhæns/",
         "meaning": "提高；增强",
         "answers": [
           "enhance"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "deadline",
-        "ipa": "",
+        "ipa": "/ˈdɛdˌlaɪn/",
         "meaning": "截止日期",
         "answers": [
           "deadline"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "academic",
-        "ipa": "",
+        "ipa": "/ˌækəˈdɛmɪk/",
         "meaning": "学术的",
         "answers": [
           "academic"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "forum",
-        "ipa": "",
+        "ipa": "/ˈfɔɹəm/",
         "meaning": "论坛",
         "answers": [
           "forum"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -372,7 +445,10 @@ const data=[
     "supportWords": [
       {
         "word": "grasp",
-        "meaning": "理解"
+        "meaning": "理解",
+        "ipa": "/ˈɡɹæsp/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -420,147 +496,183 @@ const data=[
     "newCoreWords": [
       {
         "word": "institute",
-        "ipa": "",
+        "ipa": "/ˈɪnstəˌtut/",
         "meaning": "研究所",
         "answers": [
           "institute"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "expertise",
-        "ipa": "",
+        "ipa": "/ˌɛkspɚˈtiz/",
         "meaning": "专业知识",
         "answers": [
           "expertise"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "quantitative",
-        "ipa": "",
+        "ipa": "/ˈkwɑntɪˌteɪtɪv/",
         "meaning": "定量的",
         "answers": [
           "quantitative"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "data",
-        "ipa": "",
+        "ipa": "/ˈdeɪtə/",
         "meaning": "数据",
         "answers": [
           "data"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "qualitative",
-        "ipa": "",
+        "ipa": "/ˈkwɑləˌteɪtɪv/",
         "meaning": "定性的",
         "answers": [
           "qualitative"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "evidence",
-        "ipa": "",
+        "ipa": "/ˈɛvədəns/",
         "meaning": "证据",
         "answers": [
           "evidence"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "article",
-        "ipa": "",
+        "ipa": "/ˈɑɹtəkəl/",
         "meaning": "文章",
         "answers": [
           "article"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "literature",
-        "ipa": "",
+        "ipa": "/ˈlɪtɚətʃɚ/",
         "meaning": "文献",
         "answers": [
           "literature"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "controversial",
-        "ipa": "",
+        "ipa": "/ˌkɑntɹəˈvɝʃəl/",
         "meaning": "有争议的",
         "answers": [
           "controversial"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "issue",
-        "ipa": "",
+        "ipa": "/ˈɪʃu/",
         "meaning": "问题",
         "answers": [
           "issue"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "hypothesis",
-        "ipa": "",
+        "ipa": "/haɪˈpɑθəsəs/",
         "meaning": "假设",
         "answers": [
           "hypothesis"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "empirical",
-        "ipa": "",
+        "ipa": "/ˌɛmˈpɪɹɪkəl/",
         "meaning": "实证的",
         "answers": [
           "empirical"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "systematic",
-        "ipa": "",
+        "ipa": "/ˌsɪstəˈmætɪk/",
         "meaning": "系统的",
         "answers": [
           "systematic"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "analyse",
-        "ipa": "",
+        "ipa": "/ˈænəˌlaɪz/",
         "meaning": "分析",
         "answers": [
           "analyse"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "assess",
-        "ipa": "",
+        "ipa": "/əˈsɛs/",
         "meaning": "评估",
         "answers": [
           "assess"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "quality",
-        "ipa": "",
+        "ipa": "/ˈkwɑləti/",
         "meaning": "质量",
         "answers": [
           "quality"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "motivation",
-        "ipa": "",
+        "ipa": "/ˌmoʊtəˈveɪʃən/",
         "meaning": "动机",
         "answers": [
           "motivation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "scholar",
-        "ipa": "",
+        "ipa": "/ˈskɑlɚ/",
         "meaning": "学者",
         "answers": [
           "scholar"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -570,7 +682,10 @@ const data=[
     "supportWords": [
       {
         "word": "supervisor",
-        "meaning": "指导老师"
+        "meaning": "指导老师",
+        "ipa": "/ˈsupɚˌvaɪzɚ/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -618,131 +733,163 @@ const data=[
     "newCoreWords": [
       {
         "word": "scheme",
-        "ipa": "",
+        "ipa": "/ˈskim/",
         "meaning": "方案",
         "answers": [
           "scheme"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "secondary",
-        "ipa": "",
+        "ipa": "/ˈsɛkəˌndɛɹi/",
         "meaning": "中等教育的",
         "answers": [
           "secondary"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "literate",
-        "ipa": "",
+        "ipa": "/ˈlɪtɚət/",
         "meaning": "有读写能力的",
         "answers": [
           "literate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "numerate",
-        "ipa": "",
+        "ipa": "/ˈnuməɹət/",
         "meaning": "有计算能力的",
         "answers": [
           "numerate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "primary",
-        "ipa": "",
+        "ipa": "/ˈpɹaɪˌmɛɹi/",
         "meaning": "首要的；初级的",
         "answers": [
           "primary"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "intellectual",
-        "ipa": "",
+        "ipa": "/ˌɪntəˈlɛktʃuəl/",
         "meaning": "智力的",
         "answers": [
           "intellectual"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "platform",
-        "ipa": "",
+        "ipa": "/ˈplætˌfɔɹm/",
         "meaning": "平台",
         "answers": [
           "platform"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "motivate",
-        "ipa": "",
+        "ipa": "/ˈmoʊtəˌveɪt/",
         "meaning": "激励",
         "answers": [
           "motivate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "evaluate",
-        "ipa": "",
+        "ipa": "/ɪˈvæljuˌeɪt/",
         "meaning": "评估",
         "answers": [
           "evaluate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "achievement",
-        "ipa": "",
+        "ipa": "/əˈtʃivmənt/",
         "meaning": "成就",
         "answers": [
           "achievement"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "system",
-        "ipa": "",
+        "ipa": "/ˈsɪstəm/",
         "meaning": "体系",
         "answers": [
           "system"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fundamental",
-        "ipa": "",
+        "ipa": "/ˌfʌndəˈmɛntəl/",
         "meaning": "基础的",
         "answers": [
           "fundamental"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "advanced",
-        "ipa": "",
+        "ipa": "/əˈdvænst/",
         "meaning": "高级的",
         "answers": [
           "advanced"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "alumni",
-        "ipa": "",
+        "ipa": "/əˈlʌˌmnaɪ/",
         "meaning": "校友",
         "answers": [
           "alumni"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "educational",
-        "ipa": "",
+        "ipa": "/ˌɛdʒəˈkeɪʃənəl/",
         "meaning": "教育的",
         "answers": [
           "educational"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "discipline",
-        "ipa": "",
+        "ipa": "/ˈdɪsəplən/",
         "meaning": "纪律；训练",
         "answers": [
           "discipline"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -753,7 +900,10 @@ const data=[
     "supportWords": [
       {
         "word": "panel",
-        "meaning": "评审小组"
+        "meaning": "评审小组",
+        "ipa": "/ˈpænəl/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   }

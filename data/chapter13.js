@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 13 建筑场所 | Mission 59–62 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 59,
     "chapter": 13,
@@ -29,99 +29,123 @@ const data = [
     "newCoreWords": [
       {
         "word": "spacious",
-        "ipa": "",
+        "ipa": "/ˈspeɪʃəs/",
         "meaning": "宽敞的",
         "answers": [
           "spacious"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "lobby",
-        "ipa": "",
+        "ipa": "/ˈlɑbi/",
         "meaning": "大堂",
         "answers": [
           "lobby"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "urban",
-        "ipa": "",
+        "ipa": "/ˈɝbən/",
         "meaning": "城市的",
         "answers": [
           "urban"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "corridor",
-        "ipa": "",
+        "ipa": "/ˈkɔɹədɚ/",
         "meaning": "走廊",
         "answers": [
           "corridor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "elevator",
-        "ipa": "",
+        "ipa": "/ˈɛləˌveɪtɚ/",
         "meaning": "电梯",
         "answers": [
           "elevator"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "staircase",
-        "ipa": "",
+        "ipa": "/ˈstɛɹˌkeɪs/",
         "meaning": "楼梯",
         "answers": [
           "staircase"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pillar",
-        "ipa": "",
+        "ipa": "/ˈpɪlɚ/",
         "meaning": "支柱",
         "answers": [
           "pillar"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "column",
-        "ipa": "",
+        "ipa": "/ˈkɑləm/",
         "meaning": "柱",
         "answers": [
           "column"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "arch",
-        "ipa": "",
+        "ipa": "/ˈɑɹtʃ/",
         "meaning": "拱门",
         "answers": [
           "arch"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "entrance",
-        "ipa": "",
+        "ipa": "/ˈɛntɹəns/",
         "meaning": "入口",
         "answers": [
           "entrance"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "balcony",
-        "ipa": "",
+        "ipa": "/ˈbælkəni/",
         "meaning": "阳台",
         "answers": [
           "balcony"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "downtown",
-        "ipa": "",
+        "ipa": "/ˈdaʊnˈtaʊn/",
         "meaning": "市中心",
         "answers": [
           "downtown"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -155,116 +179,144 @@ const data = [
     "newCoreWords": [
       {
         "word": "cottage",
-        "ipa": "",
+        "ipa": "/ˈkɑtədʒ/",
         "meaning": "小屋",
         "answers": [
           "cottage"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "ceiling",
-        "ipa": "",
+        "ipa": "/ˈsilɪŋ/",
         "meaning": "天花板",
         "answers": [
           "ceiling"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "chimney",
-        "ipa": "",
+        "ipa": "/ˈtʃɪmni/",
         "meaning": "烟囱",
         "answers": [
           "chimney"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "mason",
-        "ipa": "",
+        "ipa": "/ˈmeɪsən/",
         "meaning": "泥瓦匠",
         "answers": [
           "mason"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "brickwork",
-        "ipa": "",
+        "ipa": "/ˈbrɪkwɜːk/",
         "meaning": "砖砌结构",
         "answers": [
           "brickwork"
-        ]
+        ],
+        "ipaAccent": "en-GB",
+        "ipaSource": "人工校订英式宽式音标"
       },
       {
         "word": "mend",
-        "ipa": "",
+        "ipa": "/ˈmɛnd/",
         "meaning": "修补",
         "answers": [
           "mend"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "scaffold",
-        "ipa": "",
+        "ipa": "/ˈskæfəld/",
         "meaning": "脚手架",
         "answers": [
           "scaffold"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "eaves",
-        "ipa": "",
+        "ipa": "/ˈivz/",
         "meaning": "屋檐",
         "answers": [
           "eaves"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "install",
-        "ipa": "",
+        "ipa": "/ˌɪnˈstɔl/",
         "meaning": "安装",
         "answers": [
           "install"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tile",
-        "ipa": "",
+        "ipa": "/ˈtaɪl/",
         "meaning": "瓦片",
         "answers": [
           "tile",
           "tiles"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fix",
-        "ipa": "",
+        "ipa": "/ˈfɪks/",
         "meaning": "修理",
         "answers": [
           "fix"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "radiator",
-        "ipa": "",
+        "ipa": "/ˈɹeɪdiˌeɪtɚ/",
         "meaning": "暖气片",
         "answers": [
           "radiator"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "trim",
-        "ipa": "",
+        "ipa": "/ˈtɹɪm/",
         "meaning": "修整",
         "answers": [
           "trim"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "cabinet",
-        "ipa": "",
+        "ipa": "/ˈkæbənət/",
         "meaning": "柜子",
         "answers": [
           "cabinet"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -298,85 +350,105 @@ const data = [
     "newCoreWords": [
       {
         "word": "viaduct",
-        "ipa": "",
+        "ipa": "/ˈvaɪədəkt/",
         "meaning": "高架桥",
         "answers": [
           "viaduct"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "span",
-        "ipa": "",
+        "ipa": "/ˈspæn/",
         "meaning": "跨越",
         "answers": [
           "span"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "suspension",
-        "ipa": "",
+        "ipa": "/səˈspɛnʃən/",
         "meaning": "悬挂",
         "answers": [
           "suspension"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "beam",
-        "ipa": "",
+        "ipa": "/ˈbim/",
         "meaning": "横梁",
         "answers": [
           "beam"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "layout",
-        "ipa": "",
+        "ipa": "/ˈleɪˌaʊt/",
         "meaning": "布局",
         "answers": [
           "layout"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "crane",
-        "ipa": "",
+        "ipa": "/ˈkɹeɪn/",
         "meaning": "起重机",
         "answers": [
           "crane"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "drill",
-        "ipa": "",
+        "ipa": "/ˈdɹɪl/",
         "meaning": "钻孔",
         "answers": [
           "drill",
           "drilled"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "weld",
-        "ipa": "",
+        "ipa": "/ˈwɛld/",
         "meaning": "焊接",
         "answers": [
           "weld",
           "welded"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "assemble",
-        "ipa": "",
+        "ipa": "/əˈsɛmbəl/",
         "meaning": "组装",
         "answers": [
           "assemble"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "maintain",
-        "ipa": "",
+        "ipa": "/meɪnˈteɪn/",
         "meaning": "维护",
         "answers": [
           "maintain"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -410,83 +482,103 @@ const data = [
     "newCoreWords": [
       {
         "word": "complex",
-        "ipa": "",
+        "ipa": "/ˈkɑmplɛks/",
         "meaning": "综合建筑群",
         "answers": [
           "complex"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "nursery",
-        "ipa": "",
+        "ipa": "/ˈnɝsɚi/",
         "meaning": "托儿所",
         "answers": [
           "nursery"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "supermarket",
-        "ipa": "",
+        "ipa": "/ˈsupɚˌmɑɹkɪt/",
         "meaning": "超市",
         "answers": [
           "supermarket"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "studio",
-        "ipa": "",
+        "ipa": "/ˈstudiˌoʊ/",
         "meaning": "工作室",
         "answers": [
           "studio"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "exterior",
-        "ipa": "",
+        "ipa": "/ɪkˈstɪɹiɚ/",
         "meaning": "外部",
         "answers": [
           "exterior"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "porch",
-        "ipa": "",
+        "ipa": "/ˈpɔɹtʃ/",
         "meaning": "门廊",
         "answers": [
           "porch"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "placement",
-        "ipa": "",
+        "ipa": "/ˈpleɪsmənt/",
         "meaning": "位置",
         "answers": [
           "placement"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "interior",
-        "ipa": "",
+        "ipa": "/ˌɪnˈtɪɹiɚ/",
         "meaning": "内部",
         "answers": [
           "interior"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "vicinity",
-        "ipa": "",
+        "ipa": "/vəˈsɪnəti/",
         "meaning": "附近地区",
         "answers": [
           "vicinity"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "void",
-        "ipa": "",
+        "ipa": "/ˈvɔɪd/",
         "meaning": "空地",
         "answers": [
           "void"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -495,5 +587,5 @@ const data = [
     "supportWords": []
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

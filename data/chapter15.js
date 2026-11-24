@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 15 国家政府 | Mission 67–70 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 67,
     "chapter": 15,
@@ -29,83 +29,103 @@ const data = [
     "newCoreWords": [
       {
         "word": "mayor",
-        "ipa": "",
+        "ipa": "/ˈmeɪɚ/",
         "meaning": "市长",
         "answers": [
           "mayor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "municipal",
-        "ipa": "",
+        "ipa": "/mjuˈnɪsəpəl/",
         "meaning": "市政的",
         "answers": [
           "municipal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "office",
-        "ipa": "",
+        "ipa": "/ˈɔfɪs/",
         "meaning": "办公室",
         "answers": [
           "office"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "secretary",
-        "ipa": "",
+        "ipa": "/ˈsɛkɹəˌtɛɹi/",
         "meaning": "秘书",
         "answers": [
           "secretary"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "department",
-        "ipa": "",
+        "ipa": "/dɪˈpɑɹtmənt/",
         "meaning": "部门",
         "answers": [
           "department"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "service",
-        "ipa": "",
+        "ipa": "/ˈsɝvəs/",
         "meaning": "服务",
         "answers": [
           "service"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "authority",
-        "ipa": "",
+        "ipa": "/əˈθɔɹəti/",
         "meaning": "权力",
         "answers": [
           "authority"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "government",
-        "ipa": "",
+        "ipa": "/ˈɡʌvɚmənt/",
         "meaning": "政府",
         "answers": [
           "government"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "administration",
-        "ipa": "",
+        "ipa": "/ædˌmɪnɪˈstɹeɪʃən/",
         "meaning": "行政管理",
         "answers": [
           "administration"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "community",
-        "ipa": "",
+        "ipa": "/kəˈmjunəti/",
         "meaning": "社区",
         "answers": [
           "community"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -139,86 +159,107 @@ const data = [
     "newCoreWords": [
       {
         "word": "citizen",
-        "ipa": "",
+        "ipa": "/ˈsɪtəzən/",
         "meaning": "公民",
         "answers": [
           "citizen",
           "citizens"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "vote",
-        "ipa": "",
+        "ipa": "/ˈvoʊt/",
         "meaning": "投票",
         "answers": [
           "vote"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "elect",
-        "ipa": "",
+        "ipa": "/ɪˈlɛkt/",
         "meaning": "选举",
         "answers": [
           "elect",
           "elected"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "influence",
-        "ipa": "",
+        "ipa": "/ˈɪnfluəns/",
         "meaning": "影响",
         "answers": [
           "influence"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "poll",
-        "ipa": "",
+        "ipa": "/ˈpoʊl/",
         "meaning": "民意调查",
         "answers": [
           "poll"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "preference",
-        "ipa": "",
+        "ipa": "/ˈpɹɛfɚəns/",
         "meaning": "偏好",
         "answers": [
           "preference",
           "preferences"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "resident",
-        "ipa": "",
+        "ipa": "/ˈɹɛzɪdənt/",
         "meaning": "居民",
         "answers": [
           "resident",
           "residents"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "reform",
-        "ipa": "",
+        "ipa": "/ɹəˈfɔɹm/",
         "meaning": "改革",
         "answers": [
           "reform"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "parliament",
-        "ipa": "",
+        "ipa": "/ˈpɑɹləmənt/",
         "meaning": "议会",
         "answers": [
           "parliament"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
     "supportWords": [
       {
         "word": "democracy",
-        "meaning": "民主"
+        "meaning": "民主",
+        "ipa": "/dɪˈmɑkɹəsi/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -250,91 +291,113 @@ const data = [
     "newCoreWords": [
       {
         "word": "delegation",
-        "ipa": "",
+        "ipa": "/ˌdɛləˈɡeɪʃən/",
         "meaning": "代表团",
         "answers": [
           "delegation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "headquarters",
-        "ipa": "",
+        "ipa": "/ˈhɛdˌkwɔɹtɚz/",
         "meaning": "总部",
         "answers": [
           "headquarters"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "bilateral",
-        "ipa": "",
+        "ipa": "/baɪˈlætɚəl/",
         "meaning": "双边的",
         "answers": [
           "bilateral"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "meeting",
-        "ipa": "",
+        "ipa": "/ˈmitɪŋ/",
         "meaning": "会议",
         "answers": [
           "meeting"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "minister",
-        "ipa": "",
+        "ipa": "/ˈmɪnəstɚ/",
         "meaning": "部长",
         "answers": [
           "minister"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "behalf",
-        "ipa": "",
+        "ipa": "/bɪˈhæf/",
         "meaning": "代表",
         "answers": [
           "behalf"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "nation",
-        "ipa": "",
+        "ipa": "/ˈneɪʃən/",
         "meaning": "国家",
         "answers": [
           "nation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "global",
-        "ipa": "",
+        "ipa": "/ˈɡloʊbəl/",
         "meaning": "全球的",
         "answers": [
           "global"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "overseas",
-        "ipa": "",
+        "ipa": "/ˈoʊvɚˈsiz/",
         "meaning": "海外的",
         "answers": [
           "overseas"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "neutral",
-        "ipa": "",
+        "ipa": "/ˈnutɹəl/",
         "meaning": "中立的",
         "answers": [
           "neutral"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "clarify",
-        "ipa": "",
+        "ipa": "/ˈklɛɹəˌfaɪ/",
         "meaning": "澄清",
         "answers": [
           "clarify"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -368,85 +431,105 @@ const data = [
     "newCoreWords": [
       {
         "word": "announce",
-        "ipa": "",
+        "ipa": "/əˈnaʊns/",
         "meaning": "宣布",
         "answers": [
           "announce",
           "announced"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "proposal",
-        "ipa": "",
+        "ipa": "/pɹəˈpoʊzəl/",
         "meaning": "提案",
         "answers": [
           "proposal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "welfare",
-        "ipa": "",
+        "ipa": "/ˈwɛlˌfɛɹ/",
         "meaning": "福利",
         "answers": [
           "welfare"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "implement",
-        "ipa": "",
+        "ipa": "/ˈɪmpləmənt/",
         "meaning": "实施",
         "answers": [
           "implement"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "guideline",
-        "ipa": "",
+        "ipa": "/ˈɡaɪdˌlaɪn/",
         "meaning": "指导方针",
         "answers": [
           "guideline"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "institution",
-        "ipa": "",
+        "ipa": "/ˌɪnstɪˈtuʃən/",
         "meaning": "机构",
         "answers": [
           "institution",
           "institutions"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "federal",
-        "ipa": "",
+        "ipa": "/ˈfɛdɚəl/",
         "meaning": "联邦的",
         "answers": [
           "federal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "monitor",
-        "ipa": "",
+        "ipa": "/ˈmɑnətɚ/",
         "meaning": "监督",
         "answers": [
           "monitor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "process",
-        "ipa": "",
+        "ipa": "/ˈpɹɑˌsɛs/",
         "meaning": "过程",
         "answers": [
           "process"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "independence",
-        "ipa": "",
+        "ipa": "/ˌɪndɪˈpɛndəns/",
         "meaning": "独立",
         "answers": [
           "independence"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -455,10 +538,13 @@ const data = [
     "supportWords": [
       {
         "word": "ethic",
-        "meaning": "伦理"
+        "meaning": "伦理",
+        "ipa": "/ˈɛθɪk/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

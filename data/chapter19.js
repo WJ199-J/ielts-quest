@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 19 社会角色 | Mission 83–86 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 83,
     "chapter": 19,
@@ -29,77 +29,95 @@ const data = [
     "newCoreWords": [
       {
         "word": "neighbourhood",
-        "ipa": "",
+        "ipa": "/ˈneɪbɚˌhʊd/",
         "meaning": "社区",
         "answers": [
           "neighbourhood"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "generation",
-        "ipa": "",
+        "ipa": "/ˌdʒɛnɚˈeɪʃən/",
         "meaning": "一代人",
         "answers": [
           "generation",
           "generations"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "landlord",
-        "ipa": "",
+        "ipa": "/ˈlændˌlɔɹd/",
         "meaning": "房东",
         "answers": [
           "landlord"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tenant",
-        "ipa": "",
+        "ipa": "/ˈtɛnənt/",
         "meaning": "租客",
         "answers": [
           "tenant"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "household",
-        "ipa": "",
+        "ipa": "/ˈhaʊˌshoʊld/",
         "meaning": "家庭",
         "answers": [
           "household"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "couple",
-        "ipa": "",
+        "ipa": "/ˈkʌpəl/",
         "meaning": "夫妻",
         "answers": [
           "couple"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "twin",
-        "ipa": "",
+        "ipa": "/ˈtwɪn/",
         "meaning": "双胞胎",
         "answers": [
           "twin",
           "twins"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sibling",
-        "ipa": "",
+        "ipa": "/ˈsɪblɪŋ/",
         "meaning": "兄弟姐妹",
         "answers": [
           "sibling"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "member",
-        "ipa": "",
+        "ipa": "/ˈmɛmbɚ/",
         "meaning": "成员",
         "answers": [
           "member"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -135,68 +153,84 @@ const data = [
     "newCoreWords": [
       {
         "word": "wedding",
-        "ipa": "",
+        "ipa": "/ˈwɛdɪŋ/",
         "meaning": "婚礼",
         "answers": [
           "wedding"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "cousin",
-        "ipa": "",
+        "ipa": "/ˈkʌzən/",
         "meaning": "表亲",
         "answers": [
           "cousin"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "niece",
-        "ipa": "",
+        "ipa": "/ˈnis/",
         "meaning": "侄女",
         "answers": [
           "niece"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "husband",
-        "ipa": "",
+        "ipa": "/ˈhʌzbənd/",
         "meaning": "丈夫",
         "answers": [
           "husband"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "relative",
-        "ipa": "",
+        "ipa": "/ˈɹɛlətɪv/",
         "meaning": "亲属",
         "answers": [
           "relative",
           "relatives"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "grandfather",
-        "ipa": "",
+        "ipa": "/ˈɡɹændˌfɑðɚ/",
         "meaning": "祖父",
         "answers": [
           "grandfather"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "adolescence",
-        "ipa": "",
+        "ipa": "/ˌædəˈlɛsəns/",
         "meaning": "青春期",
         "answers": [
           "adolescence"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "engagement",
-        "ipa": "",
+        "ipa": "/ɛnˈɡeɪdʒmənt/",
         "meaning": "订婚",
         "answers": [
           "engagement"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -232,84 +266,104 @@ const data = [
     "newCoreWords": [
       {
         "word": "nurse",
-        "ipa": "",
+        "ipa": "/ˈnɝs/",
         "meaning": "护士",
         "answers": [
           "nurse"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "veterinary",
-        "ipa": "",
+        "ipa": "/ˈvɛtɹəˌnɛɹi/",
         "meaning": "兽医的",
         "answers": [
           "veterinary"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "specialist",
-        "ipa": "",
+        "ipa": "/ˈspɛʃələst/",
         "meaning": "专家",
         "answers": [
           "specialist"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "career",
-        "ipa": "",
+        "ipa": "/kɚˈɪɹ/",
         "meaning": "职业",
         "answers": [
           "career"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "consultant",
-        "ipa": "",
+        "ipa": "/kənˈsʌltənt/",
         "meaning": "顾问",
         "answers": [
           "consultant"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "director",
-        "ipa": "",
+        "ipa": "/dɚˈɛktɚ/",
         "meaning": "主管",
         "answers": [
           "director"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "cashier",
-        "ipa": "",
+        "ipa": "/kæˈʃɪɹ/",
         "meaning": "收银员",
         "answers": [
           "cashier"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "customer",
-        "ipa": "",
+        "ipa": "/ˈkʌstəmɚ/",
         "meaning": "顾客",
         "answers": [
           "customer",
           "customers"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "gardener",
-        "ipa": "",
+        "ipa": "/ˈɡɑɹdənɚ/",
         "meaning": "园丁",
         "answers": [
           "gardener"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "barber",
-        "ipa": "",
+        "ipa": "/ˈbɑɹbɚ/",
         "meaning": "理发师",
         "answers": [
           "barber"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -343,76 +397,94 @@ const data = [
     "newCoreWords": [
       {
         "word": "counsellor",
-        "ipa": "",
+        "ipa": "/ˈkaʊnsəlɚ/",
         "meaning": "辅导员",
         "answers": [
           "counsellor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "juvenile",
-        "ipa": "",
+        "ipa": "/ˈdʒuvənəl/",
         "meaning": "未成年人",
         "answers": [
           "juvenile"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "orphan",
-        "ipa": "",
+        "ipa": "/ˈɔɹfən/",
         "meaning": "孤儿",
         "answers": [
           "orphan"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "accompany",
-        "ipa": "",
+        "ipa": "/əˈkʌmpəni/",
         "meaning": "陪伴",
         "answers": [
           "accompany"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "youngster",
-        "ipa": "",
+        "ipa": "/ˈjʌŋstɚ/",
         "meaning": "年轻人",
         "answers": [
           "youngster"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "appointment",
-        "ipa": "",
+        "ipa": "/əˈpɔɪntmənt/",
         "meaning": "约会；预约",
         "answers": [
           "appointment",
           "appointments"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "committee",
-        "ipa": "",
+        "ipa": "/kəˈmɪti/",
         "meaning": "委员会",
         "answers": [
           "committee"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "individual",
-        "ipa": "",
+        "ipa": "/ˌɪndəˈvɪdʒəwəl/",
         "meaning": "个人",
         "answers": [
           "individual"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "support",
-        "ipa": "",
+        "ipa": "/səˈpɔɹt/",
         "meaning": "支持",
         "answers": [
           "support"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -421,5 +493,5 @@ const data = [
     "supportWords": []
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

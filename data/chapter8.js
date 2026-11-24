@@ -1,6 +1,6 @@
-/* IELTS Quest — Chapter 8 | based on 雅思词汇真经; independent data file */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 39,
     "chapter": 8,
@@ -45,83 +45,103 @@ const data = [
     "newCoreWords": [
       {
         "word": "language",
-        "ipa": "",
+        "ipa": "/ˈlæŋɡwədʒ/",
         "meaning": "语言",
         "answers": [
           "language"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "communicate",
-        "ipa": "",
+        "ipa": "/kəˈmjunəˌkeɪt/",
         "meaning": "交流",
         "answers": [
           "communicate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "symbol",
-        "ipa": "",
+        "ipa": "/ˈsɪmbəl/",
         "meaning": "符号；象征",
         "answers": [
           "symbol"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sign",
-        "ipa": "",
+        "ipa": "/ˈsaɪn/",
         "meaning": "标志；符号",
         "answers": [
           "sign"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "gesture",
-        "ipa": "",
+        "ipa": "/ˈdʒɛstʃɚ/",
         "meaning": "手势",
         "answers": [
           "gesture"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "handwriting",
-        "ipa": "",
+        "ipa": "/ˈhænˌdɹaɪtɪŋ/",
         "meaning": "手写文字",
         "answers": [
           "handwriting"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pictograph",
-        "ipa": "",
+        "ipa": "/ˈpɪktəɡrɑːf/",
         "meaning": "象形文字",
         "answers": [
           "pictograph"
-        ]
+        ],
+        "ipaAccent": "en-GB",
+        "ipaSource": "人工校订英式宽式音标"
       },
       {
         "word": "wedge",
-        "ipa": "",
+        "ipa": "/ˈwɛdʒ/",
         "meaning": "楔形物",
         "answers": [
           "wedge"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "knot",
-        "ipa": "",
+        "ipa": "/ˈnɑt/",
         "meaning": "绳结",
         "answers": [
           "knot"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "linguistics",
-        "ipa": "",
+        "ipa": "/lɪŋˈɡwɪstɪks/",
         "meaning": "语言学",
         "answers": [
           "linguistics"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -131,11 +151,15 @@ const data = [
     "supportWords": [
       {
         "word": "clay",
-        "meaning": "黏土"
+        "meaning": "黏土",
+        "ipa": "/kleɪ/"
       },
       {
         "word": "cord",
-        "meaning": "绳索"
+        "meaning": "绳索",
+        "ipa": "/ˈkɔɹd/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -183,107 +207,133 @@ const data = [
     "newCoreWords": [
       {
         "word": "phonetics",
-        "ipa": "",
+        "ipa": "/fəˈnɛtɪks/",
         "meaning": "语音学",
         "answers": [
           "phonetics"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "accent",
-        "ipa": "",
+        "ipa": "/əkˈsɛnt/",
         "meaning": "口音；重音",
         "answers": [
           "accent"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pronounce",
-        "ipa": "",
+        "ipa": "/pɹəˈnaʊns/",
         "meaning": "发音",
         "answers": [
           "pronounce"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "intonation",
-        "ipa": "",
+        "ipa": "/ˌɪntəˈneɪʃən/",
         "meaning": "语调",
         "answers": [
           "intonation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "inflection",
-        "ipa": "",
+        "ipa": "/ˌɪnˈflɛkʃən/",
         "meaning": "语调变化；屈折变化",
         "answers": [
           "inflection"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "syllable",
-        "ipa": "",
+        "ipa": "/ˈsɪləbəl/",
         "meaning": "音节",
         "answers": [
           "syllable"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "utterance",
-        "ipa": "",
+        "ipa": "/ˈʌtɚəns/",
         "meaning": "话语",
         "answers": [
           "utterance"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "phoneme",
-        "ipa": "",
+        "ipa": "/ˈfoʊnim/",
         "meaning": "音素",
         "answers": [
           "phoneme"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "vowel",
-        "ipa": "",
+        "ipa": "/ˈvaʊəl/",
         "meaning": "元音",
         "answers": [
           "vowel"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "consonant",
-        "ipa": "",
+        "ipa": "/ˈkɑnsənənt/",
         "meaning": "辅音",
         "answers": [
           "consonant"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "dialect",
-        "ipa": "",
+        "ipa": "/ˈdaɪəˌlɛkt/",
         "meaning": "方言",
         "answers": [
           "dialect"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "oral",
-        "ipa": "",
+        "ipa": "/ˈɔɹəl/",
         "meaning": "口头的",
         "answers": [
           "oral"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "verbal",
-        "ipa": "",
+        "ipa": "/ˈvɝbəl/",
         "meaning": "言语的",
         "answers": [
           "verbal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -293,11 +343,17 @@ const data = [
     "supportWords": [
       {
         "word": "tone",
-        "meaning": "语气；声调"
+        "meaning": "语气；声调",
+        "ipa": "/ˈtoʊn/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "presentation",
-        "meaning": "展示"
+        "meaning": "展示",
+        "ipa": "/ˌpɹɛzənˈteɪʃən/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -345,131 +401,163 @@ const data = [
     "newCoreWords": [
       {
         "word": "dictionary",
-        "ipa": "",
+        "ipa": "/ˈdɪkʃəˌnɛɹi/",
         "meaning": "词典",
         "answers": [
           "dictionary"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "vocabulary",
-        "ipa": "",
+        "ipa": "/voʊˈkæbjəˌlɛɹi/",
         "meaning": "词汇",
         "answers": [
           "vocabulary"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "alphabet",
-        "ipa": "",
+        "ipa": "/ˈælfəˌbɛt/",
         "meaning": "字母表",
         "answers": [
           "alphabet"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "logogram",
-        "ipa": "",
+        "ipa": "/ˈlɔɡəˌɡɹæm/",
         "meaning": "语素文字；词符",
         "answers": [
           "logogram"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "grammar",
-        "ipa": "",
+        "ipa": "/ˈɡɹæmɚ/",
         "meaning": "语法",
         "answers": [
           "grammar"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "syntax",
-        "ipa": "",
+        "ipa": "/ˈsɪnˌtæks/",
         "meaning": "句法",
         "answers": [
           "syntax"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "phrase",
-        "ipa": "",
+        "ipa": "/ˈfɹeɪz/",
         "meaning": "短语",
         "answers": [
           "phrase"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "clause",
-        "ipa": "",
+        "ipa": "/ˈklɔz/",
         "meaning": "从句",
         "answers": [
           "clause"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "expression",
-        "ipa": "",
+        "ipa": "/ɪkˈspɹɛʃən/",
         "meaning": "表达",
         "answers": [
           "expression"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tense",
-        "ipa": "",
+        "ipa": "/ˈtɛns/",
         "meaning": "时态",
         "answers": [
           "tense"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "root",
-        "ipa": "",
+        "ipa": "/ˈɹut/",
         "meaning": "词根",
         "answers": [
           "root"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "prefix",
-        "ipa": "",
+        "ipa": "/ˈpɹifɪks/",
         "meaning": "前缀",
         "answers": [
           "prefix"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "suffix",
-        "ipa": "",
+        "ipa": "/ˈsʌfɪks/",
         "meaning": "后缀",
         "answers": [
           "suffix"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "abbreviation",
-        "ipa": "",
+        "ipa": "/əˌbɹiviˈeɪʃən/",
         "meaning": "缩写",
         "answers": [
           "abbreviation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "synonym",
-        "ipa": "",
+        "ipa": "/ˈsɪnəˌnɪm/",
         "meaning": "同义词",
         "answers": [
           "synonym"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "antonym",
-        "ipa": "",
+        "ipa": "/ˈæntənɪm/",
         "meaning": "反义词",
         "answers": [
           "antonym"
-        ]
+        ],
+        "ipaAccent": "en-GB",
+        "ipaSource": "人工校订英式宽式音标"
       }
     ],
     "reviewWords": [
@@ -479,11 +567,17 @@ const data = [
     "supportWords": [
       {
         "word": "editor",
-        "meaning": "编辑"
+        "meaning": "编辑",
+        "ipa": "/ˈɛdətɚ/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "structure",
-        "meaning": "结构"
+        "meaning": "结构",
+        "ipa": "/ˈstɹʌktʃɚ/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -531,99 +625,123 @@ const data = [
     "newCoreWords": [
       {
         "word": "translate",
-        "ipa": "",
+        "ipa": "/tɹænˈzleɪt/",
         "meaning": "翻译",
         "answers": [
           "translate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "complicated",
-        "ipa": "",
+        "ipa": "/ˈkɑmpləˌkeɪtəd/",
         "meaning": "复杂的",
         "answers": [
           "complicated"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "complex",
-        "ipa": "",
+        "ipa": "/ˈkɑmplɛks/",
         "meaning": "复杂的",
         "answers": [
           "complex"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "version",
-        "ipa": "",
+        "ipa": "/ˈvɝʒən/",
         "meaning": "版本",
         "answers": [
           "version"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "decipher",
-        "ipa": "",
+        "ipa": "/dɪˈsaɪfɚ/",
         "meaning": "破译",
         "answers": [
           "decipher"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "paraphrase",
-        "ipa": "",
+        "ipa": "/ˈpɛɹəˌfɹeɪz/",
         "meaning": "释义；改述",
         "answers": [
           "paraphrase"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "consistent",
-        "ipa": "",
+        "ipa": "/kənˈsɪstənt/",
         "meaning": "一致的",
         "answers": [
           "consistent"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "interpretation",
-        "ipa": "",
+        "ipa": "/ˌɪnˌtɝpɹɪˈteɪʃən/",
         "meaning": "解释；口译",
         "answers": [
           "interpretation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "compile",
-        "ipa": "",
+        "ipa": "/kəmˈpaɪl/",
         "meaning": "编纂；汇编",
         "answers": [
           "compile"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "publish",
-        "ipa": "",
+        "ipa": "/ˈpʌblɪʃ/",
         "meaning": "出版；发表",
         "answers": [
           "publish"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "illuminate",
-        "ipa": "",
+        "ipa": "/ˌɪˈlumɪnɪt/",
         "meaning": "阐明；照亮",
         "answers": [
           "illuminate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "accurate",
-        "ipa": "",
+        "ipa": "/ˈækjɚət/",
         "meaning": "准确的",
         "answers": [
           "accurate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -634,14 +752,20 @@ const data = [
     "supportWords": [
       {
         "word": "passage",
-        "meaning": "段落"
+        "meaning": "段落",
+        "ipa": "/ˈpæsədʒ/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "findings",
-        "meaning": "研究结果"
+        "meaning": "研究结果",
+        "ipa": "/ˈfaɪndɪŋz/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   }
 ];
-window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

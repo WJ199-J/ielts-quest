@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 10 物品材料 | M47–M50 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 47,
     "chapter": 10,
@@ -41,93 +41,115 @@ const data = [
     "newCoreWords": [
       {
         "word": "recycle",
-        "ipa": "",
+        "ipa": "/ɹiˈsaɪkəl/",
         "meaning": "回收利用",
         "answers": [
           "recycle",
           "recycling"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "reuse",
-        "ipa": "",
+        "ipa": "/ɹiˈjus/",
         "meaning": "重复使用",
         "answers": [
           "reuse"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "junk",
-        "ipa": "",
+        "ipa": "/ˈdʒʌŋk/",
         "meaning": "废旧物品",
         "answers": [
           "junk"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "landfill",
-        "ipa": "",
+        "ipa": "/ˈlændˌfɪl/",
         "meaning": "垃圾填埋场",
         "answers": [
           "landfill"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "glue",
-        "ipa": "",
+        "ipa": "/ˈɡlu/",
         "meaning": "胶水",
         "answers": [
           "glue"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "scissors",
-        "ipa": "",
+        "ipa": "/ˈsɪzɚz/",
         "meaning": "剪刀",
         "answers": [
           "scissors"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "cardboard",
-        "ipa": "",
+        "ipa": "/ˈkɑɹdˌbɔɹd/",
         "meaning": "硬纸板",
         "answers": [
           "cardboard"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "label",
-        "ipa": "",
+        "ipa": "/ˈleɪbəl/",
         "meaning": "标签",
         "answers": [
           "label"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "material",
-        "ipa": "",
+        "ipa": "/məˈtɪɹiəl/",
         "meaning": "材料",
         "answers": [
           "material",
           "materials"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "waste",
-        "ipa": "",
+        "ipa": "/ˈweɪst/",
         "meaning": "废物",
         "answers": [
           "waste"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "leaflet",
-        "ipa": "",
+        "ipa": "/ˈliflət/",
         "meaning": "传单",
         "answers": [
           "leaflet"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -177,106 +199,133 @@ const data = [
     "newCoreWords": [
       {
         "word": "portable",
-        "ipa": "",
+        "ipa": "/ˈpɔɹtəbəl/",
         "meaning": "便携的",
         "answers": [
           "portable"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "switch",
-        "ipa": "",
+        "ipa": "/ˈswɪtʃ/",
         "meaning": "开关",
         "answers": [
           "switch"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "plug",
-        "ipa": "",
+        "ipa": "/ˈplʌɡ/",
         "meaning": "插头",
         "answers": [
           "plug"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fuse",
-        "ipa": "",
+        "ipa": "/ˈfjuz/",
         "meaning": "保险丝",
         "answers": [
           "fuse"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "knob",
-        "ipa": "",
+        "ipa": "/ˈnɑb/",
         "meaning": "旋钮",
         "answers": [
           "knob"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "handle",
-        "ipa": "",
+        "ipa": "/ˈhændəl/",
         "meaning": "把手",
         "answers": [
           "handle"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pane",
-        "ipa": "",
+        "ipa": "/ˈpeɪn/",
         "meaning": "玻璃片",
         "answers": [
           "pane"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fragile",
-        "ipa": "",
+        "ipa": "/ˈfɹædʒəl/",
         "meaning": "易碎的",
         "answers": [
           "fragile"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "camera",
-        "ipa": "",
+        "ipa": "/ˈkæmɚə/",
         "meaning": "相机",
         "answers": [
           "camera"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "spotlight",
-        "ipa": "",
+        "ipa": "/ˈspɑˌtlaɪt/",
         "meaning": "聚光灯",
         "answers": [
           "spotlight"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "durable",
-        "ipa": "",
+        "ipa": "/ˈdʊɹəbəl/",
         "meaning": "耐用的",
         "answers": [
           "durable"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "maintain",
-        "ipa": "",
+        "ipa": "/meɪnˈteɪn/",
         "meaning": "维护",
         "answers": [
           "maintain"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
     "supportWords": [
       {
         "word": "workshop",
-        "meaning": "工作室"
+        "meaning": "工作室",
+        "ipa": "/ˈwɝkˌʃɑp/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -320,87 +369,107 @@ const data = [
     "newCoreWords": [
       {
         "word": "metal",
-        "ipa": "",
+        "ipa": "/ˈmɛtəl/",
         "meaning": "金属",
         "answers": [
           "metal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "alloy",
-        "ipa": "",
+        "ipa": "/ˈæˌlɔɪ/",
         "meaning": "合金",
         "answers": [
           "alloy"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "timber",
-        "ipa": "",
+        "ipa": "/ˈtɪmbɚ/",
         "meaning": "木材",
         "answers": [
           "timber"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "steel",
-        "ipa": "",
+        "ipa": "/ˈstil/",
         "meaning": "钢",
         "answers": [
           "steel"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "cement",
-        "ipa": "",
+        "ipa": "/səˈmɛnt/",
         "meaning": "水泥",
         "answers": [
           "cement"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "lime",
-        "ipa": "",
+        "ipa": "/ˈlaɪm/",
         "meaning": "石灰",
         "answers": [
           "lime"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "plaster",
-        "ipa": "",
+        "ipa": "/ˈplæstɚ/",
         "meaning": "灰泥；熟石膏",
         "answers": [
           "plaster"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pitch",
-        "ipa": "",
+        "ipa": "/ˈpɪtʃ/",
         "meaning": "沥青",
         "answers": [
           "pitch"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "transparent",
-        "ipa": "",
+        "ipa": "/tɹænˈspɛɹənt/",
         "meaning": "透明的",
         "answers": [
           "transparent"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "opaque",
-        "ipa": "",
+        "ipa": "/oʊˈpeɪk/",
         "meaning": "不透明的",
         "answers": [
           "opaque"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "crack",
-        "ipa": "",
+        "ipa": "/kræk/",
         "meaning": "裂开",
         "answers": [
           "crack"
@@ -408,11 +477,13 @@ const data = [
       },
       {
         "word": "pressure",
-        "ipa": "",
+        "ipa": "/ˈpɹɛʃɚ/",
         "meaning": "压力",
         "answers": [
           "pressure"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -462,100 +533,124 @@ const data = [
     "newCoreWords": [
       {
         "word": "leather",
-        "ipa": "",
+        "ipa": "/ˈlɛðɚ/",
         "meaning": "皮革",
         "answers": [
           "leather"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "linen",
-        "ipa": "",
+        "ipa": "/ˈlɪnən/",
         "meaning": "亚麻布",
         "answers": [
           "linen"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "canvas",
-        "ipa": "",
+        "ipa": "/ˈkænvəs/",
         "meaning": "帆布",
         "answers": [
           "canvas"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "weave",
-        "ipa": "",
+        "ipa": "/ˈwiv/",
         "meaning": "编织",
         "answers": [
           "weave"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fibre",
-        "ipa": "",
+        "ipa": "/ˈfaɪbɚ/",
         "meaning": "纤维",
         "answers": [
           "fibre",
           "fibres"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "knit",
-        "ipa": "",
+        "ipa": "/ˈnɪt/",
         "meaning": "针织",
         "answers": [
           "knit"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "crystal",
-        "ipa": "",
+        "ipa": "/ˈkɹɪstəl/",
         "meaning": "水晶；晶体",
         "answers": [
           "crystal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "diamond",
-        "ipa": "",
+        "ipa": "/ˈdaɪmənd/",
         "meaning": "钻石",
         "answers": [
           "diamond"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fake",
-        "ipa": "",
+        "ipa": "/ˈfeɪk/",
         "meaning": "假的",
         "answers": [
           "fake"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "gemstone",
-        "ipa": "",
+        "ipa": "/ˈdʒɛmˌstoʊn/",
         "meaning": "宝石",
         "answers": [
           "gemstone"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "texture",
-        "ipa": "",
+        "ipa": "/ˈtɛkstʃɚ/",
         "meaning": "质地；纹理",
         "answers": [
           "texture"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "durability",
-        "ipa": "",
+        "ipa": "/dɚəˈbɪlɪti/",
         "meaning": "耐用性",
         "answers": [
           "durability"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -565,10 +660,13 @@ const data = [
     "supportWords": [
       {
         "word": "exhibition",
-        "meaning": "展览"
+        "meaning": "展览",
+        "ipa": "/ˌɛksəˈbɪʃən/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

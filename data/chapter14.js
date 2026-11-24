@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 14 交通旅行 | Mission 63–66 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 63,
     "chapter": 14,
@@ -29,67 +29,83 @@ const data = [
     "newCoreWords": [
       {
         "word": "itinerary",
-        "ipa": "",
+        "ipa": "/aɪˈtɪnɚˌɛɹi/",
         "meaning": "行程表",
         "answers": [
           "itinerary"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "suitcase",
-        "ipa": "",
+        "ipa": "/ˈsutˌkeɪs/",
         "meaning": "手提箱",
         "answers": [
           "suitcase"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "railway",
-        "ipa": "",
+        "ipa": "/ˈɹeɪˌlweɪ/",
         "meaning": "铁路",
         "answers": [
           "railway"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "route",
-        "ipa": "",
+        "ipa": "/ˈɹut/",
         "meaning": "路线",
         "answers": [
           "route"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fare",
-        "ipa": "",
+        "ipa": "/ˈfɛɹ/",
         "meaning": "票价",
         "answers": [
           "fare"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "destination",
-        "ipa": "",
+        "ipa": "/ˌdɛstəˈneɪʃən/",
         "meaning": "目的地",
         "answers": [
           "destination"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "delay",
-        "ipa": "",
+        "ipa": "/dɪˈleɪ/",
         "meaning": "延误",
         "answers": [
           "delay"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "luggage",
-        "ipa": "",
+        "ipa": "/ˈlʌɡədʒ/",
         "meaning": "行李",
         "answers": [
           "luggage"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -123,100 +139,124 @@ const data = [
     "newCoreWords": [
       {
         "word": "tram",
-        "ipa": "",
+        "ipa": "/ˈtɹæm/",
         "meaning": "有轨电车",
         "answers": [
           "tram"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "intersection",
-        "ipa": "",
+        "ipa": "/ˌɪntɚˈsɛkʃən/",
         "meaning": "十字路口",
         "answers": [
           "intersection"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "avenue",
-        "ipa": "",
+        "ipa": "/ˈævəˌnu/",
         "meaning": "大道",
         "answers": [
           "avenue"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "truck",
-        "ipa": "",
+        "ipa": "/ˈtɹʌk/",
         "meaning": "卡车",
         "answers": [
           "truck"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "freight",
-        "ipa": "",
+        "ipa": "/ˈfɹeɪt/",
         "meaning": "货物",
         "answers": [
           "freight"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "coach",
-        "ipa": "",
+        "ipa": "/ˈkoʊtʃ/",
         "meaning": "长途客车",
         "answers": [
           "coach"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "lane",
-        "ipa": "",
+        "ipa": "/ˈleɪn/",
         "meaning": "车道",
         "answers": [
           "lane"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "brake",
-        "ipa": "",
+        "ipa": "/ˈbɹeɪk/",
         "meaning": "刹车",
         "answers": [
           "brake"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "curb",
-        "ipa": "",
+        "ipa": "/ˈkɝb/",
         "meaning": "路缘",
         "answers": [
           "curb"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "signpost",
-        "ipa": "",
+        "ipa": "/ˈsaɪnˌpoʊst/",
         "meaning": "路标",
         "answers": [
           "signpost"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "vehicle",
-        "ipa": "",
+        "ipa": "/ˈvihɪkəl/",
         "meaning": "车辆",
         "answers": [
           "vehicle",
           "vehicles"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "highway",
-        "ipa": "",
+        "ipa": "/ˈhaɪˌweɪ/",
         "meaning": "高速公路",
         "answers": [
           "highway"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -250,108 +290,134 @@ const data = [
     "newCoreWords": [
       {
         "word": "ferry",
-        "ipa": "",
+        "ipa": "/ˈfɛɹi/",
         "meaning": "渡轮",
         "answers": [
           "ferry"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "harbour",
-        "ipa": "",
+        "ipa": "/ˈhɑɹbɚ/",
         "meaning": "港口",
         "answers": [
           "harbour"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "deck",
-        "ipa": "",
+        "ipa": "/ˈdɛk/",
         "meaning": "甲板",
         "answers": [
           "deck"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "captain",
-        "ipa": "",
+        "ipa": "/ˈkæptən/",
         "meaning": "船长",
         "answers": [
           "captain"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "vessel",
-        "ipa": "",
+        "ipa": "/ˈvɛsəl/",
         "meaning": "船只",
         "answers": [
           "vessel"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "depart",
-        "ipa": "",
+        "ipa": "/dɪˈpɑɹt/",
         "meaning": "出发",
         "answers": [
           "depart",
           "departed"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "dock",
-        "ipa": "",
+        "ipa": "/ˈdɑk/",
         "meaning": "码头",
         "answers": [
           "dock"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sailor",
-        "ipa": "",
+        "ipa": "/ˈseɪlɚ/",
         "meaning": "水手",
         "answers": [
           "sailor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "channel",
-        "ipa": "",
+        "ipa": "/ˈtʃænəl/",
         "meaning": "航道",
         "answers": [
           "channel"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "canoe",
-        "ipa": "",
+        "ipa": "/kəˈnu/",
         "meaning": "独木舟",
         "answers": [
           "canoe"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "crew",
-        "ipa": "",
+        "ipa": "/ˈkɹu/",
         "meaning": "船员",
         "answers": [
           "crew"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "anchor",
-        "ipa": "",
+        "ipa": "/ˈæŋkɚ/",
         "meaning": "锚",
         "answers": [
           "anchor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "emergency",
-        "ipa": "",
+        "ipa": "/ɪˈmɝdʒənsi/",
         "meaning": "紧急情况",
         "answers": [
           "emergency"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -385,76 +451,94 @@ const data = [
     "newCoreWords": [
       {
         "word": "traffic",
-        "ipa": "",
+        "ipa": "/ˈtɹæfɪk/",
         "meaning": "交通",
         "answers": [
           "traffic"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "hazard",
-        "ipa": "",
+        "ipa": "/ˈhæzɚd/",
         "meaning": "危险",
         "answers": [
           "hazard",
           "hazards"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "ambulance",
-        "ipa": "",
+        "ipa": "/ˈæmbjələns/",
         "meaning": "救护车",
         "answers": [
           "ambulance"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "passage",
-        "ipa": "",
+        "ipa": "/ˈpæsədʒ/",
         "meaning": "通道",
         "answers": [
           "passage"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "crash",
-        "ipa": "",
+        "ipa": "/ˈkɹæʃ/",
         "meaning": "碰撞",
         "answers": [
           "crash"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tunnel",
-        "ipa": "",
+        "ipa": "/ˈtʌnəl/",
         "meaning": "隧道",
         "answers": [
           "tunnel"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "transfer",
-        "ipa": "",
+        "ipa": "/tɹænˈsfɝ/",
         "meaning": "转移",
         "answers": [
           "transfer"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "transport",
-        "ipa": "",
+        "ipa": "/tɹænˈspɔɹt/ 或 /ˈtɹænspɔɹt/",
         "meaning": "运输",
         "answers": [
           "transport"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "schedule",
-        "ipa": "",
+        "ipa": "/ˈskɛdʒʊl/",
         "meaning": "时间表",
         "answers": [
           "schedule"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -465,5 +549,5 @@ const data = [
     "supportWords": []
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

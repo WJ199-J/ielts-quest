@@ -1,26 +1,16 @@
 # IELTS Quest — Course Specification
 
-Version: 1.0
+Version: 1.1 — active requirements, 2026-11-24
 
-## B-plan decision (2026-11-12)
-
-The owner selected the B plan. Existing short Missions remain the progressive
-learning steps. Several Missions in the same chapter form a Unit with a target
-of approximately 100 unique learning items and a 50-question Unit checkpoint.
-
-- Do not rename or renumber the existing 98 Missions.
-- Do not duplicate words merely to reach the Unit target.
-- A Unit checkpoint stays locked until its unique item count is within the
-  approved approximate range and every Mission in that Unit is formally
-  complete.
-- Only a first formal submission of 100% marks a Unit complete. Correcting an
-  earlier submission to 100% updates the score but not completion.
-- Source coverage and Unit readiness are separate from file delivery. A Unit
-  is not content-approved until its source-to-course mapping is verified.
-- Original-source enrichment may be attached at Unit level when changing an
-  accepted Mission would invalidate prior progress. Each such item must carry
-  a source page, learning context and answer form, and must be included in the
-  Unit checkpoint pool without changing existing Mission completion records.
+- Connected stories replace the retired isolated word cards / 50-question Unit checkpoint.
+- 134 base Missions: 6 per chapter except Chapter 2, whose 8 existing articles remain.
+- Original numeric IDs 1–98 and their stories / progress are preserved; new IDs 99–134 add articles 5–6 to Chapters 5–22. Navigation follows chapter order rather than numeric ID order.
+- Chapter 1 has 15 separately tracked hidden follow-on investigations, progressing in five stages from its original Mission 6. Other hidden chapters remain closed pending acceptance.
+- A clean first submission of each round at >=90 passes. Progress retains the real score; corrections after answers are shown never change official best/last score, attempts or completion.
+- Keep result pages until the learner chooses an action. No automatic navigation.
+- Existing pronunciation is retained. Missing broad IPA uses declared CMU American English data or manually edited British English; the page labels American entries and requests the corresponding speech locale. Actual audio availability depends on the device.
+- The larger base-course denominator is 134. Existing earned records remain; a lower overall percentage after expansion is not deletion of those records.
+- Source-index coverage is distinct from completion of all book content. New articles use 216 previously uncovered chapter-specific index entries; outstanding words still require future connected stories.
 
 ---
 

@@ -1,4 +1,4 @@
-/* IELTS Quest | Chapter 6 | standalone additive course data */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
 const data=[
   {
@@ -37,107 +37,133 @@ const data=[
     "newCoreWords": [
       {
         "word": "technology",
-        "ipa": "",
+        "ipa": "/tɛˈknɑlədʒi/",
         "meaning": "技术",
         "answers": [
           "technology"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "engineer",
-        "ipa": "",
+        "ipa": "/ˈɛndʒəˈnɪɹ/",
         "meaning": "工程师",
         "answers": [
           "engineer"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "mechanic",
-        "ipa": "",
+        "ipa": "/məˈkænɪk/",
         "meaning": "机械师",
         "answers": [
           "mechanic"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "device",
-        "ipa": "",
+        "ipa": "/dɪˈvaɪs/",
         "meaning": "设备",
         "answers": [
           "device"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "innovate",
-        "ipa": "",
+        "ipa": "/ˈɪnəˌveɪt/",
         "meaning": "创新",
         "answers": [
           "innovate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "technique",
-        "ipa": "",
+        "ipa": "/tɛˈknik/",
         "meaning": "技术；技巧",
         "answers": [
           "technique"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "devise",
-        "ipa": "",
+        "ipa": "/dɪˈvaɪz/",
         "meaning": "设计；发明",
         "answers": [
           "devise"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "machine",
-        "ipa": "",
+        "ipa": "/məˈʃin/",
         "meaning": "机器",
         "answers": [
           "machine"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "gizmo",
-        "ipa": "",
+        "ipa": "/ˈɡɪˌzmoʊ/",
         "meaning": "小装置",
         "answers": [
           "gizmo"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "breakthrough",
-        "ipa": "",
+        "ipa": "/ˈbɹeɪkˌθɹu/",
         "meaning": "突破",
         "answers": [
           "breakthrough"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "invention",
-        "ipa": "",
+        "ipa": "/ˌɪnˈvɛnʃən/",
         "meaning": "发明",
         "answers": [
           "invention"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "patent",
-        "ipa": "",
+        "ipa": "/ˈpætənt/",
         "meaning": "专利",
         "answers": [
           "patent"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "discovery",
-        "ipa": "",
+        "ipa": "/dɪˈskʌvɚi/",
         "meaning": "发现",
         "answers": [
           "discovery"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -147,7 +173,10 @@ const data=[
     "supportWords": [
       {
         "word": "prototype",
-        "meaning": "原型机"
+        "meaning": "原型机",
+        "ipa": "/ˈpɹoʊtəˌtaɪp/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -191,123 +220,153 @@ const data=[
     "newCoreWords": [
       {
         "word": "sensor",
-        "ipa": "",
+        "ipa": "/ˈsɛnsɚ/",
         "meaning": "传感器",
         "answers": [
           "sensor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "measure",
-        "ipa": "",
+        "ipa": "/ˈmɛʒɚ/",
         "meaning": "测量",
         "answers": [
           "measure"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "technician",
-        "ipa": "",
+        "ipa": "/tɛˈknɪʃən/",
         "meaning": "技术员",
         "answers": [
           "technician"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "instrument",
-        "ipa": "",
+        "ipa": "/ˈɪnstɹəmənt/",
         "meaning": "仪器",
         "answers": [
           "instrument"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "gauge",
-        "ipa": "",
+        "ipa": "/ˈɡeɪdʒ/",
         "meaning": "测量；测量仪",
         "answers": [
           "gauge"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "calculate",
-        "ipa": "",
+        "ipa": "/ˈkælkjəˌleɪt/",
         "meaning": "计算",
         "answers": [
           "calculate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "gather",
-        "ipa": "",
+        "ipa": "/ˈɡæðɚ/",
         "meaning": "收集",
         "answers": [
           "gather"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "computer",
-        "ipa": "",
+        "ipa": "/kəmˈpjutɚ/",
         "meaning": "计算机",
         "answers": [
           "computer"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "assess",
-        "ipa": "",
+        "ipa": "/əˈsɛs/",
         "meaning": "评估",
         "answers": [
           "assess"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "auxiliary",
-        "ipa": "",
+        "ipa": "/ɑɡˈzɪljɚi/",
         "meaning": "辅助的",
         "answers": [
           "auxiliary"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pump",
-        "ipa": "",
+        "ipa": "/ˈpʌmp/",
         "meaning": "泵",
         "answers": [
           "pump"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "accessory",
-        "ipa": "",
+        "ipa": "/ækˈsɛsɚi/",
         "meaning": "配件",
         "answers": [
           "accessory"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "attach",
-        "ipa": "",
+        "ipa": "/əˈtætʃ/",
         "meaning": "附加；固定",
         "answers": [
           "attach"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "evaluate",
-        "ipa": "",
+        "ipa": "/ɪˈvæljuˌeɪt/",
         "meaning": "评估",
         "answers": [
           "evaluate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "versatile",
-        "ipa": "",
+        "ipa": "/ˈvɝsətəl/",
         "meaning": "多用途的",
         "answers": [
           "versatile"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -317,7 +376,10 @@ const data=[
     "supportWords": [
       {
         "word": "pressure",
-        "meaning": "压力"
+        "meaning": "压力",
+        "ipa": "/ˈpɹɛʃɚ/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -361,123 +423,153 @@ const data=[
     "newCoreWords": [
       {
         "word": "digital",
-        "ipa": "",
+        "ipa": "/ˈdɪdʒətəl/",
         "meaning": "数字的",
         "answers": [
           "digital"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "laptop",
-        "ipa": "",
+        "ipa": "/ˈlæpˌtɑp/",
         "meaning": "笔记本电脑",
         "answers": [
           "laptop"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "software",
-        "ipa": "",
+        "ipa": "/ˈsɔfˌtwɛɹ/",
         "meaning": "软件",
         "answers": [
           "software"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "wireless",
-        "ipa": "",
+        "ipa": "/ˈwaɪɹlɪs/",
         "meaning": "无线的",
         "answers": [
           "wireless"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "network",
-        "ipa": "",
+        "ipa": "/ˈnɛˌtwɝk/",
         "meaning": "网络",
         "answers": [
           "network"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "screen",
-        "ipa": "",
+        "ipa": "/ˈskɹin/",
         "meaning": "屏幕",
         "answers": [
           "screen"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "browser",
-        "ipa": "",
+        "ipa": "/ˈbɹaʊzɚ/",
         "meaning": "浏览器",
         "answers": [
           "browser"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "keyboard",
-        "ipa": "",
+        "ipa": "/ˈkiˌbɔɹd/",
         "meaning": "键盘",
         "answers": [
           "keyboard"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "microphone",
-        "ipa": "",
+        "ipa": "/ˈmaɪkɹəˌfoʊn/",
         "meaning": "麦克风",
         "answers": [
           "microphone"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "high-definition",
-        "ipa": "",
+        "ipa": "/ˈhaɪ ˌdɛfəˈnɪʃən/",
         "meaning": "高清的",
         "answers": [
           "high-definition"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "microscope",
-        "ipa": "",
+        "ipa": "/ˈmaɪkɹəˌskoʊp/",
         "meaning": "显微镜",
         "answers": [
           "microscope"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "optics",
-        "ipa": "",
+        "ipa": "/ˈɑptɪks/",
         "meaning": "光学",
         "answers": [
           "optics"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "lens",
-        "ipa": "",
+        "ipa": "/ˈlɛnz/",
         "meaning": "透镜",
         "answers": [
           "lens"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "multimedia",
-        "ipa": "",
+        "ipa": "/ˌmʌltiˈmidiə/",
         "meaning": "多媒体",
         "answers": [
           "multimedia"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "audio",
-        "ipa": "",
+        "ipa": "/ˈɑdiˌoʊ/",
         "meaning": "声音的；音频",
         "answers": [
           "audio"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -487,7 +579,10 @@ const data=[
     "supportWords": [
       {
         "word": "dashboard",
-        "meaning": "仪表板"
+        "meaning": "仪表板",
+        "ipa": "/ˈdæʃˌbɔɹd/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -535,131 +630,163 @@ const data=[
     "newCoreWords": [
       {
         "word": "launch",
-        "ipa": "",
+        "ipa": "/ˈlɔntʃ/",
         "meaning": "发布；启动",
         "answers": [
           "launch"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "estimate",
-        "ipa": "",
+        "ipa": "/ˈɛstəmət/ 或 /ˈɛstəˌmeɪt/",
         "meaning": "估计",
         "answers": [
           "estimate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "appliance",
-        "ipa": "",
+        "ipa": "/əˈplaɪəns/",
         "meaning": "器具",
         "answers": [
           "appliance"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "utilise",
-        "ipa": "",
+        "ipa": "/ˈjuːtəlaɪz/",
         "meaning": "利用",
         "answers": [
           "utilise"
-        ]
+        ],
+        "ipaAccent": "en-GB",
+        "ipaSource": "人工校订英式宽式音标"
       },
       {
         "word": "equipment",
-        "ipa": "",
+        "ipa": "/ɪˈkwɪpmənt/",
         "meaning": "设备",
         "answers": [
           "equipment"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tool",
-        "ipa": "",
+        "ipa": "/ˈtul/",
         "meaning": "工具",
         "answers": [
           "tool"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "facility",
-        "ipa": "",
+        "ipa": "/fəˈsɪlɪti/",
         "meaning": "设施",
         "answers": [
           "facility"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "assemble",
-        "ipa": "",
+        "ipa": "/əˈsɛmbəl/",
         "meaning": "组装",
         "answers": [
           "assemble"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "compute",
-        "ipa": "",
+        "ipa": "/kəmˈpjut/",
         "meaning": "计算",
         "answers": [
           "compute"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "count",
-        "ipa": "",
+        "ipa": "/ˈkaʊnt/",
         "meaning": "计数",
         "answers": [
           "count"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "disclose",
-        "ipa": "",
+        "ipa": "/dɪˈskloʊz/",
         "meaning": "披露",
         "answers": [
           "disclose"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "reveal",
-        "ipa": "",
+        "ipa": "/ɹɪˈvil/",
         "meaning": "揭示",
         "answers": [
           "reveal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "technological",
-        "ipa": "",
+        "ipa": "/ˌtɛknəˈlɑdʒɪkəl/",
         "meaning": "技术的",
         "answers": [
           "technological"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "advance",
-        "ipa": "",
+        "ipa": "/əˈdvæns/",
         "meaning": "进步",
         "answers": [
           "advance"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "focus",
-        "ipa": "",
+        "ipa": "/ˈfoʊkəs/",
         "meaning": "集中注意力",
         "answers": [
           "focus"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "innovation",
-        "ipa": "",
+        "ipa": "/ˌɪnəˈveɪʃən/",
         "meaning": "创新",
         "answers": [
           "innovation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -670,7 +797,10 @@ const data=[
     "supportWords": [
       {
         "word": "reliability",
-        "meaning": "可靠性"
+        "meaning": "可靠性",
+        "ipa": "/ɹiˌlaɪəˈbɪləti/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   }

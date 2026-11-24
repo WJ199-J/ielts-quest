@@ -1,6 +1,6 @@
-/* IELTS Quest — Chapter 7 | based on 雅思词汇真经; independent data file */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 35,
     "chapter": 7,
@@ -45,99 +45,123 @@ const data = [
     "newCoreWords": [
       {
         "word": "culture",
-        "ipa": "",
+        "ipa": "/ˈkʌltʃɚ/",
         "meaning": "文化",
         "answers": [
           "culture"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "civilisation",
-        "ipa": "",
+        "ipa": "/ˌsɪvəlɪˈzeɪʃən/",
         "meaning": "文明",
         "answers": [
           "civilisation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tradition",
-        "ipa": "",
+        "ipa": "/tɹəˈdɪʃən/",
         "meaning": "传统",
         "answers": [
           "tradition"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "renaissance",
-        "ipa": "",
+        "ipa": "/ˌɹɛnəˈsɑns/",
         "meaning": "文艺复兴；复兴",
         "answers": [
           "renaissance"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "epic",
-        "ipa": "",
+        "ipa": "/ˈɛpɪk/",
         "meaning": "史诗；宏大的",
         "answers": [
           "epic"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "ideology",
-        "ipa": "",
+        "ipa": "/ˌaɪdiˈɑlədʒi/",
         "meaning": "意识形态",
         "answers": [
           "ideology"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "local",
-        "ipa": "",
+        "ipa": "/ˈloʊkəl/",
         "meaning": "当地的",
         "answers": [
           "local"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "inhabitant",
-        "ipa": "",
+        "ipa": "/ɪnˈhæbətənt/",
         "meaning": "居民",
         "answers": [
           "inhabitant"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "heritage",
-        "ipa": "",
+        "ipa": "/ˈhɛɹətədʒ/",
         "meaning": "遗产；文化遗产",
         "answers": [
           "heritage"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "aboriginal",
-        "ipa": "",
+        "ipa": "/ˌæbɚˈɪdʒənəl/",
         "meaning": "原住民的",
         "answers": [
           "aboriginal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "symbol",
-        "ipa": "",
+        "ipa": "/ˈsɪmbəl/",
         "meaning": "象征；符号",
         "answers": [
           "symbol"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "native",
-        "ipa": "",
+        "ipa": "/ˈneɪtɪv/",
         "meaning": "本土的；当地出生的",
         "answers": [
           "native"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -147,11 +171,17 @@ const data = [
     "supportWords": [
       {
         "word": "curator",
-        "meaning": "策展人"
+        "meaning": "策展人",
+        "ipa": "/kjʊˈɹeɪtɚ/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "exhibition",
-        "meaning": "展览"
+        "meaning": "展览",
+        "ipa": "/ˌɛksəˈbɪʃən/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -199,83 +229,103 @@ const data = [
     "newCoreWords": [
       {
         "word": "archaeology",
-        "ipa": "",
+        "ipa": "/ˌɑɹkiˈɑlədʒi/",
         "meaning": "考古学",
         "answers": [
           "archaeology"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "excavate",
-        "ipa": "",
+        "ipa": "/ˈɛkskəˌveɪt/",
         "meaning": "挖掘；发掘",
         "answers": [
           "excavate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pottery",
-        "ipa": "",
+        "ipa": "/ˈpɑtɚi/",
         "meaning": "陶器",
         "answers": [
           "pottery"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "engrave",
-        "ipa": "",
+        "ipa": "/ɪnˈɡɹeɪv/",
         "meaning": "雕刻",
         "answers": [
           "engrave"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "exotic",
-        "ipa": "",
+        "ipa": "/ɪɡˈzɑtɪk/",
         "meaning": "异国情调的；外来的",
         "answers": [
           "exotic"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "convention",
-        "ipa": "",
+        "ipa": "/kənˈvɛnʃən/",
         "meaning": "习俗；惯例",
         "answers": [
           "convention"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "feudalism",
-        "ipa": "",
+        "ipa": "/ˈfjudəˌlɪzəm/",
         "meaning": "封建制度",
         "answers": [
           "feudalism"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "slavery",
-        "ipa": "",
+        "ipa": "/ˈsleɪvɚi/",
         "meaning": "奴隶制",
         "answers": [
           "slavery"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "ethical",
-        "ipa": "",
+        "ipa": "/ˈɛθɪkəl/",
         "meaning": "伦理的",
         "answers": [
           "ethical"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "moral",
-        "ipa": "",
+        "ipa": "/ˈmɔɹəl/",
         "meaning": "道德的",
         "answers": [
           "moral"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -285,11 +335,17 @@ const data = [
     "supportWords": [
       {
         "word": "settlement",
-        "meaning": "聚落"
+        "meaning": "聚落",
+        "ipa": "/ˈsɛtəlmənt/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "evidence",
-        "meaning": "证据"
+        "meaning": "证据",
+        "ipa": "/ˈɛvədəns/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -337,123 +393,153 @@ const data = [
     "newCoreWords": [
       {
         "word": "sacred",
-        "ipa": "",
+        "ipa": "/ˈseɪkɹəd/",
         "meaning": "神圣的",
         "answers": [
           "sacred"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "holy",
-        "ipa": "",
+        "ipa": "/ˈhoʊli/",
         "meaning": "神圣的",
         "answers": [
           "holy"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "hallowed",
-        "ipa": "",
+        "ipa": "/ˈhæloʊd/",
         "meaning": "神圣的；受尊崇的",
         "answers": [
           "hallowed"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "priest",
-        "ipa": "",
+        "ipa": "/ˈpɹist/",
         "meaning": "神父；祭司",
         "answers": [
           "priest"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "bishop",
-        "ipa": "",
+        "ipa": "/ˈbɪʃəp/",
         "meaning": "主教",
         "answers": [
           "bishop"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "missionary",
-        "ipa": "",
+        "ipa": "/ˈmɪʃəˌnɛɹi/",
         "meaning": "传教士",
         "answers": [
           "missionary"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "Bible",
-        "ipa": "",
+        "ipa": "/ˈbaɪbəl/",
         "meaning": "圣经",
         "answers": [
           "Bible"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "church",
-        "ipa": "",
+        "ipa": "/ˈtʃɝtʃ/",
         "meaning": "教堂",
         "answers": [
           "church"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "royal",
-        "ipa": "",
+        "ipa": "/ˈɹɔɪəl/",
         "meaning": "皇家的",
         "answers": [
           "royal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "dynasty",
-        "ipa": "",
+        "ipa": "/ˈdaɪnəsti/",
         "meaning": "王朝",
         "answers": [
           "dynasty"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "emperor",
-        "ipa": "",
+        "ipa": "/ˈɛmpɚɚ/",
         "meaning": "皇帝",
         "answers": [
           "emperor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "chronology",
-        "ipa": "",
+        "ipa": "/kɹəˈnɑlədʒi/",
         "meaning": "年代顺序；编年表",
         "answers": [
           "chronology"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "king",
-        "ipa": "",
+        "ipa": "/ˈkɪŋ/",
         "meaning": "国王",
         "answers": [
           "king"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "queen",
-        "ipa": "",
+        "ipa": "/ˈkwin/",
         "meaning": "女王；王后",
         "answers": [
           "queen"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "prince",
-        "ipa": "",
+        "ipa": "/ˈpɹɪns/",
         "meaning": "王子",
         "answers": [
           "prince"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -463,11 +549,17 @@ const data = [
     "supportWords": [
       {
         "word": "ceremony",
-        "meaning": "仪式"
+        "meaning": "仪式",
+        "ipa": "/ˈsɛɹəˌmoʊni/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "portrait",
-        "meaning": "肖像"
+        "meaning": "肖像",
+        "ipa": "/ˈpɔɹtɹət/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -515,75 +607,93 @@ const data = [
     "newCoreWords": [
       {
         "word": "celebrity",
-        "ipa": "",
+        "ipa": "/səˈlɛbɹɪti/",
         "meaning": "名人",
         "answers": [
           "celebrity"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "status",
-        "ipa": "",
+        "ipa": "/ˈstætəs/",
         "meaning": "地位；身份",
         "answers": [
           "status"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "background",
-        "ipa": "",
+        "ipa": "/ˈbækˌɡɹaʊnd/",
         "meaning": "背景",
         "answers": [
           "background"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "experience",
-        "ipa": "",
+        "ipa": "/ɪkˈspɪɹiəns/",
         "meaning": "经历；经验",
         "answers": [
           "experience"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "nostalgia",
-        "ipa": "",
+        "ipa": "/nɔˈstældʒə/",
         "meaning": "怀旧之情",
         "answers": [
           "nostalgia"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "homesick",
-        "ipa": "",
+        "ipa": "/ˈhoʊmˌsɪk/",
         "meaning": "想家的",
         "answers": [
           "homesick"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "setback",
-        "ipa": "",
+        "ipa": "/ˈsɛtˌbæk/",
         "meaning": "挫折",
         "answers": [
           "setback"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "accident",
-        "ipa": "",
+        "ipa": "/ˈæksədənt/",
         "meaning": "事故；意外",
         "answers": [
           "accident"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "prosperity",
-        "ipa": "",
+        "ipa": "/pɹɑˈspɛɹəti/",
         "meaning": "繁荣",
         "answers": [
           "prosperity"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -594,14 +704,20 @@ const data = [
     "supportWords": [
       {
         "word": "historian",
-        "meaning": "历史学家"
+        "meaning": "历史学家",
+        "ipa": "/hɪˈstɔɹiən/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "restore",
-        "meaning": "修复"
+        "meaning": "修复",
+        "ipa": "/ɹɪˈstɔɹ/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   }
 ];
-window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

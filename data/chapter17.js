@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 17 法律法规 | Mission 75–78 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 75,
     "chapter": 17,
@@ -29,82 +29,103 @@ const data = [
     "newCoreWords": [
       {
         "word": "law",
-        "ipa": "",
+        "ipa": "/ˈlɔ/",
         "meaning": "法律",
         "answers": [
           "law"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "legal",
-        "ipa": "",
+        "ipa": "/ˈliɡəl/",
         "meaning": "法律的",
         "answers": [
           "legal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "regulation",
-        "ipa": "",
+        "ipa": "/ˌɹɛɡjəˈleɪʃən/",
         "meaning": "法规",
         "answers": [
           "regulation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fair",
-        "ipa": "",
+        "ipa": "/ˈfɛɹ/",
         "meaning": "公平的",
         "answers": [
           "fair"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "mandatory",
-        "ipa": "",
+        "ipa": "/ˈmændəˌtɔɹi/",
         "meaning": "强制的",
         "answers": [
           "mandatory"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "rule",
-        "ipa": "",
+        "ipa": "/ˈɹul/",
         "meaning": "规则",
         "answers": [
           "rule"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "official",
-        "ipa": "",
+        "ipa": "/əˈfɪʃəl/",
         "meaning": "官方的",
         "answers": [
           "official"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "procedure",
-        "ipa": "",
+        "ipa": "/pɹəˈsidʒɚ/",
         "meaning": "程序",
         "answers": [
           "procedure"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "appeal",
-        "ipa": "",
+        "ipa": "/əˈpil/",
         "meaning": "申诉",
         "answers": [
           "appeal"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
     "supportWords": [
       {
         "word": "just",
-        "meaning": "公正的"
+        "meaning": "公正的",
+        "ipa": "/ˈdʒʌst/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -136,90 +157,113 @@ const data = [
     "newCoreWords": [
       {
         "word": "trial",
-        "ipa": "",
+        "ipa": "/ˈtɹaɪəl/",
         "meaning": "审判",
         "answers": [
           "trial"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "court",
-        "ipa": "",
+        "ipa": "/ˈkɔɹt/",
         "meaning": "法庭",
         "answers": [
           "court"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "witness",
-        "ipa": "",
+        "ipa": "/ˈwɪtnəs/",
         "meaning": "证人",
         "answers": [
           "witness"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "evidence",
-        "ipa": "",
+        "ipa": "/ˈɛvədəns/",
         "meaning": "证据",
         "answers": [
           "evidence"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "judge",
-        "ipa": "",
+        "ipa": "/ˈdʒʌdʒ/",
         "meaning": "法官",
         "answers": [
           "judge"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "jury",
-        "ipa": "",
+        "ipa": "/ˈdʒʊɹi/",
         "meaning": "陪审团",
         "answers": [
           "jury"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "suspect",
-        "ipa": "",
+        "ipa": "/səˈspɛkt/ 或 /ˈsʌˌspɛkt/",
         "meaning": "嫌疑人",
         "answers": [
           "suspect"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "crime",
-        "ipa": "",
+        "ipa": "/ˈkɹaɪm/",
         "meaning": "犯罪",
         "answers": [
           "crime"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "justify",
-        "ipa": "",
+        "ipa": "/ˈdʒʌstəˌfaɪ/",
         "meaning": "证明正当",
         "answers": [
           "justify"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sentence",
-        "ipa": "",
+        "ipa": "/ˈsɛntəns/",
         "meaning": "判决",
         "answers": [
           "sentence"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
     "supportWords": [
       {
         "word": "commit",
-        "meaning": "犯（罪）"
+        "meaning": "犯（罪）",
+        "ipa": "/kəˈmɪt/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -251,60 +295,74 @@ const data = [
     "newCoreWords": [
       {
         "word": "complain",
-        "ipa": "",
+        "ipa": "/kəmˈpleɪn/",
         "meaning": "投诉",
         "answers": [
           "complain"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "false",
-        "ipa": "",
+        "ipa": "/ˈfɔls/",
         "meaning": "虚假的",
         "answers": [
           "false"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fraud",
-        "ipa": "",
+        "ipa": "/ˈfɹɔd/",
         "meaning": "欺诈",
         "answers": [
           "fraud"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "claim",
-        "ipa": "",
+        "ipa": "/ˈkleɪm/",
         "meaning": "声明",
         "answers": [
           "claim",
           "claims"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "reconcile",
-        "ipa": "",
+        "ipa": "/ˈɹɛkənˌsaɪl/",
         "meaning": "调和",
         "answers": [
           "reconcile"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "ownership",
-        "ipa": "",
+        "ipa": "/ˈoʊnɚˌʃɪp/",
         "meaning": "所有权",
         "answers": [
           "ownership"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "copyright",
-        "ipa": "",
+        "ipa": "/ˈkɑpiˌɹaɪt/",
         "meaning": "版权",
         "answers": [
           "copyright"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -314,11 +372,17 @@ const data = [
     "supportWords": [
       {
         "word": "investigate",
-        "meaning": "调查"
+        "meaning": "调查",
+        "ipa": "/ˌɪnˈvɛstəˌɡeɪt/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "mediate",
-        "meaning": "调解"
+        "meaning": "调解",
+        "ipa": "/ˈmidiˌeɪt/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -350,83 +414,103 @@ const data = [
     "newCoreWords": [
       {
         "word": "charter",
-        "ipa": "",
+        "ipa": "/ˈtʃɑɹtɚ/",
         "meaning": "宪章",
         "answers": [
           "charter"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "discrimination",
-        "ipa": "",
+        "ipa": "/dɪˌskɹɪməˈneɪʃən/",
         "meaning": "歧视",
         "answers": [
           "discrimination"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "obligation",
-        "ipa": "",
+        "ipa": "/ˌɑbləˈɡeɪʃən/",
         "meaning": "义务",
         "answers": [
           "obligation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "standard",
-        "ipa": "",
+        "ipa": "/ˈstændɚd/",
         "meaning": "标准",
         "answers": [
           "standard"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "reasonable",
-        "ipa": "",
+        "ipa": "/ˈɹizənəbəl/",
         "meaning": "合理的",
         "answers": [
           "reasonable"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "constraint",
-        "ipa": "",
+        "ipa": "/kənˈstɹeɪnt/",
         "meaning": "约束",
         "answers": [
           "constraint"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "enforce",
-        "ipa": "",
+        "ipa": "/ɛnˈfɔɹs/",
         "meaning": "执行",
         "answers": [
           "enforce"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "prejudice",
-        "ipa": "",
+        "ipa": "/ˈpɹɛdʒədɪs/",
         "meaning": "偏见",
         "answers": [
           "prejudice"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "justice",
-        "ipa": "",
+        "ipa": "/ˈdʒʌstəs/",
         "meaning": "正义",
         "answers": [
           "justice"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "access",
-        "ipa": "",
+        "ipa": "/ˈækˌsɛs/",
         "meaning": "使用权；机会",
         "answers": [
           "access"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -435,5 +519,5 @@ const data = [
     "supportWords": []
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

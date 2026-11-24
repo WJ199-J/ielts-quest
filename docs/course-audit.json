@@ -1,19 +1,18 @@
 {
   "summary": {
-    "missions": 98,
+    "missions": 134,
     "chapters": 22,
-    "uniqueIds": 98,
+    "uniqueIds": 134,
     "continuousIds": true,
-    "newWordRecords": 1109,
-    "uniqueNewWords": 1080,
-    "missingIPA": 1037,
+    "newWordRecords": 1325,
+    "uniqueNewWords": 1290,
+    "missingIPA": 0,
     "missingPOS": 1096,
-    "missingCollocations": 1096,
+    "missingCollocations": 1312,
     "unmatched": [],
     "unknownReviews": [],
-    "originalScalePassed": 0,
-    "fullPoolQuizzes": 29,
-    "sourceCoverage": "Not verified: source PDF located, full word-to-course mapping pending."
+    "fullPoolQuizzes": 65,
+    "sourceCoverage": "Printed-index baseline: 956 original + 216 newly integrated base-story chapter entries; Chapter 1 hidden stories add 180. This is not full-book/all-meaning coverage."
   },
   "missions": [
     {
@@ -31,8 +30,7 @@
       "missingCollocations": 0,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 2,
@@ -49,8 +47,7 @@
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 3,
@@ -67,8 +64,7 @@
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 4,
@@ -85,8 +81,7 @@
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 5,
@@ -103,8 +98,7 @@
       "missingCollocations": 13,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 6,
@@ -121,8 +115,7 @@
       "missingCollocations": 17,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 7,
@@ -134,13 +127,12 @@
       "candidates": 11,
       "requestedQuestions": 8,
       "actualQuestions": 8,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 8,
@@ -152,13 +144,12 @@
       "candidates": 12,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 9,
@@ -170,13 +161,12 @@
       "candidates": 14,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 13,
+      "missingIPA": 0,
       "missingPOS": 13,
       "missingCollocations": 13,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 10,
@@ -188,13 +178,12 @@
       "candidates": 18,
       "requestedQuestions": 15,
       "actualQuestions": 15,
-      "missingIPA": 17,
+      "missingIPA": 0,
       "missingPOS": 17,
       "missingCollocations": 17,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 11,
@@ -206,13 +195,12 @@
       "candidates": 14,
       "requestedQuestions": 17,
       "actualQuestions": 14,
-      "missingIPA": 12,
+      "missingIPA": 0,
       "missingPOS": 12,
       "missingCollocations": 12,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 12,
@@ -224,13 +212,12 @@
       "candidates": 24,
       "requestedQuestions": 19,
       "actualQuestions": 19,
-      "missingIPA": 21,
+      "missingIPA": 0,
       "missingPOS": 21,
       "missingCollocations": 21,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 13,
@@ -242,13 +229,12 @@
       "candidates": 21,
       "requestedQuestions": 22,
       "actualQuestions": 21,
-      "missingIPA": 18,
+      "missingIPA": 0,
       "missingPOS": 18,
       "missingCollocations": 18,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 14,
@@ -260,13 +246,12 @@
       "candidates": 29,
       "requestedQuestions": 26,
       "actualQuestions": 26,
-      "missingIPA": 17,
+      "missingIPA": 0,
       "missingPOS": 17,
       "missingCollocations": 17,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 15,
@@ -278,13 +263,12 @@
       "candidates": 12,
       "requestedQuestions": 8,
       "actualQuestions": 8,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 16,
@@ -296,13 +280,12 @@
       "candidates": 11,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 17,
@@ -314,13 +297,12 @@
       "candidates": 15,
       "requestedQuestions": 11,
       "actualQuestions": 11,
-      "missingIPA": 14,
+      "missingIPA": 0,
       "missingPOS": 14,
       "missingCollocations": 14,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 18,
@@ -332,13 +314,12 @@
       "candidates": 15,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 15,
+      "missingIPA": 0,
       "missingPOS": 15,
       "missingCollocations": 15,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 19,
@@ -350,13 +331,12 @@
       "candidates": 14,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 20,
@@ -368,13 +348,12 @@
       "candidates": 18,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 21,
@@ -386,13 +365,12 @@
       "candidates": 9,
       "requestedQuestions": 7,
       "actualQuestions": 7,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 22,
@@ -404,13 +382,12 @@
       "candidates": 11,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 23,
@@ -422,13 +399,12 @@
       "candidates": 15,
       "requestedQuestions": 11,
       "actualQuestions": 11,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 24,
@@ -440,13 +416,12 @@
       "candidates": 14,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 25,
@@ -458,13 +433,12 @@
       "candidates": 12,
       "requestedQuestions": 13,
       "actualQuestions": 12,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 26,
@@ -476,13 +450,12 @@
       "candidates": 23,
       "requestedQuestions": 15,
       "actualQuestions": 15,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 27,
@@ -494,13 +467,12 @@
       "candidates": 17,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 17,
+      "missingIPA": 0,
       "missingPOS": 17,
       "missingCollocations": 17,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 28,
@@ -512,13 +484,12 @@
       "candidates": 18,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 18,
+      "missingIPA": 0,
       "missingPOS": 18,
       "missingCollocations": 18,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 29,
@@ -530,13 +501,12 @@
       "candidates": 18,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 18,
+      "missingIPA": 0,
       "missingPOS": 18,
       "missingCollocations": 18,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 30,
@@ -548,13 +518,46 @@
       "candidates": 16,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 16,
+      "missingIPA": 0,
       "missingPOS": 16,
       "missingCollocations": 16,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 99,
+      "chapter": 5,
+      "title": "The Missing Bibliography",
+      "storyWords": 152,
+      "newWords": 6,
+      "reviewWords": 3,
+      "candidates": 9,
+      "requestedQuestions": 9,
+      "actualQuestions": 9,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 100,
+      "chapter": 5,
+      "title": "A Fair Place on the Course",
+      "storyWords": 168,
+      "newWords": 6,
+      "reviewWords": 2,
+      "candidates": 8,
+      "requestedQuestions": 8,
+      "actualQuestions": 8,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 31,
@@ -566,13 +569,12 @@
       "candidates": 14,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 13,
+      "missingIPA": 0,
       "missingPOS": 13,
       "missingCollocations": 13,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 32,
@@ -584,13 +586,12 @@
       "candidates": 16,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 15,
+      "missingIPA": 0,
       "missingPOS": 15,
       "missingCollocations": 15,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 33,
@@ -602,13 +603,12 @@
       "candidates": 17,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 15,
+      "missingIPA": 0,
       "missingPOS": 15,
       "missingCollocations": 15,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 34,
@@ -620,13 +620,46 @@
       "candidates": 16,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 16,
+      "missingIPA": 0,
       "missingPOS": 16,
       "missingCollocations": 16,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 101,
+      "chapter": 6,
+      "title": "Finding the Filter Fault",
+      "storyWords": 162,
+      "newWords": 6,
+      "reviewWords": 2,
+      "candidates": 8,
+      "requestedQuestions": 8,
+      "actualQuestions": 8,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 102,
+      "chapter": 6,
+      "title": "The Warning That Arrived Late",
+      "storyWords": 175,
+      "newWords": 6,
+      "reviewWords": 3,
+      "candidates": 9,
+      "requestedQuestions": 9,
+      "actualQuestions": 9,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 35,
@@ -638,13 +671,12 @@
       "candidates": 13,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 12,
+      "missingIPA": 0,
       "missingPOS": 12,
       "missingCollocations": 12,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 36,
@@ -656,13 +688,12 @@
       "candidates": 10,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 37,
@@ -674,13 +705,12 @@
       "candidates": 15,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 15,
+      "missingIPA": 0,
       "missingPOS": 15,
       "missingCollocations": 15,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 38,
@@ -692,13 +722,46 @@
       "candidates": 10,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 103,
+      "chapter": 7,
+      "title": "The Object Without a Label",
+      "storyWords": 164,
+      "newWords": 6,
+      "reviewWords": 1,
+      "candidates": 7,
+      "requestedQuestions": 7,
+      "actualQuestions": 7,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 104,
+      "chapter": 7,
+      "title": "A Shared Evening in the Hall",
+      "storyWords": 166,
+      "newWords": 6,
+      "reviewWords": 0,
+      "candidates": 6,
+      "requestedQuestions": 6,
+      "actualQuestions": 6,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 39,
@@ -710,13 +773,12 @@
       "candidates": 10,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 40,
@@ -728,13 +790,12 @@
       "candidates": 13,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 13,
+      "missingIPA": 0,
       "missingPOS": 13,
       "missingCollocations": 13,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 41,
@@ -746,13 +807,12 @@
       "candidates": 16,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 16,
+      "missingIPA": 0,
       "missingPOS": 16,
       "missingCollocations": 16,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 42,
@@ -764,13 +824,46 @@
       "candidates": 13,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 12,
+      "missingIPA": 0,
       "missingPOS": 12,
       "missingCollocations": 12,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 105,
+      "chapter": 8,
+      "title": "Who Does the Notice Address?",
+      "storyWords": 169,
+      "newWords": 6,
+      "reviewWords": 3,
+      "candidates": 9,
+      "requestedQuestions": 9,
+      "actualQuestions": 9,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 106,
+      "chapter": 8,
+      "title": "Words Across the Table",
+      "storyWords": 168,
+      "newWords": 6,
+      "reviewWords": 1,
+      "candidates": 7,
+      "requestedQuestions": 7,
+      "actualQuestions": 7,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 43,
@@ -782,13 +875,12 @@
       "candidates": 12,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 12,
+      "missingIPA": 0,
       "missingPOS": 12,
       "missingCollocations": 12,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 44,
@@ -800,13 +892,12 @@
       "candidates": 15,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 15,
+      "missingIPA": 0,
       "missingPOS": 15,
       "missingCollocations": 15,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 45,
@@ -818,13 +909,12 @@
       "candidates": 15,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 14,
+      "missingIPA": 0,
       "missingPOS": 14,
       "missingCollocations": 14,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 46,
@@ -836,13 +926,46 @@
       "candidates": 16,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 12,
+      "missingIPA": 0,
       "missingPOS": 12,
       "missingCollocations": 12,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 107,
+      "chapter": 9,
+      "title": "A Concert for the Quiet Street",
+      "storyWords": 171,
+      "newWords": 6,
+      "reviewWords": 1,
+      "candidates": 7,
+      "requestedQuestions": 7,
+      "actualQuestions": 7,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 108,
+      "chapter": 9,
+      "title": "The Film Behind the Poster",
+      "storyWords": 170,
+      "newWords": 6,
+      "reviewWords": 1,
+      "candidates": 7,
+      "requestedQuestions": 7,
+      "actualQuestions": 7,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 47,
@@ -854,13 +977,12 @@
       "candidates": 11,
       "requestedQuestions": 11,
       "actualQuestions": 11,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 48,
@@ -872,13 +994,12 @@
       "candidates": 12,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 12,
+      "missingIPA": 0,
       "missingPOS": 12,
       "missingCollocations": 12,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 49,
@@ -890,13 +1011,12 @@
       "candidates": 14,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 12,
+      "missingIPA": 0,
       "missingPOS": 12,
       "missingCollocations": 12,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 50,
@@ -908,13 +1028,46 @@
       "candidates": 14,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 12,
+      "missingIPA": 0,
       "missingPOS": 12,
       "missingCollocations": 12,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 109,
+      "chapter": 10,
+      "title": "A Metal Worth Repairing",
+      "storyWords": 161,
+      "newWords": 6,
+      "reviewWords": 1,
+      "candidates": 7,
+      "requestedQuestions": 7,
+      "actualQuestions": 7,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 110,
+      "chapter": 10,
+      "title": "The Package That Returned",
+      "storyWords": 156,
+      "newWords": 6,
+      "reviewWords": 2,
+      "candidates": 8,
+      "requestedQuestions": 8,
+      "actualQuestions": 8,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 51,
@@ -926,13 +1079,12 @@
       "candidates": 12,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 52,
@@ -944,13 +1096,12 @@
       "candidates": 12,
       "requestedQuestions": 11,
       "actualQuestions": 11,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 53,
@@ -962,13 +1113,12 @@
       "candidates": 13,
       "requestedQuestions": 11,
       "actualQuestions": 11,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 54,
@@ -980,13 +1130,46 @@
       "candidates": 17,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 111,
+      "chapter": 11,
+      "title": "The Jacket with a Second Life",
+      "storyWords": 166,
+      "newWords": 6,
+      "reviewWords": 3,
+      "candidates": 9,
+      "requestedQuestions": 9,
+      "actualQuestions": 9,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 112,
+      "chapter": 11,
+      "title": "The Portrait and the Uniform",
+      "storyWords": 165,
+      "newWords": 6,
+      "reviewWords": 0,
+      "candidates": 6,
+      "requestedQuestions": 6,
+      "actualQuestions": 6,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 55,
@@ -998,13 +1181,12 @@
       "candidates": 11,
       "requestedQuestions": 11,
       "actualQuestions": 11,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 56,
@@ -1016,13 +1198,12 @@
       "candidates": 13,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 13,
+      "missingIPA": 0,
       "missingPOS": 13,
       "missingCollocations": 13,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 57,
@@ -1034,13 +1215,12 @@
       "candidates": 14,
       "requestedQuestions": 12,
       "actualQuestions": 12,
-      "missingIPA": 13,
+      "missingIPA": 0,
       "missingPOS": 13,
       "missingCollocations": 13,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 58,
@@ -1052,13 +1232,46 @@
       "candidates": 13,
       "requestedQuestions": 11,
       "actualQuestions": 11,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 113,
+      "chapter": 12,
+      "title": "A Menu for Everyone",
+      "storyWords": 165,
+      "newWords": 6,
+      "reviewWords": 1,
+      "candidates": 7,
+      "requestedQuestions": 7,
+      "actualQuestions": 7,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 114,
+      "chapter": 12,
+      "title": "From Crop to Loaf",
+      "storyWords": 176,
+      "newWords": 6,
+      "reviewWords": 3,
+      "candidates": 9,
+      "requestedQuestions": 9,
+      "actualQuestions": 9,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 59,
@@ -1070,13 +1283,12 @@
       "candidates": 12,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 12,
+      "missingIPA": 0,
       "missingPOS": 12,
       "missingCollocations": 12,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 60,
@@ -1088,13 +1300,12 @@
       "candidates": 14,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 14,
+      "missingIPA": 0,
       "missingPOS": 14,
       "missingCollocations": 14,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 61,
@@ -1106,13 +1317,12 @@
       "candidates": 10,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 62,
@@ -1124,13 +1334,46 @@
       "candidates": 11,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 115,
+      "chapter": 13,
+      "title": "The Entrance Everyone Could Use",
+      "storyWords": 170,
+      "newWords": 6,
+      "reviewWords": 2,
+      "candidates": 8,
+      "requestedQuestions": 8,
+      "actualQuestions": 8,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 116,
+      "chapter": 13,
+      "title": "The Building Beneath the Drawing",
+      "storyWords": 170,
+      "newWords": 6,
+      "reviewWords": 1,
+      "candidates": 7,
+      "requestedQuestions": 7,
+      "actualQuestions": 7,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 63,
@@ -1142,13 +1385,12 @@
       "candidates": 8,
       "requestedQuestions": 8,
       "actualQuestions": 8,
-      "missingIPA": 8,
+      "missingIPA": 0,
       "missingPOS": 8,
       "missingCollocations": 8,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 64,
@@ -1160,13 +1402,12 @@
       "candidates": 12,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 12,
+      "missingIPA": 0,
       "missingPOS": 12,
       "missingCollocations": 12,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 65,
@@ -1178,13 +1419,12 @@
       "candidates": 13,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 13,
+      "missingIPA": 0,
       "missingPOS": 13,
       "missingCollocations": 13,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 66,
@@ -1196,13 +1436,46 @@
       "candidates": 12,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 117,
+      "chapter": 14,
+      "title": "The Parcel That Missed the Train",
+      "storyWords": 175,
+      "newWords": 6,
+      "reviewWords": 1,
+      "candidates": 7,
+      "requestedQuestions": 7,
+      "actualQuestions": 7,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 118,
+      "chapter": 14,
+      "title": "A Route Beyond the Timetable",
+      "storyWords": 180,
+      "newWords": 6,
+      "reviewWords": 4,
+      "candidates": 10,
+      "requestedQuestions": 10,
+      "actualQuestions": 10,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 67,
@@ -1214,13 +1487,12 @@
       "candidates": 10,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 68,
@@ -1232,13 +1504,12 @@
       "candidates": 9,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 69,
@@ -1250,13 +1521,12 @@
       "candidates": 11,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 70,
@@ -1268,13 +1538,46 @@
       "candidates": 11,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 119,
+      "chapter": 15,
+      "title": "A Meeting with an Empty Chair",
+      "storyWords": 183,
+      "newWords": 6,
+      "reviewWords": 4,
+      "candidates": 10,
+      "requestedQuestions": 10,
+      "actualQuestions": 10,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 120,
+      "chapter": 15,
+      "title": "The Promise in the New Charter",
+      "storyWords": 178,
+      "newWords": 6,
+      "reviewWords": 2,
+      "candidates": 8,
+      "requestedQuestions": 8,
+      "actualQuestions": 8,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 71,
@@ -1286,13 +1589,12 @@
       "candidates": 11,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 72,
@@ -1304,13 +1606,12 @@
       "candidates": 11,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 11,
+      "missingIPA": 0,
       "missingPOS": 11,
       "missingCollocations": 11,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 73,
@@ -1322,13 +1623,12 @@
       "candidates": 8,
       "requestedQuestions": 7,
       "actualQuestions": 7,
-      "missingIPA": 7,
+      "missingIPA": 0,
       "missingPOS": 7,
       "missingCollocations": 7,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 74,
@@ -1340,13 +1640,46 @@
       "candidates": 12,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 121,
+      "chapter": 16,
+      "title": "The Shop after the Discount",
+      "storyWords": 179,
+      "newWords": 6,
+      "reviewWords": 4,
+      "candidates": 10,
+      "requestedQuestions": 10,
+      "actualQuestions": 10,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 122,
+      "chapter": 16,
+      "title": "When Expansion Changed the Balance",
+      "storyWords": 179,
+      "newWords": 6,
+      "reviewWords": 8,
+      "candidates": 14,
+      "requestedQuestions": 14,
+      "actualQuestions": 14,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 75,
@@ -1358,13 +1691,12 @@
       "candidates": 9,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 76,
@@ -1376,13 +1708,12 @@
       "candidates": 10,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 77,
@@ -1394,13 +1725,12 @@
       "candidates": 9,
       "requestedQuestions": 7,
       "actualQuestions": 7,
-      "missingIPA": 7,
+      "missingIPA": 0,
       "missingPOS": 7,
       "missingCollocations": 7,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 78,
@@ -1412,13 +1742,46 @@
       "candidates": 11,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 123,
+      "chapter": 17,
+      "title": "The Agreement Nobody Read",
+      "storyWords": 184,
+      "newWords": 6,
+      "reviewWords": 0,
+      "candidates": 6,
+      "requestedQuestions": 6,
+      "actualQuestions": 6,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 124,
+      "chapter": 17,
+      "title": "A Rule with a Reason",
+      "storyWords": 169,
+      "newWords": 6,
+      "reviewWords": 4,
+      "candidates": 10,
+      "requestedQuestions": 10,
+      "actualQuestions": 10,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 79,
@@ -1430,13 +1793,12 @@
       "candidates": 9,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 80,
@@ -1448,13 +1810,12 @@
       "candidates": 10,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 81,
@@ -1466,13 +1827,12 @@
       "candidates": 11,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 82,
@@ -1484,13 +1844,46 @@
       "candidates": 11,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 125,
+      "chapter": 18,
+      "title": "The Bridge after the Alarm",
+      "storyWords": 173,
+      "newWords": 6,
+      "reviewWords": 3,
+      "candidates": 9,
+      "requestedQuestions": 9,
+      "actualQuestions": 9,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 126,
+      "chapter": 18,
+      "title": "The Report with Two Accounts",
+      "storyWords": 193,
+      "newWords": 6,
+      "reviewWords": 0,
+      "candidates": 6,
+      "requestedQuestions": 6,
+      "actualQuestions": 6,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 83,
@@ -1502,13 +1895,12 @@
       "candidates": 10,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 84,
@@ -1520,13 +1912,12 @@
       "candidates": 9,
       "requestedQuestions": 8,
       "actualQuestions": 8,
-      "missingIPA": 8,
+      "missingIPA": 0,
       "missingPOS": 8,
       "missingCollocations": 8,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 85,
@@ -1538,13 +1929,12 @@
       "candidates": 10,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 86,
@@ -1556,13 +1946,46 @@
       "candidates": 10,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 127,
+      "chapter": 19,
+      "title": "The Apprentice at the Counter",
+      "storyWords": 178,
+      "newWords": 6,
+      "reviewWords": 1,
+      "candidates": 7,
+      "requestedQuestions": 7,
+      "actualQuestions": 7,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 128,
+      "chapter": 19,
+      "title": "A Guest Becomes a Host",
+      "storyWords": 193,
+      "newWords": 6,
+      "reviewWords": 0,
+      "candidates": 6,
+      "requestedQuestions": 6,
+      "actualQuestions": 6,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 87,
@@ -1574,13 +1997,12 @@
       "candidates": 7,
       "requestedQuestions": 7,
       "actualQuestions": 7,
-      "missingIPA": 7,
+      "missingIPA": 0,
       "missingPOS": 7,
       "missingCollocations": 7,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 88,
@@ -1592,13 +2014,12 @@
       "candidates": 9,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 89,
@@ -1610,13 +2031,12 @@
       "candidates": 9,
       "requestedQuestions": 9,
       "actualQuestions": 9,
-      "missingIPA": 9,
+      "missingIPA": 0,
       "missingPOS": 9,
       "missingCollocations": 9,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 90,
@@ -1628,13 +2048,46 @@
       "candidates": 10,
       "requestedQuestions": 7,
       "actualQuestions": 7,
-      "missingIPA": 7,
+      "missingIPA": 0,
       "missingPOS": 7,
       "missingCollocations": 7,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 129,
+      "chapter": 20,
+      "title": "A Team Learns to Disagree",
+      "storyWords": 193,
+      "newWords": 6,
+      "reviewWords": 0,
+      "candidates": 6,
+      "requestedQuestions": 6,
+      "actualQuestions": 6,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 130,
+      "chapter": 20,
+      "title": "The Habit behind the Reminder",
+      "storyWords": 192,
+      "newWords": 6,
+      "reviewWords": 0,
+      "candidates": 6,
+      "requestedQuestions": 6,
+      "actualQuestions": 6,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 91,
@@ -1646,13 +2099,12 @@
       "candidates": 13,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 13,
+      "missingIPA": 0,
       "missingPOS": 13,
       "missingCollocations": 13,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 92,
@@ -1664,13 +2116,12 @@
       "candidates": 10,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 93,
@@ -1682,13 +2133,12 @@
       "candidates": 8,
       "requestedQuestions": 8,
       "actualQuestions": 8,
-      "missingIPA": 8,
+      "missingIPA": 0,
       "missingPOS": 8,
       "missingCollocations": 8,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 94,
@@ -1700,13 +2150,46 @@
       "candidates": 10,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 131,
+      "chapter": 21,
+      "title": "The Appointment That Needed Time",
+      "storyWords": 189,
+      "newWords": 6,
+      "reviewWords": 2,
+      "candidates": 8,
+      "requestedQuestions": 8,
+      "actualQuestions": 8,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 132,
+      "chapter": 21,
+      "title": "The Survey behind the Headline",
+      "storyWords": 195,
+      "newWords": 6,
+      "reviewWords": 1,
+      "candidates": 7,
+      "requestedQuestions": 7,
+      "actualQuestions": 7,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     },
     {
       "id": 95,
@@ -1718,13 +2201,12 @@
       "candidates": 6,
       "requestedQuestions": 6,
       "actualQuestions": 6,
-      "missingIPA": 6,
+      "missingIPA": 0,
       "missingPOS": 6,
       "missingCollocations": 6,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 96,
@@ -1736,13 +2218,12 @@
       "candidates": 8,
       "requestedQuestions": 8,
       "actualQuestions": 8,
-      "missingIPA": 8,
+      "missingIPA": 0,
       "missingPOS": 8,
       "missingCollocations": 8,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 97,
@@ -1754,13 +2235,12 @@
       "candidates": 10,
       "requestedQuestions": 10,
       "actualQuestions": 10,
-      "missingIPA": 10,
+      "missingIPA": 0,
       "missingPOS": 10,
       "missingCollocations": 10,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
     },
     {
       "id": 98,
@@ -1777,8 +2257,41 @@
       "missingCollocations": 0,
       "unmatched": [],
       "unknownReviews": [],
-      "missingTranslation": 0,
-      "meetsOriginalScale": false
+      "missingTranslation": 0
+    },
+    {
+      "id": 133,
+      "chapter": 22,
+      "title": "A Year That Was Not Complete",
+      "storyWords": 194,
+      "newWords": 6,
+      "reviewWords": 3,
+      "candidates": 9,
+      "requestedQuestions": 9,
+      "actualQuestions": 9,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
+    },
+    {
+      "id": 134,
+      "chapter": 22,
+      "title": "Two Events at the Same Moment",
+      "storyWords": 212,
+      "newWords": 6,
+      "reviewWords": 0,
+      "candidates": 6,
+      "requestedQuestions": 6,
+      "actualQuestions": 6,
+      "missingIPA": 0,
+      "missingPOS": 0,
+      "missingCollocations": 6,
+      "unmatched": [],
+      "unknownReviews": [],
+      "missingTranslation": 0
     }
   ]
 }

@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 11 时尚潮流 | M51–M54 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 51,
     "chapter": 11,
@@ -41,84 +41,104 @@ const data = [
     "newCoreWords": [
       {
         "word": "fashion",
-        "ipa": "",
+        "ipa": "/ˈfæʃən/",
         "meaning": "时尚",
         "answers": [
           "fashion"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "style",
-        "ipa": "",
+        "ipa": "/ˈstaɪl/",
         "meaning": "风格；样式",
         "answers": [
           "style"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "trend",
-        "ipa": "",
+        "ipa": "/ˈtɹɛnd/",
         "meaning": "趋势",
         "answers": [
           "trend"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "model",
-        "ipa": "",
+        "ipa": "/ˈmɑdəl/",
         "meaning": "模特；模型",
         "answers": [
           "model"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "icon",
-        "ipa": "",
+        "ipa": "/ˈaɪkɑn/",
         "meaning": "偶像；图标",
         "answers": [
           "icon"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "luxury",
-        "ipa": "",
+        "ipa": "/ˈlʌɡʒɚi/",
         "meaning": "奢侈品；奢华",
         "answers": [
           "luxury"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "elegant",
-        "ipa": "",
+        "ipa": "/ˈɛləɡənt/",
         "meaning": "优雅的",
         "answers": [
           "elegant"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "design",
-        "ipa": "",
+        "ipa": "/dɪˈzaɪn/",
         "meaning": "设计",
         "answers": [
           "design",
           "designs"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "influence",
-        "ipa": "",
+        "ipa": "/ˈɪnfluəns/",
         "meaning": "影响",
         "answers": [
           "influence"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "fashionable",
-        "ipa": "",
+        "ipa": "/ˈfæʃənəbəl/",
         "meaning": "流行的",
         "answers": [
           "fashionable"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -128,7 +148,10 @@ const data = [
     "supportWords": [
       {
         "word": "exhibition",
-        "meaning": "展览"
+        "meaning": "展览",
+        "ipa": "/ˌɛksəˈbɪʃən/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -172,91 +195,113 @@ const data = [
     "newCoreWords": [
       {
         "word": "costume",
-        "ipa": "",
+        "ipa": "/kɑˈstum/",
         "meaning": "服装；戏服",
         "answers": [
           "costume"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "masquerade",
-        "ipa": "",
+        "ipa": "/ˌmæskɚˈeɪd/",
         "meaning": "化装舞会",
         "answers": [
           "masquerade"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "adorn",
-        "ipa": "",
+        "ipa": "/əˈdɔɹn/",
         "meaning": "装饰",
         "answers": [
           "adorn"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "ornament",
-        "ipa": "",
+        "ipa": "/ˈɔɹnəmənt/",
         "meaning": "装饰品",
         "answers": [
           "ornament"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pigment",
-        "ipa": "",
+        "ipa": "/ˈpɪɡmənt/",
         "meaning": "颜料",
         "answers": [
           "pigment"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "dye",
-        "ipa": "",
+        "ipa": "/ˈdaɪ/",
         "meaning": "染色；染料",
         "answers": [
           "dye"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "embroider",
-        "ipa": "",
+        "ipa": "/ɪmˈbɹɔɪdɚ/",
         "meaning": "刺绣",
         "answers": [
           "embroider"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "veil",
-        "ipa": "",
+        "ipa": "/ˈveɪl/",
         "meaning": "面纱",
         "answers": [
           "veil"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "exquisite",
-        "ipa": "",
+        "ipa": "/ˈɛkskwəzət/",
         "meaning": "精致的",
         "answers": [
           "exquisite"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "embellish",
-        "ipa": "",
+        "ipa": "/ɪˈmbɛlɪʃ/",
         "meaning": "装饰；润色",
         "answers": [
           "embellish"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "garment",
-        "ipa": "",
+        "ipa": "/ˈɡɑɹmənt/",
         "meaning": "衣服",
         "answers": [
           "garment"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -304,91 +349,113 @@ const data = [
     "newCoreWords": [
       {
         "word": "jacket",
-        "ipa": "",
+        "ipa": "/ˈdʒækət/",
         "meaning": "夹克",
         "answers": [
           "jacket"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "button",
-        "ipa": "",
+        "ipa": "/ˈbʌtən/",
         "meaning": "纽扣",
         "answers": [
           "button"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "thread",
-        "ipa": "",
+        "ipa": "/ˈθɹɛd/",
         "meaning": "线",
         "answers": [
           "thread"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "strap",
-        "ipa": "",
+        "ipa": "/ˈstɹæp/",
         "meaning": "带子",
         "answers": [
           "strap"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "clasp",
-        "ipa": "",
+        "ipa": "/ˈklæsp/",
         "meaning": "搭扣",
         "answers": [
           "clasp"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sweater",
-        "ipa": "",
+        "ipa": "/ˈswɛtɚ/",
         "meaning": "毛衣",
         "answers": [
           "sweater"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "textile",
-        "ipa": "",
+        "ipa": "/ˈtɛkˌstaɪl/",
         "meaning": "纺织品",
         "answers": [
           "textile"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "scarf",
-        "ipa": "",
+        "ipa": "/ˈskɑɹf/",
         "meaning": "围巾",
         "answers": [
           "scarf"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "brim",
-        "ipa": "",
+        "ipa": "/ˈbɹɪm/",
         "meaning": "帽檐",
         "answers": [
           "brim"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "patch",
-        "ipa": "",
+        "ipa": "/ˈpætʃ/",
         "meaning": "补丁",
         "answers": [
           "patch"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tailor",
-        "ipa": "",
+        "ipa": "/ˈteɪlɚ/",
         "meaning": "裁缝",
         "answers": [
           "tailor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -398,7 +465,10 @@ const data = [
     "supportWords": [
       {
         "word": "workshop",
-        "meaning": "工作室"
+        "meaning": "工作室",
+        "ipa": "/ˈwɝkˌʃɑp/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -442,76 +512,94 @@ const data = [
     "newCoreWords": [
       {
         "word": "collection",
-        "ipa": "",
+        "ipa": "/kəˈlɛkʃən/",
         "meaning": "系列；收藏品",
         "answers": [
           "collection"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "elegance",
-        "ipa": "",
+        "ipa": "/ˈɛləɡəns/",
         "meaning": "优雅",
         "answers": [
           "elegance"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "practical",
-        "ipa": "",
+        "ipa": "/ˈpɹæktəkəl/",
         "meaning": "实用的",
         "answers": [
           "practical"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "recycled",
-        "ipa": "",
+        "ipa": "/ɹiˈsaɪkəld/",
         "meaning": "回收再利用的",
         "answers": [
           "recycled"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "embroidery",
-        "ipa": "",
+        "ipa": "/ɛmˈbɹɔɪdɚi/",
         "meaning": "刺绣",
         "answers": [
           "embroidery"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "debate",
-        "ipa": "",
+        "ipa": "/dəˈbeɪt/",
         "meaning": "辩论",
         "answers": [
           "debate",
           "debated"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "craftsmanship",
-        "ipa": "",
+        "ipa": "/ˈkɹæftsmənˌʃɪp/",
         "meaning": "工艺",
         "answers": [
           "craftsmanship"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "comfort",
-        "ipa": "",
+        "ipa": "/ˈkʌmfɚt/",
         "meaning": "舒适",
         "answers": [
           "comfort"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sustainable",
-        "ipa": "",
+        "ipa": "/səˈsteɪnəbəl/",
         "meaning": "可持续的",
         "answers": [
           "sustainable"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -527,10 +615,13 @@ const data = [
     "supportWords": [
       {
         "word": "exhibition",
-        "meaning": "展览"
+        "meaning": "展览",
+        "ipa": "/ˌɛksəˈbɪʃən/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

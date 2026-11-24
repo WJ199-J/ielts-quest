@@ -12,9 +12,15 @@
     try { return JSON.parse(localStorage.getItem(KEY)) || {}; }
     catch (_) { return {}; }
   }
+  function lexicalSignature(signature) {
+    try {
+      return JSON.stringify(JSON.parse(signature), (key, value) =>
+        ["ipa", "ipaAccent", "ipaSource"].includes(key) ? undefined : value);
+    } catch (_) { return signature; }
+  }
   function get(id, signature) {
     const item = read()[scope()]?.[id];
-    return item?.version === 1 && item.signature === signature ? item : null;
+    return item?.version === 1 && lexicalSignature(item.signature) === lexicalSignature(signature) ? { ...item, signature } : null;
   }
   function save(id, value) {
     try {

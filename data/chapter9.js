@@ -1,6 +1,6 @@
-/* IELTS Quest | Chapter 9 娱乐运动 | M43–M46 */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
-const data = [
+const data=[
   {
     "id": 43,
     "chapter": 9,
@@ -45,99 +45,123 @@ const data = [
     "newCoreWords": [
       {
         "word": "press",
-        "ipa": "",
+        "ipa": "/ˈpɹɛs/",
         "meaning": "新闻界；报刊",
         "answers": [
           "press"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "journalist",
-        "ipa": "",
+        "ipa": "/ˈdʒɝnələst/",
         "meaning": "记者",
         "answers": [
           "journalist"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "athlete",
-        "ipa": "",
+        "ipa": "/ˈæθˌlit/",
         "meaning": "运动员",
         "answers": [
           "athlete"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "editor",
-        "ipa": "",
+        "ipa": "/ˈɛdətɚ/",
         "meaning": "编辑",
         "answers": [
           "editor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "publish",
-        "ipa": "",
+        "ipa": "/ˈpʌblɪʃ/",
         "meaning": "发表；出版",
         "answers": [
           "publish"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "correspondent",
-        "ipa": "",
+        "ipa": "/ˌkɔɹəˈspɑndənt/",
         "meaning": "通讯员",
         "answers": [
           "correspondent"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "announcer",
-        "ipa": "",
+        "ipa": "/əˈnaʊnsɚ/",
         "meaning": "播音员",
         "answers": [
           "announcer"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "broadcast",
-        "ipa": "",
+        "ipa": "/ˈbɹɔdˌkæst/",
         "meaning": "广播；播送",
         "answers": [
           "broadcast"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "media",
-        "ipa": "",
+        "ipa": "/ˈmidiə/",
         "meaning": "媒体",
         "answers": [
           "media"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "disseminate",
-        "ipa": "",
+        "ipa": "/dɪˈsɛməˌneɪt/",
         "meaning": "传播",
         "answers": [
           "disseminate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "gossip",
-        "ipa": "",
+        "ipa": "/ˈɡɑsəp/",
         "meaning": "闲话；八卦",
         "answers": [
           "gossip"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "anticipate",
-        "ipa": "",
+        "ipa": "/ænˈtɪsəˌpeɪt/",
         "meaning": "预期",
         "answers": [
           "anticipate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -187,124 +211,154 @@ const data = [
     "newCoreWords": [
       {
         "word": "gallery",
-        "ipa": "",
+        "ipa": "/ˈɡælɚi/",
         "meaning": "画廊；美术馆",
         "answers": [
           "gallery"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "exhibition",
-        "ipa": "",
+        "ipa": "/ˌɛksəˈbɪʃən/",
         "meaning": "展览",
         "answers": [
           "exhibition"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "painting",
-        "ipa": "",
+        "ipa": "/ˈpeɪntɪŋ/",
         "meaning": "绘画；油画",
         "answers": [
           "painting",
           "paintings"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sculpture",
-        "ipa": "",
+        "ipa": "/ˈskʌlptʃɚ/",
         "meaning": "雕塑",
         "answers": [
           "sculpture"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "aesthetic",
-        "ipa": "",
+        "ipa": "/ɛsˈθɛtɪk/",
         "meaning": "审美的",
         "answers": [
           "aesthetic"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "sketch",
-        "ipa": "",
+        "ipa": "/ˈskɛtʃ/",
         "meaning": "速写；草图",
         "answers": [
           "sketch"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "orchestra",
-        "ipa": "",
+        "ipa": "/ˈɔɹkəstɹə/",
         "meaning": "管弦乐队",
         "answers": [
           "orchestra"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "classical",
-        "ipa": "",
+        "ipa": "/ˈklæsɪkəl/",
         "meaning": "古典的",
         "answers": [
           "classical"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "melody",
-        "ipa": "",
+        "ipa": "/ˈmɛlədi/",
         "meaning": "旋律",
         "answers": [
           "melody"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "violin",
-        "ipa": "",
+        "ipa": "/vaɪəˈlɪn/",
         "meaning": "小提琴",
         "answers": [
           "violin"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "flute",
-        "ipa": "",
+        "ipa": "/ˈflut/",
         "meaning": "长笛",
         "answers": [
           "flute"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "drum",
-        "ipa": "",
+        "ipa": "/ˈdɹʌm/",
         "meaning": "鼓",
         "answers": [
           "drum"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "ballet",
-        "ipa": "",
+        "ipa": "/bæˈleɪ/",
         "meaning": "芭蕾舞",
         "answers": [
           "ballet"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "opera",
-        "ipa": "",
+        "ipa": "/ˈɑpɹə/",
         "meaning": "歌剧",
         "answers": [
           "opera"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "entertain",
-        "ipa": "",
+        "ipa": "/ˌɛntɚˈteɪn/",
         "meaning": "使娱乐",
         "answers": [
           "entertain"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [],
@@ -354,116 +408,144 @@ const data = [
     "newCoreWords": [
       {
         "word": "badminton",
-        "ipa": "",
+        "ipa": "/ˈbædˌmɪntən/",
         "meaning": "羽毛球",
         "answers": [
           "badminton"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "tournament",
-        "ipa": "",
+        "ipa": "/ˈtʊɹnəmənt/",
         "meaning": "锦标赛",
         "answers": [
           "tournament"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "stadium",
-        "ipa": "",
+        "ipa": "/ˈsteɪdiəm/",
         "meaning": "体育场",
         "answers": [
           "stadium"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "competitor",
-        "ipa": "",
+        "ipa": "/kəmˈpɛtətɚ/",
         "meaning": "竞争者；选手",
         "answers": [
           "competitor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "competition",
-        "ipa": "",
+        "ipa": "/ˌkɑmpəˈtɪʃən/",
         "meaning": "比赛；竞争",
         "answers": [
           "competition"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "racket",
-        "ipa": "",
+        "ipa": "/ˈɹækɪt/",
         "meaning": "球拍",
         "answers": [
           "racket"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "shuttlecock",
-        "ipa": "",
+        "ipa": "/ˈʃʌtlkɒk/",
         "meaning": "羽毛球",
         "answers": [
           "shuttlecock"
-        ]
+        ],
+        "ipaAccent": "en-GB",
+        "ipaSource": "人工校订英式宽式音标"
       },
       {
         "word": "spectator",
-        "ipa": "",
+        "ipa": "/ˈspɛkteɪtɚ/",
         "meaning": "观众",
         "answers": [
           "spectator",
           "spectators"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "commentator",
-        "ipa": "",
+        "ipa": "/ˈkɑmənˌteɪtɚ/",
         "meaning": "解说员",
         "answers": [
           "commentator"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "exercise",
-        "ipa": "",
+        "ipa": "/ˈɛksɚˌsaɪz/",
         "meaning": "锻炼",
         "answers": [
           "exercise"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "strain",
-        "ipa": "",
+        "ipa": "/ˈstɹeɪn/",
         "meaning": "拉伤；紧张",
         "answers": [
           "strain"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "volleyball",
-        "ipa": "",
+        "ipa": "/ˈvɑliˌbɔl/",
         "meaning": "排球",
         "answers": [
           "volleyball"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "hockey",
-        "ipa": "",
+        "ipa": "/ˈhɑki/",
         "meaning": "曲棍球",
         "answers": [
           "hockey"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pitch",
-        "ipa": "",
+        "ipa": "/ˈpɪtʃ/",
         "meaning": "球场",
         "answers": [
           "pitch"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -472,7 +554,10 @@ const data = [
     "supportWords": [
       {
         "word": "community",
-        "meaning": "社区"
+        "meaning": "社区",
+        "ipa": "/kəˈmjunəti/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   },
@@ -520,100 +605,124 @@ const data = [
     "newCoreWords": [
       {
         "word": "recreation",
-        "ipa": "",
+        "ipa": "/ˌɹɛkɹiˈeɪʃən/",
         "meaning": "娱乐；消遣",
         "answers": [
           "recreation"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "indoor",
-        "ipa": "",
+        "ipa": "/ˈɪˌndɔɹ/",
         "meaning": "室内的",
         "answers": [
           "indoor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "chess",
-        "ipa": "",
+        "ipa": "/ˈtʃɛs/",
         "meaning": "国际象棋",
         "answers": [
           "chess"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "outdoor",
-        "ipa": "",
+        "ipa": "/ˈaʊtˌdɔɹ/",
         "meaning": "户外的",
         "answers": [
           "outdoor"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "pastime",
-        "ipa": "",
+        "ipa": "/ˈpæˌstaɪm/",
         "meaning": "消遣",
         "answers": [
           "pastime"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "festival",
-        "ipa": "",
+        "ipa": "/ˈfɛstəvəl/",
         "meaning": "节日",
         "answers": [
           "festival"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "consensus",
-        "ipa": "",
+        "ipa": "/kənˈsɛnsəs/",
         "meaning": "共识",
         "answers": [
           "consensus"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "expect",
-        "ipa": "",
+        "ipa": "/ɪkˈspɛkt/",
         "meaning": "期待；预计",
         "answers": [
           "expect",
           "expected"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "propaganda",
-        "ipa": "",
+        "ipa": "/ˌpɹɑpəˈɡændə/",
         "meaning": "宣传；政治宣传",
         "answers": [
           "propaganda"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "simulate",
-        "ipa": "",
+        "ipa": "/ˈsɪmjələt/",
         "meaning": "模拟",
         "answers": [
           "simulate"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "programme",
-        "ipa": "",
+        "ipa": "/ˈpɹoʊˌɡɹæm/",
         "meaning": "节目；方案",
         "answers": [
           "programme"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "entertainment",
-        "ipa": "",
+        "ipa": "/ˌɛntɚˈteɪnmənt/",
         "meaning": "娱乐",
         "answers": [
           "entertainment"
-        ]
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ],
     "reviewWords": [
@@ -625,14 +734,20 @@ const data = [
     "supportWords": [
       {
         "word": "exhibition",
-        "meaning": "展览"
+        "meaning": "展览",
+        "ipa": "/ˌɛksəˈbɪʃən/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       },
       {
         "word": "budget",
-        "meaning": "预算"
+        "meaning": "预算",
+        "ipa": "/ˈbʌdʒɪt/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
       }
     ]
   }
 ];
-window.IELTS_QUEST_MISSIONS = [...(window.IELTS_QUEST_MISSIONS || []), ...data];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

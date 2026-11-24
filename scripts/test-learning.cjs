@@ -19,7 +19,7 @@ const ctx = { window: { location: { search: '?id=4' }, matchMedia: () => ({ matc
   localStorage: { getItem: k => memory.get(k) ?? null, setItem: (k, v) => memory.set(k, v) },
   URLSearchParams, URL, console, Date, Set, Map };
 vm.createContext(ctx);
-for (const file of ['data/missions.js', ...Array.from({ length: 21 }, (_, i) => `data/chapter${i + 2}.js`), 'data/review-vocabulary.js', 'assets/vocabulary-pattern.js', 'assets/quiz-session.js']) vm.runInContext(fs.readFileSync(path.join(root, file), 'utf8'), ctx);
+for (const file of ['data/missions.js', ...Array.from({ length: 21 }, (_, i) => `data/chapter${i + 2}.js`), 'data/additional-missions.js', 'data/review-vocabulary.js', 'assets/vocabulary-pattern.js', 'assets/quiz-session.js']) vm.runInContext(fs.readFileSync(path.join(root, file), 'utf8'), ctx);
 const html = fs.readFileSync(path.join(root, 'mission.html'), 'utf8');
 const inline = [...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)].map(m => m[1]).find(s => s.includes('function gradeQuiz'));
 new Function(inline);
@@ -84,6 +84,15 @@ run(`for (const mission of missions) {
   const decorated = mission.story.map(sentence => decorateStoryText(sentence.en)).join(' ');
   if (decorated.includes('$1')) throw new Error('Replacement artifact in Mission ' + mission.id);
 }`);
+for (const mission of run('missions.filter(m=>m.id>=99)')) {
+  run(`currentMission=missions.find(m=>m.id===${mission.id}); currentQuizWords=getAllCoreWords(currentMission).filter(w=>storyContainsWord(currentMission,w)); quizSubmitted=false; quizSession={signature:quizSignature(),words:currentQuizWords.map(w=>w.word),answers:{},assisted:false}`);
+  inputs=run('currentQuizWords').map(word=>input(word.word,word.word));
+  run('gradeQuiz()');
+  assert.equal(run(`getMissionState(${mission.id}).bestScore`),100);
+  inputs.forEach(x=>x.value='wrong');run('resubmitAnswers()');
+  assert.equal(run(`getMissionState(${mission.id}).bestScore`),100);
+  assert.equal(run(`getMissionState(${mission.id}).attempts`),1);
+}
 run('window.IELTS_QUEST_QUIZ_SESSIONS.save(4,{signature:"test",words:["weather"]})');
 assert.equal(run('window.IELTS_QUEST_QUIZ_SESSIONS.get(4,"other")'), null);
 memory.set('ieltsQuestAuthSession', JSON.stringify({ user: { id: 'test-user' } }));

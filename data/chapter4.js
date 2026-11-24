@@ -1,5 +1,4 @@
-
-/* IELTS Quest | Chapter 4 | 太空探索 | load after prior chapter files */
+/* IELTS Quest course source; existing story IDs and text preserved. Missing pronunciation supplied with per-word provenance. */
 (function(){
 const data=[
   {
@@ -40,20 +39,114 @@ const data=[
       }
     ],
     "newCoreWords": [
-      {"word":"observatory","ipa":"","meaning":"天文台","answers":["observatory"]},
-      {"word":"universe","ipa":"","meaning":"宇宙","answers":["universe"]},
-      {"word":"telescope","ipa":"","meaning":"望远镜","answers":["telescope"]},
-      {"word":"galaxy","ipa":"","meaning":"星系","answers":["galaxy"]},
-      {"word":"planet","ipa":"","meaning":"行星","answers":["planet"]},
-      {"word":"orbit","ipa":"","meaning":"轨道；绕轨道运行","answers":["orbit"]},
-      {"word":"solar system","ipa":"","meaning":"太阳系","answers":["solar system"]},
-      {"word":"satellite","ipa":"","meaning":"卫星","answers":["satellite"]},
-      {"word":"constellation","ipa":"","meaning":"星座","answers":["constellation"]}
+      {
+        "word": "observatory",
+        "ipa": "/əbˈzɝvəˌtɔɹi/",
+        "meaning": "天文台",
+        "answers": [
+          "observatory"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "universe",
+        "ipa": "/ˈjunəˌvɝs/",
+        "meaning": "宇宙",
+        "answers": [
+          "universe"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "telescope",
+        "ipa": "/ˈtɛləˌskoʊp/",
+        "meaning": "望远镜",
+        "answers": [
+          "telescope"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "galaxy",
+        "ipa": "/ˈɡæləksi/",
+        "meaning": "星系",
+        "answers": [
+          "galaxy"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "planet",
+        "ipa": "/ˈplænət/",
+        "meaning": "行星",
+        "answers": [
+          "planet"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "orbit",
+        "ipa": "/ˈɔɹbət/",
+        "meaning": "轨道；绕轨道运行",
+        "answers": [
+          "orbit"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "solar system",
+        "ipa": "/ˈsoʊlɚ ˈsɪstəm/",
+        "meaning": "太阳系",
+        "answers": [
+          "solar system"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "satellite",
+        "ipa": "/ˈsætəˌlaɪt/",
+        "meaning": "卫星",
+        "answers": [
+          "satellite"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "constellation",
+        "ipa": "/ˌkɑnstəˈleɪʃən/",
+        "meaning": "星座",
+        "answers": [
+          "constellation"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ],
-    "reviewWords": ["globe","atmosphere"],
+    "reviewWords": [
+      "globe",
+      "atmosphere"
+    ],
     "supportWords": [
-      {"word":"distant","meaning":"遥远的"},
-      {"word":"recognise","meaning":"认出；识别"}
+      {
+        "word": "distant",
+        "meaning": "遥远的",
+        "ipa": "/ˈdɪstənt/"
+      },
+      {
+        "word": "recognise",
+        "meaning": "认出；识别",
+        "ipa": "/ˈɹɛkəɡˌnaɪz/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ]
   },
   {
@@ -98,21 +191,124 @@ const data=[
       }
     ],
     "newCoreWords": [
-      {"word":"spacecraft","ipa":"","meaning":"宇宙飞船；航天器","answers":["spacecraft"]},
-      {"word":"probe","ipa":"","meaning":"探测器；探查","answers":["probe"]},
-      {"word":"rocket","ipa":"","meaning":"火箭","answers":["rocket"]},
-      {"word":"launch","ipa":"","meaning":"发射；启动","answers":["launch"]},
-      {"word":"engine","ipa":"","meaning":"发动机","answers":["engine"]},
-      {"word":"thrust","ipa":"","meaning":"推力；猛推","answers":["thrust"]},
-      {"word":"fuel","ipa":"","meaning":"燃料","answers":["fuel"]},
-      {"word":"monitor","ipa":"","meaning":"监测；显示器","answers":["monitor"]},
-      {"word":"navigation","ipa":"","meaning":"导航","answers":["navigation"]},
-      {"word":"astronomy","ipa":"","meaning":"天文学","answers":["astronomy"]}
+      {
+        "word": "spacecraft",
+        "ipa": "/ˈspeɪˌskɹæft/",
+        "meaning": "宇宙飞船；航天器",
+        "answers": [
+          "spacecraft"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "probe",
+        "ipa": "/ˈpɹoʊb/",
+        "meaning": "探测器；探查",
+        "answers": [
+          "probe"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "rocket",
+        "ipa": "/ˈɹɑkət/",
+        "meaning": "火箭",
+        "answers": [
+          "rocket"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "launch",
+        "ipa": "/ˈlɔntʃ/",
+        "meaning": "发射；启动",
+        "answers": [
+          "launch"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "engine",
+        "ipa": "/ˈɛndʒən/",
+        "meaning": "发动机",
+        "answers": [
+          "engine"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "thrust",
+        "ipa": "/ˈθɹʌst/",
+        "meaning": "推力；猛推",
+        "answers": [
+          "thrust"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "fuel",
+        "ipa": "/ˈfjuəl/",
+        "meaning": "燃料",
+        "answers": [
+          "fuel"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "monitor",
+        "ipa": "/ˈmɑnətɚ/",
+        "meaning": "监测；显示器",
+        "answers": [
+          "monitor"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "navigation",
+        "ipa": "/ˌnævɪˈɡeɪʃən/",
+        "meaning": "导航",
+        "answers": [
+          "navigation"
+        ]
+      },
+      {
+        "word": "astronomy",
+        "ipa": "/əˈstɹɑnəmi/",
+        "meaning": "天文学",
+        "answers": [
+          "astronomy"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ],
-    "reviewWords": ["orbit","satellite"],
+    "reviewWords": [
+      "orbit",
+      "satellite"
+    ],
     "supportWords": [
-      {"word":"instrument","meaning":"仪器"},
-      {"word":"control room","meaning":"控制室"}
+      {
+        "word": "instrument",
+        "meaning": "仪器",
+        "ipa": "/ˈɪnstɹəmənt/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "control room",
+        "meaning": "控制室",
+        "ipa": "/kənˈtɹoʊl ˈɹum/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ]
   },
   {
@@ -161,22 +357,136 @@ const data=[
       }
     ],
     "newCoreWords": [
-      {"word":"detect","ipa":"","meaning":"探测；察觉","answers":["detect"]},
-      {"word":"electromagnetic","ipa":"","meaning":"电磁的","answers":["electromagnetic"]},
-      {"word":"radiation","ipa":"","meaning":"辐射","answers":["radiation"]},
-      {"word":"vacuum","ipa":"","meaning":"真空","answers":["vacuum"]},
-      {"word":"wavelength","ipa":"","meaning":"波长","answers":["wavelength"]},
-      {"word":"emit","ipa":"","meaning":"发出；排放","answers":["emit"]},
-      {"word":"faint","ipa":"","meaning":"微弱的；暗淡的","answers":["faint"]},
-      {"word":"spectrum","ipa":"","meaning":"光谱；范围","answers":["spectrum"]},
-      {"word":"frequency","ipa":"","meaning":"频率","answers":["frequency"]},
-      {"word":"intensity","ipa":"","meaning":"强度","answers":["intensity"]},
-      {"word":"signal","ipa":"","meaning":"信号","answers":["signal"]}
+      {
+        "word": "detect",
+        "ipa": "/dɪˈtɛkt/",
+        "meaning": "探测；察觉",
+        "answers": [
+          "detect"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "electromagnetic",
+        "ipa": "/ˌɪˌlɛktɹoʊmæɡˈnɛtɪk/",
+        "meaning": "电磁的",
+        "answers": [
+          "electromagnetic"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "radiation",
+        "ipa": "/ˌɹeɪdiˈeɪʃən/",
+        "meaning": "辐射",
+        "answers": [
+          "radiation"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "vacuum",
+        "ipa": "/ˈvækjum/",
+        "meaning": "真空",
+        "answers": [
+          "vacuum"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "wavelength",
+        "ipa": "/ˈweɪˌvlɛŋθ/",
+        "meaning": "波长",
+        "answers": [
+          "wavelength"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "emit",
+        "ipa": "/ɪˈmɪt/",
+        "meaning": "发出；排放",
+        "answers": [
+          "emit"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "faint",
+        "ipa": "/ˈfeɪnt/",
+        "meaning": "微弱的；暗淡的",
+        "answers": [
+          "faint"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "spectrum",
+        "ipa": "/ˈspɛktɹəm/",
+        "meaning": "光谱；范围",
+        "answers": [
+          "spectrum"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "frequency",
+        "ipa": "/ˈfɹikwənsi/",
+        "meaning": "频率",
+        "answers": [
+          "frequency"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "intensity",
+        "ipa": "/ɪnˈtensəti/",
+        "meaning": "强度",
+        "answers": [
+          "intensity"
+        ]
+      },
+      {
+        "word": "signal",
+        "ipa": "/ˈsɪɡnəl/",
+        "meaning": "信号",
+        "answers": [
+          "signal"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ],
-    "reviewWords": ["observatory","telescope","universe","energy"],
+    "reviewWords": [
+      "observatory",
+      "telescope",
+      "universe",
+      "energy"
+    ],
     "supportWords": [
-      {"word":"analyse","meaning":"分析"},
-      {"word":"conclusion","meaning":"结论"}
+      {
+        "word": "analyse",
+        "meaning": "分析",
+        "ipa": "/ˈænəˌlaɪz/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "conclusion",
+        "meaning": "结论",
+        "ipa": "/kənˈkluʒən/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ]
   },
   {
@@ -225,21 +535,126 @@ const data=[
       }
     ],
     "newCoreWords": [
-      {"word":"surface","ipa":"","meaning":"表面","answers":["surface"]},
-      {"word":"gravity","ipa":"","meaning":"重力；引力","answers":["gravity"]},
-      {"word":"mass","ipa":"","meaning":"质量；大量","answers":["mass"]},
-      {"word":"rotate","ipa":"","meaning":"旋转；自转","answers":["rotate"]},
-      {"word":"axis","ipa":"","meaning":"轴线","answers":["axis"]},
-      {"word":"elliptical","ipa":"","meaning":"椭圆形的","answers":["elliptical"]},
-      {"word":"motion","ipa":"","meaning":"运动","answers":["motion"]},
-      {"word":"planetary","ipa":"","meaning":"行星的","answers":["planetary"]},
-      {"word":"liquid","ipa":"","meaning":"液体；液态的","answers":["liquid"]},
-      {"word":"rocky","ipa":"","meaning":"多岩石的","answers":["rocky"]}
+      {
+        "word": "surface",
+        "ipa": "/ˈsɝfəs/",
+        "meaning": "表面",
+        "answers": [
+          "surface"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "gravity",
+        "ipa": "/ˈɡɹævəti/",
+        "meaning": "重力；引力",
+        "answers": [
+          "gravity"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "mass",
+        "ipa": "/ˈmæs/",
+        "meaning": "质量；大量",
+        "answers": [
+          "mass"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "rotate",
+        "ipa": "/ˈɹoʊˌteɪt/",
+        "meaning": "旋转；自转",
+        "answers": [
+          "rotate"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "axis",
+        "ipa": "/ˈæksɪs/",
+        "meaning": "轴线",
+        "answers": [
+          "axis"
+        ]
+      },
+      {
+        "word": "elliptical",
+        "ipa": "/ɪˈlɪptɪkəl/",
+        "meaning": "椭圆形的",
+        "answers": [
+          "elliptical"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "motion",
+        "ipa": "/ˈmoʊʃən/",
+        "meaning": "运动",
+        "answers": [
+          "motion"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "planetary",
+        "ipa": "/ˈplænəˌtɛɹi/",
+        "meaning": "行星的",
+        "answers": [
+          "planetary"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "liquid",
+        "ipa": "/ˈlɪkwəd/",
+        "meaning": "液体；液态的",
+        "answers": [
+          "liquid"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "rocky",
+        "ipa": "/ˈɹɑki/",
+        "meaning": "多岩石的",
+        "answers": [
+          "rocky"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ],
-    "reviewWords": ["planet","orbit","atmosphere","probe"],
+    "reviewWords": [
+      "planet",
+      "orbit",
+      "atmosphere",
+      "probe"
+    ],
     "supportWords": [
-      {"word":"estimate","meaning":"估计"},
-      {"word":"measurement","meaning":"测量"}
+      {
+        "word": "estimate",
+        "meaning": "估计",
+        "ipa": "/ˈɛstəmət/ 或 /ˈɛstəˌmeɪt/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "measurement",
+        "meaning": "测量",
+        "ipa": "/ˈmɛʒɚmənt/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ]
   },
   {
@@ -288,21 +703,128 @@ const data=[
       }
     ],
     "newCoreWords": [
-      {"word":"astronomer","ipa":"","meaning":"天文学家","answers":["astronomer"]},
-      {"word":"asteroid","ipa":"","meaning":"小行星","answers":["asteroid"]},
-      {"word":"comet","ipa":"","meaning":"彗星","answers":["comet"]},
-      {"word":"trajectory","ipa":"","meaning":"轨迹；弹道","answers":["trajectory"]},
-      {"word":"velocity","ipa":"","meaning":"速度","answers":["velocity"]},
-      {"word":"collision","ipa":"","meaning":"碰撞","answers":["collision"]},
-      {"word":"meteor","ipa":"","meaning":"流星","answers":["meteor"]},
-      {"word":"meteorite","ipa":"","meaning":"陨石","answers":["meteorite"]},
-      {"word":"fragment","ipa":"","meaning":"碎片","answers":["fragment"]},
-      {"word":"predict","ipa":"","meaning":"预测","answers":["predict"]}
+      {
+        "word": "astronomer",
+        "ipa": "/əˈstɹɑnəmɚ/",
+        "meaning": "天文学家",
+        "answers": [
+          "astronomer"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "asteroid",
+        "ipa": "/ˈæstɚˌɔɪd/",
+        "meaning": "小行星",
+        "answers": [
+          "asteroid"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "comet",
+        "ipa": "/ˈkɑmət/",
+        "meaning": "彗星",
+        "answers": [
+          "comet"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "trajectory",
+        "ipa": "/tɹəˈdʒɛktɚi/",
+        "meaning": "轨迹；弹道",
+        "answers": [
+          "trajectory"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "velocity",
+        "ipa": "/vəˈlɑsəti/",
+        "meaning": "速度",
+        "answers": [
+          "velocity"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "collision",
+        "ipa": "/kəˈlɪʒən/",
+        "meaning": "碰撞",
+        "answers": [
+          "collision"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "meteor",
+        "ipa": "/ˈmitiɚ/",
+        "meaning": "流星",
+        "answers": [
+          "meteor"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "meteorite",
+        "ipa": "/ˈmitiɔˌɹaɪt/",
+        "meaning": "陨石",
+        "answers": [
+          "meteorite"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "fragment",
+        "ipa": "/ˈfɹæɡmənt/",
+        "meaning": "碎片",
+        "answers": [
+          "fragment"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "predict",
+        "ipa": "/pɹɪˈdɪkt/",
+        "meaning": "预测",
+        "answers": [
+          "predict"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ],
-    "reviewWords": ["orbit","atmosphere","solar system","motion"],
+    "reviewWords": [
+      "orbit",
+      "atmosphere",
+      "solar system",
+      "motion"
+    ],
     "supportWords": [
-      {"word":"streak","meaning":"条纹；光迹"},
-      {"word":"calculate","meaning":"计算"}
+      {
+        "word": "streak",
+        "meaning": "条纹；光迹",
+        "ipa": "/ˈstɹik/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "calculate",
+        "meaning": "计算",
+        "ipa": "/ˈkælkjəˌleɪt/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ]
   },
   {
@@ -355,15 +877,97 @@ const data=[
       }
     ],
     "newCoreWords": [
-      {"word":"ambitious","ipa":"","meaning":"雄心勃勃的","answers":["ambitious"]},
-      {"word":"advanced","ipa":"","meaning":"先进的","answers":["advanced"]},
-      {"word":"equip","ipa":"","meaning":"装备；配备","answers":["equip","equipped"]},
-      {"word":"departure","ipa":"","meaning":"出发；离开","answers":["departure"]},
-      {"word":"adjust","ipa":"","meaning":"调整","answers":["adjust"]},
-      {"word":"exploration","ipa":"","meaning":"探索","answers":["exploration"]},
-      {"word":"cooperation","ipa":"","meaning":"合作","answers":["cooperation"]},
-      {"word":"simulation","ipa":"","meaning":"模拟","answers":["simulation"]},
-      {"word":"combine","ipa":"","meaning":"结合；组合","answers":["combine"]}
+      {
+        "word": "ambitious",
+        "ipa": "/æˈmbɪʃəs/",
+        "meaning": "雄心勃勃的",
+        "answers": [
+          "ambitious"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "advanced",
+        "ipa": "/əˈdvænst/",
+        "meaning": "先进的",
+        "answers": [
+          "advanced"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "equip",
+        "ipa": "/ɪˈkwɪp/",
+        "meaning": "装备；配备",
+        "answers": [
+          "equip",
+          "equipped"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "departure",
+        "ipa": "/dɪˈpɑɹtʃɚ/",
+        "meaning": "出发；离开",
+        "answers": [
+          "departure"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "adjust",
+        "ipa": "/əˈdʒʌst/",
+        "meaning": "调整",
+        "answers": [
+          "adjust"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "exploration",
+        "ipa": "/ˌɛksplɚˈeɪʃən/",
+        "meaning": "探索",
+        "answers": [
+          "exploration"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "cooperation",
+        "ipa": "/koʊˌɑpɚˈeɪʃən/",
+        "meaning": "合作",
+        "answers": [
+          "cooperation"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "simulation",
+        "ipa": "/ˌsɪmjəˈleɪʃən/",
+        "meaning": "模拟",
+        "answers": [
+          "simulation"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "combine",
+        "ipa": "/ˈkɑmbaɪn/",
+        "meaning": "结合；组合",
+        "answers": [
+          "combine"
+        ],
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ],
     "reviewWords": [
       "spacecraft",
@@ -382,13 +986,22 @@ const data=[
       "universe"
     ],
     "supportWords": [
-      {"word":"instrument","meaning":"仪器"},
-      {"word":"scientific research","meaning":"科学研究"}
+      {
+        "word": "instrument",
+        "meaning": "仪器",
+        "ipa": "/ˈɪnstɹəmənt/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      },
+      {
+        "word": "scientific research",
+        "meaning": "科学研究",
+        "ipa": "/ˌsaɪənˈtɪfɪk ɹiˈsɝtʃ/",
+        "ipaAccent": "en-US",
+        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+      }
     ]
   }
 ];
-window.IELTS_QUEST_MISSIONS=[
-  ...(window.IELTS_QUEST_MISSIONS||[]),
-  ...data
-];
+window.IELTS_QUEST_MISSIONS=[...(window.IELTS_QUEST_MISSIONS||[]),...data.filter(m=>!(window.IELTS_QUEST_MISSIONS||[]).some(old=>Number(old.id)===Number(m.id)))];
 })();

@@ -15,7 +15,7 @@
   function lexicalSignature(signature) {
     try {
       return JSON.stringify(JSON.parse(signature), (key, value) =>
-        ["ipa", "ipaAccent", "ipaSource"].includes(key) ? undefined : value);
+        ["ipa", "ipaAccent", "ipaSource", "pronunciationUrl"].includes(key) ? undefined : value);
     } catch (_) { return signature; }
   }
   function get(id, signature) {

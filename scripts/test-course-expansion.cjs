@@ -5,7 +5,7 @@ for(const f of ['data/missions.js',...Array.from({length:21},(_,i)=>`data/chapte
 const missions=c.window.IELTS_QUEST_MISSIONS, hidden=c.window.IELTS_QUEST_HIDDEN_CHAPTER1;
 assert.equal(missions.length,134);assert.equal(new Set(missions.map(m=>m.id)).size,134);
 for(let chapter=1;chapter<=22;chapter++)assert.equal(missions.filter(m=>m.chapter===chapter).length,chapter===2?8:6);
-function canonical(v){if(Array.isArray(v))return v.map(canonical);if(v&&typeof v==='object')return Object.fromEntries(Object.keys(v).filter(k=>!['ipa','ipaAccent','ipaSource'].includes(k)).sort().map(k=>[k,canonical(v[k])]));return v;}
+function canonical(v){if(Array.isArray(v))return v.map(canonical);if(v&&typeof v==='object')return Object.fromEntries(Object.keys(v).filter(k=>!['ipa','ipaAccent','ipaSource','pronunciationUrl'].includes(k)).sort().map(k=>[k,canonical(v[k])]));return v;}
 const hashes=JSON.parse(fs.readFileSync('docs/original-mission-hashes.json'));
 for(const m of missions.filter(m=>m.id<=98))assert.equal(crypto.createHash('sha256').update(JSON.stringify(canonical(m))).digest('hex'),hashes[m.id],`Original Mission ${m.id} semantics changed`);
 const added=missions.filter(m=>m.id>=99),newTerms=new Set();assert.equal(added.length,36);

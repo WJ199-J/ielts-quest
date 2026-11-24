@@ -9,7 +9,8 @@
   const escape=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const read=()=>{try{return JSON.parse(localStorage.getItem('ieltsQuestV1'))||{missions:{},words:{},units:{}};}catch(_){return {missions:{},words:{},units:{}};}};
   const owner=()=>{try{return JSON.parse(localStorage.getItem('ieltsQuestAuthSession'))?.user?.id||'guest';}catch(_){return 'guest';}};
-  let state=read(), index=-1, draft=null, currentOwner=owner();
+  let state=read(), index=-1, draft=null, currentOwner=owner(), feedbackWord=null;
+  window.IELTS_QUEST_FEEDBACK_CONTEXT=()=>({chapter,mission:index>=0?`隐藏文章 ${index+1}`:"",title:articles[index]?.titleZh||"",word:feedbackWord?.word||"",ipa:feedbackWord?.ipa||""});
   const signature=a=>JSON.stringify([a.id,a.story,a.newCoreWords.map(w=>[w.word,w.answers,w.acceptedAlternatives])]);
   const progress=()=>state.missions||{};
   function persist() {
@@ -35,7 +36,7 @@
   function openArticle(i) {
     state=read();
     if(chapter!==1 || !rules.gate(state,articles,i)){drawList();return;}
-    index=i;const a=articles[i];draft=sessions.get(a.id,signature(a));
+    index=i;feedbackWord=null;const a=articles[i];draft=sessions.get(a.id,signature(a));
     $('articleTitle').textContent=a.title;
     $('articleTitleZh').textContent=`隐藏文章 ${i+1}/${articles.length} · ${a.titleZh} · ${a.level} · ${a.time}`;
     $('articleShell').hidden=false;
@@ -85,7 +86,7 @@
     $('nextStory').disabled=index+1>=articles.length||!rules.gate(state,articles,index+1);
     $('nextStory').textContent=index+1>=articles.length?'本章隐藏文章已到最后一篇':'阅读下一篇';
     $('storyBody').querySelectorAll('.story-word').forEach(b=>b.onclick=()=>{
-      const item=a.newCoreWords.find(w=>w.word===b.dataset.word);
+      const item=a.newCoreWords.find(w=>w.word===b.dataset.word);feedbackWord=item;
       $('wordDetail').innerHTML=`<b>${escape(item.word)}</b><small>${escape(item.ipa)} · ${escape(item.pos)}</small><p>${escape(item.meaning)}</p><small>原书第${item.sourcePage}页</small> <button id="speakWord" type="button">听发音</button>`;
       $('speakWord').onclick=()=>speak(item.word);
     });

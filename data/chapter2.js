@@ -91,12 +91,13 @@ const data=[
       {
         "word": "perennial",
         "meaning": "多年生植物；长期的",
-        "ipa": "/pɚˈɛniəl/",
+        "ipa": "/pəˈren.i.əl/",
         "answers": [
           "perennial"
         ],
-        "ipaAccent": "en-US",
-        "ipaSource": "CMU Pronouncing Dictionary · broad ARPAbet mapping"
+        "ipaAccent": "en-GB",
+        "ipaSource": "Cambridge Dictionary · verified 2026-11-24",
+        "pronunciationUrl": "https://dictionary.cambridge.org/pronunciation/english/perennial"
       },
       {
         "word": "organism",

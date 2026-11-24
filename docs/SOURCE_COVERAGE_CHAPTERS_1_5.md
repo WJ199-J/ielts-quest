@@ -1,3 +1,7 @@
+# Historical delivery ledger — superseded on 2026-11-24
+
+The previous single-sentence Unit checkpoint and word-card layer below has been removed from active source. Chapter 1 now uses hidden connected stories; see `CHAPTER1_HIDDEN_STORIES.md` and `chapter1-hidden-coverage.json`. Chapter 2–5 replacement stories remain unreleased. The historical 100-item counts below are not full original-book coverage or current release gates.
+
 # Source coverage ledger — Chapters 1–5
 
 Source: `雅思词汇真经PDF高清彩色版.pdf` (337 pages). The page numbers below are the printed book pages recorded in each supplemental item.

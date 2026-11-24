@@ -175,33 +175,23 @@
   function renderUnitSummary() {
     const unit = units.find(item => item.chapter === selectedChapter);
     const container = document.getElementById("unitSummary");
-    if (!unit || !container) { container?.classList.add("hidden"); return; }
+    if (!unit || !container || !unit.hiddenReleased) { container?.classList.add("hidden"); return; }
     container.classList.remove("hidden");
-    const progress = chapterProgress(selectedChapter);
-    const allMissionsComplete = progress.total > 0 && progress.completed === progress.total;
-    const unitStatus = state.units?.[unit.id] || {};
-    const unitComplete = unitStatus.completed === true && unitStatus.completionMethod === "first-submit-100";
-    const coveragePercent = Math.min(100, Math.round((unit.itemCount / unit.targetItemCount) * 100));
-    document.getElementById("unitItemCount").textContent = `${unit.itemCount} / ${unit.targetItemCount}`;
-    document.getElementById("unitCoverageBar").style.width = `${coveragePercent}%`;
-    document.getElementById("unitCoverageBar").parentElement.setAttribute("aria-valuenow", String(coveragePercent));
+    const base = chapterProgress(selectedChapter);
+    const unlocked = base.total > 0 && base.completed === base.total;
+    const stories = window.IELTS_QUEST_HIDDEN_CHAPTER1 || [];
+    const done = stories.filter(a => isFormalCompletion(missionState(a.id))).length;
+    const percent = stories.length ? Math.round(stories.reduce((n,a)=>n+missionProgressScore(missionState(a.id)),0)/stories.length) : 0;
+    document.getElementById("unitItemCount").textContent = `${done}/${stories.length} 篇过关`;
+    document.getElementById("unitCoverageBar").style.width = `${percent}%`;
+    document.getElementById("unitCoverageBar").parentElement.setAttribute("aria-valuenow",String(percent));
+    document.getElementById("unitCoverageNote").textContent = unlocked
+      ? "15篇连贯故事承载180个新增目标词。进入后打开开关，按顺序阅读与测试；正式90%过关，进度保留真实分数。"
+      : `本章${base.total}篇基础Mission正式成绩均达到90%后，解锁隐藏文章。`;
     const action = document.getElementById("unitAction");
-    if (!unit.contentReady) {
-      document.getElementById("unitCoverageNote").textContent = `还需补齐 ${unit.gapToTarget} 个不重复学习项；补齐前不开放 50 题测验。`;
-      action.textContent = "课程内容补齐中";
-      action.disabled = true;
-    } else if (!allMissionsComplete) {
-      document.getElementById("unitCoverageNote").textContent = `学习项已达到约 100 项；本章 ${progress.total} 个 Mission 首次有效成绩均达到 90% 后解锁。`;
-      action.textContent = "全部 Mission 达到 90% 后解锁";
-      action.disabled = true;
-    } else {
-      document.getElementById("unitCoverageNote").textContent = unitComplete
-        ? `单元测验已正式完成，最高 ${Number(unitStatus.bestScore) || 100}%。`
-        : `本单元已满足覆盖与学习条件，可进入 50 题综合测验。`;
-      action.textContent = unitComplete ? "复习 50 题单元测验" : "开始 50 题单元测验";
-      action.disabled = false;
-      action.onclick = () => { window.location.href = `unit.html?chapter=${selectedChapter}`; };
-    }
+    action.textContent = unlocked ? "进入隐藏故事" : "基础Mission过关后解锁";
+    action.disabled = !unlocked;
+    action.onclick = unlocked ? () => { window.location.href = "unit.html?chapter=1"; } : null;
   }
 
   function setupFilters() {

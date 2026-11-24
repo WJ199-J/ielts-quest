@@ -1,136 +1,167 @@
+/* Chapter 1 hidden connected stories replace the retired checkpoint page. */
 (function () {
-  "use strict";
-  const STORAGE_KEY = "ieltsQuestV1";
-  const THEME_KEY = "ieltsQuestTheme";
-  const missions = window.IELTS_QUEST_MISSIONS || [];
-  const units = window.IELTS_QUEST_UNITS || [];
-  const chapter = Number(new URLSearchParams(location.search).get("chapter")) || 1;
-  const unit = units.find(item => item.chapter === chapter) || units[0];
-  const unitMissions = missions.filter(item => unit?.missionIds.includes(item.id));
-  let state = readState();
-  let quiz = readQuiz();
-
-  function emptyState() { return { missions: {}, words: {}, units: {} }; }
-  function readState() {
-    try {
-      const value = JSON.parse(localStorage.getItem(STORAGE_KEY));
-      const normalized = value && typeof value === "object" ? { missions: value.missions || {}, words: value.words || {}, units: value.units || {} } : emptyState();
-      Object.values(normalized.missions).forEach(item => {
-        if (item?.completed !== true && Number(item?.completionRuleVersion) === 2 && Number(item?.attempts) === 1 && Number(item?.bestScore) >= 90 && Number(item?.bestScore) < 100 && !item?.completionMethod) {
-          item.completed = true; item.completionMethod = "first-submit-90-plus"; item.completionScore = Number(item.bestScore); item.progressScore = Number(item.bestScore); item.completionRuleVersion = 3; item.completedAt ||= new Date().toISOString();
-        }
-      });
-      return normalized;
-    }
-    catch (_) { return emptyState(); }
+  'use strict';
+  const $=id=>document.getElementById(id);
+  const rules=window.IELTS_QUEST_HIDDEN_RULES;
+  const articles=window.IELTS_QUEST_HIDDEN_CHAPTER1 || [];
+  const sessions=window.IELTS_QUEST_QUIZ_SESSIONS;
+  const chapter=Number(new URLSearchParams(location.search).get('chapter'))||1;
+  const escape=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const read=()=>{try{return JSON.parse(localStorage.getItem('ieltsQuestV1'))||{missions:{},words:{},units:{}};}catch(_){return {missions:{},words:{},units:{}};}};
+  const owner=()=>{try{return JSON.parse(localStorage.getItem('ieltsQuestAuthSession'))?.user?.id||'guest';}catch(_){return 'guest';}};
+  let state=read(), index=-1, draft=null, currentOwner=owner();
+  const signature=a=>JSON.stringify([a.id,a.story,a.newCoreWords.map(w=>[w.word,w.answers,w.acceptedAlternatives])]);
+  const progress=()=>state.missions||{};
+  function persist() {
+    if(!draft || index<0)return;
+    const ok=sessions.save(articles[index].id,{...draft,signature:signature(articles[index])});
+    $('saveNotice').textContent=ok?'本轮作答已保存在本设备，刷新后可继续。':'本设备保存失败，请不要关闭页面。正式成绩保存状态见下方提示。';
   }
-  function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); window.IELTS_QUEST_SYNC?.schedule(); }
-  function quizKey() { return `ieltsQuestUnitQuizV1:${unit?.id || "unknown"}`; }
-  function readQuiz() { try { return JSON.parse(localStorage.getItem(quizKey())) || null; } catch (_) { return null; } }
-  function saveQuiz() { try { localStorage.setItem(quizKey(), JSON.stringify(quiz)); document.getElementById("quizSave").textContent = "作答痕迹已保存在本设备，刷新后可继续。"; } catch (_) { document.getElementById("quizSave").textContent = "本设备存储空间不足，作答痕迹暂未保存。"; } }
-  function isMissionComplete(mission) { const item = state.missions?.[mission.id] || {}; return item.completed === true && ["first-submit-90-plus", "first-submit-100", "user-confirmed-legacy-completion"].includes(item.completionMethod); }
-  function escapeHtml(value) { return String(value || "").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;"); }
-  function normalize(value) { return String(value || "").trim().toLowerCase().replace(/[.,!?;:'"]/g, ""); }
-  function shuffle(items) { const copy = [...items]; for (let i = copy.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [copy[i], copy[j]] = [copy[j], copy[i]]; } return copy; }
-  function candidates() {
-    const seen = new Set();
-    const result = [];
-    unitMissions.forEach(mission => (mission.newCoreWords || []).forEach(info => {
-      const key = String(info.word || "").toLowerCase();
-      if (!key || seen.has(key)) return;
-      const pattern = window.IELTS_QUEST_VOCABULARY.pattern(info, "i");
-      const sentence = mission.story.find(item => pattern.test(item.en));
-      if (!sentence) return;
-      const match = sentence.en.match(window.IELTS_QUEST_VOCABULARY.pattern(info, "i"));
-      if (!match) return;
-      seen.add(key);
-      result.push({ key, word: info.word, answers: [...new Set([info.word, ...(info.answers || []), match[0]])], surface: match[0], meaning: info.meaning || "", missionId: mission.id, missionTitle: mission.titleZh || mission.title, sentence: sentence.en, translation: sentence.zh });
-    }));
-    (unit.supplementalItems || []).forEach(info => {
-      const key = String(info.word || "").toLowerCase();
-      if (!key || seen.has(key) || !info.example) return;
-      const match = info.example.match(window.IELTS_QUEST_VOCABULARY.pattern(info, "i"));
-      if (!match) return;
-      seen.add(key);
-      result.push({ key, word: info.word, answers: [...new Set([info.word, ...(info.answers || []), match[0]])], surface: match[0], meaning: info.meaning || "", missionId: "Unit", missionTitle: "原书扩展词汇", sentence: info.example, translation: info.translation || "" });
+  function drawList() {
+    const enabled=chapter===1;
+    if(!enabled){$('courseHeading').textContent=`Chapter ${chapter} 拓展尚未开放`;$('courseIntro').textContent='请先完成Chapter 1隐藏故事测试与验收。';}
+    const base=[1,2,3,4,5,6].filter(id=>rules.formal(progress()[id])).length;
+    $('gateNote').textContent=enabled?`基础 Mission：${base}/6 过关。六篇正式成绩均达到90%后，可打开隐藏文章开关；随后逐篇过关解锁。`:'本章拓展文章尚未开放。旧独立单句测验已移除，请先测试Chapter 1。';
+    $('hiddenToggle').disabled=!enabled||base<6;
+    if($('hiddenToggle').disabled){$('hiddenToggle').checked=false;$('articlePath').hidden=true;}
+    $('articlePath').innerHTML=enabled?articles.map((a,i)=>{
+      const unlocked=rules.gate(state,articles,i),r=progress()[a.id]||{};
+      return `<button class="story-entry" data-index="${i}" ${unlocked?'':'disabled'}><span>${String(i+1).padStart(2,'0')}</span><span><b>${escape(a.titleZh)}</b><small>${escape(a.title)} · ${escape(a.level)} · ${a.newCoreWords.length}个新词${Number(r.attempts)?` · 正式最高${Number(r.bestScore)||0}%`:''}</small></span><span>${!unlocked?'未解锁':rules.formal(r)?'✓ 复习':'阅读'}</span></button>`;
+    }).join(''):'';
+    $('articlePath').querySelectorAll('[data-index]').forEach(b=>b.onclick=()=>openArticle(Number(b.dataset.index)));
+    const finished=articles.filter(a=>rules.formal(progress()[a.id])).length;
+    $('hiddenProgress').textContent=enabled?`${finished}/${articles.length} 篇过关`:'等待Chapter 1验收';
+  }
+  function openArticle(i) {
+    state=read();
+    if(chapter!==1 || !rules.gate(state,articles,i)){drawList();return;}
+    index=i;const a=articles[i];draft=sessions.get(a.id,signature(a));
+    $('articleTitle').textContent=a.title;
+    $('articleTitleZh').textContent=`隐藏文章 ${i+1}/${articles.length} · ${a.titleZh} · ${a.level} · ${a.time}`;
+    $('articleShell').hidden=false;
+    const target=new URL(location.href);target.searchParams.set('article',String(i+1));history.replaceState(null,'',target);
+    renderArticle();
+    $('articleShell').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function studyText(a) {
+    return a.story.map(p=>`<p>${decorate(p.en,a,false)}</p>`).join('');
+  }
+  function decorate(text,a,quiz) {
+    const matches=window.IELTS_QUEST_VOCABULARY.matches(text,a.newCoreWords);
+    let cursor=0,html='';
+    matches.forEach(m=>{
+      html+=escape(text.slice(cursor,m.start));cursor=m.end;
+      if(quiz){const value=draft.answers[m.item.word]||'',marked=draft.submitted,ok=draft.feedback?.[m.item.word];
+        html+=`<input class="story-input ${marked?(ok?'correct':'wrong'):''}" data-word="${escape(m.item.word)}" value="${escape(value)}" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="第${a.newCoreWords.findIndex(w=>w.word===m.item.word)+1}空"/>`;
+      }else html+=`<button class="story-word" data-word="${escape(m.item.word)}">${escape(m.text)}</button>`;
     });
-    return result;
+    return html+escape(text.slice(cursor));
   }
-  function applyTheme(theme) { document.documentElement.dataset.theme = theme; localStorage.setItem(THEME_KEY, theme); document.querySelector('meta[name="theme-color"]').setAttribute("content", theme === "dark" ? "#101815" : "#f7f4ed"); }
-  function setupTheme() { applyTheme(localStorage.getItem(THEME_KEY) || "light"); document.getElementById("themeToggle").onclick = () => applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark"); }
-
-  function renderOverview() {
-    if (!unit) return;
-    document.title = `IELTS Quest · ${unit.titleZh}单元测验`;
-    document.getElementById("unitLabel").textContent = `CHAPTER ${unit.chapter} · UNIT 01`;
-    document.getElementById("unitTitle").textContent = `${unit.titleZh} · ${unit.title}`;
-    document.getElementById("coverageCount").textContent = `${unit.itemCount} / ${unit.targetItemCount}`;
-    document.getElementById("coverageState").textContent = unit.contentReady ? "已达到约 100 项门槛" : `还差 ${unit.gapToTarget} 项`;
-    const completed = unitMissions.filter(isMissionComplete).length;
-    document.getElementById("missionProgress").textContent = `${completed} / ${unitMissions.length} 已完成`;
-    document.getElementById("unitMissionList").innerHTML = unitMissions.map((mission,index) => {
-      const item = state.missions?.[mission.id] || {}; const complete = isMissionComplete(mission); const best = Number(item.bestScore) || 0; const completionScore = Number(item.completionScore) || Number(item.progressScore) || best;
-      return `<div class="unit-mission ${complete ? "complete" : ""}"><span>${complete ? "✓" : String(index + 1).padStart(2,"0")}</span><div><strong>${escapeHtml(mission.titleZh || mission.title)}</strong><small>${mission.newCoreWords.length} 个新词${complete ? ` · 完成 ${completionScore}%` : best ? ` · 最高 ${best}%` : ""}</small></div><a href="mission.html?id=${mission.id}">${complete ? "复习" : "学习"}</a></div>`;
-    }).join("");
-    const supplement = unit.supplementalItems || [];
-    document.getElementById("unitSupplement").classList.toggle("hidden", supplement.length === 0);
-    document.getElementById("supplementCount").textContent = `${supplement.length} 项`;
-    document.getElementById("supplementGrid").innerHTML = supplement.map(item => `<article class="supplement-item"><div><strong>${escapeHtml(item.word)}</strong><span>${escapeHtml(item.ipa)} · ${escapeHtml(item.pos)}</span></div><p>${escapeHtml(item.meaning)}</p><small>${escapeHtml(item.example)}</small><em>原书第 ${item.sourcePage} 页</em></article>`).join("");
-    const allComplete = unitMissions.length > 0 && completed === unitMissions.length;
-    const button = document.getElementById("startUnitQuiz");
-    if (!unit.contentReady) { document.getElementById("checkpointNote").textContent = `当前只有 ${unit.itemCount} 个不重复学习项，还需补齐 ${unit.gapToTarget} 项。`; button.textContent = "内容补齐后开放"; button.disabled = true; }
-    else if (!allComplete) { document.getElementById("checkpointNote").textContent = `学习项数量已达标；剩余 ${unitMissions.length - completed} 个 Mission 首次有效成绩达到 90% 后解锁。`; button.textContent = "全部 Mission 达到 90% 后解锁"; button.disabled = true; }
-    else { document.getElementById("checkpointNote").textContent = "已满足覆盖与学习条件，可随机抽取 50 题。"; button.textContent = quiz ? "继续本轮测验" : "开始 50 题测验"; button.disabled = false; button.onclick = () => startQuiz(false); }
-    const status = state.units?.[unit.id] || {};
-    if (status.completed && status.completionMethod === "first-submit-100") document.getElementById("unitWarning").textContent = `本单元已正式完成，最高分 ${status.bestScore || 100}%。重新练习不会取消完成状态。`;
-    if (quiz && unit.contentReady && allComplete) startQuiz(true);
-  }
-
-  function startQuiz(restoring) {
-    const pool = candidates();
-    if (pool.length < unit.targetQuizCount) { document.getElementById("checkpointNote").textContent = `只有 ${pool.length} 个词能在故事中定位，尚不足 50 题。`; return; }
-    if (!restoring || !quiz || !Array.isArray(quiz.words) || quiz.words.length !== unit.targetQuizCount) {
-      const selected = shuffle(pool).slice(0, unit.targetQuizCount);
-      quiz = { words: selected.map(item => item.key), answers: {}, feedback: {}, submissions: 0, firstScore: null, score: null, submitted: false };
-      saveQuiz();
+  function renderArticle() {
+    if(index<0)return;
+    const a=articles[index],testing=draft?.stage==='quiz'||draft?.stage==='result';
+    $('storyBody').innerHTML=testing?a.story.map(p=>`<p>${decorate(p.en,a,true)}</p>`).join(''):studyText(a);
+    $('wordDetail').textContent=testing?'测试时词义与译文暂时收起。':'点击文章中的下划线词语查看释义并听发音。';
+    $('wordDetail').hidden=testing;
+    $('startStoryQuiz').hidden=testing;
+    $('quizActions').hidden=!testing;
+    $('showTranslation').hidden=testing&&!draft?.submitted;
+    $('translation').hidden=true;
+    $('translation').textContent='';
+    $('studyNote').textContent=testing?`保留完整故事语境，隐藏${a.newCoreWords.length}个目标词；同词重复出现只计一题。首次提交计正式成绩，之后修改只算纠错。`:'先读完整故事，点击词语学习。句级翻译默认隐藏；测试提交后可查看。';
+    $('showTranslation').hidden=!draft?.firstScore&&draft?.firstScore!==0;
+    $('resultPanel').hidden=!draft?.submitted;
+    if(draft?.submitted){
+      $('resultHeading').textContent=draft.submissions>1?'本轮纠错结果':'本轮正式结果';
+      $('roundScore').textContent=`${draft.score}%`;
+      $('resultMessage').textContent=`首次正式分：${draft.firstScore}% · 本轮${draft.correct}/${a.newCoreWords.length}正确。纠错不改变正式最高分、进度和测试次数。下一步由你选择。`;
+      $('answerList').innerHTML=a.newCoreWords.filter(w=>!draft.feedback?.[w.word]).map(w=>`<li>${escape(w.word)}：${escape(w.meaning)}</li>`).join('')||'<li>本轮全部答对。</li>';
     }
-    document.getElementById("quizShell").classList.remove("hidden");
-    renderQuiz(pool);
-    if (!restoring) document.getElementById("quizShell").scrollIntoView({ behavior: "smooth", block: "start" });
+    const record=progress()[a.id]||{};
+    $('formalBest').textContent=`${Number(record.bestScore)||0}%`;
+    $('formalAttempts').textContent=String(Number(record.attempts)||0);
+    $('formalBar').style.width=`${Number(record.progressScore)||0}%`;
+    $('submitStoryQuiz').textContent=draft?.submissions?'检查纠错答案':'提交正式测试';
+    $('nextStory').disabled=index+1>=articles.length||!rules.gate(state,articles,index+1);
+    $('nextStory').textContent=index+1>=articles.length?'本章隐藏文章已到最后一篇':'阅读下一篇';
+    $('storyBody').querySelectorAll('.story-word').forEach(b=>b.onclick=()=>{
+      const item=a.newCoreWords.find(w=>w.word===b.dataset.word);
+      $('wordDetail').innerHTML=`<b>${escape(item.word)}</b><small>${escape(item.ipa)} · ${escape(item.pos)}</small><p>${escape(item.meaning)}</p><small>原书第${item.sourcePage}页</small> <button id="speakWord" type="button">听发音</button>`;
+      $('speakWord').onclick=()=>speak(item.word);
+    });
+    $('storyBody').querySelectorAll('.story-input').forEach(input=>input.oninput=()=>{
+      draft.answers[input.dataset.word]=input.value;
+      $('storyBody').querySelectorAll('.story-input').forEach(other=>{if(other.dataset.word===input.dataset.word)other.value=input.value;});
+      persist();
+    });
   }
-
-  function renderQuiz(pool = candidates()) {
-    const selected = quiz.words.map(key => pool.find(item => item.key === key)).filter(Boolean);
-    document.getElementById("quizList").innerHTML = selected.map((item,index) => {
-      const pattern = window.IELTS_QUEST_VOCABULARY.pattern(item, "i");
-      const parts = item.sentence.split(pattern); const answer = quiz.answers[item.key] || ""; const marked = quiz.submitted;
-      const correct = marked && quiz.feedback[item.key] === true;
-      return `<article class="unit-question"><div class="question-meta"><span>QUESTION ${String(index + 1).padStart(2,"0")}</span><span>Mission ${item.missionId} · ${escapeHtml(item.missionTitle)}</span></div><p class="question-sentence">${escapeHtml(parts[0])}<input class="unit-input ${marked ? (correct ? "correct" : "wrong") : ""}" data-key="${escapeHtml(item.key)}" data-surface="${escapeHtml(item.surface)}" value="${escapeHtml(answer)}" autocomplete="off" spellcheck="false" aria-label="第 ${index + 1} 题答案" />${escapeHtml(parts.slice(1).join(item.surface))}</p>${marked && !correct ? `<p class="answer-line">正确答案：${escapeHtml(item.surface)}</p>` : ""}${marked ? `<p class="translation-line">${escapeHtml(item.translation)}</p>` : ""}</article>`;
-    }).join("");
-    document.querySelectorAll(".unit-input").forEach(input => input.addEventListener("input", event => { quiz.answers[event.target.dataset.key] = event.target.value; if (quiz.submitted) { quiz.submitted = false; event.target.classList.remove("correct","wrong"); } saveQuiz(); }));
-    document.getElementById("submitUnitQuiz").textContent = quiz.submissions ? "重新检查修改" : "提交 50 题";
-    document.getElementById("quizScore").classList.toggle("hidden", quiz.score === null);
-    if (quiz.score !== null) document.getElementById("scoreValue").textContent = `${quiz.score}%`;
+  function speak(word) {
+    if(!('speechSynthesis' in window)){ $('saveNotice').textContent='当前浏览器不支持发音，请换用系统浏览器。';return; }
+    const utterance=new SpeechSynthesisUtterance(word);utterance.lang='en-GB';utterance.rate=.85;
+    utterance.onerror=()=>{$('saveNotice').textContent='发音暂不可用，请检查系统英语语音或稍后重试。';};
+    speechSynthesis.cancel();speechSynthesis.speak(utterance);
   }
-
-  function submitQuiz() {
-    const pool = candidates(); const selected = quiz.words.map(key => pool.find(item => item.key === key)).filter(Boolean);
-    document.querySelectorAll(".unit-input").forEach(input => { quiz.answers[input.dataset.key] = input.value; });
-    let correct = 0; quiz.feedback = {};
-    selected.forEach(item => { const ok = item.answers.some(answer => normalize(answer) === normalize(quiz.answers[item.key])); quiz.feedback[item.key] = ok; if (ok) correct += 1; });
-    const score = Math.round((correct / selected.length) * 100); const firstSubmission = quiz.submissions === 0;
-    quiz.submissions += 1; quiz.submitted = true; quiz.score = score; if (firstSubmission) quiz.firstScore = score;
-    state.units ||= {}; const status = state.units[unit.id] ||= { bestScore: 0, lastScore: 0, attempts: 0, completed: false, completionMethod: null, completedAt: null };
-    if (firstSubmission) { status.bestScore = Math.max(Number(status.bestScore) || 0, score); status.lastScore = score; }
-    if (firstSubmission) { status.attempts = (Number(status.attempts) || 0) + 1; if (score === 100) { status.completed = true; status.completionMethod = "first-submit-100"; status.completedAt = new Date().toISOString(); } }
-    saveState(); saveQuiz(); renderQuiz(pool);
-    document.getElementById("quizSave").textContent = firstSubmission && score === 100 ? "首次提交 100%，本单元已正式完成。" : score === 100 ? "已纠错至 100%；本轮不会被计为正式完成。" : `已提交，正确 ${correct} / ${selected.length}。结果页会保留，可继续修改。`;
-    document.getElementById("quizShell").scrollIntoView({ behavior: "smooth", block: "start" });
+  function startRound() {
+    if(index<0||!rules.gate(read(),articles,index))return;
+    draft={stage:'quiz',answers:{},submissions:0,submitted:false,firstScore:null,score:null,feedback:{}};
+    persist();renderArticle();
   }
-
-  function newRound() { if (!confirm("重新随机会清除本设备当前这轮的作答痕迹，确定继续吗？")) return; localStorage.removeItem(quizKey()); quiz = null; startQuiz(false); }
-  document.getElementById("submitUnitQuiz").onclick = submitQuiz;
-  document.getElementById("newUnitRound").onclick = newRound;
-  window.addEventListener("ieltsquest:progress-synced", () => { state = readState(); });
-  setupTheme(); renderOverview();
+  function submit() {
+    state=read();
+    if(index<0||!draft||!rules.gate(state,articles,index))return;
+    $('storyBody').querySelectorAll('.story-input').forEach(input=>{draft.answers[input.dataset.word]=input.value;});
+    const a=articles[index],result=rules.grade(a,draft.answers),first=draft.submissions===0;
+    if(first){
+      // Re-read immediately before writing, preserving unrelated Mission/word/unit records.
+      rules.recordFirst(state,a,result);
+      try{localStorage.setItem('ieltsQuestV1',JSON.stringify(state));}
+      catch(_){$('saveNotice').textContent='正式成绩保存失败，尚未提交；请清理设备存储后重试。';return;}
+      draft.firstScore=result.score;
+    }
+    Object.assign(draft,result,{submissions:draft.submissions+1,submitted:true,stage:'result'});
+    persist();
+    if(first)window.IELTS_QUEST_SYNC?.schedule();
+    drawList();renderArticle();
+    // Deliberately no navigation or scroll: all scores stay on this result page.
+  }
+  function returnToReading() {
+    if(!draft)return;
+    // Reading after an unfinished test abandons it; a subsequent test starts a fresh round.
+    if(draft.submissions===0&&!confirm('返回阅读会结束当前未提交测试；再次开始时将重新作答。'))return;
+    if(draft.submissions===0){draft=null;sessions.save(articles[index].id,{signature:signature(articles[index]),stage:'study'});}
+    else {draft.stage='study';persist();}
+    renderArticle();
+  }
+  $('hiddenToggle').onchange=()=>{ $('articlePath').hidden=!$('hiddenToggle').checked; if(!$('hiddenToggle').checked)$('articleShell').hidden=true; };
+  $('startStoryQuiz').onclick=()=>{if(draft?.submissions&&!confirm('开始新一轮正式测试？当前正式成绩会保留，本轮答案将清空。'))return;startRound();};
+  $('submitStoryQuiz').onclick=submit;
+  $('newStoryRound').onclick=()=>{if(confirm('清空本轮答案并重新正式测试？历史正式成绩保持不变。'))startRound();};
+  $('returnReading').onclick=returnToReading;
+  $('nextStory').onclick=()=>openArticle(index+1);
+  $('showTranslation').onclick=()=>{
+    const allowed=draft&&Number(draft.submissions)>0;
+    if(!allowed)return;
+    $('translation').hidden=!$('translation').hidden;
+    $('translation').innerHTML=articles[index].story.map(p=>`<p>${escape(p.en)}<br><span>${escape(p.zh)}</span></p>`).join('');
+  };
+  $('themeToggle').onclick=()=>{
+    const next=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=next;localStorage.setItem('ieltsQuestTheme',next);
+  };
+  document.documentElement.dataset.theme=localStorage.getItem('ieltsQuestTheme')||'light';
+  function refresh() {
+    const changedOwner=owner()!==currentOwner;currentOwner=owner();state=read();drawList();
+    if(index>=0 && (!rules.gate(state,articles,index)||changedOwner)){
+      index=-1;draft=null;$('articleShell').hidden=true;
+    }else if(index>=0)renderArticle();
+    else {
+      const n=Number(new URLSearchParams(location.search).get('article'));
+      if(n>0&&chapter===1&&rules.gate(state,articles,n-1)){
+        $('hiddenToggle').checked=true;$('articlePath').hidden=false;openArticle(n-1);
+      }
+    }
+  }
+  window.addEventListener('ieltsquest:progress-synced',refresh);
+  window.addEventListener('ieltsquest:auth-change',refresh);
+  window.addEventListener('storage',refresh);
+  refresh();
 })();

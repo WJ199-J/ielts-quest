@@ -1,0 +1,1600 @@
+{
+  "scope": "Chapter 1 printed-book index headwords only; no claim of all illustration/derived terms",
+  "sourceTotal": 241,
+  "baseCovered": 61,
+  "hiddenCovered": 180,
+  "articles": 15,
+  "items": [
+    {
+      "word": "abnormal",
+      "sourcePage": 13,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "adjacent",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "Antarctic",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "aggravate",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "altitude",
+      "sourcePage": 2,
+      "baseMissionIds": [
+        2
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "arctic",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "arid",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-07"
+    },
+    {
+      "word": "artificial",
+      "sourcePage": 19,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "Atlantic",
+      "sourcePage": 8,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "atmosphere",
+      "sourcePage": 2,
+      "baseMissionIds": [
+        2,
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "avalanche",
+      "sourcePage": 6,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "axis",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-14"
+    },
+    {
+      "word": "breeze",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        1,
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "brook",
+      "sourcePage": 8,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "carbon dioxide",
+      "sourcePage": 2,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "barren",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-07"
+    },
+    {
+      "word": "blow",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "beach",
+      "sourcePage": 8,
+      "baseMissionIds": [
+        1,
+        2
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "catastrophic",
+      "sourcePage": 3,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "border",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "cave",
+      "sourcePage": 6,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "calamity",
+      "sourcePage": 3,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "calendar",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-15"
+    },
+    {
+      "word": "Celsius",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "clay",
+      "sourcePage": 13,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "cliff",
+      "sourcePage": 6,
+      "baseMissionIds": [
+        2,
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "climate",
+      "sourcePage": 9,
+      "baseMissionIds": [
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "condition",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "core",
+      "sourcePage": 2,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "coast",
+      "sourcePage": 8,
+      "baseMissionIds": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "chill",
+      "sourcePage": 11,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "crack",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "contaminate",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "circulate",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "continent",
+      "sourcePage": 6,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "deteriorate",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "crust",
+      "sourcePage": 2,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "distant",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "deforest",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "dew",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        3,
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "degrade",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "current",
+      "sourcePage": 8,
+      "baseMissionIds": [
+        3
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "delta",
+      "sourcePage": 6,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "dense",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-07"
+    },
+    {
+      "word": "downpour",
+      "sourcePage": 11,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "damp",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "dirt",
+      "sourcePage": 13,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "drain",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        3,
+        4,
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "disaster",
+      "sourcePage": 2,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "desert",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-07"
+    },
+    {
+      "word": "dramatic",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "debris",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "desolate",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-08"
+    },
+    {
+      "word": "drip",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "drought",
+      "sourcePage": 5,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-07"
+    },
+    {
+      "word": "destructive",
+      "sourcePage": 3,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "drown",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "dusk",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "earthquake",
+      "sourcePage": 5,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "eastern",
+      "sourcePage": 13,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "eclipse",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-15"
+    },
+    {
+      "word": "El Nino",
+      "sourcePage": 3,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "erupt",
+      "sourcePage": 4,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "emerge",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "evaporate",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "endanger",
+      "sourcePage": 3,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "environment",
+      "sourcePage": 18,
+      "baseMissionIds": [
+        1,
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "equator",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "erode",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "fertile",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-07"
+    },
+    {
+      "word": "fertilise",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-07"
+    },
+    {
+      "word": "forecast",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "fountain",
+      "sourcePage": 17,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "flash",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "freeze",
+      "sourcePage": 11,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "flat",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "frigid",
+      "sourcePage": 11,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "fringe",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "float",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "frost",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "flooding",
+      "sourcePage": 5,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "fume",
+      "sourcePage": 5,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "gale",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "grand",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-08"
+    },
+    {
+      "word": "gap",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-14"
+    },
+    {
+      "word": "granite",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "gas",
+      "sourcePage": 19,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "gasoline",
+      "sourcePage": 19,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "greenhouse",
+      "sourcePage": 3,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-07"
+    },
+    {
+      "word": "geology",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "gulf",
+      "sourcePage": 8,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "glacier",
+      "sourcePage": 6,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "gush",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "gust",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "globe",
+      "sourcePage": 7,
+      "baseMissionIds": [
+        2
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "hail",
+      "sourcePage": 11,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "horizon",
+      "sourcePage": 2,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "heating",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-07"
+    },
+    {
+      "word": "humid",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "heaven",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-08"
+    },
+    {
+      "word": "hurricane",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "hemisphere",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "hydrogen",
+      "sourcePage": 2,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "hydrosphere",
+      "sourcePage": 2,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "hillside",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "inappropriate",
+      "sourcePage": 13,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "intensity",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-14"
+    },
+    {
+      "word": "intensive",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-07"
+    },
+    {
+      "word": "interesting",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "inevitable",
+      "sourcePage": 13,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "irregularly",
+      "sourcePage": 13,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-14"
+    },
+    {
+      "word": "irreversible",
+      "sourcePage": 13,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "magma",
+      "sourcePage": 5,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "magnet",
+      "sourcePage": 3,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-14"
+    },
+    {
+      "word": "magnificent",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-08"
+    },
+    {
+      "word": "lightning",
+      "sourcePage": 11,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "mainland",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "jeopardise",
+      "sourcePage": 3,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "lithosphere",
+      "sourcePage": 2,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "landscape",
+      "sourcePage": 6,
+      "baseMissionIds": [
+        1,
+        2,
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "mantle",
+      "sourcePage": 2,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "marble",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "margin",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "latitude",
+      "sourcePage": 2,
+      "baseMissionIds": [
+        2
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "marine",
+      "sourcePage": 8,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-14"
+    },
+    {
+      "word": "longitude",
+      "sourcePage": 2,
+      "baseMissionIds": [
+        2
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "lunar",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-15"
+    },
+    {
+      "word": "Mediterranean",
+      "sourcePage": 8,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "meteorology",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-14"
+    },
+    {
+      "word": "mild",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "mineral",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "mishap",
+      "sourcePage": 3,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "mist",
+      "sourcePage": 5,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "moderate",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-14"
+    },
+    {
+      "word": "narrow",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "moist",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "natural",
+      "sourcePage": 19,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "nature",
+      "sourcePage": 19,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "monsoon",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "navigation",
+      "sourcePage": 8,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-14"
+    },
+    {
+      "word": "mount",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-08"
+    },
+    {
+      "word": "mountain",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "northeast",
+      "sourcePage": 13,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "muddy",
+      "sourcePage": 13,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "northwest",
+      "sourcePage": 13,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "oasis",
+      "sourcePage": 6,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-07"
+    },
+    {
+      "word": "ocean",
+      "sourcePage": 8,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "Oceania",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "plate",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "plateau",
+      "sourcePage": 6,
+      "baseMissionIds": [
+        2,
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "ore",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "paradise",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-08"
+    },
+    {
+      "word": "parallel",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "oriental",
+      "sourcePage": 13,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-08"
+    },
+    {
+      "word": "petrol",
+      "sourcePage": 19,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "petroleum",
+      "sourcePage": 19,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "phenomenon",
+      "sourcePage": 3,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-15"
+    },
+    {
+      "word": "polar",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "outskirts",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "pole",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "overlook",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "pollutant",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "pollution",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "peak",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "pebble",
+      "sourcePage": 3,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "oxide",
+      "sourcePage": 2,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "oxygen",
+      "sourcePage": 2,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "pacific",
+      "sourcePage": 8,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "peninsula",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "pour",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        3,
+        4,
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "plain",
+      "sourcePage": 6,
+      "baseMissionIds": [
+        5,
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "precipitate",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "rainbow",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "puff",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "rainfall",
+      "sourcePage": 11,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "range",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "quartz",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "remote",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-08"
+    },
+    {
+      "word": "shade",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "shadow",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "shallow",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "reservoir",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        3,
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "rough",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "shiver",
+      "sourcePage": 11,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "shore",
+      "sourcePage": 8,
+      "baseMissionIds": [
+        1,
+        2
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "shower",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "rural",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "sediment",
+      "sourcePage": 13,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "silt",
+      "sourcePage": 13,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "seismic",
+      "sourcePage": 6,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "situation",
+      "sourcePage": 19,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "ridge",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "sandy",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "steep",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "suburb",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "slope",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "smog",
+      "sourcePage": 5,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "smooth",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "splendid",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-08"
+    },
+    {
+      "word": "snowy",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "stony",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-02"
+    },
+    {
+      "word": "sunrise",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "sunset",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "sunshine",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "stormy",
+      "sourcePage": 11,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "super",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-08"
+    },
+    {
+      "word": "superficial",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "spring",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        3,
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "sprinkle",
+      "sourcePage": 11,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "solar",
+      "sourcePage": 16,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-15"
+    },
+    {
+      "word": "stream",
+      "sourcePage": 8,
+      "baseMissionIds": [
+        1,
+        3,
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "surrounding",
+      "sourcePage": 18,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "source",
+      "sourcePage": 8,
+      "baseMissionIds": [
+        3
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "southeast",
+      "sourcePage": 13,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "southern",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "southwest",
+      "sourcePage": 13,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-05"
+    },
+    {
+      "word": "swamp",
+      "sourcePage": 6,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "thaw",
+      "sourcePage": 11,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "thermal",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-15"
+    },
+    {
+      "word": "thermodynamic",
+      "sourcePage": 5,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-15"
+    },
+    {
+      "word": "synthetic",
+      "sourcePage": 19,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "tremble",
+      "sourcePage": 11,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "thunder",
+      "sourcePage": 11,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "tide",
+      "sourcePage": 8,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-14"
+    },
+    {
+      "word": "upgrade",
+      "sourcePage": 7,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-13"
+    },
+    {
+      "word": "tropics",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-06"
+    },
+    {
+      "word": "temperature",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-04"
+    },
+    {
+      "word": "tsunami",
+      "sourcePage": 5,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-10"
+    },
+    {
+      "word": "tornado",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "torrent",
+      "sourcePage": 5,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-11"
+    },
+    {
+      "word": "valley",
+      "sourcePage": 12,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-03"
+    },
+    {
+      "word": "toxic",
+      "sourcePage": 14,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-12"
+    },
+    {
+      "word": "terrain",
+      "sourcePage": 6,
+      "baseMissionIds": [
+        6
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "vapour",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        4
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "typhoon",
+      "sourcePage": 4,
+      "baseMissionIds": [
+        5
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "volcano",
+      "sourcePage": 4,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-09"
+    },
+    {
+      "word": "vertical",
+      "sourcePage": 9,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-14"
+    },
+    {
+      "word": "wilderness",
+      "sourcePage": 15,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-08"
+    },
+    {
+      "word": "warm",
+      "sourcePage": 10,
+      "baseMissionIds": [],
+      "hiddenArticle": "ch1-hidden-01"
+    },
+    {
+      "word": "waterfall",
+      "sourcePage": 17,
+      "baseMissionIds": [
+        3
+      ],
+      "hiddenArticle": null
+    },
+    {
+      "word": "weather",
+      "sourcePage": 9,
+      "baseMissionIds": [
+        4,
+        5
+      ],
+      "hiddenArticle": null
+    }
+  ]
+}
